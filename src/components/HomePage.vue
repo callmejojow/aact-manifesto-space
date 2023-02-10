@@ -1,6 +1,6 @@
 <template>
   <div class="p-10">
-    <h1 class="text-5xl font-medium text-center">Welcome to My Website</h1>
+    <h1 class="text-5xl font-medium text-center">Manifesto Space</h1>
     <p class="text-lg text-center">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare
       vestibulum massa, vel gravida ante efficitur in. Sed euismod velit id
