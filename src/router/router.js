@@ -1,8 +1,8 @@
 import {createWebHistory, createRouter} from 'vue-router';
 import HomePage from '@/components/HomePage.vue'
 import AboutPage from '@/components/AboutPage.vue'
-import GalleryPage from '@/components/GalleryPage.vue'
-import ContactPage from '@/components/ContactPage.vue'
+import ExhibitionPage from '@/components/ExhibitionPage.vue'
+import ArtistPage from '@/components/ArtistPage.vue'
 
 const history = createWebHistory();
 const router = createRouter({
@@ -13,16 +13,16 @@ const router = createRouter({
 			component: HomePage
 		},
 		{
-			path:'/about',
+			path:'/about_us',
 			component: AboutPage
 		},
 		{
-			path:'/gallery',
-			component: GalleryPage
+			path:'/exhibitions',
+			component: ExhibitionPage
 		},
 		{
-			path:'/contact',
-			component: ContactPage
+			path:'/artists',
+			component: ArtistPage
 		}
 	]
 });

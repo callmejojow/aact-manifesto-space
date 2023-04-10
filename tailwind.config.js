@@ -4,6 +4,13 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend: {
+            fontFamily: {
+            },
+            colors: {
+                'bitten': '#be0000',
+            },
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
