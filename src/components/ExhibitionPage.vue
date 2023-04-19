@@ -24,58 +24,57 @@
             </div>
         </div>
         <div class="col-span-1 flex flex-col lg:grid-cols-3 lg:grid justify-start lg:min-h-screen">
-                <div @mouseover="showTopic(1)" @mouseleave="hideTopic(1)" class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic1.fd438742.png')">
-                    <div class=" w-full h-full flex  justify-center items-center "
-                    :class="[active.pic1 ? 'opacity-100 ease-out' : 'opacity-0  hover:ease-in backdrop-brightness-50']">
-                        <span  class="  text-white text-4xl text-center font-thin  duration-300 transition-opacity " >MADE IN QUEER</span>
-                    </div>
+            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic1.fd438742.png')">
+                <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
                 </div>
-                <div @mouseover="showTopic(2)" @mouseleave="hideTopic(2)" class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
-                    <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
-                        <span  class="text-white text-4xl text-center font-thin" :class="{'hidden':!active.pic2}">BODY POLITICS</span>
-                    </div>
+            </div>
+            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
+                <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
                 </div>
-                <div  @mouseover="showTopic(3)" @mouseleave="hideTopic(3)" class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic3.e774224c.jpg')">
-                    <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
-                        <span   class="text-white text-4xl text-center font-thin" :class="{'hidden':!active.pic3}">YELLOW PERILS</span>
-                    </div>
+            </div>
+            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic3.e774224c.jpg')">
+                <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
                 </div>
+            </div>
         </div>
     </div>
 </template>
 <script setup>
-import {reactive} from 'vue';
+// import { reactive } from 'vue';
 
-const active = reactive({
-    pic1:false,
-    pic2:false,
-    pic3:false
-})
-const showTopic = (pic) => {
-    console.log('show topic')
-    switch(pic)
-    {
-    case 1:
-      active.pic1 = true;
-      break;
-    case 2:
-        active.pic2 = true;
-        break;
-    case 3: active.pic3 = true;
-    }
-   
-}
-const hideTopic = (pic) => {
-    console.log('hide topic')
-    switch(pic)
-    {
-    case 1:
-      active.pic1 = false;
-      break;
-    case 2:
-        active.pic2 = false;
-        break;
-    case 3: active.pic3 = false;
-    }
-}
+// const active = reactive({
+//     pic1: false,
+//     pic2: false,
+//     pic3: false
+// })
+// const showTopic = (pic) => {
+//     console.log('show topic')
+//     switch (pic) {
+//         case 1:
+//             active.pic1 = true;
+//             break;
+//         case 2:
+//             active.pic2 = true;
+//             break;
+//         case 3:
+//             active.pic3 = true;
+//     }
+
+// }
+// const hideTopic = (pic) => {
+//     console.log('hide topic')
+//     switch (pic) {
+//         case 1:
+//             active.pic1 = false;
+//             break;
+//         case 2:
+//             active.pic2 = false;
+//             break;
+//         case 3:
+//             active.pic3 = false;
+//     }
+// }
 </script>
