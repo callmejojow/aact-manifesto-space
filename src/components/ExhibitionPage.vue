@@ -26,12 +26,12 @@
         <div class="col-span-1 flex flex-col lg:grid-cols-3 lg:grid justify-start lg:min-h-screen">
                 <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic1.fd438742.png')">
                     <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
-                        <span class="text-white text-4xl text-center font-thin">MADE IN QUEER</span>
+                        <span @mouseover="showTopic" class="text-white text-4xl text-center font-thin">MADE IN QUEER</span>
                     </div>
                 </div>
                 <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
                     <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
-                        <span class="text-white text-4xl text-center font-thin">BODY POLITICS</span>
+                        <span @mouseover="showTopic" class="text-white text-4xl text-center font-thin">BODY POLITICS</span>
                     </div>
                 </div>
                 <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic3.e774224c.jpg')">
@@ -43,5 +43,5 @@
     </div>
 </template>
 <script setup>
-
+import {ref} from 'vue';
 </script>
