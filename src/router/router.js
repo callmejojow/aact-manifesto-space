@@ -23,7 +23,7 @@ const router = createRouter({
 		{
 			path:'/artists',
 			component: ArtistPage
-		}
+		},
 	]
 });
 
