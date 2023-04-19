@@ -5,16 +5,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Navbar from './components/NavBar'
 import '@/assets/tailwind.css';
-
-export default {
-  name: 'App',
-  components: {
-    Navbar
-  },
-  return() {
-  }
-}
 </script>

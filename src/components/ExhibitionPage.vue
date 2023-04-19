@@ -24,19 +24,24 @@
             </div>
         </div>
         <div class="col-span-1 flex flex-col lg:grid-cols-3 lg:grid justify-start lg:min-h-screen">
-                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
-                    <h3>MADE IN QUEER</h3>
+                <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic1.fd438742.png')">
+                    <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
+                        <span class="text-white text-4xl text-center font-thin">MADE IN QUEER</span>
+                    </div>
                 </div>
-                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
-                    <h3>BODY POLITICS</h3>
+                <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
+                    <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
+                        <span class="text-white text-4xl text-center font-thin">BODY POLITICS</span>
+                    </div>
                 </div>
-                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
-                    <h3>YELLOW</h3>
+                <div class="col-span-1 h-40 lg:h-screen bg-cover" style="background-image: url('img/curation-topic3.e774224c.jpg')">
+                    <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">
+                        <span @mouseover="showTopic" class="text-white text-4xl text-center font-thin">YELLOW PERILS</span>
+                    </div>
                 </div>
-
-<!--             <img src="@/assets/curation-topic1.png" class="col-span-1 h-40 lg:h-screen object-cover" alt="Curation Topic 1" />
-            <img src="@/assets/curation-topic2.jpg" class="col-span-1 h-40 lg:h-screen object-cover" alt="Curation Topic 2" />
-            <img src="@/assets/curation-topic3.jpg" class="col-span-1 h-40 lg:h-screen object-cover" alt="Curation Topic 3" /> -->
         </div>
     </div>
 </template>
+<script setup>
+
+</script>
