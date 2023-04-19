@@ -2,7 +2,7 @@
 <template>
   <div class="flex justify-end item-start p-4">
     <Menu as="div" class="relative inline-block text-left">
-      <MenuButton class="text-gray-800/80 hover:text-black">
+      <MenuButton class="text-gray-300/80 hover:text-gray-700/50">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -16,13 +16,13 @@
         leave-to-class="transform scale-95 opacity-0"
       >
         <MenuItems
-          class="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-red-300/80 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-40 backdrop-blur-lg"
+          class="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white/50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-40 backdrop-blur-lg"
         >
           <div class="px-1 py-1">
             <MenuItem v-slot="{ active }">
               <a
                 :class="[
-                  active ? 'bg-red-700/90 text-white/80' : 'text-red-900',
+                  active ? 'bg-gray-600/40 text-white/80' : 'text-gray-800',
                   'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                 ]" href="/"
               >
@@ -32,7 +32,7 @@
             <MenuItem v-slot="{ active }">
               <a
                 :class="[
-                  active ? 'bg-red-700/90 text-white/80' : 'text-red-900',
+                  active ? 'bg-gray-600/40 text-white/80' : 'text-gray-800',
                   'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                 ]" href="/exhibitions"
               >
@@ -42,7 +42,7 @@
             <MenuItem v-slot="{ active }">
               <a
                 :class="[
-                  active ? 'bg-red-700/90 text-white/80' : 'text-red-900',
+                  active ? 'bg-gray-600/40 text-white/80' : 'text-gray-800',
                   'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                 ]" href="/artists"
               >
@@ -52,7 +52,7 @@
             <MenuItem v-slot="{ active }">
               <a
                 :class="[
-                  active ? 'bg-red-700/90 text-white/80' : 'text-red-900',
+                  active ? 'bg-gray-600/40 text-white/80' : 'text-gray-800',
                   'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                 ]" href="/about_us"
               >
