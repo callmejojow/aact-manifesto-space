@@ -3,7 +3,7 @@
       <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
       <p class="text-white tracking-widest ml-6">MANIFESTO</p>
   </div>
-  <div class="bg-bitten flex flex-col justify-end md:justify-start min-h-screen text-white/90 relative max-w-screen overflow-hidden ">
+  <div class="bg-bitten flex flex-col justify-end items-center md:justify-start min-h-screen text-white/90 relative max-w-screen overflow-hidden ">
     <span class="sr-only">Current Curation</span>
     <img src="@/assets/curation-topic1.png" class="z-0 scale-125 mt-10 md:mt-0 md:scale-100 min-h-screen lg:w-4/5 xl:w-3/5 self-end" alt="Curation Cover"/>
     <div class="absolute px-8 md:px-16 mb-64 md:mb-0 mt-0 md:mt-96">
