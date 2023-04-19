@@ -4,7 +4,7 @@
         <p class="text-black tracking-widest ml-6">MANIFESTO</p>
     </div>
     <div class="flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
-        <div class="col-span-1 justify-self-center px-8 md:px-10 lg:px-16">
+        <div class="col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
             <p class="mt-4 text-sm font-thin">May 2023</p>
@@ -23,18 +23,18 @@
                 </p>
             </div>
         </div>
-        <div class="col-span-1 flex flex-col lg:grid-cols-3 lg:grid justify-start lg:min-h-screen">
-            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic1.fd438742.png')">
+        <div class="col-span-1 flex flex-col lg:flex-row justify-end lg:min-h-screen">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic1.fd438742.png')">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
                 </div>
             </div>
-            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
                 </div>
             </div>
-            <div class="col-span-1 h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic3.e774224c.jpg')">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic3.e774224c.jpg')">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
                 </div>
