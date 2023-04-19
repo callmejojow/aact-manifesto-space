@@ -24,13 +24,13 @@
             </div>
         </div>
         <div class="col-span-1 flex flex-col lg:grid-cols-3 lg:grid justify-start lg:min-h-screen">
-                <div style="background-image: url('~/src/assets/curation-topic1.png')">
+                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
                     <h3>MADE IN QUEER</h3>
                 </div>
-                <div style="background-image: url('~/src/assets/curation-topic1.png')">
+                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
                     <h3>BODY POLITICS</h3>
                 </div>
-                <div style="background-image: url('~/src/assets/curation-topic1.png')">
+                <div class="col-span-1 h-40 lg:h-screen object-cover" style="background-image: url('~/src/assets/curation-topic1.png')">
                     <h3>YELLOW</h3>
                 </div>
 
