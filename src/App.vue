@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navbar class="z-20 absolute top-0 right-0"/>
-    <router-view class="z-10"/>
+    <div class="z-10">
+    <router-view />
+    </div>
   </div>
 </template>
 

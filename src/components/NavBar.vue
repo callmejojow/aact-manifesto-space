@@ -1,11 +1,4 @@
-<script>
-export default {
-  data() {
-    return {
-    }
-  }
-}
-</script>
+
 <template>
   <div class="flex justify-end item-start p-4">
     <Menu as="div" class="relative inline-block text-left">
