@@ -72,13 +72,16 @@ onMounted(() => {AOS.init()})
             <p class="font-semibold text-xl">Unsullied Souls</p>
             <p class="text-lg">Imran Jatoi</p>
         </div>
+        <!-- placeholder for carousel of this artist's pieces -->
+        <!-- <div>
+            place holder
+        </div> -->
     </section>
 </template>
 <style>
 .banner-url {
     background-image: url('../assets/section2-1.jpg');
 }
-
 .quote-url {
     background-image: url('../assets/artist-quote1.jpg');
 }
