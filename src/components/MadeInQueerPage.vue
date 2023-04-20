@@ -58,7 +58,7 @@ onMounted(() => {AOS.init()})
     <!-- For mobile,there should be a bar of section anchors on this page with #, Now I'm focusing on desktop ui-->
     <!-- Banner -->
     <kinesis-container>
-        <section class="h-[48rem] lg:h-screen w-screen bg-cover bg-fixed banner-url">
+        <section class="h-[48rem] lg:h-screen w-screen bg-cover bg-fixed banner2-url">
             <div class="w-full h-full flex flex-col items-start justify-center backdrop-brightness-50 pl-20 md:pl-14 sm:pl-10 pl-6">
                 <kinesis-element :strength="50" transformOrigin="100% 500%" axis="x" type="depth">
                     <p class="text-lg md:text-xl lg:text-2xl text-white/90">
@@ -88,7 +88,7 @@ onMounted(() => {AOS.init()})
     </section>
     <div v-for="artist in madeInQueer" :key="artist">
     <!-- Quote of the Topic -->
-    <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote1-url">
+    <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote2-url">
         <div class="w-full h-80 lg:h-[48rem] flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
             <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                 {{artist.quote}}
@@ -112,11 +112,11 @@ onMounted(() => {AOS.init()})
     </div>
 </template>
 <style>
-.banner-url {
+.banner2-url {
     background-image: url('../assets/cover1.jpg');
 }
 
-.quote1-url {
+.quote2-url {
     background-image: url('../assets/MadeInQueer/Josh/Fig5_Ceremonial Vessel 2.jpg');
 }
 </style>

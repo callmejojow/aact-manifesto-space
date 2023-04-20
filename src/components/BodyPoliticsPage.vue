@@ -326,7 +326,7 @@ onMounted(() => {AOS.init()})
     <!-- For mobile,there should be a bar of section anchors on this page with #, Now I'm focusing on desktop ui-->
     <!-- Banner -->
     <kinesis-container>
-        <section class="h-[48rem] lg:h-screen w-screen bg-cover bg-fixed banner-url">
+        <section class="h-[48rem] lg:h-screen w-screen bg-cover bg-fixed banner1-url">
             <div class="w-full h-full flex flex-col items-start justify-center backdrop-brightness-50 pl-20 md:pl-14 sm:pl-10 pl-6">
                 <kinesis-element :strength="50" transformOrigin="100% 500%" axis="x" type="depth">
                     <p class="text-lg md:text-xl lg:text-2xl text-white/90">
@@ -380,7 +380,7 @@ onMounted(() => {AOS.init()})
     </div>
 </template>
 <style>
-.banner-url {
+.banner1-url {
     background-image: url('../assets/section2-1.jpg');
 }
 
