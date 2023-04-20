@@ -12,6 +12,7 @@ onMounted(() => {AOS.init()})
         </a>
         <p class="text-black tracking-widest ml-6">MANIFESTO</p>
     </div>
+    <!-- Generic Breadcrumbs -->
     <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
         <BreadCrumbs />
         <span class="ml-4 text-sm text-gray-400/80">
@@ -24,6 +25,7 @@ onMounted(() => {AOS.init()})
         </p>
     </div>
     <!-- For mobile,there should be a bar of section anchors on this page with #, Now I'm focusing on desktop ui-->
+    <!-- Banner -->
     <kinesis-container>
         <section class="h-[48rem] lg:h-screen w-screen bg-cover bg-fixed banner-url">
             <div class="w-full h-full flex flex-col items-start justify-center backdrop-brightness-50 pl-20 md:pl-14 sm:pl-10 pl-6">
@@ -40,6 +42,7 @@ onMounted(() => {AOS.init()})
             </div>
         </section>
     </kinesis-container>
+    <!-- Introduction of the topic -->
     <section class="p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <h1 class="text-3xl font-semibold my-4">About</h1>
         <p class="text-md lg:text-lg font-thin">
@@ -52,14 +55,22 @@ onMounted(() => {AOS.init()})
             We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
         </p>
     </section>
+    <!-- Quote of the Topic -->
     <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote-url">
         <div class="w-full h-80 lg:h-[48rem] flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
-                <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
-                    “Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”
-                </p>
-                <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
-                    Imran Jatoi
-                </p>
+            <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
+                “Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”
+            </p>
+            <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
+                Imran Jatoi
+            </p>
+        </div>
+    </section>
+    <!-- Art pieces of a certain artist with his/her introduction -->
+    <section class="p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+        <div class="flex justify-between items-center">
+            <p class="font-semibold text-xl">Unsullied Souls</p>
+            <p class="text-lg">Imran Jatoi</p>
         </div>
     </section>
 </template>
@@ -67,7 +78,8 @@ onMounted(() => {AOS.init()})
 .banner-url {
     background-image: url('../assets/section2-1.jpg');
 }
+
 .quote-url {
-    background-image: url('../assets/section2-quote.jpg');
+    background-image: url('../assets/artist-quote1.jpg');
 }
 </style>
