@@ -1,5 +1,5 @@
 <script setup>
-import BreadCrumbs from '@/components/BreadCrumbs.vue'
+    import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
 
@@ -10,8 +10,8 @@ const AllowedFormats = {
   Text: "text",
 }
 
-let BodyPolitics = {
-  artist1: {
+let bodyPolitics = {
+  artist1:{
     idx: 3,  // for internal use
     format: AllowedFormats.Image,  // for rendering
     visible: true,
@@ -19,84 +19,74 @@ let BodyPolitics = {
     ins_handle: ["@imranfaizjatoi"],  // a list b/c some artists have multiple handles
     quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their ' +
         'racial identities as well as how to intersect their gender and sexual orientation.”',
-    topic_name: "Body Politics",
+    topic_name: "Unsullied Souls",
     quote_bg_url: null,
+    description: "",  // TODO: some artists have a single description for a series of works, whereas others have a description for each work. Need to decide how to handle this.
+    directory: "/assets/BodyPolitics/Imran",
     artworks: {
-      folder: "@/assets/BodyPolitics/Imran",
-      description: "",  // TODO: some artists have a single description for a series of works, whereas others have a description for each work. Need to decide how to handle this.
       art1: {
-        name: "‎⁨1.شناختی کارڈ (Identity Card)⁩",  // TODO in Arabics - double check on the rendered look
+        name: "شناختی کارڈ (Identity Card)",  // TODO in Arabics - double check on the rendered look
         year: null,
         medium: "Digital Print",
         file_name: "1_identity_card.jpg",
-        description: "",  // TODO: see above - maybe we just include both the series description and the individual work description?
       },
       art2: {
         name: "Silence",
         year: null,
         medium: "Digital Print",
         file_name: "2_silence.jpg",
-        description: "",
       },
       art3: {
         name: "Re-emerge",
         year: null,
         medium: "Digital Print",
         file_name: "3_reemerge.jpg",
-        description: "",
       },
       art4: {
         name: "Trust",
         year: null,
         medium: "Digital Print",
         file_name: "4_trust.jpg",
-        description: "",
       },
       art5: {
         name: "Immaculate",
         year: null,
         medium: "Digital Print",
         file_name: "5_immaculate.jpg",
-        description: "",
       },
       art6: {
-        name: "‎⁨آمنے سامنے (face to face)⁩",
+        name: "آمنے سامنے (face to face)",
         year: null,
         medium: "Digital Print",
         file_name: "6_face_to_face.jpg",
-        description: "",
       },
       art7: {
         name: "In Search Of",
         year: null,
         medium: "Digital Print",
         file_name: "7_in_search_of.jpg",
-        description: "",
       },
       art8: {
         name: "Return to Yourself",
         year: null,
         medium: "Digital Print",
         file_name: "8_return_to_yourself.jpg",
-        description: "",
       },
       art9: {
         name: "Minute",
         year: null,
         medium: "Digital Print",
         file_name: "9_minute.jpg",
-        description: "",
       },
       art10: {
         name: "Levitate",
         year: null,
         medium: "Digital Print",
         file_name: "10_levitate.jpg",
-        description: "",
       },
     },
   },
-  artist2: {
+  artist2:{
     idx: 9,
     format: AllowedFormats.Image,
     visible: true,
@@ -106,215 +96,212 @@ let BodyPolitics = {
         'behaviour, our physique, our Asian-ness, and our queerness.”',
     topic_name: "Body Politics",
     quote_bg_url: null,
+    description: "",
+    directory: "/assets/BodyPolitics/Geoff",
     artworks: {
-      folder: "@/assets/BodyPolitics/Geoff",
       art1: {
         name: "A Palace for My Forefathers",
         year: "",
         medium: null,
         file_name: "aPalaceForMyForefathers.jpg",
-        description: "",
       },
       art2: {
         name: "Homecoming",
         year: "",
         medium: null,
         file_name: "homecoming.jpg",
-        description: "",
       },
       art3: {
         name: "Pathfinding",
         year: "",
         medium: null,
         file_name: "pathfinding.jpg",
-        description: "",
       },
       art4: {
         name: "Stifle",
         year: "",
         medium: null,
         file_name: "stifle.jpg",
-        description: "",
       },
       art5: {
         name: "Toward a Memory",
         year: "",
         medium: null,
         file_name: "towardAMemory.jpg",
-        description: "",
       },
     },
-  },
-  artist3: {
-    idx: 11,
-    format: AllowedFormats.Text,  // TODO: check with the UI team on how to handle this. Here is the text: https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2
-    visible: false,  // set to false for now
-    ins_handle: ["@dun.a.way"],
-    artist_name: "Jeff Chow Jung Sing 重昇",
-    quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being ' +
-        'a Queer Asian can contribute to the conversation."',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {
-      folder: null,
-      art1: {
-        name: "",
-        year: "",
-        medium: null,
-        file_name: "",
-        description: "",
-      },
-    },
-  },
-  artist4: {
-    idx: 13,
-    format: AllowedFormats.Video,  // TODO: this is NOT an embedded video. See: https://drive.google.com/file/d/1KEFSM2Tvok77Lslw-SgJt_sQxHZh2da4/view
-    visible: false,
-    ins_handle: ["@sailphototo", "@shallisailnow"],
-    artist_name: "Muchen Zhou / Erin Zhou",
-    quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and ' +
-        'respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {
-      folder: null,
-      art1: {
-        name: "",
-        year: "",
-        medium: null,
-        file_name: "",
-        description: "",
-      },
-    },
-  },
-  artist5: {
-    idx: 14,
-    format: AllowedFormats.Image,
-    visible: true,
-    ins_handle: ["@dj.esl"],
-    artist_name: "Sophie Stiquée",
-    quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the ' +
-        'challenges and complexities of balancing these two distinct parts of my identity.” ',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {
-      folder: "@/assets/BodyPolitics/Sophie",
-      art1: {
-        name: "01",
-        year: "",
-        medium: "Photography",
-        file_name: "01.jpg",
-        description: "",
-      },
-      art2: {
-        name: "02",
-        year: "",
-        medium: "Photography",
-        file_name: "02.jpg",
-        description: "",
-      },
-      art3: {
-        name: "03",
-        year: "",
-        medium: "Photography",
-        file_name: "03.jpg",
-        description: "",
-      },
-      art4: {
-        name: "04",
-        year: "",
-        medium: "Photography",
-        file_name: "04.jpg",
-        description: "",
-      },
-      art5: {
-        name: "05",
-        year: "",
-        medium: "Photography",
-        file_name: "05.jpg",
-        description: "",
-      },
-    },
-  },
-  artist6: {
-    idx: 17,
-    format: AllowedFormats.Video,  // embedded video
-    visible: true,
-    ins_handle: ["@sherlchen"],
-    artist_name: "Sidi Chen",
-    quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an ' +
-        'archive of the distances and relations... ”',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {
-      folder: null,  // no folder since it's a video on Youtube
-      art1: {
-        name: "Mirage Raft (The Dream Talking Oyster)",
-        year: "",
-        medium: "Digital Video",
-        file_name: "https://www.youtube.com/watch?v=ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
-        description: "",
-      }
-    },
-  },
-  artist7: {
-    idx: 23,
-    format: AllowedFormats.Video,  // embedded video
-    visible: true,
-    ins_handle: ["@jasmineliaw_"],
-    artist_name: "Jasmine Liaw",
-    quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and ' +
-        'externalization?”',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {
-      folder: null,  // no folder since it's a video on Vimeo
-      art1: {
-        name: "xīn nī 廖芯妮 (understanding you)",
-        year: "",
-        medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  // todo: check with curatorial team on this
-        file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
-        description: "",
-      }
-    },
-  },
-  artist8: {
-    idx: 24,
-    format: AllowedFormats.Image,
-    visible: true,
-    ins_handle: ["@makoto.chi", "@ma__ko__to___"],
-    artist_name: "Makoto Chi",
-    quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many ' +
-        'truths and contradictions in a culture that loves rigid binaries.” ',
-    topic_name: "Body Politics",
-    quote_bg_url: null,
-    artworks: {  // TODO: Check with Jolie on the file size - original works are extremely large (> 100 MB), reduced size with low quality JPGs
-      folder: "@/assets/BodyPolitics/Makoto",
-      art1: {
-        name: "Comets",
-        year: "",
-        medium: "Digital Painting",
-        file_name: "Comets.jpg",
-        description: "",
-      },
-      art2: {
-        name: "Two Snakes",
-        year: "",
-        medium: "Digital Painting",
-        file_name: "TwoSnakes.jpg",
-        description: "",
-      },
-      art3: {
-        name: "Yin Yang",
-        year: "",
-        medium: "Digital Painting",
-        file_name: "YinYang.jpg",
-        description: "",
-      },
-    },
-  },
+  }
 }
+  // {
+  //   idx: 11,
+  //   format: AllowedFormats.Text,  // TODO: check with the UI team on how to handle this. Here is the text: https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2
+  //   visible: false,  // set to false for now
+  //   ins_handle: ["@dun.a.way"],
+  //   artist_name: "Jeff Chow Jung Sing 重昇",
+  //   quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being ' +
+  //       'a Queer Asian can contribute to the conversation."',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {
+  //     folder: null,
+  //     art1: {
+  //       name: "",
+  //       year: "",
+  //       medium: null,
+  //       file_name: "",
+  //       description: "",
+  //     },
+  //   },
+  // },
+  // {
+  //   idx: 13,
+  //   format: AllowedFormats.Video,  // TODO: this is NOT an embedded video. See: https://drive.google.com/file/d/1KEFSM2Tvok77Lslw-SgJt_sQxHZh2da4/view
+  //   visible: false,
+  //   ins_handle: ["@sailphototo", "@shallisailnow"],
+  //   artist_name: "Muchen Zhou / Erin Zhou",
+  //   quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and ' +
+  //       'respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {
+  //     folder: null,
+  //     art1: {
+  //       name: "",
+  //       year: "",
+  //       medium: null,
+  //       file_name: "",
+  //       description: "",
+  //     },
+  //   },
+  // },
+  // {
+  //   idx: 14,
+  //   format: AllowedFormats.Image,
+  //   visible: true,
+  //   ins_handle: ["@dj.esl"],
+  //   artist_name: "Sophie Stiquée",
+  //   quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the ' +
+  //       'challenges and complexities of balancing these two distinct parts of my identity.” ',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {
+  //     folder: "@/assets/BodyPolitics/Sophie",
+  //     art1: {
+  //       name: "01",
+  //       year: "",
+  //       medium: "Photography",
+  //       file_name: "01.jpg",
+  //       description: "",
+  //     },
+  //     art2: {
+  //       name: "02",
+  //       year: "",
+  //       medium: "Photography",
+  //       file_name: "02.jpg",
+  //       description: "",
+  //     },
+  //     art3: {
+  //       name: "03",
+  //       year: "",
+  //       medium: "Photography",
+  //       file_name: "03.jpg",
+  //       description: "",
+  //     },
+  //     art4: {
+  //       name: "04",
+  //       year: "",
+  //       medium: "Photography",
+  //       file_name: "04.jpg",
+  //       description: "",
+  //     },
+  //     art5: {
+  //       name: "05",
+  //       year: "",
+  //       medium: "Photography",
+  //       file_name: "05.jpg",
+  //       description: "",
+  //     },
+  //   },
+  // },
+  // {
+  //   idx: 17,
+  //   format: AllowedFormats.Video,  // embedded video
+  //   visible: true,
+  //   ins_handle: ["@sherlchen"],
+  //   artist_name: "Sidi Chen",
+  //   quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an ' +
+  //       'archive of the distances and relations... ”',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {
+  //     folder: null,  // no folder since it's a video on Youtube
+  //     art1: {
+  //       name: "Mirage Raft (The Dream Talking Oyster)",
+  //       year: "",
+  //       medium: "Digital Video",
+  //       file_name: "https://www.youtube.com/watch?v=ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
+  //       description: "",
+  //     }
+  //   },
+  // },
+  // {
+  //   idx: 23,
+  //   format: AllowedFormats.Video,  // embedded video
+  //   visible: true,
+  //   ins_handle: ["@jasmineliaw_"],
+  //   artist_name: "Jasmine Liaw",
+  //   quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and ' +
+  //       'externalization?”',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {
+  //     folder: null,  // no folder since it's a video on Vimeo
+  //     art1: {
+  //       name: "xīn nī 廖芯妮 (understanding you)",
+  //       year: "",
+  //       medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  // todo: check with curatorial team on this
+  //       file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
+  //       description: "",
+  //     }
+  //   },
+  // },
+  // {
+  //   idx: 24,
+  //   format: AllowedFormats.Image,
+  //   visible: true,
+  //   ins_handle: ["@makoto.chi", "@ma__ko__to___"],
+  //   artist_name: "Makoto Chi",
+  //   quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many ' +
+  //       'truths and contradictions in a culture that loves rigid binaries.” ',
+  //   topic_name: "Body Politics",
+  //   quote_bg_url: null,
+  //   artworks: {  // TODO: Check with Jolie on the file size - original works are extremely large (> 100 MB), reduced size with low quality JPGs
+  //     folder: "@/assets/BodyPolitics/Makoto",
+  //     art1: {
+  //       name: "Comets",
+  //       year: "",
+  //       medium: "Digital Painting",
+  //       file_name: "Comets.jpg",
+  //       description: "",
+  //     },
+  //     art2: {
+  //       name: "Two Snakes",
+  //       year: "",
+  //       medium: "Digital Painting",
+  //       file_name: "TwoSnakes.jpg",
+  //       description: "",
+  //     },
+  //     art3: {
+  //       name: "Yin Yang",
+  //       year: "",
+  //       medium: "Digital Painting",
+  //       file_name: "YinYang.jpg",
+  //       description: "",
+  //     },
+  //   },
+  // },
 
+console.log(bodyPolitics)
 onMounted(() => {AOS.init()})
 </script>
 <template class="bg-white">
@@ -367,33 +354,36 @@ onMounted(() => {AOS.init()})
             We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
         </p>
     </section>
+    <div v-for="artist in bodyPolitics" :key="artist">
     <!-- Quote of the Topic -->
     <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote1-url">
         <div class="w-full h-80 lg:h-[48rem] flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
             <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
-                “Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”
+                {{artist.quote}}
             </p>
             <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
-                Imran Jatoi
+                {{artist.artist_name}}
             </p>
         </div>
     </section>
     <!-- Art pieces of a certain artist with his/her introduction -->
     <section class="p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <div class="flex justify-between items-center">
-            <p class="font-semibold text-xl">Unsullied Souls</p>
-            <p class="text-lg">Imran Jatoi</p>
+            <p class="font-semibold text-xl">{{artist.topic_name}}</p>
+            <p class="text-lg">{{artist.artist_name}}</p>
         </div>
         <!-- placeholder for carousel of this artist's pieces -->
-        <!-- <div>
-            place holder
-        </div> -->
+        <div v-for="art in artist.artworks" :key="art">
+            <p>{{art.name}}</p>
+        </div>
     </section>
+    </div>
 </template>
 <style>
 .banner-url {
     background-image: url('../assets/section2-1.jpg');
 }
+
 .quote1-url {
     background-image: url('../assets/artist-quote1.jpg');
 }
