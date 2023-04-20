@@ -33,7 +33,7 @@
         <div class="col-span-1 flex flex-col lg:flex-row justify-end lg:min-h-screen">
             <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-1">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
-                    <a href="/exhibitions/body_politics">
+                    <a href="/exhibitions/made_in_queer">
                         <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
                     </a>
                 </div>
@@ -47,7 +47,7 @@
             </div>
             <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-3">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
-                    <a href="/exhibitions/body_politics">
+                    <a href="/exhibitions/yellow_perils">
                         <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
                     </a>
                 </div>
