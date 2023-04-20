@@ -2,6 +2,138 @@
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
+
+let BodyPolitics = {
+  artist1: {
+    idx: 3,  // for internal use
+    artist_name: "Imran Jatoi",
+    ins_handle: ["@imranfaizjatoi"],  // a list b/c some artists have multiple handles
+    quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their ' +
+        'racial identities as well as how to intersect their gender and sexual orientation.”',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "Identity Card",
+        year: "2021",
+        medium: null,
+      }
+    },
+  },
+  artist2: {
+    idx: 9,
+    ins_handle: ["@geoffrey.l.cheung"],
+    artist_name: "Geoffrey Cheung",
+    quote: '“Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our ' +
+        'behaviour, our physique, our Asian-ness, and our queerness.”',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist3: {
+    idx: 11,
+    ins_handle: ["@dun.a.way"],
+    artist_name: "Jeff Chow Jung Sing 重昇",
+    quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being ' +
+        'a Queer Asian can contribute to the conversation."',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist4: {
+    idx: 13,
+    ins_handle: ["@sailphototo", "@shallisailnow"],
+    artist_name: "Muchen Zhou / Erin Zhou",
+    quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and ' +
+        'respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist5: {
+    idx: 14,
+    ins_handle: ["@dj.esl"],
+    artist_name: "Sophie Stiquée",
+    quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the ' +
+        'challenges and complexities of balancing these two distinct parts of my identity.” ',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist6: {
+    idx: 17,
+    ins_handle: ["@sherlchen"],
+    artist_name: "Sidi Chen",
+    quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an ' +
+        'archive of the distances and relations... ”',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist7: {
+    idx: 23,
+    ins_handle: ["@jasmineliaw_"],
+    artist_name: "Jasmine Liaw",
+    quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and ' +
+        'externalization?”',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+  artist8: {
+    idx: 24,
+    ins_handle: ["@makoto.chi", "@ma__ko__to___"],
+    artist_name: "Makoto Chi",
+    quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many ' +
+        'truths and contradictions in a culture that loves rigid binaries.” ',
+    topic_name: "Body Politics",
+    quote_url: null,
+    artworks: {
+      art1: {
+        name: "",
+        year: "",
+        medium: null,
+      }
+    },
+  },
+}
+
 onMounted(() => {AOS.init()})
 </script>
 <template class="bg-white">
