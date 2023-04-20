@@ -1,8 +1,12 @@
-import {createWebHistory, createRouter} from 'vue-router';
-import HomePage from '@/components/HomePage.vue'
-import AboutPage from '@/components/AboutPage.vue'
-import ExhibitionPage from '@/components/ExhibitionPage.vue'
-import ArtistPage from '@/components/ArtistPage.vue'
+import {createWebHistory, createRouter} from 'vue-router'
+
+import Home from '@/components/HomePage.vue'
+import About from '@/components/AboutPage.vue'
+import Exhibition from '@/components/ExhibitionPage.vue'
+import Artist from '@/components/ArtistPage.vue'
+import BodyPolitics from '@/components/BodyPoliticsPage.vue'
+import MadeInQueer from '@/components/MadeInQueerPage.vue'
+import YellowPerils from '@/components/YellowPerilsPage.vue'
 
 const history = createWebHistory();
 const router = createRouter({
@@ -10,19 +14,31 @@ const router = createRouter({
 	routes:[
 		{
 			path:'/',
-			component: HomePage
+			component: Home
 		},
 		{
 			path:'/about_us',
-			component: AboutPage
+			component: About
 		},
 		{
 			path:'/exhibitions',
-			component: ExhibitionPage
+			component: Exhibition
 		},
 		{
 			path:'/artists',
-			component: ArtistPage
+			component: Artist
+		},
+		{
+			path:'/exhibitions/body_politics',
+			component: BodyPolitics
+		},
+		{
+			path:'/exhibitions/made_in_queer',
+			component: MadeInQueer
+		},
+		{
+			path:'/exhibitions/yellow_perils',
+			component: YellowPerils
 		},
 	]
 });
