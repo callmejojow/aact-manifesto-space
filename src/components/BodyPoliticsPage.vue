@@ -2,7 +2,6 @@
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
-
 onMounted(() => {AOS.init()})
 </script>
 <template class="bg-white">
