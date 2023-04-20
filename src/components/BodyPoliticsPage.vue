@@ -1,5 +1,5 @@
 <script setup>
-    import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
 
@@ -42,7 +42,7 @@ onMounted(() => {AOS.init()})
             </div>
         </section>
     </kinesis-container>
-    <!-- Introduction of the topic -->
+    <!-- Introduction of the sub section -->
     <section class="p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <h1 class="text-3xl font-semibold my-4">About</h1>
         <p class="text-md lg:text-lg font-thin">
@@ -56,7 +56,7 @@ onMounted(() => {AOS.init()})
         </p>
     </section>
     <!-- Quote of the Topic -->
-    <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote-url">
+    <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote1-url">
         <div class="w-full h-80 lg:h-[48rem] flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
             <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                 “Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”
@@ -82,7 +82,7 @@ onMounted(() => {AOS.init()})
 .banner-url {
     background-image: url('../assets/section2-1.jpg');
 }
-.quote-url {
+.quote1-url {
     background-image: url('../assets/artist-quote1.jpg');
 }
 </style>
