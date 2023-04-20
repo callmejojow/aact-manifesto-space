@@ -24,17 +24,17 @@
             </div>
         </div>
         <div class="col-span-1 flex flex-col lg:flex-row justify-end lg:min-h-screen">
-            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic1.fd438742.png')">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-1">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
                 </div>
             </div>
-            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic2.35b2c23a.jpg')">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-2">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
                 </div>
             </div>
-            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group" style="background-image: url('img/curation-topic3.e774224c.jpg')">
+            <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-3">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
                 </div>
@@ -43,38 +43,15 @@
     </div>
 </template>
 <script setup>
-// import { reactive } from 'vue';
-
-// const active = reactive({
-//     pic1: false,
-//     pic2: false,
-//     pic3: false
-// })
-// const showTopic = (pic) => {
-//     console.log('show topic')
-//     switch (pic) {
-//         case 1:
-//             active.pic1 = true;
-//             break;
-//         case 2:
-//             active.pic2 = true;
-//             break;
-//         case 3:
-//             active.pic3 = true;
-//     }
-
-// }
-// const hideTopic = (pic) => {
-//     console.log('hide topic')
-//     switch (pic) {
-//         case 1:
-//             active.pic1 = false;
-//             break;
-//         case 2:
-//             active.pic2 = false;
-//             break;
-//         case 3:
-//             active.pic3 = false;
-//     }
-// }
 </script>
+<style>
+.bg-url-1 {
+  background-image: url('../assets/curation-topic1.png');
+}
+.bg-url-2 {
+  background-image: url('../assets/curation-topic2.jpg');
+}
+.bg-url-3 {
+  background-image: url('../assets/curation-topic3.jpg');
+}
+</style>
