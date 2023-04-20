@@ -1,7 +1,7 @@
 <template>
     <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 md:px-0">
         <a href="/">
-        <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
+            <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
         </a>
         <p class="text-black tracking-widest ml-6">MANIFESTO</p>
     </div>
@@ -26,24 +26,30 @@
             </div>
             <div class="lg:hidden flex justify-center my-10">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 animate-ping">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
         </div>
         <div class="col-span-1 flex flex-col lg:flex-row justify-end lg:min-h-screen">
             <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-1">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
-                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
+                    <a href="/exhibitions/body_politics">
+                        <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
+                    </a>
                 </div>
             </div>
             <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-2">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
-                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
+                    <a href="/exhibitions/body_politics">
+                        <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
+                    </a>
                 </div>
             </div>
             <div class="transition-all ease-in ease-out duration-300 shrink hover:grow h-40 lg:h-screen bg-cover group bg-url-3">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
-                    <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
+                    <a href="/exhibitions/body_politics">
+                        <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,12 +59,14 @@
 </script>
 <style>
 .bg-url-1 {
-  background-image: url('../assets/curation-topic1.png');
+    background-image: url('../assets/curation-topic1.png');
 }
+
 .bg-url-2 {
-  background-image: url('../assets/curation-topic2.jpg');
+    background-image: url('../assets/curation-topic2.jpg');
 }
+
 .bg-url-3 {
-  background-image: url('../assets/curation-topic3.jpg');
+    background-image: url('../assets/curation-topic3.jpg');
 }
 </style>
