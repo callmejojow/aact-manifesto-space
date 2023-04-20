@@ -1,11 +1,15 @@
 <template>
   <div class="bg-bitten flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
-      <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
+      <a href="/">
+       <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
+      </a> 
       <p class="text-white tracking-widest ml-6">MANIFESTO</p>
   </div>
-  <div class="bg-bitten flex flex-col justify-end items-center md:justify-start min-h-screen text-white/90 relative max-w-screen overflow-hidden ">
+  <div class="bg-black flex flex-col justify-end items-start md:justify-start max-h-screen text-white/90 relative max-w-screen overflow-hidden ">
+
     <span class="sr-only">Current Curation</span>
-    <img src="@/assets/curation-topic1.png" class="z-0 mt-10 md:mt-0  min-h-screen lg:w-4/5 xl:w-3/5 self-end" alt="Curation Cover"/>
+    <img src="@/assets/cover1.jpg" class="z-0 min-h-screen lg:w-4/5 xl:w-3/5 self-end object-cover" alt="Curation Cover"/>
+
     <div class="absolute px-8 md:px-16 mb-64 md:mb-0 mt-0 md:mt-96">
       <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide">The Bitten Peach</h1>
       <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4">

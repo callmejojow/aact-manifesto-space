@@ -1,6 +1,8 @@
 <template>
     <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 md:px-0">
+        <a href="/">
         <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
+        </a>
         <p class="text-black tracking-widest ml-6">MANIFESTO</p>
     </div>
     <div class="flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
