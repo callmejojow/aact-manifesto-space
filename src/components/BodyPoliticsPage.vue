@@ -97,6 +97,7 @@ let bodyPolitics = {
     bio: 'Geoffrey Lok-Fay Cheung is a visual artist interested in the themes of tension, conflict, and harmony as they relate to identity, community, and cultural inheritance. His practice is heavily informed by his own lived experiences growing up in Vancouver as a queer first-generation Canadian of Chinese descent. In his current investigations, Cheung explores connection with land and memory as it relates to the immigrant experience. For the better part of the past two decades, Cheung lived and worked out East, most recently in Toronto, as a Medical Animator and Illustrator. He previously received a Master of Science in Biomedical Communications and Bachelor of Science in Life Science. He returned to live in Vancouver for the MFA program at Emily Carr University which is on the unceded territories of the Coast Salish peoples, including the Musqueam, Squamish and Tsleil-Waututh nations.',
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     description: "TBC",
     directory: "/assets/BodyPolitics/Geoff",
     artworks: {
@@ -134,7 +135,7 @@ let bodyPolitics = {
   },
   artist3: {
     idx: 11,
-    format: AllowedFormats.Text,  // TODO: check with the UI team on how to handle this.
+    format: AllowedFormats.Text,
     visible: false,  // set to false for now
     artist_name: "Jeff Chow Jung Sing 重昇",
     ins_handle: ["@dun.a.way"],
@@ -142,6 +143,7 @@ let bodyPolitics = {
     bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, designs and draw inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario pursuing education but left defeated in spite.",
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "",
     description: "",
     artworks: {
@@ -155,7 +157,7 @@ let bodyPolitics = {
   },
   artist4: {
     idx: 13,
-    format: AllowedFormats.Video,  // TODO: this is NOT an embedded video. See: https://drive.google.com/file/d/1KEFSM2Tvok77Lslw-SgJt_sQxHZh2da4/view
+    format: AllowedFormats.Video,
     visible: false,
     artist_name: "Muchen Zhou / Erin Zhou",
     ins_handle: ["@sailphototo", "@shallisailnow"],
@@ -163,6 +165,7 @@ let bodyPolitics = {
     bio: 'I\'m Muchen, a photographer and videographer. When I was little, both still photos and movie scenes astounded me. Throughout my growing process, photos, movies, and drawing have all been present. Visual pictures have been my main tool to explore my internal expression during my developing process, but more crucial for me right now is to use my works as a medium to resonate with the outside world. Images affect me both consciously and unconsciously throughout my life. I was able to get through some of my darkest years with the diversion of making art out of photographs. I couldn\'t have found it anyplace else, but it gave me the consciousness and voice I needed.',
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "",
     description: "",
     artworks: {
@@ -185,6 +188,7 @@ let bodyPolitics = {
     bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences. In June 2023, Sophie will showcase her work at an art exhibition organized by the City of Toronto, exploring the universe of drag and the intersectionality of being queer and Mauritian through a series of portraits of queer Mauritians. With a passion for creativity and a drive to make an impact, Sophie is poised for continued success in the world of music and art.',
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "/assets/BodyPolitics/Sophie",
     description: "",
     artworks: {
@@ -232,6 +236,7 @@ let bodyPolitics = {
         'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC."',
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "",  // no directory since it's a video on Youtube
     description: "",
     artworks: {
@@ -253,6 +258,7 @@ let bodyPolitics = {
     bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy,  and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "",  // no directory since it's a video on Youtube
     description: "",
     artworks: {
@@ -274,6 +280,7 @@ let bodyPolitics = {
     bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western massachusetts. He is cultivating slow practices, and making art addressing sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
     topic_name: "Body Politics",
     quote_bg_url: "",
+    collection_title: "",
     directory: "/assets/BodyPolitics/Makoto",
     artworks: {
       art1: {
