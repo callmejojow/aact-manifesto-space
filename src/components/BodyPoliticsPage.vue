@@ -3,12 +3,12 @@
 import { onMounted } from "vue"
 import AOS from "aos"
 
-// TODO: Is this too much?
 const AllowedFormats = {
   Image: "image",
   Video: "video",
   Text: "text",
 }
+
 
 let bodyPolitics = {
   artist1:{
@@ -17,70 +17,71 @@ let bodyPolitics = {
     visible: true,
     artist_name: "Imran Jatoi",
     ins_handle: ["@imranfaizjatoi"],  // a list b/c some artists have multiple handles
-    quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their ' +
-        'racial identities as well as how to intersect their gender and sexual orientation.”',
-    topic_name: "Unsullied Souls",
-    quote_bg_url: null,
-    description: "",  // TODO: some artists have a single description for a series of works, whereas others have a description for each work. Need to decide how to handle this.
+    quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”',
+    bio: 'Imran Faizyab Jatoi is a Pakistani self-employed visual artist, creating 2d and 3d art forms and performances. His practice underlines queer ideologies with an emphasis on identity, orientation, faith and autobiographical allusions. He is postgraduate in Art & Design from Yasar University, Turkey and contributed to number of exhibitions. The involvement of his art practice is to educate and make awareness about queer issues center on an investigation of Identity, especially gender and sexuality, through multidisciplinary approaches. He will likely to make work that mechanism with closeness and empowers understanding, accepting, and basic discussions about queer identity, sexuality and contemporary societal movement.',
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    collection_title: "Unsullied Souls",
+    description: "TBC",
     directory: "/assets/BodyPolitics/Imran",
     artworks: {
       art1: {
-        name: "شناختی کارڈ (Identity Card)",  // TODO in Arabics - double check on the rendered look
-        year: null,
+        name: "شناختی کارڈ (Identity Card)",
+        year: "",
         medium: "Digital Print",
         file_name: "1_identity_card.jpg",
       },
       art2: {
         name: "Silence",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "2_silence.jpg",
       },
       art3: {
         name: "Re-emerge",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "3_reemerge.jpg",
       },
       art4: {
         name: "Trust",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "4_trust.jpg",
       },
       art5: {
         name: "Immaculate",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "5_immaculate.jpg",
       },
       art6: {
         name: "آمنے سامنے (face to face)",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "6_face_to_face.jpg",
       },
       art7: {
         name: "In Search Of",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "7_in_search_of.jpg",
       },
       art8: {
         name: "Return to Yourself",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "8_return_to_yourself.jpg",
       },
       art9: {
         name: "Minute",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "9_minute.jpg",
       },
       art10: {
         name: "Levitate",
-        year: null,
+        year: "",
         medium: "Digital Print",
         file_name: "10_levitate.jpg",
       },
@@ -90,216 +91,215 @@ let bodyPolitics = {
     idx: 9,
     format: AllowedFormats.Image,
     visible: true,
-    ins_handle: ["@geoffrey.l.cheung"],
     artist_name: "Geoffrey Cheung",
-    quote: '“Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our ' +
-        'behaviour, our physique, our Asian-ness, and our queerness.”',
+    ins_handle: ["@geoffrey.l.cheung"],
+    quote: '“Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our behaviour, our physique, our Asian-ness, and our queerness.”',
+    bio: 'Geoffrey Lok-Fay Cheung is a visual artist interested in the themes of tension, conflict, and harmony as they relate to identity, community, and cultural inheritance. His practice is heavily informed by his own lived experiences growing up in Vancouver as a queer first-generation Canadian of Chinese descent. In his current investigations, Cheung explores connection with land and memory as it relates to the immigrant experience. For the better part of the past two decades, Cheung lived and worked out East, most recently in Toronto, as a Medical Animator and Illustrator. He previously received a Master of Science in Biomedical Communications and Bachelor of Science in Life Science. He returned to live in Vancouver for the MFA program at Emily Carr University which is on the unceded territories of the Coast Salish peoples, including the Musqueam, Squamish and Tsleil-Waututh nations.',
     topic_name: "Body Politics",
-    quote_bg_url: null,
-    description: "",
+    quote_bg_url: "",
+    description: "TBC",
     directory: "/assets/BodyPolitics/Geoff",
     artworks: {
       art1: {
         name: "A Palace for My Forefathers",
         year: "",
-        medium: null,
+        medium: 'Photography',
         file_name: "aPalaceForMyForefathers.jpg",
       },
       art2: {
         name: "Homecoming",
         year: "",
-        medium: null,
+        medium: 'Photography',
         file_name: "homecoming.jpg",
       },
       art3: {
         name: "Pathfinding",
         year: "",
-        medium: null,
+        medium: 'Photography',
         file_name: "pathfinding.jpg",
       },
       art4: {
         name: "Stifle",
         year: "",
-        medium: null,
+        medium: 'Photography',
         file_name: "stifle.jpg",
       },
       art5: {
         name: "Toward a Memory",
         year: "",
-        medium: null,
+        medium: 'Photography',
         file_name: "towardAMemory.jpg",
       },
     },
-  }
+  },
+  artist3: {
+    idx: 11,
+    format: AllowedFormats.Text,  // TODO: check with the UI team on how to handle this.
+    visible: false,  // set to false for now
+    artist_name: "Jeff Chow Jung Sing 重昇",
+    ins_handle: ["@dun.a.way"],
+    quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being a Queer Asian can contribute to the conversation."',
+    bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, designs and draw inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario pursuing education but left defeated in spite.",
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "",
+    description: "",
+    artworks: {
+      art1: {
+        name: "Queer Asians on the Dancefloor",
+        year: "",
+        medium: 'Text',
+        file_name: 'https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2',
+      },
+    },
+  },
+  artist4: {
+    idx: 13,
+    format: AllowedFormats.Video,  // TODO: this is NOT an embedded video. See: https://drive.google.com/file/d/1KEFSM2Tvok77Lslw-SgJt_sQxHZh2da4/view
+    visible: false,
+    artist_name: "Muchen Zhou / Erin Zhou",
+    ins_handle: ["@sailphototo", "@shallisailnow"],
+    quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
+    bio: 'I\'m Muchen, a photographer and videographer. When I was little, both still photos and movie scenes astounded me. Throughout my growing process, photos, movies, and drawing have all been present. Visual pictures have been my main tool to explore my internal expression during my developing process, but more crucial for me right now is to use my works as a medium to resonate with the outside world. Images affect me both consciously and unconsciously throughout my life. I was able to get through some of my darkest years with the diversion of making art out of photographs. I couldn\'t have found it anyplace else, but it gave me the consciousness and voice I needed.',
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "",
+    description: "",
+    artworks: {
+      folder: "",
+      art1: {
+        name: "Yang",
+        year: "",
+        medium: 'Film',
+        file_name: "N/A",  // todo: contact artist to upload the video to youtube
+      },
+    },
+  },
+  artist5: {
+    idx: 14,
+    format: AllowedFormats.Image,
+    visible: true,
+    ins_handle: ["@dj.esl"],
+    artist_name: "Sophie Stiquée",
+    quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the challenges and complexities of balancing these two distinct parts of my identity.”',
+    bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences. In June 2023, Sophie will showcase her work at an art exhibition organized by the City of Toronto, exploring the universe of drag and the intersectionality of being queer and Mauritian through a series of portraits of queer Mauritians. With a passion for creativity and a drive to make an impact, Sophie is poised for continued success in the world of music and art.',
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "/assets/BodyPolitics/Sophie",
+    description: "",
+    artworks: {
+      art1: {
+        name: "01",
+        year: "",
+        medium: "Photography",
+        file_name: "01.jpg",
+      },
+      art2: {
+        name: "02",
+        year: "",
+        medium: "Photography",
+        file_name: "02.jpg",
+      },
+      art3: {
+        name: "03",
+        year: "",
+        medium: "Photography",
+        file_name: "03.jpg",
+      },
+      art4: {
+        name: "04",
+        year: "",
+        medium: "Photography",
+        file_name: "04.jpg",
+      },
+      art5: {
+        name: "05",
+        year: "",
+        medium: "Photography",
+        file_name: "05.jpg",
+      },
+    },
+  },
+  artist6:{
+    idx: 17,
+    format: AllowedFormats.Video,  // embedded video
+    visible: true,
+    ins_handle: ["@sherlchen"],
+    artist_name: "Sidi Chen",
+    quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an archive of the distances and relations... ”',
+    bio: '"Sidi Chen is a queer artist in diaspora whose interdisciplinary performance-based practice interrogates the entangled relations held within the collective bodies that are communal, ecological, and planetary. Through his practice, Chen explores subjects of queer diaspora, intergenerational migration, social and environmental shifting to understand and cultivate an Earthly empathy. \n' +
+        '\n' +
+        'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC."',
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "",  // no directory since it's a video on Youtube
+    description: "",
+    artworks: {
+      art1: {
+        name: "Mirage Raft (The Dream Talking Oyster)",
+        year: "",
+        medium: "Digital Video",
+        file_name: "https://www.youtube.com/watch?v=ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
+      }
+    },
+  },
+  artist7: {
+    idx: 23,
+    format: AllowedFormats.Video,  // embedded video
+    visible: true,
+    artist_name: "Jasmine Liaw",
+    ins_handle: ["@jasmineliaw_"],
+    quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and externalization?”',
+    bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy,  and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "",  // no directory since it's a video on Youtube
+    description: "",
+    artworks: {
+      art1: {
+        name: "xīn nī 廖芯妮 (understanding you)",
+        year: "",
+        medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  // todo: check with curatorial team on this
+        file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
+      }
+    },
+  },
+  artist8: {
+    idx: 24,
+    format: AllowedFormats.Image,
+    visible: true,
+    artist_name: "Makoto Chi",
+    ins_handle: ["@makoto.chi", "@ma__ko__to___"],
+    quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries.”',
+    bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western massachusetts. He is cultivating slow practices, and making art addressing sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
+    topic_name: "Body Politics",
+    quote_bg_url: "",
+    directory: "/assets/BodyPolitics/Makoto",
+    artworks: {
+      art1: {
+        name: "Comets",
+        year: "",
+        medium: "Digital Painting",
+        file_name: "Comets.jpg",
+        description: "",
+      },
+      art2: {
+        name: "Two Snakes",
+        year: "",
+        medium: "Digital Painting",
+        file_name: "TwoSnakes.jpg",
+        description: "",
+      },
+      art3: {
+        name: "Yin Yang",
+        year: "",
+        medium: "Digital Painting",
+        file_name: "YinYang.jpg",
+        description: "",
+      },
+    },
+  },
 }
-  // {
-  //   idx: 11,
-  //   format: AllowedFormats.Text,  // TODO: check with the UI team on how to handle this. Here is the text: https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2
-  //   visible: false,  // set to false for now
-  //   ins_handle: ["@dun.a.way"],
-  //   artist_name: "Jeff Chow Jung Sing 重昇",
-  //   quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being ' +
-  //       'a Queer Asian can contribute to the conversation."',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {
-  //     folder: null,
-  //     art1: {
-  //       name: "",
-  //       year: "",
-  //       medium: null,
-  //       file_name: "",
-  //       description: "",
-  //     },
-  //   },
-  // },
-  // {
-  //   idx: 13,
-  //   format: AllowedFormats.Video,  // TODO: this is NOT an embedded video. See: https://drive.google.com/file/d/1KEFSM2Tvok77Lslw-SgJt_sQxHZh2da4/view
-  //   visible: false,
-  //   ins_handle: ["@sailphototo", "@shallisailnow"],
-  //   artist_name: "Muchen Zhou / Erin Zhou",
-  //   quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and ' +
-  //       'respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {
-  //     folder: null,
-  //     art1: {
-  //       name: "",
-  //       year: "",
-  //       medium: null,
-  //       file_name: "",
-  //       description: "",
-  //     },
-  //   },
-  // },
-  // {
-  //   idx: 14,
-  //   format: AllowedFormats.Image,
-  //   visible: true,
-  //   ins_handle: ["@dj.esl"],
-  //   artist_name: "Sophie Stiquée",
-  //   quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the ' +
-  //       'challenges and complexities of balancing these two distinct parts of my identity.” ',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {
-  //     folder: "@/assets/BodyPolitics/Sophie",
-  //     art1: {
-  //       name: "01",
-  //       year: "",
-  //       medium: "Photography",
-  //       file_name: "01.jpg",
-  //       description: "",
-  //     },
-  //     art2: {
-  //       name: "02",
-  //       year: "",
-  //       medium: "Photography",
-  //       file_name: "02.jpg",
-  //       description: "",
-  //     },
-  //     art3: {
-  //       name: "03",
-  //       year: "",
-  //       medium: "Photography",
-  //       file_name: "03.jpg",
-  //       description: "",
-  //     },
-  //     art4: {
-  //       name: "04",
-  //       year: "",
-  //       medium: "Photography",
-  //       file_name: "04.jpg",
-  //       description: "",
-  //     },
-  //     art5: {
-  //       name: "05",
-  //       year: "",
-  //       medium: "Photography",
-  //       file_name: "05.jpg",
-  //       description: "",
-  //     },
-  //   },
-  // },
-  // {
-  //   idx: 17,
-  //   format: AllowedFormats.Video,  // embedded video
-  //   visible: true,
-  //   ins_handle: ["@sherlchen"],
-  //   artist_name: "Sidi Chen",
-  //   quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an ' +
-  //       'archive of the distances and relations... ”',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {
-  //     folder: null,  // no folder since it's a video on Youtube
-  //     art1: {
-  //       name: "Mirage Raft (The Dream Talking Oyster)",
-  //       year: "",
-  //       medium: "Digital Video",
-  //       file_name: "https://www.youtube.com/watch?v=ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
-  //       description: "",
-  //     }
-  //   },
-  // },
-  // {
-  //   idx: 23,
-  //   format: AllowedFormats.Video,  // embedded video
-  //   visible: true,
-  //   ins_handle: ["@jasmineliaw_"],
-  //   artist_name: "Jasmine Liaw",
-  //   quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and ' +
-  //       'externalization?”',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {
-  //     folder: null,  // no folder since it's a video on Vimeo
-  //     art1: {
-  //       name: "xīn nī 廖芯妮 (understanding you)",
-  //       year: "",
-  //       medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  // todo: check with curatorial team on this
-  //       file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
-  //       description: "",
-  //     }
-  //   },
-  // },
-  // {
-  //   idx: 24,
-  //   format: AllowedFormats.Image,
-  //   visible: true,
-  //   ins_handle: ["@makoto.chi", "@ma__ko__to___"],
-  //   artist_name: "Makoto Chi",
-  //   quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many ' +
-  //       'truths and contradictions in a culture that loves rigid binaries.” ',
-  //   topic_name: "Body Politics",
-  //   quote_bg_url: null,
-  //   artworks: {  // TODO: Check with Jolie on the file size - original works are extremely large (> 100 MB), reduced size with low quality JPGs
-  //     folder: "@/assets/BodyPolitics/Makoto",
-  //     art1: {
-  //       name: "Comets",
-  //       year: "",
-  //       medium: "Digital Painting",
-  //       file_name: "Comets.jpg",
-  //       description: "",
-  //     },
-  //     art2: {
-  //       name: "Two Snakes",
-  //       year: "",
-  //       medium: "Digital Painting",
-  //       file_name: "TwoSnakes.jpg",
-  //       description: "",
-  //     },
-  //     art3: {
-  //       name: "Yin Yang",
-  //       year: "",
-  //       medium: "Digital Painting",
-  //       file_name: "YinYang.jpg",
-  //       description: "",
-  //     },
-  //   },
-  // },
 
 console.log(bodyPolitics)
 onMounted(() => {AOS.init()})
