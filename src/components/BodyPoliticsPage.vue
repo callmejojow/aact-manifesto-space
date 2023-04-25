@@ -312,7 +312,7 @@ console.log(bodyPolitics)
 onMounted(() => {AOS.init()})
 </script>
 <template class="scroll-smooth">
-    <div class="sticky top-0 z-40 bg-white">
+    <div class="sticky top-0 z-20 bg-white">
         <div class="flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
             <a href="/">
                 <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
@@ -327,13 +327,13 @@ onMounted(() => {AOS.init()})
             </span>
         </div>
         <div class="lg:hidden p-4">
-            <p class="text-sm text-gray-500 hover:text-gray-700">
+            <a href="/exhibitions" class="text-sm text-gray-500 hover:text-gray-700">
                 The Bitten Peach: Decolonizing Queer Asians
-            </p>
+            </a>
         </div>
         <ul class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
             <a href="#about">About</a>
-            <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="block whitespace-nowrap">
+            <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="inline-block whitespace-nowrap">
                 {{artist.collection_title}}
             </a>
         </ul>

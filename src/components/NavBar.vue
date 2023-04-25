@@ -1,6 +1,6 @@
 
 <template>
-  <div class="flex justify-end item-start p-4">
+  <div class="flex justify-end item-start p-4 z-40">
     <Menu as="div" class="relative inline-block text-left">
       <MenuButton class="text-gray-300/80 hover:text-gray-700/50">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

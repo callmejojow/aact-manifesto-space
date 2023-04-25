@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="sticky z-20 top-0 bg-white h-36">
         <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
             <a href="/">
                 <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
@@ -21,7 +21,7 @@
     <!-- end of navigation -->
 
     <div class="flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
-        <div id="about" class="col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
+        <div id="about" class="pt-36 col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
             <p class="mt-4 text-sm font-thin">May 2023</p>
@@ -40,7 +40,7 @@
                 </p>
             </div>
         </div>
-        <div id="sections" class="col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:w-auto lg:min-h-screen">
+        <div id="sections" class="pt-36 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:w-auto lg:min-h-screen">
             <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-1">
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                     <a href="/exhibitions/made_in_queer">
