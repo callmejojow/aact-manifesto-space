@@ -5,7 +5,7 @@
       </a> 
       <p class="text-white tracking-widest ml-6">MANIFESTO</p>
   </div>
-  <div class="bg-black flex flex-col justify-end items-start md:justify-start max-h-screen text-white/90 relative max-w-screen overflow-hidden ">
+  <div class="bg-bitten flex flex-col justify-end items-start md:justify-start max-h-screen text-white/90 relative max-w-screen overflow-hidden ">
 
     <span class="sr-only">Current Curation</span>
     <img src="@/assets/cover1.jpg" class="z-0 min-h-screen lg:w-4/5 xl:w-3/5 self-end object-cover" alt="Curation Cover"/>
