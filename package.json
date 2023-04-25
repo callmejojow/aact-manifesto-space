@@ -14,7 +14,8 @@
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-kinesis": "^2.0.5",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "vueperslides": "^3.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

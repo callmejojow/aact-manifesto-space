@@ -1,5 +1,6 @@
 <script setup>
-    import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import CarouselComponent from '@/components/CarouselComponent.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
 
@@ -86,6 +87,15 @@ let bodyPolitics = {
         file_name: "10_levitate.jpg",
       },
     },
+    slides:[
+      {
+       image:require("@/assets/BodyPolitics/Imran/1_identity_card.jpg"),
+       content:`<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="object-contain bg-black"/>`,
+      },
+      {image:'https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80',
+        content:'<h2 class="font-bold">Content 2</h2>',
+      },
+    ],
   },
   artist2:{
     idx: 9,
@@ -381,16 +391,17 @@ onMounted(() => {AOS.init()})
             </div>
         </section>
         <!-- Art pieces of a certain artist with his/her introduction -->
-        <section class="snap-end h-screen w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+        <section class="snap-end h-screen lg:h-full w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
             <div class="flex justify-between items-center">
                 <p class="font-semibold text-xl">{{artist.collection_title}}</p>
                 <p class="text-lg">{{artist.artist_name}}</p>
             </div>
             <!-- placeholder for carousel of this artist's pieces -->
-            <div v-for="art in artist.artworks" :key="art">
+            <!-- <div v-for="art in artist.artworks" :key="art">
                 <p>{{art.name}}</p>
-            </div>
+            </div> -->
         </section>
+        <CarouselComponent :slides="artist.slides" v-if="artist.slides" />
     </div>
 </template>
 <style>
