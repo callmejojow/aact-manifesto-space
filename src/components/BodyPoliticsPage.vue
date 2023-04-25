@@ -23,7 +23,7 @@ let bodyPolitics = {
     topic_name: "Body Politics",
     quote_bg_url: require('@/assets/BodyPolitics/Imran/6_face_to_face.jpg'),
     collection_title: "Unsullied Souls",
-    description: "TBC",
+    description: "Through Safe Distance, Jamie compares the HIV pandemic in the 1980s with COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against queer community in society. She also highlights how queer Chinese individuals experience “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.",
     directory: "/assets/BodyPolitics/Imran",
     artworks: {
       art1: {
@@ -200,6 +200,8 @@ let bodyPolitics = {
     collection_title: "",
     directory: "",
     description: "",
+    excert1:"Having been raised in Hong Kong for twenty-something years, I only learned about my Chineseness and Queerness when I moved to Canada four years ago. Growing up I was never asked the question Where are you from? Thinking back, there is a certain *thinginess* that comes with the migration process and spending the last few years in suburban Ontario. It all felt like a third puberty — learning how to swim again but this time in olive oil. Breathing at first was hard but as the old saying goes, you get used to it.",
+    excert2:"The scholar Kathryn Bond Stockton writes about how queer child “grows sideways”,because queer life often defies the linear chronology of marriage and children. Stockton also describes children of color as growing sideways, since their youth is likewise outside the model of the enshrined white child. I have been thinking about how Queer Asian comes to their reckoning through a meandering fuckery of sideways and straightways and sideways. We are being told we fit in and that we can assimilate, yet we are different because of our queerness; we have been told that Asians in America have it good despite our realities tell us otherwise. Where is the Queer Asian heading?",
     artworks: {
       art1: {
         name: "Queer Asians on the Dancefloor",
@@ -316,7 +318,7 @@ let bodyPolitics = {
         name: "Mirage Raft (The Dream Talking Oyster)",
         year: "",
         medium: "Digital Video",
-        file_name: "https://www.youtube.com/watch?v=ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
+        file_name: "https://www.youtube.com/embed/ASOwIWN4Kvs",  // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
       }
     },
   },
@@ -337,7 +339,7 @@ let bodyPolitics = {
       art1: {
         name: "xīn nī 廖芯妮 (understanding you)",
         year: "",
-        medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  // todo: check with curatorial team on this
+        medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  //mod: this video url is not available for html embedding. Need to ask artist to replace.
         file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
       }
     },
@@ -475,18 +477,52 @@ onMounted(() => {AOS.init()})
             </div>
         </section>
         <!-- Art pieces of a certain artist with his/her introduction -->
-        <section class="snap-end h-screen lg:h-full w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
-            <div class="flex justify-between items-center">
-                <p class="font-semibold text-xl">{{artist.collection_title}}</p>
-                <p class="text-lg">{{artist.artist_name}}</p>
-            </div>
+        <section class="snap-end w-full tracking-wide leading-6">
             <!-- placeholder for carousel of this artist's pieces -->
             <!-- <div v-for="art in artist.artworks" :key="art">
                 <p>{{art.name}}</p>
             </div> -->
-            <CarouselComponent :slides="artist.slides" v-if="artist.slides" />
+            <div v-if="artist.format == 'image'" class="min-h-screen">
+              <div class="lg:flex lg:justify-between lg:items-start gap-4">
+                <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
+                <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
+              </div>
+              <CarouselComponent :slides="artist.slides" />
+              <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
+                  <div class="lg:w-3/4">
+                      <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? artist.collection_title : artist.artist_name }}</span>
+                      <p class="lg:text-justify">{{artist.description}}</p>
+                  </div>
+                  <div class="mt-4 lg:mt-0 lg:w-1/4">
+                      <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
+                      <p>{{artist.bio}}</p>
+                  </div>
+              </div>
+            </div>
+            <div v-if="artist.format == 'text'" class="relative h-full bg-black text-white lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 p-4 md:p-8 lg:p-12">
+              <div class="lg:w-3/4 flex flex-col">
+                  <h3 v-for="art in artist.artworks" :key="art" class="font-semibold text-lg lg:text-2xl">{{art.name}}</h3>
+                  <p class="lg:text-justify">
+                      {{artist.excert1}}
+                  </p>
+                  <p class="lg:text-justify mt-4">
+                      {{artist.excert2}}
+                  </p>
+                  <a href="https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2" target="_blank" class="self-end justify-self-end underline text-white/50 hover:text-white/80 p-2">Read More</a>
+              </div>
+              <div class="mt-6 lg:mt-0 lg:w-1/4">
+                  <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
+                  <p>
+                      {{artist.bio}}
+                  </p>
+              </div>
+            </div>
+            <div v-if="artist.format == 'video'" class="bg-black min-h-screen snap-start p-6 md:p-8 lg:p-12">
+              <div v-for="art in artist.artworks" :key="art" class="aspect-video">
+                <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
+              </div>
+            </div>
         </section>
-        
     </div>
 </template>
 <style>
