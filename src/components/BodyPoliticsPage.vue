@@ -1,5 +1,6 @@
 <script setup>
-    import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import NavBar from '@/components/NavBar.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
@@ -397,13 +398,16 @@ let bodyPolitics = {
 console.log(bodyPolitics)
 onMounted(() => {AOS.init()})
 </script>
-<template class="scroll-smooth">
+<template class="scroll-smooth font-open">
     <div class="sticky top-0 z-20 bg-white">
         <div class="flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
             <a href="/">
                 <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
             </a>
             <p class="text-black tracking-widest ml-6">MANIFESTO</p>
+            <div class="absolute right-4 text-white z-40">
+              <NavBar />
+            </div>
         </div>
         <!-- Generic Breadcrumbs -->
         <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">

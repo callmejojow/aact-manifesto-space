@@ -1,10 +1,17 @@
+<script setup>
+  import NavBar from '@/components/NavBar.vue'
+</script>
 <template>
-  <div class="bg-bitten flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
+  <div class="relative bg-bitten flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
       <a href="/">
        <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
       </a> 
       <p class="text-white tracking-widest ml-6">MANIFESTO</p>
+      <div class="absolute right-4 text-white z-40">
+      <NavBar />
+      </div>
   </div>
+  
   <div class="bg-bitten flex flex-col justify-end items-start md:justify-start max-h-screen text-white/90 relative max-w-screen overflow-hidden ">
 
     <span class="sr-only">Current Curation</span>

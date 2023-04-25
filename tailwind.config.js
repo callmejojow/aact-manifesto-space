@@ -307,6 +307,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      open:['"Open Sans"'],
       sans: [
         'ui-sans-serif',
         'system-ui',

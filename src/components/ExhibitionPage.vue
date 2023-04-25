@@ -1,3 +1,6 @@
+<script setup>
+  import NavBar from '@/components/NavBar.vue'
+</script>
 <template>
     <div class="sticky z-20 top-0 bg-white h-36 lg:h-full">
         <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
@@ -5,6 +8,9 @@
                 <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
             </a>
             <p class="text-black tracking-widest ml-6">MANIFESTO</p>
+            <div class="absolute right-4 text-white z-40">
+                <NavBar />
+            </div>
         </div>
 
         <!-- navigation -->
@@ -20,7 +26,7 @@
     </div>
     <!-- end of navigation -->
 
-    <div class="flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
+    <div class="font-open flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
         <div id="about" class="pt-36 lg:pt-0 col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
             <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
