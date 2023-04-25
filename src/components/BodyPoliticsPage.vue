@@ -2,11 +2,6 @@
     import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
-const headers = [
-    'about',
-    'artist1',
-    'artist2',
-    ]
 
 const AllowedFormats = {
   Image: "image",
@@ -25,7 +20,7 @@ let bodyPolitics = {
     quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”',
     bio: 'Imran Faizyab Jatoi is a Pakistani self-employed visual artist, creating 2d and 3d art forms and performances. His practice underlines queer ideologies with an emphasis on identity, orientation, faith and autobiographical allusions. He is postgraduate in Art & Design from Yasar University, Turkey and contributed to number of exhibitions. The involvement of his art practice is to educate and make awareness about queer issues center on an investigation of Identity, especially gender and sexuality, through multidisciplinary approaches. He will likely to make work that mechanism with closeness and empowers understanding, accepting, and basic discussions about queer identity, sexuality and contemporary societal movement.',
     topic_name: "Body Politics",
-    quote_bg_url: "",
+    quote_bg_url: '',
     collection_title: "Unsullied Souls",
     description: "TBC",
     directory: "/assets/BodyPolitics/Imran",
@@ -102,7 +97,7 @@ let bodyPolitics = {
     bio: 'Geoffrey Lok-Fay Cheung is a visual artist interested in the themes of tension, conflict, and harmony as they relate to identity, community, and cultural inheritance. His practice is heavily informed by his own lived experiences growing up in Vancouver as a queer first-generation Canadian of Chinese descent. In his current investigations, Cheung explores connection with land and memory as it relates to the immigrant experience. For the better part of the past two decades, Cheung lived and worked out East, most recently in Toronto, as a Medical Animator and Illustrator. He previously received a Master of Science in Biomedical Communications and Bachelor of Science in Life Science. He returned to live in Vancouver for the MFA program at Emily Carr University which is on the unceded territories of the Coast Salish peoples, including the Musqueam, Squamish and Tsleil-Waututh nations.',
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 2",
     description: "TBC",
     directory: "/assets/BodyPolitics/Geoff",
     artworks: {
@@ -148,7 +143,7 @@ let bodyPolitics = {
     bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, designs and draw inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario pursuing education but left defeated in spite.",
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 3",
     directory: "",
     description: "",
     artworks: {
@@ -170,7 +165,7 @@ let bodyPolitics = {
     bio: 'I\'m Muchen, a photographer and videographer. When I was little, both still photos and movie scenes astounded me. Throughout my growing process, photos, movies, and drawing have all been present. Visual pictures have been my main tool to explore my internal expression during my developing process, but more crucial for me right now is to use my works as a medium to resonate with the outside world. Images affect me both consciously and unconsciously throughout my life. I was able to get through some of my darkest years with the diversion of making art out of photographs. I couldn\'t have found it anyplace else, but it gave me the consciousness and voice I needed.',
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 4",
     directory: "",
     description: "",
     artworks: {
@@ -193,7 +188,7 @@ let bodyPolitics = {
     bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences. In June 2023, Sophie will showcase her work at an art exhibition organized by the City of Toronto, exploring the universe of drag and the intersectionality of being queer and Mauritian through a series of portraits of queer Mauritians. With a passion for creativity and a drive to make an impact, Sophie is poised for continued success in the world of music and art.',
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 5",
     directory: "/assets/BodyPolitics/Sophie",
     description: "",
     artworks: {
@@ -241,7 +236,7 @@ let bodyPolitics = {
         'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC."',
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 6",
     directory: "",  // no directory since it's a video on Youtube
     description: "",
     artworks: {
@@ -263,7 +258,7 @@ let bodyPolitics = {
     bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy,  and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 7",
     directory: "",  // no directory since it's a video on Youtube
     description: "",
     artworks: {
@@ -285,7 +280,7 @@ let bodyPolitics = {
     bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western massachusetts. He is cultivating slow practices, and making art addressing sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
     topic_name: "Body Politics",
     quote_bg_url: "",
-    collection_title: "",
+    collection_title: "collection 8",
     directory: "/assets/BodyPolitics/Makoto",
     artworks: {
       art1: {
@@ -330,15 +325,16 @@ onMounted(() => {AOS.init()})
             Body Politics
         </span>
     </div>
-    <div class="lg:hidden p-4">
+    <div class="lg:hidden sticky p-4">
         <p class="text-sm text-gray-500 hover:text-gray-700">
             The Bitten Peach: Decolonizing Queer Asians
         </p>
     </div>
-    <ul class="lg:hidden sticky t-0 border-b border-gray-600 flex space-x-2 mx-4 mb-4">
-        <li v-for="header in headers" :key="header">
-            <a>{{header}}</a>
-        </li>
+    <ul class="lg:hidden sticky bg-white t-0 border-b border-gray-600 flex space-x-2 mx-4 mb-4">
+        <a href="#about">About</a>
+        <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`">
+            {{artist.collection_title}}
+        </a>
     </ul>
     <!-- Banner -->
     <kinesis-container>
@@ -370,9 +366,9 @@ onMounted(() => {AOS.init()})
             We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
         </p>
     </section>
-    <div v-for="artist in bodyPolitics" :key="artist">
+    <div v-for="(artist,index) in bodyPolitics" :key="artist">
     <!-- Quote of the Topic -->
-    <section class="h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote1-url">
+    <section :id="index" class="h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }">
         <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
             <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                 {{artist.quote}}
@@ -385,7 +381,7 @@ onMounted(() => {AOS.init()})
     <!-- Art pieces of a certain artist with his/her introduction -->
     <section class="h-screen w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <div class="flex justify-between items-center">
-            <p class="font-semibold text-xl">{{artist.topic_name}}</p>
+            <p class="font-semibold text-xl">{{artist.collection_title}}</p>
             <p class="text-lg">{{artist.artist_name}}</p>
         </div>
         <!-- placeholder for carousel of this artist's pieces -->
@@ -399,8 +395,8 @@ onMounted(() => {AOS.init()})
 .banner1-url {
     background-image: url('../assets/section2-1.jpg');
 }
-
-.quote1-url {
+/*
+.quote-url {
     background-image: url('../assets/artist-quote1.jpg');
-}
+}*/
 </style>
