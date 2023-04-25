@@ -311,34 +311,36 @@ let bodyPolitics = {
 console.log(bodyPolitics)
 onMounted(() => {AOS.init()})
 </script>
-<template class="bg-white scroll-smooth">
-    <div class="bg-transparent flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
-        <a href="/">
-            <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
-        </a>
-        <p class="text-black tracking-widest ml-6">MANIFESTO</p>
+<template class="scroll-smooth">
+    <div class="sticky top-0 z-40 bg-white">
+        <div class="flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
+            <a href="/">
+                <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
+            </a>
+            <p class="text-black tracking-widest ml-6">MANIFESTO</p>
+        </div>
+        <!-- Generic Breadcrumbs -->
+        <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
+            <BreadCrumbs />
+            <span class="ml-4 text-sm text-gray-400/80">
+                Body Politics
+            </span>
+        </div>
+        <div class="lg:hidden p-4">
+            <p class="text-sm text-gray-500 hover:text-gray-700">
+                The Bitten Peach: Decolonizing Queer Asians
+            </p>
+        </div>
+        <ul class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
+            <a href="#about">About</a>
+            <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="block whitespace-nowrap">
+                {{artist.collection_title}}
+            </a>
+        </ul>
     </div>
-    <!-- Generic Breadcrumbs -->
-    <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
-        <BreadCrumbs />
-        <span class="ml-4 text-sm text-gray-400/80">
-            Body Politics
-        </span>
-    </div>
-    <div class="lg:hidden sticky p-4">
-        <p class="text-sm text-gray-500 hover:text-gray-700">
-            The Bitten Peach: Decolonizing Queer Asians
-        </p>
-    </div>
-    <ul class="lg:hidden sticky bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-        <a href="#about">About</a>
-        <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="block whitespace-nowrap">
-            {{artist.collection_title}}
-        </a>
-    </ul>
     <!-- Banner -->
     <kinesis-container>
-        <section class="h-screen w-full bg-cover bg-fixed banner1-url">
+        <section class="h-screen w-full bg-cover banner1-url">
             <div class="w-full h-full flex flex-col items-start justify-center backdrop-brightness-50 pl-20 md:pl-14 sm:pl-10 pl-6">
                 <kinesis-element :strength="50" transformOrigin="100% 500%" axis="x" type="depth">
                     <p class="text-lg md:text-xl lg:text-2xl text-white/90">
@@ -354,7 +356,7 @@ onMounted(() => {AOS.init()})
         </section>
     </kinesis-container>
     <!-- Introduction of the sub section -->
-    <section id="about" class="h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+    <section id="about" class="snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <h1 class="text-3xl font-semibold my-4">About</h1>
         <p class="text-md lg:text-lg font-thin">
             Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -367,34 +369,35 @@ onMounted(() => {AOS.init()})
         </p>
     </section>
     <div v-for="(artist,index) in bodyPolitics" :key="artist">
-    <!-- Quote of the Topic -->
-    <section :id="index" class="h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }">
-        <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
-            <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
-                {{artist.quote}}
-            </p>
-            <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
-                {{artist.artist_name}}
-            </p>
-        </div>
-    </section>
-    <!-- Art pieces of a certain artist with his/her introduction -->
-    <section class="h-screen w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
-        <div class="flex justify-between items-center">
-            <p class="font-semibold text-xl">{{artist.collection_title}}</p>
-            <p class="text-lg">{{artist.artist_name}}</p>
-        </div>
-        <!-- placeholder for carousel of this artist's pieces -->
-        <div v-for="art in artist.artworks" :key="art">
-            <p>{{art.name}}</p>
-        </div>
-    </section>
+        <!-- Quote of the Topic -->
+        <section :id="index" class="snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }">
+            <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
+                <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
+                    {{artist.quote}}
+                </p>
+                <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
+                    {{artist.artist_name}}
+                </p>
+            </div>
+        </section>
+        <!-- Art pieces of a certain artist with his/her introduction -->
+        <section class="snap-end h-screen w-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-xl">{{artist.collection_title}}</p>
+                <p class="text-lg">{{artist.artist_name}}</p>
+            </div>
+            <!-- placeholder for carousel of this artist's pieces -->
+            <div v-for="art in artist.artworks" :key="art">
+                <p>{{art.name}}</p>
+            </div>
+        </section>
     </div>
 </template>
 <style>
 .banner1-url {
     background-image: url('../assets/section2-1.jpg');
 }
+
 /*
 .quote-url {
     background-image: url('../assets/artist-quote1.jpg');
