@@ -330,9 +330,9 @@ onMounted(() => {AOS.init()})
             The Bitten Peach: Decolonizing Queer Asians
         </p>
     </div>
-    <ul class="lg:hidden sticky bg-white t-0 border-b border-gray-600 flex space-x-2 mx-4 mb-4">
+    <ul class="lg:hidden sticky bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
         <a href="#about">About</a>
-        <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`">
+        <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="block whitespace-nowrap">
             {{artist.collection_title}}
         </a>
     </ul>
