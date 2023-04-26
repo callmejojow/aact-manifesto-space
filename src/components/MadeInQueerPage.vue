@@ -20,22 +20,34 @@ let madeInQueer = {
     artist_name: "Dummy Artist",
     ins_handle: ["@dummyinshandle"],  // a list b/c some artists have multiple handles
     quote: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..',
+    bio: 'Placeholder bio bio bio placeholder',
     topic_name: "Dummy Topic Name",
-    quote_bg_url: null,
+    collection_title:'',
+    quote_bg_url: require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "", 
-    directory: null,
+    directory: "/assets/MadeInQueer/Josh",
     artworks: {
       art1: {
-        name: "Dummy Art Name",
+        name: "Dummy Art Name 1",
         year: null,
         medium: "Digital Print",
-        file_name: "1_identity_card.jpg",
+        file_name: "dummy1.jpg",
+      },
+      art2: {
+        name: "Dummy Art Name2",
+        year: null,
+        medium: "Digital Print",
+        file_name: "dummy2.jpg",
       },
     },
     slides:[
       {
        image:require("@/assets/bg.svg"),
-       content:`<img src="${require("@/assets/MadeInQueer/Josh/Fig5_Ceremonial Vessel 2.jpg")}" class="object-contain h-[48rem]"/>`,
+       content:`<img src="${require("@/assets/YellowPerils/Josh/CeremonialVessel.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+       image:require("@/assets/bg.svg"),
+       content:`<img src="${require("@/assets/YellowPerils/Josh/Cannon.jpg")}" class="object-contain h-[48rem]"/>`,
       },
     ],
   },
