@@ -1,6 +1,6 @@
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
-import NavBar from '@/components/NavBar.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import { onMounted } from "vue"
 import AOS from "aos"
@@ -406,7 +406,7 @@ onMounted(() => {AOS.init()})
             </a>
             <p class="text-black tracking-widest ml-6">MANIFESTO</p>
             <div class="absolute right-4 text-white z-40">
-              <NavBar />
+              <NavDropdown />
             </div>
         </div>
         <!-- Generic Breadcrumbs -->

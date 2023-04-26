@@ -1,5 +1,5 @@
 <script setup>
-  import NavBar from '@/components/NavBar.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
 </script>
 <template>
   <div class="relative bg-bitten flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
@@ -8,7 +8,7 @@
       </a> 
       <p class="text-white tracking-widest ml-6">MANIFESTO</p>
       <div class="absolute right-4 text-white z-40">
-      <NavBar />
+      <NavDropdown />
       </div>
   </div>
   
@@ -22,7 +22,7 @@
       <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4">
         Decolonizing Queer Asians
       </p>
-      <a href="/exhibitions#about" type="button" class="mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-transparent">Explore Now</a>
+      <a href="/exhibitions#about" type="button" class="mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</a>
     </div>
   </div>
 </template>

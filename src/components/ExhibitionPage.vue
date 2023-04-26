@@ -1,5 +1,5 @@
 <script setup>
-  import NavBar from '@/components/NavBar.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
 </script>
 <template>
     <div class="sticky z-20 top-0 bg-white h-36 lg:h-full">
@@ -9,7 +9,7 @@
             </a>
             <p class="text-black tracking-widest ml-6">MANIFESTO</p>
             <div class="absolute right-4 text-white z-40">
-                <NavBar />
+                <NavDropdown />
             </div>
         </div>
 
