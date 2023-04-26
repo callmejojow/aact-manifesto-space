@@ -19,7 +19,7 @@
                 The Bitten Peach: Decolonizing Queer Asians
             </p>
         </div>
-        <ul class="lg:hidden border-b border-gray-600 flex space-x-2 mx-4">
+        <ul class="lg:hidden border-b border-gray-600 flex space-x-2 mx-4 inline-block whitespace-nowrap text-gray-600 text-sm">
             <li><a href="#about">About</a></li>
             <li><a href="#sections">Sections</a></li>
         </ul>

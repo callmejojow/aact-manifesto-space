@@ -422,8 +422,8 @@ onMounted(() => {AOS.init()})
             </a>
         </div>
         <ul class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-            <a href="#about">About</a>
-            <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="inline-block whitespace-nowrap">
+            <a href="#about" class="inline-block whitespace-nowrap text-gray-600 text-sm">About</a>
+            <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="inline-block whitespace-nowrap text-gray-600 text-sm">
                 {{artist.artist_name}}
             </a>
         </ul>
@@ -446,7 +446,7 @@ onMounted(() => {AOS.init()})
         </section>
     </kinesis-container>
     <!-- Introduction of the sub section -->
-    <section id="about" class="snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+    <section id="about" class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
         <h1 class="text-3xl font-semibold my-4">About</h1>
         <p class="text-md lg:text-lg font-thin">
             Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
