@@ -1,4 +1,4 @@
-import { ref, watch, onUnmounted } from "vue";
+import { ref, watch, onUnmounted } from 'vue';
 
 export function useScrollObserver() {
   const observer = ref(null);
@@ -6,7 +6,9 @@ export function useScrollObserver() {
 
   const callback = (entries) => {
     entries.forEach((entry) => {
-      const observedEl = observedElements.value.find((el) => el.target === entry.target);
+      const observedEl = observedElements.value.find(
+        (el) => el.target === entry.target
+      );
       if (observedEl) {
         observedEl.callback(entry);
       }
@@ -24,6 +26,7 @@ export function useScrollObserver() {
         observer.value = new IntersectionObserver(callback, {
           root: null,
           threshold: 0.5,
+          rootMargin: '0px', 
         });
 
         observedElements.value.forEach((el) => {
@@ -41,6 +44,7 @@ export function useScrollObserver() {
   });
 
   function startObserving(target, index, onIntersection) {
+    console.log("Observing:", target, index);
     observedElements.value.push({
       target,
       callback: (entry) => onIntersection(entry, index),

@@ -1,3 +1,4 @@
+
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
@@ -5,25 +6,29 @@ import CarouselComponent from '@/components/CarouselComponent.vue'
 import {useScrollObserver} from '@/useScrollObserver.js'
 import { ref,onMounted } from "vue"
 import AOS from "aos"
-
+/* eslint-disable no-unused-vars */
 const navItems = ref([]);
 const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
 
 onMounted(() => {
-  navItems.value = document.querySelectorAll('.nav-item');
-  navItems.value.forEach((navItem, index) => {
-    startObserving(navItem, index, onIntersection);
-  });
-
-  console.log('Nav Items:', navItems.value);
   AOS.init()
-})
+  navItems.value = document.querySelectorAll(".nav-item");
+  navItems.value.forEach((el, index) => {
+    const targetId = el.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      console.log(`Found target element for index ${index}:`, targetElement);
+      startObserving(targetElement, index, onIntersection);
+    } else {
+      console.log(`Could not find target element for index ${index}`);
+    }
+  });
+});
 
 function onIntersection(entry, index) {
   if (entry.isIntersecting) {
     activeIndex.value = index;
-    console.log('Intersecting element index:', index);
   }
 }
 
@@ -362,7 +367,8 @@ let bodyPolitics = {
         name: "xīn nī 廖芯妮 (understanding you)",
         year: "",
         medium: "Auto-ethnographic, experimental visual poem and moving-portrait",  //mod: this video url is not available for html embedding. Need to ask artist to replace.
-        file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
+        file_name:""
+        // file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
       }
     },
   },
@@ -443,14 +449,14 @@ let bodyPolitics = {
             <nav class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
                 <a href="#about" 
                    class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" 
-                   :class="{ 'font-bold': activeIndex.value === 0 }">
+                   :class="{'font-bold': activeIndex.value === -1 }">
                    About
                 </a>
                 <a v-for="(artist,index) in bodyPolitics" 
                    :key="artist" 
                    :href="`#${index}`" 
                    class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
-                   :class="{ 'font-bold': activeIndex.value === index + 1 }">
+                   :class="{ 'font-bold': activeIndex.value === index }">
                     {{artist.artist_name}}
                 </a>
             </nav>
@@ -473,7 +479,8 @@ let bodyPolitics = {
             </section>
         </kinesis-container>
         <!-- Introduction of the sub section -->
-        <section id="about" class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6" ref="el => el && startObserving(el, index, onIntersection)">
+        <section id="about" 
+                 class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
             <h2 class="text-3xl font-semibold my-4">About</h2>
             <p class="text-md lg:text-lg font-thin">
                 Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -487,7 +494,10 @@ let bodyPolitics = {
         </section>
         <div v-for="(artist,index) in bodyPolitics" :key="artist">
             <!-- Quote of the Topic -->
-            <section :id="index" class="snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }" v-if="artist.quote_bg_url" ref="el => el && startObserving(el, index, onIntersection)">
+            <section :id="index" 
+                     class="bg-bitten snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" 
+                     :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}" 
+                     >
                 <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
                     <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                         {{artist.quote}}
@@ -497,16 +507,6 @@ let bodyPolitics = {
                     </p>
                 </div>
             </section>
-            <div class="snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-bitten" v-else>
-                <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
-                    <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
-                        {{artist.quote}}
-                    </p>
-                    <p class="mt-10 z-20 text-white/90 font-semibold text-xl md:text-2xl lg:text-3xl text-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="1000">
-                        {{artist.artist_name}}
-                    </p>
-                </div>
-            </div>
             <!-- Art pieces of a certain artist with his/her introduction -->
             <div class="snap-end w-full tracking-wide leading-6">
                 <div v-if="artist.format == 'image'" class="min-h-screen">
