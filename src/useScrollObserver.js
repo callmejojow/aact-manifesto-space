@@ -44,7 +44,6 @@ export function useScrollObserver() {
   });
 
   function startObserving(target, index, onIntersection) {
-    console.log("Observing:", target, index);
     observedElements.value.push({
       target,
       callback: (entry) => onIntersection(entry, index),

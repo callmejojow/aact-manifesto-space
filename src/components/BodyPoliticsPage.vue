@@ -17,18 +17,14 @@ onMounted(() => {
   navItems.value.forEach((el, index) => {
     const targetId = el.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      console.log(`Found target element for index ${index}:`, targetElement);
-      startObserving(targetElement, index, onIntersection);
-    } else {
-      console.log(`Could not find target element for index ${index}`);
-    }
+    startObserving(targetElement, index, onIntersection);
   });
 });
 
 function onIntersection(entry, index) {
   if (entry.isIntersecting) {
     activeIndex.value = index;
+    console.log(activeIndex.value)
   }
 }
 
@@ -449,14 +445,14 @@ let bodyPolitics = {
             <nav class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
                 <a href="#about" 
                    class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" 
-                   :class="{'font-bold': activeIndex.value === -1 }">
+                   :class="{'font-bold': activeIndex == 0 }">
                    About
                 </a>
                 <a v-for="(artist,index) in bodyPolitics" 
-                   :key="artist" 
-                   :href="`#${index}`" 
+                   :key="index" 
+                   :href="`#artist_${index}`" 
                    class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
-                   :class="{ 'font-bold': activeIndex.value === index }">
+                   :class="index == activeIndex ? 'font-bold' : 'font-normal'">
                     {{artist.artist_name}}
                 </a>
             </nav>
@@ -494,7 +490,7 @@ let bodyPolitics = {
         </section>
         <div v-for="(artist,index) in bodyPolitics" :key="artist">
             <!-- Quote of the Topic -->
-            <section :id="index" 
+            <section :id="`artist_${index}`" 
                      class="bg-bitten snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" 
                      :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}" 
                      >
