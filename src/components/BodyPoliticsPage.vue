@@ -1,20 +1,38 @@
 <script setup>
-    import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
-import { onMounted } from "vue"
+import {useScrollObserver} from '@/useScrollObserver.js'
+import { ref,onMounted } from "vue"
 import AOS from "aos"
 
+const navItems = ref([]);
+const activeIndex = ref(-1);
+const { startObserving } = useScrollObserver();
+
 onMounted(() => {
+  navItems.value = document.querySelectorAll('.nav-item');
+  navItems.value.forEach((navItem, index) => {
+    startObserving(navItem, index, onIntersection);
+  });
+
+  console.log('Nav Items:', navItems.value);
   AOS.init()
 })
+
+function onIntersection(entry, index) {
+  if (entry.isIntersecting) {
+    activeIndex.value = index;
+    console.log('Intersecting element index:', index);
+  }
+}
+
 // Data Entries
 const AllowedFormats = {
   Image: "image",
   Video: "video",
   Text: "text",
 }
-
 let bodyPolitics = {
   artist1:{
     idx: 3,  // for internal use
@@ -423,8 +441,16 @@ let bodyPolitics = {
                 </a>
             </div>
             <nav class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-                <a href="#about" class="inline-block whitespace-nowrap text-gray-600 text-sm">About</a>
-                <a v-for="(artist,index) in bodyPolitics" :key="artist" :href="`#${index}`" class="inline-block whitespace-nowrap text-gray-600 text-sm">
+                <a href="#about" 
+                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" 
+                   :class="{ 'font-bold': activeIndex.value === 0 }">
+                   About
+                </a>
+                <a v-for="(artist,index) in bodyPolitics" 
+                   :key="artist" 
+                   :href="`#${index}`" 
+                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
+                   :class="{ 'font-bold': activeIndex.value === index + 1 }">
                     {{artist.artist_name}}
                 </a>
             </nav>
@@ -447,7 +473,7 @@ let bodyPolitics = {
             </section>
         </kinesis-container>
         <!-- Introduction of the sub section -->
-        <section id="about" class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+        <section id="about" class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6" ref="el => el && startObserving(el, index, onIntersection)">
             <h2 class="text-3xl font-semibold my-4">About</h2>
             <p class="text-md lg:text-lg font-thin">
                 Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -461,7 +487,7 @@ let bodyPolitics = {
         </section>
         <div v-for="(artist,index) in bodyPolitics" :key="artist">
             <!-- Quote of the Topic -->
-            <section :id="index" class="snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }" v-if="artist.quote_bg_url">
+            <section :id="index" class="snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="{ backgroundImage: 'url(' + artist.quote_bg_url + ')' }" v-if="artist.quote_bg_url" ref="el => el && startObserving(el, index, onIntersection)">
                 <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
                     <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                         {{artist.quote}}
