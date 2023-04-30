@@ -9,251 +9,451 @@ const AllowedFormats = {
   Text: "text",
 }
 
-let madeInQueer = {
+let yellowPeril = {
   artist1:{
-    idx: 1,  // for internal use
-    format: [AllowedFormats.Image, AllowedFormats.Video],  // for rendering  # TODO: MIXED MEDIA!! Both images and an embedded video
+    idx: 4,  // for internal use
+    format: AllowedFormats.Video,  // for rendering
     visible: true,
-    artist_name: "Rising Lai",
-    ins_handle: ["@loveintersectionsm", "@davidngstagram", "@jensungshine"],
-    quote: '“I am a Taiwanese, a Hakka, and a homosexual person. Growing up and living with the conflicting histories that these identities bring, I was challenged to live with frictions and contradictions, of which I am proud.”',
-    bio: 'As a designer and artist with a background in Industrial Design and a Master\'s in Fine Art & Design, Rising Lai (they/them) brings a unique global perspective to their art and design. Born and raised in Taiwan before relocating to Rotterdam, Rising is dedicated to exploring the stories and complexities of human creations, from industrial products to cultural artefacts.\n' +
-        '\n' +
-        'But there is more to Rising\'s art and design practice than meets the eye. Deeply rooted in their own experiences as a queer individual in society, Rising uses their work to challenge normative definitions of gender and create a world without discrimination. Through a framework and guide for researching material culture and demonstrating theoretical concepts through craft, Rising focuses on traditions, folk culture, and craftsmanship to invite viewers to consider the deeper meanings and significance behind the materials and artefacts that shape our world.\n' +
-        '\n' +
-        'Whether through their crafted objects or thought-provoking installations, Rising Lai\'s work invites viewers to explore the deeper complexities of human creations and the impact they have on society.\n',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "Crafting Desire: Queering",
+    artist_name: "Love Intersections",
+    ins_handle: ["@loveintersections"],  // a list b/c some artists have multiple handles
+    quote: 'A core part of our recent practice as queer Chinese artists, has been exploring the relationship between our identities as queer Chinese artists, and how our anti-racist arts practice can work in solidarity with struggles to decolonize.',
+    bio: 'Love Intersections is a media arts collective made up of queer artists of colour dedicated to using collaborative art making and relational storytelling to address systemic racism in our communities. We produce intersectional and intergenerational stories from underrepresented communities of colour – centering the invisible, the spiritual, the metaphysical and the imaginary. We believe in deep and meaningful relationships, that intersectionality is a verb and a call to action, that we must cultivate social trust through collective care and community responsibility. Our desire is to provoke (he)artful social change through a lens of love.',
+    topic_name: "Yellow Peril",
+    collection_title:'',
+    quote_bg_url: require('@/assets/YellowPerils/Love/YellowPeril.jpg'),
     description: "",
-    directory: '/assets/YellowPerils/Rising',
+    directory: "",
     artworks: {
       art1: {
-        name: "Selected Views",
-        year: '',
-        medium: "",
-        file_name: ["Foundation.jpg", "FullPieceAssembled.jpg", "FullPieceOpenFramework.jpg", "SmallModels.jpg",],
-      },
-      art2: {
-        name: "Intro: Story Of Me And The Red Sleep Bed",
-        year: '',
-        medium: "",
-        file_name: "https://www.youtube.com/watch?v=0i8i-kE3qH0",
+        name: "Channeling the Elements; an encounter of time/space",
+        year: '2020',
+        medium: "Film",
+        file_name: "https://www.youtube.com/watch?v=B91Fx_143Fk",
       },
     },
   },
   artist2:{
-    idx: 2,  // for internal use
-    format: AllowedFormats.Image,
+    idx: 7,  // for internal use
+    format: AllowedFormats.Video,  // for rendering
     visible: true,
-    artist_name: "Gillian Lapuz",
-    ins_handle: ["@gillizn"],
-    quote: '“As an Asian artist, and a first-generation Canadian, queer theory has only previously been digested through a Eurocentric lens [... which] is often described through the experience of a perspective that is not mine.”',
-    bio: 'Gillian Lapuz is an interdisciplinary artist based in Toronto, Canada. Lapuz is currently completing his BEd at the University of Windsor in the intermediate/senior level with teachables in Visual Arts and General Social Science. Lapuz’ body of work revolves around investigating and developing facets of queer identity. His interest of connection and relationship has ventured into a material based practice that examines personal intersecting aspects of love, fear and humour. Inspired by the material process of developing work, Lapuz attempts to render queer imagery through print, textiles, illustrations and wearable art. Lapuz completed his BFA undergraduate studies at OCADU majoring in Printmaking and minoring in Material Arts and Design: Textiles.',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "Joker: Wildcard",
+    artist_name: "Jamie Chi",
+    ins_handle: ["@safedistance_docu", "@jamiechi_"],  // a list b/c some artists have multiple handles
+    quote: 'A core part of our recent practice as queer Chinese artists, has been exploring the relationship between our identities as queer Chinese artists, and how our anti-racist arts practice can work in solidarity with struggles to decolonize.',
+    bio: "Jamie Chi (she/they) is an independent filmmaker and photographer, using her work to advocate for LGBTQ+ rights. After receiving an MA in cultural studies at Université Jean Moulin Lyon 3, France, Jamie advocated for Asian LGBTQ+ rights through her film. \n" +
+        "\n" +
+        "Jamie studied experimental filmmaking at the University of the Philippines Diliman in 2019 and was selected for the Ricky Lee Script Writing Program organised by the Cinemalaya Institute in 2021.  In 2022, her film 《Safe Distance: Chapter 1》won the Short Film Audience Award in the 33rd Hong Kong Lesbian and Gay Film Festival.",
+    topic_name: "Yellow Peril",
+    collection_title:'',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "",
-    directory: '/assets/YellowPerils/Gillian',
+    directory: "",
     artworks: {
-      art1: {  // TODO: check with Jolie to see if can just use a list for all the individual files
-        name: "Group",
+      art1: {
+        name: "Safe Distance",
         year: '',
-        medium: "",
-        file_name: "group.jpg",
-      },
-      art2: {
-        name: "Individual",
-        year: '',
-        medium: "",
-        file_name: ['1.jpg', '1.2.jpg',  // TODO: This is what I was referring to. All images are just depictions of the same project so we don't need to give them separate names
-            '2.jpg', '2.2.jpg',
-            '3.jpg', '3.3.jpg',
-            '4.jpg', '4.2.jpg',
-            '5.jpg', '5.2.jpg',
-            '6.jpg', '6.2.jpg',
-            '7.jpg', '7.2.jpg',],
+        medium: "Film/Documentary",
+        file_name: "https://www.youtube.com/watch?v=Jj5WbiY__Pw",
       },
     },
   },
   artist3:{
-    idx: 5,  // for internal use
-    format: AllowedFormats.Image,
+    idx: 10,  // for internal use
+    format: [AllowedFormats.Image, AllowedFormats.Video],  // todo: like Rising Lai, multiple formats, check with Jolie
     visible: true,
-    artist_name: "Joshua Lue Chee Kong",
-    ins_handle: ["@josh_lu_studio"],
-    quote: '“[M]y identity has always felt like a moving target, going back and forth between Chinese and West Indian, but also Hakka Chinese and queer. Having these multiple identities all confined to one body has always been met with confusion, amazement and wonder.”',
-    bio: 'Joshua Lue Chee Kong is a Trinidadian artist based in Toronto, Canada. In 2020, Joshua graduated from OCAD University, Toronto, with a degree in the Interdisciplinary Master’s in Art, Media, and Design. His explorations of home, longing, and belonging interrogate ideas of multiculturalism and assimilation. In particular, the representation of the Chinese in the Caribbean culture and its diaspora.',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "Bronze Series",
+    artist_name: "Andi Vicente",
+    ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
+    quote: 'I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, Isneg. To be seen by others like you can be a gift, a moment of euphoria. Sometimes it can bring about forced relationships. Solidarity is not simply based on the similar ways we experience oppression. Solidarity is compassionate.',
+    bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?" Author and Editor of Bitter Melanin',
+    topic_name: "Yellow Peril",
+    collection_title:'',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "",
-    directory: '/assets/YellowPerils/Josh',
+    directory: "/assets/YellowPerils/Andi",
     artworks: {
       art1: {
-        name: "Hyphenated Being",
-        year: '2020',
-        medium: "3D Printed Resin",
-        dimensions: '3 x 2.25 x 6.35 in',
-        file_name: "HyphenatedBeing.jpg",
+        name: "barbed dreams",
+        year: '',
+        medium: "",
+        file_name: "barbed_dreams.jpg",
       },
       art2: {
-        name: "See You Soon",
-        year: '2020',
-        medium: "3D Print and Wax",
-        dimensions: '5 x 7 in',
-        file_name: "SeeYouSoon.jpg",
+        name: "libération en fait (freedom actually _ release)",
+        year: '',
+        medium: "",
+        file_name: "libération_en_fait_(freedom_actually___release).jpg",
       },
       art3: {
-        name: "Cannon",
-        year: '2020',
-        medium: "Bronze",
-        dimensions: '5 x 3 x 8 in',
-        file_name: "Cannon.jpg",
+        name: "makibaka (to struggle and to fight)",
+        year: '',
+        medium: "",
+        file_name: "makibaka_(to_struggle_and_to_fight).jpg",
       },
       art4: {
-        name: "Guardians",
-        year: '2020',
-        medium: "Bronze",
-        dimensions: '11.5 x 4 x 14 in',
-        file_name: "Guardians.jpg",
+        name: "malgré eux (despite them)",
+        year: '',
+        medium: "",
+        file_name: "malgré_eux_(despite_them).jpg",
       },
       art5: {
-        name: "Masquerader",
-        year: '2020',
-        medium: "Bronze",
-        dimensions: '4.25 x 3 x 10.75 in',
-        file_name: ["Masquerader1.jpg", "Masquerader2.jpg", "Masquerader3.jpg"],
+        name: "thank you [i learned of my legacy and my ancestors through the harms made by yours]",
+        year: '',
+        medium: "",
+        file_name: "thank_you_[i_learned_of_my_legacy_and_my_ancestors_through_the_harms_made_by_yours].jpg",
       },
       art6: {
-        name: "Ceremonial Vessel",
-        year: '2020',
-        medium: "Bronze",
-        dimensions: '6 x 7.25 x 1.5 in',
-        file_name: "CeremonialVessel.jpg",
+        name: "PAGKAKAISA",
+        year: '',
+        medium: "",
+        file_name: "https://youtu.be/t9qG14MSVPs",  // todo: check with curatorial team if this should still be included
+      },
+    },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Andi/barbed_dreams.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Andi/libération_en_fait_(freedom_actually___release).jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Andi/makibaka_(to_struggle_and_to_fight).jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Andi/malgré_eux_(despite_them).jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Andi/thank_you_[i_learned_of_my_legacy_and_my_ancestors_through_the_harms_made_by_yours].jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
+  },
+  artist4: {
+    idx: 12,  // for internal use
+    format: AllowedFormats.Image,
+    visible: true,
+    artist_name: "Theysi Queers",
+    ins_handle: [],  // todo: ins handles are in their descriptions
+    quote: 'Being queer and South Asian can often feel like two diverging identities that are difficult to navigate simultaneously especially if you\'re also an immigrant.',
+    bio: '"Theysi Queers is a collective of artists, dreamers, makers, and creators in Tkaronto, dreaming of queer futures and realities in the South Asian diaspora.\n' +
+        'Our mission is to visualize for you the joy of the realities we live in. We want to make real and give flesh to queer daydreams.\n' +
+        'Each season, we will work within a theme to bring you a photo series showcasing collaborative talents of models, stylists, set designers, photographers, and all kinds of artists, and demonstrate what inspires us.\n' +
+        'This season, we look to the written word for inspiration. We are lifting queer stories from the page and bringing you images inspired by our favourite stories."',
+    topic_name: "Yellow Peril",
+    collection_title: '',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    description: "",
+    directory: "/assets/YellowPerils/Theysi",
+    artworks: {
+      art1: {  // todo: every image has a separate artist and a separate description... Check with teams to see how to handle this...
+        name: "Giovanni's Room by James Baldwin (1956)",
+        year: '',
+        medium: "",
+        file_name: "1GiovannisRoom.jpg",
+      },
+      art2: {
+        name: "A Suitable Boy by Vikram Seth (1993)",
+        year: '',
+        medium: "",
+        file_name: "2ASuitableBoy.jpg",
+      },
+      art3: {
+        name: "We Have Always Been Here: A Queer Muslim Memoir by Samra Habib (2019)",
+        year: '',
+        medium: "",
+        file_name: "3WeHaveAlwaysBeenHere.jpg",
+      },
+      art4: {
+        name: "Beyond the Gender Binary by Alok Vaid-Menon (2020)",
+        year: '',
+        medium: "",
+        file_name: "4BeyondtheGenderBinary.jpg",
+      },
+      art5: {
+        name: "Biker Gang Baddies",
+        year: '',
+        medium: "",
+        file_name: "5BikerGangBaddies.jpg",
+      },
+      art6: {
+        name: "Who We Are",
+        year: '',
+        medium: "",
+        file_name: "6WhoWeAre.jpg",
+      },
+    },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/1GiovannisRoom.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/2ASuitableBoy.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/3WeHaveAlwaysBeenHere.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/4BeyondtheGenderBinary.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/5BikerGangBaddies.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Theysi/6WhoWeAre.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
+  },
+  artist5: {
+    idx: 15,  // for internal use
+    format: AllowedFormats.Video,
+    visible: true,
+    artist_name: "Hanxuan (Sophie) Jiang",
+    ins_handle: [],
+    quote: 'From sleeping together and uninhibited dancing to daily conversations, I seem to find out which community I am in and which community I am excluded from',
+    bio: 'Hanxuan Jiang is a time-based artist and an art tutor who is currently based in Shanghai. She graduated from Ruskin School of Art, University of Oxford with Distinction (MFA). Her first MA was in Contemporary Art Practice of the Royal College of Art. In 2019, She was announced by Art News of China as one of the most excellent young artists in China (100 in total). Her moving image works were selected in European Short Film Festival, London Independent film Festival, Manchester film festival, 2019 Coventry Biennial, 9th International Video Poetry Festival, etc. Her artworks were collected by 2019 Florence Contemporary art Biennale, National Art Museum of China and Beijing Biennial.',
+    topic_name: "Yellow Peril",
+    collection_title: '',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    description: "",
+    directory: "",
+    artworks: {
+      art1: {
+        name: "The Journey of Displacement",
+        year: '',
+        medium: "",
+        file_name: "",  // todo: embed link from Vimeo
+      },
+    },
+  },
+  // artist6: {  // todo: missing materials - should we still include him????
+  //   idx: 18,  // for internal use
+  //   format: AllowedFormats.Video,
+  //   visible: true,
+  //   artist_name: "Anto Chan",
+  //   ins_handle: [],
+  //   quote: '',
+  //   bio: '',
+  //   topic_name: "Yellow Peril",
+  //   collection_title: '',
+  //   quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+  //   description: "",
+  //   directory: "",
+  //   artworks: {
+  //     art1: {
+  //       name: "",
+  //       year: '',
+  //       medium: "",
+  //       file_name: "",
+  //     },
+  //   },
+  // },
+  artist7: {
+    idx: 19,  // for internal use
+    format: AllowedFormats.Video,
+    visible: true,
+    artist_name: "Snack Witch",
+    ins_handle: [],
+    quote: 'I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.',
+    bio: '"🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +  // todo check if okay lots of emojis
+        '\n' +
+        'They’re currently toiling over their MFA on stolen lands of the Kanien’kehá:ka at Concordia University.  A wicked #magicalgirl ✨ eating art + making snacks 🌈⁠, she has exhibited and curated shows across Turtle Island, colonially known as Canada, including Centre CLARK, Montréal; Latitude 53, Edmonton; Xpace Cultural Centre, Toronto; and Hotam Press Bookshop & Gallery, Vancouver; among other spaces and platforms. Their work has been published nationally and internationally.\n' +
+        '\n' +
+        'They are a recipient of numerous awards, including the BC Arts Council Scholarship and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship."',
+    topic_name: "Yellow Peril",
+    collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    description: "",
+    directory: "/assets/YellowPerils/Snack",
+    artworks: {
+      art1: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "1snack.jpg",
+      },
+      art2: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "2snack.jpg",
+      },
+      art3: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "3snack.jpg",
+      },
+      art4: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "4snack.jpg",
+      },
+      art5: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "5snack.jpg",
+      },
+      art6: {
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
+        year: '',
+        medium: "",
+        file_name: "6snack.jpg",
       },
       art7: {
-        name: "Stay at Home",
-        year: '2020',
-        medium: "Bronze",
-        dimensions: '20 x 3.5 x 3.5 in',
-        file_name: ["StayAtHome001.jpg", "StayAtHome002.jpg", "StayAtHome003.jpg", "StayAtHome013.jpg"],
-      },
-    },
-  },
-  artist4:{
-    idx: 8,  // for internal use
-    format: AllowedFormats.Image,
-    visible: true,
-    artist_name: "Mia Yaguchi-Chow",
-    ins_handle: ["@bitchfits"],
-    quote: '“I often feel like I don\'t fit into conventional Western communities of queerness [...] Not that I don\'t appreciate these communities -- I do, and I\'m grateful to be welcomed into the one\'s I\'m part of, but it\'s not how I often choose to instinctively express or engage with my queerness.”',
-    bio: 'My name is Mia and I\'m a non-binary Japanese/Chinese multifaceted creative particularly focused in visual art, photography, illustration, graphic design, acting, and more. Currently, I am studying my Masters of Arts in Fashion at Toronto Metropolitan University, where I also received my Bachelors of Design in Fashion in 2021. Professionally, I work as a freelance/contract graphic designer and photographer and am an ACTRA member. Within both my professional and creative/personal work, I always aim to contribute to discourses that invite contemplation or critical reflection as this is a relationship I share with my own work. Art is a method of communication for me and I like to share these discussions with others and use it as a tool to get to know others, and if I can contribute to progressive change with it then that’s a bonus.',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "Self Portraits",
-    description: "",
-    directory: '/assets/YellowPerils/Mia',
-    artworks: {
-      art1: {
-        name: "",
+        name: "2033 Essex Rd, Williston, Vermont, USA, 05495",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "7snack.jpg",
       },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/1snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/2snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/3snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/4snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/5snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Snack/6snack.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
   },
-  artist5:{
-    idx: 1,  // for internal use
+  artist8: {
+    idx: 21,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
-    artist_name: "",
+    artist_name: "Julie Tián",
     ins_handle: [],
-    quote: '',
-    bio: '',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "",
+    quote: 'I\'m aware that my Chinese upbringing contributed to my sense of responsibility and lack of boundaries, but I still struggle with navigating the individualistic and fragmented nature of North American queer communities.',
+    bio: 'Julie Chǔ Níng Tián is a self-taught Chinese-Canadian artist based in tkaronto. Her works explore themes of memory, space, time, and connection. She sees the intricate details often present in her works as a way of conveying care and love to the subject and the recipient. Julie has worked with various local organizations on projects surrounding art and queer belonging. She works primarily with oils, mixed paint, graphite, pen and ink, and embroidery.',
+    topic_name: "Yellow Peril",
+    collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
+    quote_bg_url: require('@/assets/YellowPerils/Julie/JulieTian_1.jpg'),
     description: "",
-    directory: '/assets/YellowPerils/',
+    directory: "/assets/YellowPerils/Julie",
     artworks: {
       art1: {
-        name: "",
+        name: "níng nìng",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "JulieTian_1.jpg",
+      },
+      art2: {
+        name: "níng nìng",
+        year: '',
+        medium: "",
+        file_name: "JulieTian_2.jpg",
+      },
+      art3: {
+        name: "níng nìng",
+        year: '',
+        medium: "",
+        file_name: "JulieTian_3.jpg",
       },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
   },
-  artist6:{
-    idx: 1,  // for internal use
+  artist9: {
+    idx: 22,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
-    artist_name: "",
-    ins_handle: [],
-    quote: '',
-    bio: '',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "",
+    artist_name: "Michelle Lu",
+    ins_handle: ['@tiger___mommy'],
+    quote: '[Until recently] I\'ve been intimidated to explore the intersection of my ethnicity and queerness. I’m now recognizing that they have always been intricately intertwined and an essential part of who I am.',
+    bio: '"Michelle Lu (she/they) is a multidisciplinary designer and artist from Toronto, Canada. Her practice explores the nuances of identity, collaborative creation, and imagining new forms of community. Lu’s work is motivated by storytelling and the desire to make systems more equitable and accessible.\n' +
+        '\n' +
+        'Michelle’s work has been featured in exhibitions and publications nationally and internationally. They are also a founding member of here-there collective, a group of interdisciplinary artists who are currently working on the here-there audio archive – a community arts project and home for stories from the Asian Canadian diaspora."',
+    topic_name: "Yellow Peril",
+    collection_title: 'Mother’s Tongue',
+    quote_bg_url: require('@/assets/YellowPerils/Michelle/mothers_tongue.jpg'),
     description: "",
-    directory: '/assets/YellowPerils/',
+    directory: "/assets/YellowPerils/Michelle",
     artworks: {
       art1: {
-        name: "",
+        name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "mothers_tongue.jpg",
       },
-    },
-  },
-  artist7:{
-    idx: 1,  // for internal use
-    format: AllowedFormats.Image,
-    visible: true,
-    artist_name: "",
-    ins_handle: [],
-    quote: '',
-    bio: '',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "",
-    description: "",
-    directory: '/assets/YellowPerils/',
-    artworks: {
-      art1: {
-        name: "",
+      art2: {
+        name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "mt_w1.jpg",
       },
-    },
-  },
-  artist8:{
-    idx: 1,  // for internal use
-    format: AllowedFormats.Image,
-    visible: true,
-    artist_name: "",
-    ins_handle: [],
-    quote: '',
-    bio: '',
-    topic_name: "Yellow Perils",
-    quote_bg_url: '',
-    collection_title: "",
-    description: "",
-    directory: '/assets/YellowPerils/',
-    artworks: {
-      art1: {
-        name: "",
+      art3: {
+        name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "mt_w2.jpg",
+      },
+      art4: {
+        name: "Mother’s Tongue",
+        year: '',
+        medium: "",
+        file_name: "mt_w3.jpg",
       },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mothers_tongue.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
   },
 }
 
-console.log(madeInQueer)
+console.log(yellowPeril)
 onMounted(() => {AOS.init()})
 </script>
 <template class="bg-white">
