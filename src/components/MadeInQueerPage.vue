@@ -285,12 +285,68 @@ let madeInQueer = {
     directory: '/assets/MadeInQueer/Mia',
     artworks: {  // TODO to be picked out by Sheng
       art1: {
-        name: "",
+        name: "Self Portrait 1",
         year: '',
         medium: "",
-        file_name: ".jpg",
+        file_name: "MiaSelected1.jpg",
+      },
+      art2: {
+        name: "Self Portrait 2",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected2.jpg",
+      },
+      art3: {
+        name: "Self Portrait 3",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected3.jpg",
+      },
+      art4: {
+        name: "Self Portrait 4",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected4.jpg",
+      },
+      art5: {
+        name: "Self Portrait 5",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected5.jpg",
+      },
+      art6: {
+        name: "Self Portrait 6",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected6.jpg",
       },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected4.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected5.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected6.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
   },
   artist5:{
     idx: 20,  // for internal use
