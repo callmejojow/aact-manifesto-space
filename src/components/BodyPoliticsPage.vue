@@ -4,7 +4,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import {useScrollObserver} from '@/useScrollObserver.js'
-import { ref,onMounted } from "vue"
+import { ref,onMounted,computed } from "vue"
 import AOS from "aos"
 /* eslint-disable no-unused-vars */
 const navItems = ref([]);
@@ -27,6 +27,8 @@ function onIntersection(entry, index) {
     console.log(activeIndex.value)
   }
 }
+
+const bodyPoliticsArray = computed(() => Object.values(bodyPolitics));
 
 // Data Entries
 const AllowedFormats = {
@@ -448,11 +450,11 @@ let bodyPolitics = {
                    :class="{'font-bold': activeIndex == 0 }">
                    About
                 </a>
-                <a v-for="(artist,index) in bodyPolitics" 
-                   :key="index" 
+                <a v-for="(artist, index) in bodyPoliticsArray" 
+                   :key="'nav_item_' + index" 
                    :href="`#artist_${index}`" 
                    class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
-                   :class="index == activeIndex ? 'font-bold' : 'font-normal'">
+                   :class="{ 'font-bold': activeIndex == index + 1 }">
                     {{artist.artist_name}}
                 </a>
             </nav>
@@ -488,7 +490,7 @@ let bodyPolitics = {
                 We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
             </p>
         </section>
-        <div v-for="(artist,index) in bodyPolitics" :key="artist">
+        <div v-for="(artist,index) in bodyPoliticsArray" :key="artist">
             <!-- Quote of the Topic -->
             <section :id="`artist_${index}`" 
                      class="bg-bitten snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" 
