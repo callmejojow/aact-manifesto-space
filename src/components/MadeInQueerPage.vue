@@ -14,7 +14,7 @@ const AllowedFormats = {
 let madeInQueer = {
   artist1:{
     idx: 1,  // for internal use
-    format: [AllowedFormats.Image, AllowedFormats.Video],  // for rendering  # TODO: MIXED MEDIA!! Both images and an embedded video
+    format: [AllowedFormats.Image, AllowedFormats.Video],  // for rendering  # TODO: ADD LINK TO VIDEO IN DESCRIPTION!!
     visible: true,
     artist_name: "Rising Lai",
     ins_handle: ["@loveintersectionsm", "@davidngstagram", "@jensungshine"],

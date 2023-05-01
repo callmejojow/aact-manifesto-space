@@ -506,7 +506,7 @@ onMounted(() => {AOS.init()})
             We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
         </p>
     </section>
-    <div v-for="artist in madeInQueer" :key="artist">
+    <div v-for="artist in yellowPeril" :key="artist">
     <!-- Quote of the Topic -->
     <section class="h-80 lg:h-[48rem] w-screen bg-cover bg-scroll quote3-url">
         <div class="w-full h-80 lg:h-[48rem] flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
