@@ -61,7 +61,7 @@ let madeInQueer = {
         file_name: "https://www.youtube.com/watch?v=0i8i-kE3qH0",
       },
     },
-    slides:[  // todo: not sure why this is not showing
+    slides:[
       {
         image:require("@/assets/bg.svg"),
         content:`<img src="${require("@/assets/MadeInQueer/Rising/Foundation.jpg")}" class="object-contain h-[48rem]"/>`,
@@ -283,7 +283,7 @@ let madeInQueer = {
     collection_title: "Self Portraits",
     description: "",
     directory: '/assets/MadeInQueer/Mia',
-    artworks: {  // TODO to be picked out by Sheng
+    artworks: {
       art1: {
         name: "Self Portrait 1",
         year: '',

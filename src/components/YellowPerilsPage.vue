@@ -58,7 +58,7 @@ let yellowPeril = {
   },
   artist3:{
     idx: 10,  // for internal use
-    format: [AllowedFormats.Image, AllowedFormats.Video],  // todo: like Rising Lai, multiple formats, check with Jolie
+    format: AllowedFormats.Image,
     visible: true,
     artist_name: "Andi Vicente",
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
@@ -147,7 +147,7 @@ let yellowPeril = {
     description: "",
     directory: "/assets/YellowPerils/Theysi",
     artworks: {
-      art1: {  // todo: every image has a separate artist and a separate description... Check with teams to see how to handle this...
+      art1: {
         name: "Giovanni's Room by James Baldwin (1956)",
         year: '',
         medium: "",
@@ -262,7 +262,7 @@ let yellowPeril = {
     artist_name: "Snack Witch",
     ins_handle: [],
     quote: 'I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.',
-    bio: '"🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +  // todo check if okay lots of emojis
+    bio: '"🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +
         '\n' +
         'They’re currently toiling over their MFA on stolen lands of the Kanien’kehá:ka at Concordia University.  A wicked #magicalgirl ✨ eating art + making snacks 🌈⁠, she has exhibited and curated shows across Turtle Island, colonially known as Canada, including Centre CLARK, Montréal; Latitude 53, Edmonton; Xpace Cultural Centre, Toronto; and Hotam Press Bookshop & Gallery, Vancouver; among other spaces and platforms. Their work has been published nationally and internationally.\n' +
         '\n' +
