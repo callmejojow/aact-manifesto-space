@@ -14,7 +14,7 @@ const AllowedFormats = {
 let madeInQueer = {
   artist1:{
     idx: 1,  // for internal use
-    format: [AllowedFormats.Image, AllowedFormats.Video],  // for rendering  # TODO: ADD LINK TO VIDEO IN DESCRIPTION!!
+    format: AllowedFormats.Image,  // for rendering  # TODO: ADD LINK TO VIDEO IN DESCRIPTION!!
     visible: true,
     artist_name: "Rising Lai",
     ins_handle: ["@loveintersectionsm", "@davidngstagram", "@jensungshine"],
@@ -97,25 +97,83 @@ let madeInQueer = {
         medium: "",
         file_name: "group.jpg",
       },
-      // art2: {
-      //   name: "Individual",
-      //   year: '',
-      //   medium: "",
-      //   file_name: ['1.jpg', '1.2.jpg',  // todo: reduce # of featured images
-      //     '2.jpg', '2.2.jpg',
-      //     '3.jpg', '3.3.jpg',
-      //     '4.jpg', '4.2.jpg',
-      //     '5.jpg', '5.2.jpg',
-      //     '6.jpg', '6.2.jpg',
-      //     '7.jpg', '7.2.jpg',],
-      // },
-      slides:[  // todo: not sure why this is not showing
-        {
-          image:require("@/assets/bg.svg"),
-          content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-[48rem]"/>`,
-        },
-      ],
+      art2: {
+        name: "Individual 1",
+        year: '',
+        medium: "",
+        file_name: "1_2.jpg",
+      },
+      art3: {
+        name: "Individual 2",
+        year: '',
+        medium: "",
+        file_name: "2_2.jpg",
+      },
+      art4: {
+        name: "Individual 3",
+        year: '',
+        medium: "",
+        file_name: "3_3.jpg",
+      },
+      art5: {
+        name: "Individual 4",
+        year: '',
+        medium: "",
+        file_name: "4_2.jpg",
+      },
+      art6: {
+        name: "Individual 5",
+        year: '',
+        medium: "",
+        file_name: "5_2.jpg",
+      },
+      art7: {
+        name: "Individual 6",
+        year: '',
+        medium: "",
+        file_name: "6_2.jpg",
+      },
+      art8: {
+        name: "Individual 7",
+        year: '',
+        medium: "",
+        file_name: "7_2.jpg",
+      },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/1_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/2_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/3_3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/4_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/5_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/6_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/7_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+    ],
   },
   artist3:{
     idx: 5,  // for internal use
@@ -471,7 +529,7 @@ onMounted(() => {AOS.init()})
         <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
             <BreadCrumbs />
             <span class="ml-4 text-sm text-gray-400/80">
-                Body Politics
+                Made in Queer
             </span>
         </div>
         <div class="lg:hidden p-4">
@@ -544,7 +602,7 @@ onMounted(() => {AOS.init()})
             <!-- <div v-for="art in artist.artworks" :key="art">
                 <p>{{art.name}}</p>
             </div> -->
-            <div v-if="artist.format == 'image'" class="min-h-screen">
+            <div v-if="artist.format === AllowedFormats.Image" class="min-h-screen">
               <div class="lg:flex lg:justify-between lg:items-start gap-4">
                 <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
                 <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
