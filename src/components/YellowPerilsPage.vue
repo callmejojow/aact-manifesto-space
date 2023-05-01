@@ -533,10 +533,10 @@ onMounted(() => {AOS.init()})
 </template>
 <style>
 .banner3-url {
-    background-image: url('../assets/YellowPerils/Mia/Mia1.jpeg');
+    background-image: url('../assets/YellowPerils/Love/YellowPeril.jpg');
 }
 
 .quote3-url {
-    background-image: url('../assets/YellowPerils/Mia/Mia2.png');
+    background-image: url('../assets/YellowPerils/Love/YellowPeril.jpg');  /* todo artist-specific?? */
 }
 </style>
