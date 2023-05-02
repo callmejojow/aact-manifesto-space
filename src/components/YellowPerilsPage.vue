@@ -132,7 +132,7 @@ watch(activeIndex, () => {
             </section>
             <!-- Art pieces of a certain artist with his/her introduction -->
             <div class="snap-end w-full tracking-wide leading-6">
-                <div v-if="artist.format == 'image'" class="min-h-screen">
+                <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4">
                         <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
                         <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
@@ -141,7 +141,11 @@ watch(activeIndex, () => {
                     <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
                         <div class="lg:w-3/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-                            <p class="lg:text-justify">{{artist.description}}</p>
+                            <p class="lg:text-justify">{{artist.description}}
+                                <span v-if=" artist.format == 'mixed'">
+                                    <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>
+                                </span>
+                            </p>
                         </div>
                         <div class="mt-4 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>

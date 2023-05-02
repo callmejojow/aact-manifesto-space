@@ -2,6 +2,7 @@ const AllowedFormats = {
   Image: "image",
   Video: "video",
   Text: "text",
+  Mixed: "mixed",
 }
 
 export const yellowPerils = {
@@ -53,7 +54,7 @@ export const yellowPerils = {
   },
   artist3:{
     idx: 10,  // for internal use
-    format: AllowedFormats.Image, 
+    format: AllowedFormats.Mixed, 
     visible: true,
     artist_name: "Andi Vicente",
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
@@ -62,7 +63,7 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-    description: "Need to put the video link in the description part",
+    description: "See more details by clicking the Link below.",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
       art1: {
@@ -75,31 +76,25 @@ export const yellowPerils = {
         name: "libération en fait (freedom actually _ release)",
         year: '',
         medium: "",
-        file_name: "libération_en_fait_(freedom_actually___release).jpg",
+        file_name: "freedom_actually_release.jpg",
       },
       art3: {
         name: "makibaka (to struggle and to fight)",
         year: '',
         medium: "",
-        file_name: "makibaka_(to_struggle_and_to_fight).jpg",
+        file_name: "to_struggle_and_to_fight.jpg",
       },
       art4: {
         name: "malgré eux (despite them)",
         year: '',
         medium: "",
-        file_name: "malgré_eux_(despite_them).jpg",
+        file_name: "despite_them.jpg",
       },
       art5: {
         name: "thank you [i learned of my legacy and my ancestors through the harms made by yours]",
         year: '',
         medium: "",
-        file_name: "thank_you_[i_learned_of_my_legacy_and_my_ancestors_through_the_harms_made_by_yours].jpg",
-      },
-      art6: {
-        name: "PAGKAKAISA",
-        year: '',
-        medium: "",
-        file_name: "https://youtu.be/t9qG14MSVPs",  // todo: check with curatorial team if this should still be included
+        file_name: "thank_you.jpg",
       },
     },
     slides:[
@@ -109,19 +104,19 @@ export const yellowPerils = {
       },
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/libération_en_fait_(freedom_actually___release).jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/freedom_actually_release.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/makibaka_(to_struggle_and_to_fight).jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/to_struggle_and_to_fight.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/malgré_eux_(despite_them).jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/despite_them.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/thank_you_[i_learned_of_my_legacy_and_my_ancestors_through_the_harms_made_by_yours].jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/thank_you.jpg")}" class="object-contain h-[48rem]"/>`,
       },
     ],
   },
