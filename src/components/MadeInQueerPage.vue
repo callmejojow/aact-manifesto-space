@@ -54,7 +54,7 @@ watch(activeIndex, () => {
 <template>
     <div class="scroll-smooth font-open">
         <div class="sticky top-0 z-20 bg-white">
-            <div class="flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
+            <div class="flex justify-start lg:justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
                 </a>
