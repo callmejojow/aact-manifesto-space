@@ -233,7 +233,7 @@ export const bodyPolitics = {
                 name: "Yang",
                 year: "",
                 medium: 'Film',
-                file_name: "N/A", // todo: contact artist to upload the video to youtube
+                file_name: "https://www.youtube.com/embed/_Of_jsCjsM0",
             },
         },
     },
@@ -360,7 +360,7 @@ export const bodyPolitics = {
         quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries.”',
         bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western massachusetts. He is cultivating slow practices, and making art addressing sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
         topic_name: "Body Politics",
-        quote_bg_url: require('@/assets/BodyPolitics/Makoto/TwoSnakes.jpg'),
+        quote_bg_url: require('@/assets/BodyPolitics/Makoto/YinYang.jpg'),
         collection_title: "",
         directory: "/assets/BodyPolitics/Makoto",
         artworks: {
