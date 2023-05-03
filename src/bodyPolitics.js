@@ -228,7 +228,6 @@ export const bodyPolitics = {
         directory: "",
         description: "",
         artworks: {
-            folder: "",
             art1: {
                 name: "Yang",
                 year: "",

@@ -56,7 +56,7 @@ watch(activeIndex, () => {
 <template>
     <div class="scroll-smooth font-open">
         <div class="sticky top-0 z-20 bg-ivory">
-            <div class="flex items-center justify-start lg:justify-center py-4 px-4 md:px-0 border-b border-gray-200/80">
+            <div class="flex items-center justify-start lg:justify-center py-4 px-4 md:px-0 border-b border-stone-200/80">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
                 </a>
@@ -68,29 +68,30 @@ watch(activeIndex, () => {
             <!-- Generic Breadcrumbs -->
             <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
                 <BreadCrumbs />
-                <span class="ml-4 text-sm text-gray-400/80">
+                <span class="ml-4 text-sm text-stone-400/80">
                     Body Politics
                 </span>
             </div>
             <div class="lg:hidden p-4">
-                <a href="/exhibitions" class="text-sm text-gray-500 hover:text-gray-700">
+                <a href="/exhibitions" class="text-sm text-stone-500 hover:text-stone-700">
                     The Bitten Peach: Decolonizing Queer Asians
                 </a>
             </div>
-            <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
+            <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 mx-4 overflow-x-auto max-w-screen">
                 <a href="#about" 
-                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" 
+                   class="nav-item inline-block whitespace-nowrap text-stone-600 text-sm" 
                    :class="{'font-bold': activeIndex == 0 }">
                    About
                 </a>
                 <a v-for="(artist, index) in bodyPoliticsArray" 
                    :key="'nav_item_' + index" 
                    :href="`#artist_${index}`" 
-                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
+                   class="nav-item inline-block whitespace-nowrap text-stone-600 text-sm"
                    :class="{ 'font-bold': activeIndex == index + 1 }">
                     {{artist.artist_name}}
                 </a>
             </nav>
+            <br class="lg:hidden">
         </div>
         <!-- Banner -->
         <kinesis-container>
