@@ -9,6 +9,7 @@ module.exports = {
             },
             colors: {
                 'bitten': '#be0000',
+                'ivory': '#E4E2DD',
             },
     },
     accentColor: ({ theme }) => ({
