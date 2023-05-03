@@ -4,6 +4,15 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import coverMobile from '@/assets/cover2.png'
 import coverDesktop from '@/assets/cover1.png'
 
+function navigateWithFadeOut(url) {
+  const body = document.querySelector("body");
+  body.classList.add("fade-out");
+
+  setTimeout(() => {
+    window.location.href = url;
+  }, 500); // Wait for 500ms (the duration of the fade-out animation) before navigating
+}
+
 const bgImage = ref(coverMobile)
 
 const updateBgImage = () => {
@@ -13,16 +22,29 @@ const updateBgImage = () => {
         bgImage.value = coverMobile
       }
     }
+onMounted(() => {
+  updateBgImage()
+  window.addEventListener('resize', updateBgImage)
+})
 
-    onMounted(() => {
-      updateBgImage()
-      window.addEventListener('resize', updateBgImage)
-    })
-
-    onUnmounted(() => {
-      window.removeEventListener('resize', updateBgImage)
-    })
+onUnmounted(() => {
+  window.removeEventListener('resize', updateBgImage)
+})
 </script>
+<style>
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+</style>
 <template>
   <main class="overflow-hidden h-screen bg-cover bg-right-top" :style="`background-image: url(${bgImage});`">
     <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
@@ -43,7 +65,7 @@ const updateBgImage = () => {
       <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4">
         <kinesis-element :strength="70" transformOrigin="100% 500%" type="depth">Decolonizing Queer Asians</kinesis-element>
       </p>
-      <a href="/exhibitions#about" type="button" class="z-20 mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</a>
+      <button @click="navigateWithFadeOut('/exhibitions#about')" type="button" class="z-20 mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</button>
     </div>
     </kinesis-container>
   </div>
