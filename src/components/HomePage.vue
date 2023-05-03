@@ -24,7 +24,7 @@ const updateBgImage = () => {
     })
 </script>
 <template>
-  <main class="h-screen bg-cover bg-right-top" :style="`background-image: url(${bgImage});`">
+  <main class="overflow-hidden h-screen bg-cover bg-right-top" :style="`background-image: url(${bgImage});`">
     <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
       <a href="/">
        <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
