@@ -346,7 +346,7 @@ export const bodyPolitics = {
                 name: "xīn nī 廖芯妮 (understanding you)",
                 year: "",
                 medium: "Auto-ethnographic, experimental visual poem and moving-portrait", //mod: this video url is not available for html embedding. Need to ask artist to replace.
-                file_name: ""
+                file_name: "https://player.vimeo.com/video/809597831?h=48207ec787&badge=0&autopause=0&player_id=0&app_id=58479"
                 // file_name: "https://vimeo.com/manage/videos/809597831/48207ec787",
             }
         },
