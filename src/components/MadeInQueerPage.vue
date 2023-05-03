@@ -3,6 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import AOS from "aos"
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
+import SmoothScroll from 'smooth-scroll'
 
 import { madeInQueer } from '@/madeInQueer.js';
 import {useScrollObserver} from '@/useScrollObserver.js'
@@ -22,6 +23,11 @@ onMounted(() => {
     const targetId = el.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
     startObserving(targetElement, index, onIntersection);
+  });
+
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    easing: 'easeInOutCubic',
   });
 });
 
