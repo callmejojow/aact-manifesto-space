@@ -192,7 +192,7 @@ watch(activeIndex, () => {
 </template>
 <style>
 .banner3-url {
-    background-image: url('../assets/curation-topic3.jpg');
+    background-image: url('../assets/curation-topic3.webp');
 }
 
 </style>

@@ -75,14 +75,14 @@ import NavDropdown from '@/components/NavDropdown.vue'
 </script>
 <style>
 .bg-url-1 {
-    background-image: url('../assets/curation-topic1.png');
+    background-image: url('../assets/curation-topic1.webp');
 }
 
 .bg-url-2 {
-    background-image: url('../assets/curation-topic2.jpg');
+    background-image: url('../assets/curation-topic2.webp');
 }
 
 .bg-url-3 {
-    background-image: url('../assets/curation-topic3.jpg');
+    background-image: url('../assets/curation-topic3.webp');
 }
 </style>
