@@ -4,6 +4,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import coverMobile from '@/assets/cover2.png'
 import coverDesktop from '@/assets/cover1.png'
 
+const buttonOpacity = ref(0);
+
 function navigateWithFadeOut(url) {
   const body = document.querySelector("body");
   body.classList.add("fade-out");
@@ -25,6 +27,10 @@ const updateBgImage = () => {
 onMounted(() => {
   updateBgImage()
   window.addEventListener('resize', updateBgImage)
+
+  setTimeout(() => {
+    buttonOpacity.value = 1;
+  }, 1600);
 })
 
 onUnmounted(() => {
@@ -44,6 +50,35 @@ onUnmounted(() => {
     opacity: 0;
   }
 }
+
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 5s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 </style>
 <template>
   <main class="font-open overflow-hidden h-screen bg-cover bg-right-top" :style="`background-image: url(${bgImage});`">
@@ -57,15 +92,18 @@ onUnmounted(() => {
       </div>
     </div>
   
-  <div class="flex flex-col items-start justify-start text-white/90 max-w-screen">
+  <div class="slide-left flex flex-col items-start justify-start text-white/90 max-w-screen">
     <span class="sr-only">Current Curation</span>
     <kinesis-container>
     <div class="pl-6 sm:pl-12 md:pl-16 mt-96">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide"><kinesis-element :strength="30" transformOrigin="100% 500%" type="depth">The Bitten Peach</kinesis-element></h1>
+      <p class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide"><kinesis-element :strength="30" transformOrigin="100% 500%" type="depth">The Bitten Peach</kinesis-element></p>
       <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4">
         <kinesis-element :strength="70" transformOrigin="100% 500%" type="depth">Decolonizing Queer Asians</kinesis-element>
       </p>
-      <button @click="navigateWithFadeOut('/exhibitions#about')" type="button" class="z-20 mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</button>
+      <button @click="navigateWithFadeOut('/exhibitions#about')" 
+              type="button"
+              :style="{ opacity: buttonOpacity, transition: 'opacity 600ms ease-in' }"
+              class="z-20 mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</button>
     </div>
     </kinesis-container>
   </div>
