@@ -30,13 +30,13 @@ function onIntersection(entry, index) {
 </script>
 <template>
     <div class="min-h-screen font-open">
-        <div class="sticky z-20 top-0 bg-white h-36 lg:h-full">
+        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full">
             <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
                 </a>
                 <p class="text-black tracking-widest ml-6">MANIFESTO</p>
-                <div class="absolute right-4 text-white z-40">
+                <div class="absolute right-4 text-ivory z-40">
                     <NavDropdown />
                 </div>
             </div>
@@ -46,13 +46,13 @@ function onIntersection(entry, index) {
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
             </div>
-            <ul class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-                <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
-                <li><a href="#sections" class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Sections</a></li>
+            <ul class="lg:hidden bg-ivory t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
+                <li><a href="#about" class="nav-item inline-block ivoryspace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
+                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Sections</a></li>
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0">
+        <div class="font-open flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0 bg-ivory">
             <div id="about" class="pt-36 lg:pt-0 col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
@@ -76,21 +76,21 @@ function onIntersection(entry, index) {
                 <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-1">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                         <a href="/exhibitions/made_in_queer">
-                            <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
+                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
                         </a>
                     </div>
                 </div>
                 <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-2">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                         <a href="/exhibitions/body_politics">
-                            <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
+                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
                         </a>
                     </div>
                 </div>
                 <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-3">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
                         <a href="/exhibitions/yellow_perils">
-                            <span class="text-white text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
+                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
                         </a>
                     </div>
                 </div>

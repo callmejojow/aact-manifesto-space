@@ -86,13 +86,13 @@ div.slide-left p {
       <a href="/">
        <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
       </a> 
-      <p class="text-white tracking-widest ml-6">MANIFESTO</p>
-      <div class="absolute right-0 text-white z-40">
+      <p class="text-ivory tracking-widest ml-6">MANIFESTO</p>
+      <div class="absolute right-0 text-ivory z-40">
       <NavDropdown />
       </div>
     </div>
   
-  <div class="slide-left flex flex-col items-start justify-start text-white/90 max-w-screen">
+  <div class="slide-left flex flex-col items-start justify-start text-ivory/90 max-w-screen">
     <span class="sr-only">Current Curation</span>
     <kinesis-container>
     <div class="pl-6 sm:pl-12 md:pl-16 mt-96">
@@ -103,7 +103,7 @@ div.slide-left p {
       <button @click="navigateWithFadeOut('/exhibitions#about')" 
               type="button"
               :style="{ opacity: buttonOpacity, transition: 'opacity 600ms ease-in' }"
-              class="z-20 mt-6 border border-white/60 px-2.5 py-2 text-white/60 hover:border/white hover:text-white bg-white/10">Explore Now</button>
+              class="z-20 mt-6 border border-ivory/60 px-2.5 py-2 text-ivory/60 hover:border/ivory hover:text-ivory bg-ivory/10">Explore Now</button>
     </div>
     </kinesis-container>
   </div>
