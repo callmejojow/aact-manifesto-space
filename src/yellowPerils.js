@@ -62,7 +62,7 @@ export const yellowPerils = {
     bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?" Author and Editor of Bitter Melanin',
     topic_name: "Yellow Peril",
     collection_title:'',
-    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "See more details by clicking the Link below.",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
@@ -133,7 +133,7 @@ export const yellowPerils = {
         'This season, we look to the written word for inspiration. We are lifting queer stories from the page and bringing you images inspired by our favourite stories."',
     topic_name: "Yellow Peril",
     collection_title: '',
-    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    quote_bg_url: require('@/assets/YellowPerils/Theysi/2ASuitableBoy.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "",
     directory: "/assets/YellowPerils/Theysi",
     artworks: {
@@ -259,7 +259,7 @@ export const yellowPerils = {
         'They are a recipient of numerous awards, including the BC Arts Council Scholarship and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship."',
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
-    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
     description: "",
     directory: "/assets/YellowPerils/Snack",
     artworks: {
@@ -343,7 +343,7 @@ export const yellowPerils = {
     bio: 'Julie Chǔ Níng Tián is a self-taught Chinese-Canadian artist based in tkaronto. Her works explore themes of memory, space, time, and connection. She sees the intricate details often present in her works as a way of conveying care and love to the subject and the recipient. Julie has worked with various local organizations on projects surrounding art and queer belonging. She works primarily with oils, mixed paint, graphite, pen and ink, and embroidery.',
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
-    quote_bg_url: require('@/assets/YellowPerils/Julie/JulieTian_1.jpg'),
+    quote_bg_url: require('@/assets/YellowPerils/Julie/JulieTian_3.jpg'),
     description: "",
     directory: "/assets/YellowPerils/Julie",
     artworks: {
