@@ -1,8 +1,30 @@
 <script setup>
 import NavDropdown from '@/components/NavDropdown.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+import coverMobile from '@/assets/cover2.png'
+import coverDesktop from '@/assets/cover1.png'
+
+const bgImage = ref(coverMobile)
+
+const updateBgImage = () => {
+      if (window.innerWidth >= 768) {
+        bgImage.value = coverDesktop
+      } else {
+        bgImage.value = coverMobile
+      }
+    }
+
+    onMounted(() => {
+      updateBgImage()
+      window.addEventListener('resize', updateBgImage)
+    })
+
+    onUnmounted(() => {
+      window.removeEventListener('resize', updateBgImage)
+    })
 </script>
 <template>
-  <main class="h-screen overflow-y-hidden bg-url bg-cover bg-left-top">
+  <main class="h-screen bg-cover bg-right-top" :style="`background-image: url(${bgImage});`">
     <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
       <a href="/">
        <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
@@ -13,9 +35,9 @@ import NavDropdown from '@/components/NavDropdown.vue'
       </div>
     </div>
   
-  <div class="flex flex-col justify-end items-start md:justify-start max-h-screen text-white/90 relative max-w-screen overflow-hidden ">
+  <div class="flex flex-col items-start justify-start text-white/90 max-w-screen">
     <span class="sr-only">Current Curation</span>
-    <div class="absolute px-8 md:px-16 mb-64 md:mb-0 mt-0 md:mt-96">
+    <div class="px-16 mt-96">
       <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide">The Bitten Peach</h1>
       <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4">
         Decolonizing Queer Asians
@@ -25,8 +47,3 @@ import NavDropdown from '@/components/NavDropdown.vue'
   </div>
   </main>
 </template>
-<style>
-.bg-url {
-    background-image: url('../assets/cover1.png');
-}
-</style>
