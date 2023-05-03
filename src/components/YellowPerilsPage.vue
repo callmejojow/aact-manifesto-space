@@ -3,6 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import AOS from "aos"
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
+import SmoothScroll from 'smooth-scroll'
 
 import { yellowPerils } from '@/yellowPerils.js';
 import {useScrollObserver} from '@/useScrollObserver.js'
@@ -22,6 +23,10 @@ onMounted(() => {
     const targetId = el.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
     startObserving(targetElement, index, onIntersection);
+  });
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    easing: 'easeInOutCubic',
   });
 });
 
@@ -46,7 +51,7 @@ watch(activeIndex, () => {
 
 </script>
 <template>
-    <div class="scroll-smooth font-open">
+    <div class="font-open">
         <div class="sticky top-0 z-20 bg-white">
             <div class="flex justify-center items-center py-4 px-4 md:px-0 border-b border-gray-200/80">
                 <a href="/">
@@ -70,16 +75,10 @@ watch(activeIndex, () => {
                 </a>
             </div>
             <nav ref="navbar" class="lg:hidden bg-white t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-                <a href="#about" 
-                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" 
-                   :class="{'font-bold': activeIndex == 0 }">
-                   About
+                <a href="#about" class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 0 }">
+                    About
                 </a>
-                <a v-for="(artist, index) in yellowPerilsArray" 
-                   :key="'nav_item_' + index" 
-                   :href="`#artist_${index}`" 
-                   class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm"
-                   :class="{ 'font-bold': activeIndex == index + 1 }">
+                <a v-for="(artist, index) in yellowPerilsArray" :key="'nav_item_' + index" :href="`#artist_${index}`" class="nav-item inline-block whitespace-nowrap text-gray-600 text-sm" :class="{ 'font-bold': activeIndex == index + 1 }">
                     {{artist.artist_name}}
                 </a>
             </nav>
@@ -102,8 +101,7 @@ watch(activeIndex, () => {
             </section>
         </kinesis-container>
         <!-- Introduction of the sub section -->
-        <section id="about" 
-                 class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
+        <section id="about" class="pt-36 relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6">
             <h2 class="text-3xl font-semibold my-4">About</h2>
             <p class="text-md lg:text-lg font-thin">
                 Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -117,10 +115,7 @@ watch(activeIndex, () => {
         </section>
         <div v-for="(artist,index) in yellowPerilsArray" :key="artist">
             <!-- Quote of the Topic -->
-            <section :id="`artist_${index}`" 
-                     class="bg-bitten snap-end h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" 
-                     :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}" 
-                     >
+            <section :id="`artist_${index}`" class="bg-bitten h-screen w-full h-80 lg:h-[48rem] w-screen bg-cover bg-scroll" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                 <div class="w-full h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out">
                     <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-delay="600">
                         {{artist.quote}}
@@ -131,7 +126,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Art pieces of a certain artist with his/her introduction -->
-            <div class="snap-end w-full tracking-wide leading-6">
+            <div class="w-full tracking-wide leading-6">
                 <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4">
                         <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
@@ -171,7 +166,7 @@ watch(activeIndex, () => {
                         </p>
                     </div>
                 </div>
-                <div v-if="artist.format == 'video'" class="min-h-screen snap-start p-6 md:p-8 lg:p-12">
+                <div v-if="artist.format == 'video'" class="min-h-screen p-6 md:p-8 lg:p-12">
                     <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                         <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
                     </div>
@@ -194,5 +189,4 @@ watch(activeIndex, () => {
 .banner3-url {
     background-image: url('../assets/curation-topic3.webp');
 }
-
 </style>
