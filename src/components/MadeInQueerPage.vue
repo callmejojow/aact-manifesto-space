@@ -9,8 +9,6 @@ import { useScrollObserver } from '@/useScrollObserver.js'
 
 import { ref, onMounted, computed, watch } from "vue"
 
-import AOS from "aos"
-
 /* eslint-disable no-unused-vars */
 const navItems = ref([]);
 const navbar = ref(null);
@@ -18,7 +16,6 @@ const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
 
 onMounted(() => {
-    AOS.init()
     navItems.value = document.querySelectorAll(".nav-item");
     navItems.value.forEach((el, index) => {
         const targetId = el.getAttribute("href").substring(1);
