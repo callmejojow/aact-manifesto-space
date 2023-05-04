@@ -52,8 +52,8 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open flex flex-col lg:grid lg:grid-cols-2 justify-end md:justify-start relative overflow-hidden h-full pt-4 md:pt-0 bg-ivory">
-            <div id="about" class="pt-36 lg:pt-0 col-span-1 justify-self-center self-center px-8 md:px-10 lg:px-16 lg:mb-10">
+        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-cente relative overflow-hidden h-full pt-4 md:pt-0 bg-ivory">
+            <div id="about" class="col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 lg:pt-12 lg:-mt-12 justify-self-center self-center px-4">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
@@ -72,25 +72,25 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-36 lg:pt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:w-auto lg:min-h-screen">
-                <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-1">
-                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+            <div id="sections" class="pt-36 -mt-36 lg:pt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:min-h-screen">
+                <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-1">
+                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/made_in_queer">
-                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">MADE IN QUEER</span>
+                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">MADE IN QUEER</span>
                         </a>
                     </div>
                 </div>
-                <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-2">
-                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+                <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-2">
+                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/body_politics">
-                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">BODY POLITICS</span>
+                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">BODY POLITICS</span>
                         </a>
                     </div>
                 </div>
-                <div class="transition-all ease-in ease-out duration-300 lg:shrink lg:hover:grow h-1/3 lg:h-screen bg-cover group bg-url-3">
-                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 transition-all ease-in ease-out duration-300">
+                <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-3">
+                    <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/yellow_perils">
-                            <span class="text-ivory text-4xl text-center font-thin transition-all ease-in ease-out duration-300 group-hover:opacity-100 opacity-0">YELLOW PERILS</span>
+                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">YELLOW PERILS</span>
                         </a>
                     </div>
                 </div>

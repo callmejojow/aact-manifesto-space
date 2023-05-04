@@ -94,25 +94,19 @@ watch(activeIndex, () => {
             <br class="lg:hidden">
         </div>
         <!-- Banner -->
-        <kinesis-container>
-            <section class="h-screen w-full bg-cover banner1-url">
-                <div class="w-full h-full flex flex-col items-start justify-center backdrop-brightness-50 pl-20 md:pl-14 sm:pl-10 pl-6">
-                    <kinesis-element :strength="50" transformOrigin="100% 500%" axis="x" type="depth">
-                        <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
-                            The Bitten Peach: Decolonizing Queer Asians
-                        </p>
-                    </kinesis-element>
-                    <kinesis-element :strength="50">
-                        <p class="z-20 text-ivory/90 font-bold text-4xl md:text-5xl lg:text-6xl text-ivory text-center">
-                            BODY POLITICS
-                        </p>
-                    </kinesis-element>
-                </div>
-            </section>
-        </kinesis-container>
+        <section class="h-screen w-full bg-cover banner1-url overflow-hidden">
+            <div class="backdrop-brightness-50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
+                    <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
+                        The Bitten Peach: Decolonizing Queer Asians
+                    </p>
+                    <p class="z-20 text-ivory/90 font-bold text-4xl md:text-5xl lg:text-6xl text-ivory text-center">
+                        BODY POLITICS
+                    </p>
+            </div>
+        </section>
         <!-- Introduction of the sub section -->
         <section id="about" 
-                 class="pt-36 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6 bg-ivory/50">
+                 class="pt-36 -mt-36 md:pt-24 md:-mt-24 lg:pt-12 lg:-mt-12 snap-end relative h-screen w-full lg:h-full p-20 md:p-14 sm:p-10 p-6 tracking-wide leading-6 bg-ivory/50">
             <h2 class="text-3xl font-semibold my-4">About</h2>
             <p class="text-md lg:text-lg font-thin">
                 Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
