@@ -65,6 +65,8 @@ div.slide-left p {
 }
 </style>
 <template>
+<!--  Todo: one of the potential culprits for the padding issue could be related to having header and footer both inside the main tag. -->
+<!--  Todo: check with Jolie re the rationale behind doing so and whether we can modify this to allow appropriate padding. -->
     <main class="overflow-hidden font-open min-h-screen bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
         <div class="min-h-screen bg-black/20 flex flex-col">
             <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">

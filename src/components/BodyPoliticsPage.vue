@@ -129,11 +129,11 @@ watch(activeIndex, () => {
                         <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
                             <div class="lg:w-3/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-                              <!--                              TODO: modified by WXY to render hyperlinks in description - check with Jolie -->
+<!--                              TODO: modified by WXY to render hyperlinks in description - check with Jolie -->
+<!--                              TODO: in mobile view, the artist bio would overlap with the next artist's quote. Checked if this is b/c of WXY's edit, but it seems like this may be an existing issue.-->
                               <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
 <!--                                <p class="lg:text-justify">-->
 <!--                                    <span style="white-space: pre-line;">{{artist.description}}</span>-->
-<!--&lt;!&ndash;                                    {{artist.description}}&ndash;&gt;-->
 <!--                                    <span v-if=" artist.format == 'mixed'">-->
 <!--                                        <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>-->
 <!--                                    </span>-->
