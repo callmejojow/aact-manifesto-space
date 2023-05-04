@@ -1,6 +1,6 @@
 <script setup>
-    import NavDropdown from '@/components/NavDropdown.vue'
-// import FooterComponent from '@/components/FooterComponent.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import { ref, onMounted } from 'vue'
 const buttonOpacity = ref(0);
 import bgImg from '@/assets/curation-topic1.webp'
@@ -88,4 +88,5 @@ div.slide-left p {
             </div>
         </div>
     </main>
+    <FooterComponent class="absolute bottom-12 inset-x-0"/>
 </template>
