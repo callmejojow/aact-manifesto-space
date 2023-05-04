@@ -52,15 +52,15 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-cente relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory px-4">
-            <div id="about" class="col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 lg:pt-0 md:-mt-0 justify-self-center self-center">
+        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-cente relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory pl-4">
+            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
                 <p class="text-xl my-10">
                     AACT MANIFESTO is pleased to present The Bitten Peach: Decolonizing Queer Asians, a group exhibition curated by Emily Gong and Shengyu Cai.
                 </p>
-                <div class="flex flex-col space-y-4 leading-6 pb-4">
+                <div class="flex flex-col space-y-4 leading-6 pb-4 pr-4 text-left">
                     <p class="font-thin">
                         Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
                     </p>
@@ -72,7 +72,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-36 -mt-36 lg:pt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:min-h-screen">
+            <div id="sections" class="pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:min-h-screen">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-1">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/made_in_queer">
