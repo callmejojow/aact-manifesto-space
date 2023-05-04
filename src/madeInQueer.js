@@ -26,7 +26,7 @@ export const madeInQueer = {
         "\n" +
         "Whether through their crafted objects or thought-provoking installations, Rising Lai's work invites viewers to explore the deeper complexities of human creations and the impact they have on society.\n" +
         "\n" +
-        "The accompanying video for this series can be viewed at https://www.youtube.com/watch?v=0i8i-kE3qH0",
+        "The accompanying video for this series can be viewed  <a href='https://www.youtube.com/watch?v=0i8i-kE3qH0'>here</a>.",
     directory: '/assets/MadeInQueer/Rising',
     artworks: {
       art1: {
@@ -524,7 +524,7 @@ export const madeInQueer = {
     collection_title: "You’re here, too",
     description: "You’re here, too is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
         "\n" +
-        "The accompanying video for this series can be viewed at: https://beaugomez.com/yht/wipvid001",
+        "The accompanying video for this series can be viewed <a href='https://beaugomez.com/yht/wipvid001'>here</a>.",
     directory: '/assets/MadeInQueer/Beau',
     artworks: {
       art1: {

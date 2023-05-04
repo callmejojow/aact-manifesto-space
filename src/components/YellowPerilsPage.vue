@@ -129,12 +129,14 @@ watch(activeIndex, () => {
                         <div class="h-screen mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
                             <div class="lg:w-3/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-                                <p class="lg:text-justify">
-                                    {{artist.description}}
-                                    <span v-if=" artist.format == 'mixed'">
-                                        <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>
-                                    </span>
-                                </p>
+                              <!--                              TODO: modified by WXY to render hyperlinks in description - check with Jolie -->
+                              <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
+<!--                                <p class="lg:text-justify">-->
+<!--                                    {{artist.description}}-->
+<!--                                    <span v-if=" artist.format == 'mixed'">-->
+<!--                                        <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>-->
+<!--                                    </span>-->
+<!--                                </p>-->
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>

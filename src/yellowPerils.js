@@ -69,7 +69,7 @@ export const yellowPerils = {
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "See more details by clicking the Link below." +  // todo add description
         "" +
-        "The accompanying video for makibaka (to struggle and to fight) can be viewed at https://youtu.be/t9qG14MSVPs",
+        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a href='https://youtu.be/t9qG14MSVPs'>here</a>.",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
       art4: {
