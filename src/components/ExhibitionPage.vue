@@ -52,7 +52,7 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-cente relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory pl-4">
+        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
             <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
