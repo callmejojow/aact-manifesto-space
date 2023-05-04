@@ -17,7 +17,11 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: require('@/assets/YellowPerils/Love/YellowPeril.jpg'),
-    description: "",
+    description: "This video installation employs the metaphor of the Chinese Five Elements to explore the discursive formation of queer Chinese diasporic identity from a non-Eurocentric/Western point of departure. In Traditional Chinese Medicine, the Five Elemental forces provide many applications to understanding daily life, identity, and relationships in addition to physical, mental, and emotional health. The elements help to approach and understand ways of “being” through principles of metaphysics and temporalities. We invoke these five elements in this installation as a conduit to understanding queer East Asian cultural formations, not as an intellectual delineation, but to interpret our own embodiment of queer Chinese, diasporic identities.\n" +
+        "\n" +
+        "We performed an ancestral veneration ceremony at Larwill Park in Vancouver, which was the gathering site of the anti-Oriental riots of 1907 to mark an image of the temporal relationship that the project Yellow Peril: Queer Destiny has amongst a history of anti-Asian racism in Canada.  Giving offerings to our ancestors, reflecting on histories of colonization, founded upon systemic racism, and recognizing that these formations of anti-Asian racism and yellow peril exist to uphold imperialism - and never really goes away. Drawing on Simeon Mann and Dylan Rodriguez, Anti-Asian racism emerges when there’s an insecurity around the capitalist mode of production predicated on the seizure and extraction of Indigenous lands, and that anti-Asian violence is a structure to sustain racial devices inherent in racial capitalism and settler colonialism.\n" +
+        "\n" +
+        "Race, temporality, ancestry, and relationships to land are themes that we grapple with in this project. A core part of our recent practice as queer Chinese artists is exploring the relationship between our identities as queer Asian artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize. We are particularly interested in the recent (re)emergence of Anti-Asian racism and community (and governmental) responses that lean towards identity based politics. We are interested in creating works that address systemic racism and colonization, and the roles that queer Chinese people play in undoing anti-Black and anti-Indigenous racism.",
     directory: "",
     artworks: {
       art1: {
@@ -41,7 +45,7 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: '', 
-    description: "",
+    description: "",  // todo add description
     directory: "",
     artworks: {
       art1: {
@@ -63,14 +67,16 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-    description: "See more details by clicking the Link below.",
+    description: "See more details by clicking the Link below." +  // todo add description
+        "" +
+        "The accompanying video for makibaka (to struggle and to fight) can be viewed at https://youtu.be/t9qG14MSVPs",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
-      art1: {
-        name: "barbed dreams",
+      art4: {
+        name: "malgré eux (despite them)",
         year: '',
         medium: "",
-        file_name: "barbed_dreams.jpg",
+        file_name: "despite_them.jpg",
       },
       art2: {
         name: "libération en fait (freedom actually _ release)",
@@ -84,11 +90,11 @@ export const yellowPerils = {
         medium: "",
         file_name: "to_struggle_and_to_fight.jpg",
       },
-      art4: {
-        name: "malgré eux (despite them)",
+      art1: {
+        name: "barbed dreams",
         year: '',
         medium: "",
-        file_name: "despite_them.jpg",
+        file_name: "barbed_dreams.jpg",
       },
       art5: {
         name: "thank you [i learned of my legacy and my ancestors through the harms made by yours]",
@@ -100,7 +106,7 @@ export const yellowPerils = {
     slides:[
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/barbed_dreams.jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/despite_them.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {
         image:require("@/assets/bg.svg"),
@@ -112,7 +118,7 @@ export const yellowPerils = {
       },
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/despite_them.jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/barbed_dreams.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {
         image:require("@/assets/bg.svg"),
@@ -133,11 +139,11 @@ export const yellowPerils = {
         'This season, we look to the written word for inspiration. We are lifting queer stories from the page and bringing you images inspired by our favourite stories."',
     topic_name: "Yellow Peril",
     collection_title: '',
-    quote_bg_url: require('@/assets/YellowPerils/Theysi/2ASuitableBoy.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    quote_bg_url: require('@/assets/YellowPerils/Theysi/6WhoWeAre.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "",
     directory: "/assets/YellowPerils/Theysi",
     artworks: {
-      art1: {  // todo: every image has a separate artist and a separate description... Check with teams to see how to handle this...
+      art1: {
         name: "Giovanni's Room by James Baldwin (1956)",
         year: '',
         medium: "",
@@ -212,7 +218,18 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: '',
     quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-    description: "",
+    description: "Swinging on a seesaw, by the little beach,\n" +
+        "In the midst of the verdant green space,\n" +
+        "I find my own piece of paradise,\n" +
+        "A sanctuary for my mind to embrace.\n" +
+        "Gazing out at the lush greenery,\n" +
+        "I yearn for a sense of inner peace,\n" +
+        "But it eludes me, like a fleeting dream,\n" +
+        "As I wander, searching for release.\n" +
+        "I seek solace in the mountains and forests,\n" +
+        "But perhaps it's just a false hope I chase,\n" +
+        "For anxiety clings to me like a shadow,\n" +
+        "As I navigate this uneasy society's maze.\n",
     directory: "",
     artworks: {
       art1: {
@@ -223,28 +240,30 @@ export const yellowPerils = {
       },
     },
   },
-  // artist6: {  // todo: missing materials - should we still include him????
-  //   idx: 18,  // for internal use
-  //   format: AllowedFormats.Video,
-  //   visible: true,
-  //   artist_name: "Anto Chan",
-  //   ins_handle: [],
-  //   quote: '',
-  //   bio: '',
-  //   topic_name: "Yellow Peril",
-  //   collection_title: '',
-  //   quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-  //   description: "",
-  //   directory: "",
-  //   artworks: {
-  //     art1: {
-  //       name: "",
-  //       year: '',
-  //       medium: "",
-  //       file_name: "",
-  //     },
-  //   },
-  // },
+  artist6: {  // todo: This is a spoken word and will feature a PDF file - check with Jolie re implementation - should i just take screen shots of the PDF and use the images?
+    idx: 18,  // for internal use
+    format: AllowedFormats.Text,
+    visible: true,
+    artist_name: "Anto Chan",
+    ins_handle: ["@antopunfu", "@antowrites"],
+    quote: '“The unfolding of self-discovery has been a lifetime of feeling as [if] I’m not enough. Consistently pleasing my family’s views on sacrifice and big picture living, left me disconnected from my reality and AUTHENTIC identity.”',
+    bio: 'Anto is a queer HK Chinese-Canadian spoken word performance artist, writer, facilitator, entrepreneur, producer & caregiver. He performed his one-person show "Love So Far” at the Montreal Fringe Festival in 2019. He was featured on Toronto Fringe Community Booster Storytelling, Bell Fibe Raconteur Storytelling & the CBC’s the National.  He currently co-curates and hosts the variety show "FreeFlow Showcase”, and his poetry chapbook Romantic Reflections was released in 2020. In 2022, he received a grant from the Canada Council of the Arts for his project InnerGenerational: Trauma & Healing, that he performed during May’s Asian Heritage Month, Guelph Fringe Festival and Mississauga Fringe Festival for a total of 12 shows. He is passionate about mentoring the next generation of artists to overcome personal obstacles, leading to sharing their stories authentically. His life’s work is to create and support meaningful art that centres around the journey of growth, self-love and healing intergenerational trauma. He is currently studying Expressive Art Therapy with Create Institute, running 2 groups with University of Toronto Mississauga and Keystone Psychology (for Asian-Canadian population).',
+    topic_name: "Yellow Peril",
+    collection_title: 'Anto’s Spoken Words',
+    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    description: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living, left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n" +
+        "\n" +
+        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
+    directory: "",
+    artworks: {
+      art1: {
+        name: "",
+        year: '',
+        medium: "",
+        file_name: "",
+      },
+    },
+  },
   artist7: {
     idx: 19,  // for internal use
     format: AllowedFormats.Image,
@@ -252,7 +271,7 @@ export const yellowPerils = {
     artist_name: "Snack Witch",
     ins_handle: [],
     quote: '“I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.”',
-    bio: '"🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +  // todo check if okay lots of emojis
+    bio: '"🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +
         '\n' +
         'They’re currently toiling over their MFA on stolen lands of the Kanien’kehá:ka at Concordia University.  A wicked #magicalgirl ✨ eating art + making snacks 🌈⁠, she has exhibited and curated shows across Turtle Island, colonially known as Canada, including Centre CLARK, Montréal; Latitude 53, Edmonton; Xpace Cultural Centre, Toronto; and Hotam Press Bookshop & Gallery, Vancouver; among other spaces and platforms. Their work has been published nationally and internationally.\n' +
         '\n' +
@@ -260,7 +279,18 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
     quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
-    description: "",
+    description:  // todo description too long?
+        "2033 Essex Rd, Williston, Vermont, USA, 05495 (2023 - ongoing) is inspired by a recent trip home to unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, Səl̓ílwətaʔ/Selilwitulh, colonially known as Vancouver, BC.\n" +
+        " \n" +
+        "On this trip, I observed that many small businesses installed new business signs and awnings directly over previous covers, layering new signs over the old ones without removing them. I see this as an act of interventionism: a queering of what has come before that conveys questionable practices of writing over the past. Perhaps it is a simple act of convenience on the part of business owners, but it demonstrates the enactment of a suspension in time that signifies how a singular space or parcel of land remains fixed to its physical location yet carries a multitude of meanings, purposes, and histories.\n" +
+        " \n" +
+        "With this in mind, I explore public signs as an active form of cross-generational communication, where signs inform and encourage viewers to participate and engage with their community while also becoming meaningful social stamps whose significance is shaped and derived by its audience. In this artwork, the restaurant awnings function in the way that printed matter “insist[s] on […] encounter[s]” by taking inspiration from Josh MacPhee who states that “[signs] gesture beyond the text on a page to a more-than, to publics to come. Banner making is a similar form of public/ation that is both community driven and a form of communication.”\n" +
+        "  \n" +
+        "Performing in parallel with Rebecca Solnit’s reflections on posters and artistic projects involving “public/ations”, my work acknowledges how temporal signs define and lay claim to physical spaces and inspire viewers to think of the past, present, and future not as a linear timeline but a continuous social project that is constantly being written. As stated by Stephanie Springgay in Feltness:\n" +
+        " \n" +
+        "The vitality of street posters [...] ‘when the walls wake up, they remind us of who we are, where we are . . .  that we are not alone, that others have gone before, and hope remains ahead’ (18). In an era of eroded public space, protest posters become ‘small gestures,’ [...] that keep alive the power of revolution and hope in the public sphere.\n" +
+        " \n" +
+        "What might initially be read as carelessness or laziness may actually be the complete opposite. Instead, the layering of signs could be an example of how one can care for those that came before, serving as a reminder that there will always be someone or something preceding or coming after. The question then becomes: How do we care for those who have yet to arrive while thanking the ones who paved desire lines for us to flourish in the various gestures we make everyday?\n",
     directory: "/assets/YellowPerils/Snack",
     artworks: {
       art1: {
@@ -394,7 +424,11 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: 'Mother’s Tongue',
     quote_bg_url: require('@/assets/YellowPerils/Michelle/mothers_tongue.jpg'),
-    description: "",
+    description: "Mother’s Tongue is a temporal sculpture and prose reflecting on the ever-changing nature of memory, identity, and tradition. Created in 2020 during a time of instability and discomfort, the tandem pieces explore finding solace in tradition, ritual, and food. This piece was originally conceived as a way to connect with my cultural ancestors but upon reevaluation, I recognize now I was also searching for connection with my queer ancestors. \n" +
+        "\n" +
+        "Mother’s Tongue is a manifestation of my discomfort with my queer identity. The sculpture consists of polymer clay dumplings encased in gelatine. The unstable fluid materiality of the gelatine captures my relationship to my queerness, meanwhile the encased clay dumplings are representative of my Asian identity. The two identities are frequently at odds with one another, existing in a state of suspension and tension. From the material tension of the sculpture to the underlying tension within my writing, both forms are trying to contain the multitudes of what is undefinable, capturing a moment in time and suspending it in space. \n" +
+        "\t\n" +
+        "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.",
     directory: "/assets/YellowPerils/Michelle",
     artworks: {
       art1: {

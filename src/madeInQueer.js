@@ -7,7 +7,7 @@ const AllowedFormats = {
 export const madeInQueer = {
   artist1:{
     idx: 1,  // for internal use
-    format: AllowedFormats.Image,  // for rendering  # TODO: ADD LINK TO VIDEO IN DESCRIPTION!!
+    format: AllowedFormats.Image,  // for rendering
     visible: true,
     artist_name: "Rising Lai",
     ins_handle: ["@loveintersectionsm", "@davidngstagram", "@jensungshine"],
@@ -20,14 +20,20 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg'),
     collection_title: "Crafting Desire: Queering",
-    description: "",
+    description: "As a designer and artist with a background in Industrial Design and a Master's in Fine Art & Design, Rising Lai (they/them) brings a unique global perspective to their art and design. Born and raised in Taiwan before relocating to Rotterdam, Rising is dedicated to exploring the stories and complexities of human creations, from industrial products to cultural artefacts.\n" +
+        "\n" +
+        "But there is more to Rising's art and design practice than meets the eye. Deeply rooted in their own experiences as a queer individual in society, Rising uses their work to challenge normative definitions of gender and create a world without discrimination. Through a framework and guide for researching material culture and demonstrating theoretical concepts through craft, Rising focuses on traditions, folk culture, and craftsmanship to invite viewers to consider the deeper meanings and significance behind the materials and artefacts that shape our world.\n" +
+        "\n" +
+        "Whether through their crafted objects or thought-provoking installations, Rising Lai's work invites viewers to explore the deeper complexities of human creations and the impact they have on society.\n" +
+        "\n" +
+        "The accompanying video for this series can be viewed at https://www.youtube.com/watch?v=0i8i-kE3qH0",
     directory: '/assets/MadeInQueer/Rising',
     artworks: {
       art1: {
-        name: "Foundation",
+        name: "Small Models",
         year: '',
         medium: "",
-        file_name: "Foundation.jpg",
+        file_name: "SmallModels.jpg",
       },
       art2: {
         name: "Full Piece Assembled",
@@ -36,31 +42,42 @@ export const madeInQueer = {
         file_name: "FullPieceAssembled.jpg",
       },
       art3: {
+        name: "Foundation",
+        year: '',
+        medium: "",
+        file_name: "Foundation.jpg",
+      },
+      art4: {
+        name: "Carving Set",
+        year: '',
+        medium: "",
+        file_name: "CarvingSet.jpg",
+      },
+      art5: {
         name: "Full Piece Open Framework",
         year: '',
         medium: "",
         file_name: "FullPieceOpenFramework.jpg",
       },
-      art4: {
-        name: "Small Models",
-        year: '',
-        medium: "",
-        file_name: "SmallModels.jpg",
-      },
     },
-    slides:[  // todo: not sure why this is not showing
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/Foundation.jpg")}" class="object-contain h-[48rem]"/>`,
+    slides:[
+      {image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/SmallModels.jpg")}" class="object-contain h-[48rem]"/>`,
       },
       {image:require("@/assets/bg.svg"),
         content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceAssembled.jpg")}" class="object-contain h-[48rem]"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/Foundation.jpg")}" class="object-contain h-[48rem]"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/SmallModels.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/CarvingSet.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg")}" class="object-contain h-[48rem]"/>`,
       },
     ],
   },
@@ -75,63 +92,63 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Gillian/group.jpg'),
     collection_title: "Joker: Wildcard",
-    description: "",
+    description: "This mini collection was created during my online artist residency with Brampton Arts Organization (formerly known as ACCIDA - Arts, Culture, & Creative Industry Development Agency). Joker: Wildcard, features seven garments accompanied with unique wheat pasted, cardboard masks. Each of the garments was created from thrifted materials including bedsheets and curtains. \n" +
+        "\n" +
+        "While conducting material research during this residency, I wanted to explore the bridges between queer theory and adorning the queer body. Using textiles as the medium to showcase my intersectional identities, I attempted to create a framework of understanding my perspective of what it meant to be a queer, Filipino artist and translate queer theory into material practice. \n" +
+        "\n" +
+        "I often feel ostracized from my familial and Catholic upbringing for being queer, but also not feeling queer enough in relation to the Eurocentric vision of exploding queerness. Finding myself in a dichotomy that does little to explain and showcase my own experiences, I used this series as a portal to explain wanting to explore gender and sexuality beyond the conventional standards of beauty. Each of these garments, although dull in color palette, is filled with character and personality. There is a connection between the horrors of feeling excluded and the humors of living authentically. In other words, there is a connection between all my identities and my understanding of queerness cannot be removed from my religious background, my familial values, and the love I have for each of my communities. It is difficult to explain my version of being queer without also addressing feelings of fear and joy in conjunction with each other.",
     directory: '/assets/MadeInQueer/Gillian',
     artworks: {
       art1: {
-        name: "Group",
-        year: '',
-        medium: "",
-        file_name: "group.jpg",
-      },
-      art2: {
         name: "Individual 1",
         year: '',
         medium: "",
         file_name: "1_2.jpg",
       },
-      art3: {
+      art2: {
         name: "Individual 2",
         year: '',
         medium: "",
         file_name: "2_2.jpg",
       },
-      art4: {
+      art3: {
         name: "Individual 3",
         year: '',
         medium: "",
         file_name: "3_3.jpg",
       },
-      art5: {
+      art4: {
         name: "Individual 4",
         year: '',
         medium: "",
         file_name: "4_2.jpg",
       },
-      art6: {
+      art5: {
         name: "Individual 5",
         year: '',
         medium: "",
         file_name: "5_2.jpg",
       },
-      art7: {
+      art6: {
         name: "Individual 6",
         year: '',
         medium: "",
         file_name: "6_2.jpg",
       },
-      art8: {
+      art7: {
         name: "Individual 7",
         year: '',
         medium: "",
         file_name: "7_2.jpg",
       },
+      art8: {
+        name: "Group",
+        year: '',
+        medium: "",
+        file_name: "group.jpg",
+      },
     },
     slides:[
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
       {
         image:require("@/assets/bg.svg"),
         content:`<img src="${require("@/assets/MadeInQueer/Gillian/1_2.jpg")}" class="object-contain h-[48rem]"/>`,
@@ -160,6 +177,10 @@ export const madeInQueer = {
         image:require("@/assets/bg.svg"),
         content:`<img src="${require("@/assets/MadeInQueer/Gillian/7_2.jpg")}" class="object-contain h-[48rem]"/>`,
       },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
     ],
   },
   artist3:{
@@ -173,7 +194,9 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Josh/CeremonialVessel.jpg'),
     collection_title: "Bronze Series",
-    description: "",
+    description: "When you see my work will you ever know if I was ever gay or tell I am Trinidadian Chinese from my work without reading my bio? Does it matter to me? I am telling myself this as I write this statement. For a queer Trinidadian Hakka Chinese like myself I have lived with ambiguity my whole life when I have been told “Oh I never knew there were Chinese from the Caribbean” or “Can you just become straight again?”, which has consistently challenged my identity. As an artist, I embrace this ambiguity in my work that confronts what it means to be queer, Hakka and Trinidadian, giving myself the space to reimagine how a queer Trinidadian Hakka Chinese body would look like. Having a fluid identity, inhabiting and flowing within the hyphens between cultures, through the construction of my memories, fantasy, and experiences within these various cultural identities.\n" +
+        "\n" +
+        "As an artist, I deconstruct these identities and choose what to emphasize or to hide which is the reflection of the struggles I had to endure within my own body. I use the transformative aspects of bronze casting and 3D printing to capture the shifting and mixing of cultures and identities in one body. I am making space for my body, family, ancestors, and the diaspora to become part of this ongoing process of identity production. I hope my work will bring joy and happiness to future queers from the diaspora and the wider Asian community.",
     directory: '/assets/MadeInQueer/Josh',
     artworks: {
       art1: {
@@ -268,7 +291,7 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Mia/Mia2.png'),
     collection_title: "Self Portraits",
-    description: "",
+    description: "",  // todo add description
     directory: '/assets/MadeInQueer/Mia',
     artworks: {
       art1: {
@@ -346,7 +369,7 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg'),
     collection_title: "",
-    description: "",
+    description: "",  // todo add description
     directory: '/assets/MadeInQueer/Marisa',
     artworks: {
       art1: {
@@ -451,11 +474,21 @@ export const madeInQueer = {
     artist_name: "Eric Chengyang",
     ins_handle: ["@monkeywearstie"],
     quote: '“By integrating storytelling with historical research and contemporary art, my practice explores the themes of symbiotic duality and paradox, such as the intersections and proximity between the East and the West.”',
-    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts, through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox, with a focus on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy. Aiming to build bridges through multidisciplinary art practices, Eric is also one-half of an artist duo called the Dawat Yan Project, co-founded with Mariam Magsi. (Pronouns: They/He)',
+    // bio: 'Eric Chengyang’s practice integrates storytelling with visual arts, through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox, with a focus on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy. Aiming to build bridges through multidisciplinary art practices, Eric is also one-half of an artist duo called the Dawat Yan Project, co-founded with Mariam Magsi. (Pronouns: They/He)',
+    bio: '',  // TODO note: the artist wishes not to share his bio for the exhibition
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Eric/ASplitPeach.jpg"),
     collection_title: "",
-    description: "",
+    description: "Fen-tao 分桃\n" +
+        "Literal: the divided peach | Euphemism: homosexuality\n" +
+        "\n" +
+        "异日，与君游于果园，食桃而甘，不尽，以其半啗君，君曰：爱我哉，忘其口味，以啗寡人。 及弥子色衰爱弛，得罪于君，君曰：是固尝矫驾吾车，又尝啗我以馀桃。—— 节选于《韩非子·说难篇》 \n" +
+        "\n" +
+        "\"... One day, Mizi Xia and the Duke Ling of Wei were visiting an orchard. When Mizi found a tasty peach, he took a few bites; then, he gave the remainder to the Duke. The Duke was touched by the gesture and said, ‘you adore me so much that you are willing to share this tasty experience with me.’\n" +
+        "​\n" +
+        "As both men aged, the Duke’s attraction toward Mizi diminished. On another day, when Mizi offended the Duke, the Duke responded, ‘this person has offended me several times. For example, he had used the royal chaise by forging my name and authority. Furthermore, he once offered me a leftover peach that he no longer desired’...” \n" +
+        "\n" +
+        "-- Excerpt taken from Shui Nan (the Difficulties of Persuasion) by Han, Feizi; Translated by Eric Chengyang",
     directory: '/assets/MadeInQueer/Eric',
     artworks: {
       art1: {
@@ -489,7 +522,9 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Beau/YoureHereToo2.jpg"),
     collection_title: "You’re here, too",
-    description: "",
+    description: "You’re here, too is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
+        "\n" +
+        "The accompanying video for this series can be viewed at: https://beaugomez.com/yht/wipvid001",
     directory: '/assets/MadeInQueer/Beau',
     artworks: {
       art1: {
@@ -541,7 +576,12 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: '',
     collection_title: "",
-    description: "",
+    description: "Between shape and shadow, there is the penumbra. In ambiguity, they ask…\n" +
+        "The penumbra questions three realms: the boundaries between binary sex; the queer desire; and the inevitable anthropocentric projection. Hermaphrodite clownfish turns from orange to brown, then black and white — a process of sexual maturity. It spends its entire life waiting for the moment it becomes female, the “queen”.\n" +
+        "\n" +
+        "Our work is penumbra to the world but umbra to our audiences, as they become the penumbra to ask us. We reflect on our anthropocentric projection of the queerness to the hermaphrodite clownfish, and also hope that the audiences will continue to ask…\n" +
+        "\n" +
+        "The Chinese instruments used in the soundtrack include Guqin, Xun and Erhu. They resonate with Zhuangzi, the classical Daoist text from which the tale Penumbra asks umbra originates.",
     directory: '',
     artworks: {
       art1: {

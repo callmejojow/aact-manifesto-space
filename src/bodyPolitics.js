@@ -17,7 +17,7 @@ export const bodyPolitics = {
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Imran/6_face_to_face.jpg'),
         collection_title: "Unsullied Souls",
-        description: "Through Safe Distance, Jamie compares the HIV pandemic in the 1980s with COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against queer community in society. She also highlights how queer Chinese individuals experience “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.",
+        description: "",  // todo: missing description
         directory: "/assets/BodyPolitics/Imran",
         artworks: {
             art1: {
@@ -134,7 +134,9 @@ export const bodyPolitics = {
         topic_name: "Body Politics",
         quote_bg_url: require("@/assets/BodyPolitics/Geoff/aPalaceForMyForefathers.jpg"),
         collection_title: "",
-        description: "TBC",
+        description: "The impacts of migration are multigenerational. It affects those we leave, those we bring, and those born long after resettlement. Through the action of displacement and in the subsequent retellings of the journey, families and communities begin to blur the lines between individual and collective experience, mixing together their memories of joy, challenge, and trauma. I’ve come to sit with the imperfection of my competing memories—nonlinear, atemporal thoughts that meander and meditate along the erratic threads of experience that connect me and my ancestors to the places we’ve inhabited.\n" +
+            "\n" +
+            "In my series, “Homecoming,” I was particularly interested in examining how memories are carried in our bodies and in the land, how they inform our ability to find belonging in new places, and how queer bodies complicate these processes. The works in this series are lens-based, abstract digital paintings which exposes the entanglement of my own memories and inherited ones. Yet time decays and transforms thoughts as we bear it from the past into the present. Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our behaviour, our physique, our Asian-ness, and our queerness. In creating these pieces, I wanted to honour the complexities of my family and my community’s past. Simultaneously, I wished to acknowledge my own identities which serve as the vessel for these fractured histories.\n",
         directory: "/assets/BodyPolitics/Geoff",
         artworks: {
             art1: {
@@ -202,7 +204,7 @@ export const bodyPolitics = {
         quote_bg_url: '',
         collection_title: "",
         directory: "",
-        description: "",
+        description: "Jeff is interested in exploring how Asian and queer, respectively and collectively — contest the genre of electronic dance music (e.g. house, techno, etc.) and the dancefloor. The history of dance music is undeniably racialized — roots of underground music of queer Black and Latino population in New York, Chicago, Detroit; and also de-racialized — the whitewashing and commodification of dance music since the late 90s. What more conversations does being a Queer Asian, specifically, bring to the conversation? What does that Queer Asian sound sound like on the dance floor? What does coalition sound like on the dancefloor and what conditions are we creating to reach that? Jeff accepted our invitation to write an essay, In an attempt to address these questions.",
         excert1: "Having been raised in Hong Kong for twenty-something years, I only learned about my Chineseness and Queerness when I moved to Canada four years ago. Growing up I was never asked the question Where are you from? Thinking back, there is a certain *thinginess* that comes with the migration process and spending the last few years in suburban Ontario. It all felt like a third puberty — learning how to swim again but this time in olive oil. Breathing at first was hard but as the old saying goes, you get used to it.",
         excert2: "The scholar Kathryn Bond Stockton writes about how queer child “grows sideways”,because queer life often defies the linear chronology of marriage and children. Stockton also describes children of color as growing sideways, since their youth is likewise outside the model of the enshrined white child. I have been thinking about how Queer Asian comes to their reckoning through a meandering fuckery of sideways and straightways and sideways. We are being told we fit in and that we can assimilate, yet we are different because of our queerness; we have been told that Asians in America have it good despite our realities tell us otherwise. Where is the Queer Asian heading?",
         artworks: {
@@ -226,7 +228,13 @@ export const bodyPolitics = {
         quote_bg_url: "",
         collection_title: "",
         directory: "",
-        description: "",
+        description: "As the artist and filmmaker of the experimental video \"Yang,\" I delved into the personal experiences and challenges faced by my dear friend Yang. Through a combination of montages and interviews, I aimed to capture the essence of Yang's reflections on his journey, intertwined with his deeply personal explorations of his life experiences.\n" +
+            "\n" +
+            "The left channel of the video presents a series of carefully curated montages, each with its distinct color pattern. These montages visually represent Yang's life, showcasing various aspects of his personal experiences in an abstract manner. As the colors shift and change, viewers are invited to join Yang on his journey of self-discovery and personal growth.\n" +
+            "\n" +
+            "The right channel of the video documents my intimate interview with Yang, using both a digital camera and VCR. Through this interview, Yang shares his personal perspective on the challenges of being both Chinese and gay, including the pressure to uphold the family lineage, show filial piety, and respect parental authority.\n" +
+            "\n" +
+            "Overall, \"Yang\" is a deeply personal and intimate work that offers a glimpse into the complex and often challenging experiences of those navigating the intersection of cultural identity and sexual orientation.\n",
         artworks: {
             art1: {
                 name: "Yang",
@@ -248,7 +256,7 @@ export const bodyPolitics = {
         quote_bg_url: require('@/assets/BodyPolitics/Sophie/04.jpg'),
         collection_title: "",
         directory: "/assets/BodyPolitics/Sophie",
-        description: "",
+        description: "",  // todo missing description
         artworks: {
             art1: {
                 name: "01",
@@ -317,7 +325,7 @@ export const bodyPolitics = {
         quote_bg_url: "",
         collection_title: "",
         directory: "", // no directory since it's a video on Youtube
-        description: "",
+        description: "Mirage Raft (The Dream Talking Oyster) interrogates my own diasporic experience and queer identities by emphasizing the hermaphroditic bodies of oysters and their habitational behaviors that respond to the tidal cycle and planetary rotations. Using an acoustic device, I compose the music through the texture of the oyster shell which has accompanied me through my diasporic journey for nearly 10 years. Every physical movement is captured in the musical score so that the visual and auditory composition is an imaginative representation of the oyster’s absent body. By residing my body inside the oyster shell, I reference the Chinese classical story of Chuang Chou’s Dreaming a Butterfly (庄周梦蝶) to consider if it was the oyster dreaming of me or if I was becoming the oyster, and in doing so I ultimately question the subjectivity of the diasporic experience and find a kinesthetic empathy that transforms the boundaries of the bodies.",
         artworks: {
             art1: {
                 name: "Mirage Raft (The Dream Talking Oyster)",
@@ -339,7 +347,9 @@ export const bodyPolitics = {
         quote_bg_url: "",
         collection_title: "",
         directory: "", // no directory since it's a video on Youtube
-        description: "",
+        description: "As an intimate auto-ethnographic, experimental visual poem and moving-portrait, xīn nī 廖芯妮 explores the ancestral and dance-technological embodiments when retracing familial relationships within intergenerational conversations. Bridging the gaps surrounding my Chinese given name and its Hakka translation, this linguistic divide is common in Western diaspora culture, and navigating these marginalized displacements through my contemporary dance practice has created space for healing. I often feel inside and outside of my Hakka culture, as I also question my understanding of queer culture and its intersectionalities. \n" +
+            "\n" +
+            "Am I Asian enough within the Hakka Asian diaspora? Am I queer enough within my own physical experience and externalization? These themes of decolonizing queerness resonate with how I exist within and challenge the queer Asian diaspora. The film’s physical bending of binaries, as a reactionary connection to ancestral stories and responsive gestural communication devices, lean into the queer self-love and self-curiosity. Queering diasporic culture allows me to exist intimately, experiment with the body sensorially, and investigate the phenomenological consciousness of my queer and cultural displacement. Holding space and appreciation for my elders’ storytelling supports the growing-web of my ancestral knowledge through physical listening exchanges with my family and in my community.",
         artworks: {
             art1: {
                 name: "xīn nī 廖芯妮 (understanding you)",
@@ -362,6 +372,7 @@ export const bodyPolitics = {
         quote_bg_url: require('@/assets/BodyPolitics/Makoto/YinYang.jpg'),
         collection_title: "",
         directory: "/assets/BodyPolitics/Makoto",
+        description: '',  // todo no description
         artworks: {
             art1: {
                 name: "Comets",
