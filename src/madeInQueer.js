@@ -47,12 +47,6 @@ export const madeInQueer = {
         medium: "",
         file_name: "SmallModels.jpg",
       },
-      art5: {
-        name: "Intro: Story Of Me And The Red Sleep Bed",
-        year: '',
-        medium: "",
-        file_name: "https://www.youtube.com/watch?v=0i8i-kE3qH0",
-      },
     },
     slides:[  // todo: not sure why this is not showing
       {
@@ -276,27 +270,68 @@ export const madeInQueer = {
     collection_title: "Self Portraits",
     description: "",
     directory: '/assets/MadeInQueer/Mia',
-    artworks: {  // TODO to be picked out by Sheng //Jo: I picked 2 as placeholder first
+    artworks: {
       art1: {
-        name: "Mia 1",
+        name: "Self Portrait 1",
         year: '',
         medium: "",
-        file_name: "Mia1.jpeg",
+        file_name: "MiaSelected1.jpg",
       },
       art2: {
-        name: "Mia 2",
+        name: "Self Portrait 2",
         year: '',
         medium: "",
-        file_name: "Mia2.png",
+        file_name: "MiaSelected2.jpg",
+      },
+      art3: {
+        name: "Self Portrait 3",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected3.jpg",
+      },
+      art4: {
+        name: "Self Portrait 4",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected4.jpg",
+      },
+      art5: {
+        name: "Self Portrait 5",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected5.jpg",
+      },
+      art6: {
+        name: "Self Portrait 6",
+        year: '',
+        medium: "",
+        file_name: "MiaSelected6.jpg",
       },
     },
     slides:[
       {
         image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/Mia1.jpeg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected1.jpg")}" class="object-contain h-[48rem]"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/Mia2.png")}" class="object-contain h-[48rem]"/>`,
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected4.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected5.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected6.jpg")}" class="object-contain h-[48rem]"/>`,
       },
     ],
   },
