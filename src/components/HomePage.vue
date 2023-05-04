@@ -78,13 +78,13 @@ div.slide-left p {
   <div class="slide-left flex flex-col items-start justify-start text-ivory/90 max-w-screen">
     <span class="sr-only">Current Curation</span>
     <div class="pl-6 sm:pl-12 md:pl-16 mt-96">
-      <p class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 100ms ease-in' }">The Bitten Peach</p>
-      <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4" :style="{ opacity: buttonOpacity, transition: 'opacity 400ms ease-in' }">
+      <p class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 0.1s ease-in' }">The Bitten Peach</p>
+      <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium my-4" :style="{ opacity: buttonOpacity, transition: 'opacity 0.3s ease-in' }">
         Decolonizing Queer Asians
       </p>
       <button @click="navigateWithFadeOut('/exhibitions#about')" 
               type="button"
-              :style="{ opacity: buttonOpacity, transition: 'opacity 600ms ease-in' }"
+              :style="{ opacity: buttonOpacity, transition: 'opacity 0.8s ease-in' }"
               class="z-20 mt-6 border border-ivory/60 px-2.5 py-2 text-ivory/60 hover:border/ivory hover:text-ivory bg-ivory/10">Explore Now</button>
     </div>
   </div>
