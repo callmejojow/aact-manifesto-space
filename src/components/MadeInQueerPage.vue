@@ -3,7 +3,6 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
-import SmoothScroll from 'smooth-scroll'
 
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
@@ -22,11 +21,6 @@ onMounted(() => {
         const targetId = el.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
         startObserving(targetElement, index, onIntersection);
-    });
-
-    const scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-        easing: 'easeInOutCubic',
     });
 });
 
@@ -49,8 +43,8 @@ watch(activeIndex, () => {
 });
 </script>
 <template>
-    <div class="scroll-smooth font-open">
-        <div class="snap-y snap-mandatory">
+    <div class="font-open">
+        <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky top-0 z-30 bg-ivory h-36 lg:h-28">
                 <div class="flex items-center justify-start lg:justify-center py-[1.1rem] px-4 border-b border-stone-200/80">
                     <a href="/">
@@ -84,7 +78,7 @@ watch(activeIndex, () => {
                 <br class="lg:hidden">
             </div>
             <!-- Banner -->
-            <section id="page_banner" class="-mt-36 lg:-mt-28 h-screen snap-always min-h-screen w-full bg-cover bg-top banner2-url overflow-hidden z-20">
+            <section id="page_banner" class="scroll-mt-36 snap-start h-screen min-h-screen w-full bg-cover bg-top banner2-url overflow-hidden z-20">
                 <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
                     <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -95,7 +89,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="scroll-pt-[8rem] pt-8 snap-always overflow-y-hidden inline-block relative h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
+            <section id="about" class="scroll-mt-36 -mb-2 min-h-full max-h-screen snap-start overflow-y-hidden inline-block relative h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
                 <h2 class="text-4xl font-semibold">About</h2>
                 <p class="text-md lg:text-lg font-thin">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -107,7 +101,7 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in madeInQueerArray" :key="artist" class="snap-always">
+            <div v-for="(artist,index) in madeInQueerArray" :key="artist" class="snap-start scroll-mt-36">
                 <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-screen w-screen bg-cover sticky-margin lg:sticky-margin-lg" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
@@ -132,14 +126,7 @@ watch(activeIndex, () => {
                                 <span class="font-semibold text-lg lg:text-2xl">
                                   {{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}
                                 </span>
-<!--                              TODO: modified by WXY to render hyperlinks in description - check with Jolie -->
                                 <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
-<!--                                <p class="lg:text-justify">-->
-<!--                                    {{artist.description}}   original-->
-<!--                                    <span v-if=" artist.format == 'mixed'">-->
-<!--                                        <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>-->
-<!--                                    </span>-->
-<!--                                </p>-->
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
@@ -165,7 +152,7 @@ watch(activeIndex, () => {
                             </p>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-always p-6 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
