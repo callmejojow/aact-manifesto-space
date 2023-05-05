@@ -1,5 +1,6 @@
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import SmoothScroll from 'smooth-scroll'
@@ -181,6 +182,7 @@ watch(activeIndex, () => {
             </div>
         </div>
     </div>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
 .banner3-url {
