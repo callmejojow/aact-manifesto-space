@@ -49,8 +49,8 @@ watch(activeIndex, () => {
 });
 </script>
 <template>
-    <div class="scroll-smooth font-open">
-        <div class="snap-y snap-mandatory">
+    <div class="font-open">
+        <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky top-0 z-30 bg-ivory h-36 lg:h-28">
                 <div class="flex items-center justify-start lg:justify-center py-[1.1rem] px-4 border-b border-stone-200/80">
                     <a href="/">
@@ -84,7 +84,7 @@ watch(activeIndex, () => {
                 <br class="lg:hidden">
             </div>
             <!-- Banner -->
-            <section id="page_banner" class="snap-start snap-always mb-4 lg:mb-12 h-screen w-full bg-cover banner1-url overflow-hidden z-20">
+            <section id="page_banner" class="scroll-mt-36 snap-start h-screen min-h-screen w-full bg-cover bg-top banner1-url overflow-hidden z-20">
                 <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
                     <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-36 -mt-36 -mb-6 snap-start snap-always overflow-y-hidden inline-block relative h-screen w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
+            <section id="about" class="scroll-mt-36 -mb-2 min-h-full max-h-screen snap-start overflow-y-hidden inline-block relative h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
                 <h2 class="text-4xl font-semibold">About</h2>
                 <p class="text-md lg:text-lg font-thin">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -107,10 +107,10 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in bodyPoliticsArray" :key="artist" class="snap-start snap-always">
+            <div v-for="(artist,index) in bodyPoliticsArray" :key="artist" class="scroll-mt-36 snap-start">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-screen w-screen bg-cover bg-scroll" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
-                    <div class="w-full h-screen flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
+                <section :id="`artist_${index}`" class="bg-bitten h-screen w-screen bg-cover sticky-margin lg:sticky-margin-lg" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                    <div class="h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-ivory/90">
                             {{artist.quote}}
                         </p>
@@ -121,24 +121,18 @@ watch(activeIndex, () => {
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
                 <div class="w-full tracking-wide leading-6 bg-ivory">
-                    <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen">
+                    <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen max-h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4">
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
                         </div>
                         <CarouselComponent :slides="artist.slides" />
-                        <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
-                            <div class="lg:w-3/4">
-                                <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-                              <!--                              TODO: modified by WXY to render hyperlinks in description - check with Jolie -->
-                              <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
-<!--                                <p class="lg:text-justify">-->
-<!--                                    <span style="white-space: pre-line;">{{artist.description}}</span>-->
-<!--&lt;!&ndash;                                    {{artist.description}}&ndash;&gt;-->
-<!--                                    <span v-if=" artist.format == 'mixed'">-->
-<!--                                        <a href="https://www.youtube.com/watch?v=t9qG14MSVPs" target="_blank" class="underline text-black hover:text-gray-900/70">See Video Here</a>-->
-<!--                                    </span>-->
-<!--                                </p>-->
+                        <div class="min-h-screen max-h-full mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
+                            <div class="lg:w-3/4 min-h-full">
+                                <span class="font-semibold text-lg lg:text-2xl">
+                                    {{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}
+                                </span>
+                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
@@ -164,7 +158,7 @@ watch(activeIndex, () => {
                             </p>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-start snap-always p-6 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
