@@ -88,5 +88,5 @@ div.slide-left p {
             </div>
         </div>
     </main>
-    <FooterComponent class="absolute bottom-12 inset-x-0"/>
+    <FooterComponent class="text-ivory/70 absolute bottom-12 inset-x-0"/>
 </template>

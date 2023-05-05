@@ -1,5 +1,6 @@
 <script setup>
 import NavDropdown from '@/components/NavDropdown.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import {useScrollObserver} from '@/useScrollObserver.js'
 import { ref,onMounted } from "vue"
 import SmoothScroll from 'smooth-scroll'
@@ -29,7 +30,7 @@ function onIntersection(entry, index) {
 
 </script>
 <template>
-    <div class="min-h-screen font-open">
+    <main class="min-h-screen font-open">
         <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full">
             <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
                 <a href="/">
@@ -96,7 +97,8 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
 .bg-url-1 {
