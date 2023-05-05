@@ -166,7 +166,7 @@ watch(activeIndex, () => {
                     </div>
                     <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-start snap-always p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
-                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-screen" allowfullscreen></iframe>
+                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
                         <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 h-screen">
                             <div class="lg:w-3/4">
