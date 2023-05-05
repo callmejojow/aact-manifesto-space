@@ -3,7 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
-import SmoothScroll from 'smooth-scroll'
+// import SmoothScroll from 'smooth-scroll'
 
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
@@ -24,10 +24,10 @@ onMounted(() => {
         startObserving(targetElement, index, onIntersection);
     });
 
-    const scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-        easing: 'easeInOutCubic',
-    });
+    // const scroll = new SmoothScroll('a[href*="#"]', {
+    //     speed: 800,
+    //     easing: 'easeInOutCubic',
+    // });
 });
 
 function onIntersection(entry, index) {
@@ -84,7 +84,7 @@ watch(activeIndex, () => {
                 <br class="lg:hidden">
             </div>
             <!-- Banner -->
-            <section id="page_banner" class="snap-start snap-always mb-4 lg:mb-12 h-screen w-full bg-cover banner2-url overflow-hidden z-20">
+            <section id="page_banner" class="-mt-36 lg:-mt-28 h-screen snap-always min-h-screen w-full bg-cover bg-top banner2-url overflow-hidden z-20">
                 <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
                     <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-36 -mt-36 -mb-6 snap-start snap-always overflow-y-hidden inline-block relative min-h-screen max-h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
+            <section id="about" class="sticky-margin lg:sticky-margin-lg pt-8 snap-always overflow-y-hidden inline-block relative min-h-screen max-h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
                 <h2 class="text-4xl font-semibold">About</h2>
                 <p class="text-md lg:text-lg font-thin">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -107,10 +107,10 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in madeInQueerArray" :key="artist" class="snap-start snap-always">
+            <div v-for="(artist,index) in madeInQueerArray" :key="artist" class="snap-always">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-screen w-screen bg-cover bg-scroll" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
-                    <div class="w-full h-screen flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
+                <section :id="`artist_${index}`" class="bg-bitten h-screen w-screen bg-cover sticky-margin lg:sticky-margin-lg" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                    <div class="h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-ivory/90">
                             {{artist.quote}}
                         </p>
@@ -127,8 +127,8 @@ watch(activeIndex, () => {
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
                         </div>
                         <CarouselComponent :slides="artist.slides" />
-                        <div class="h-screen mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
-                            <div class="lg:w-3/4">
+                        <div class="min-h-screen max-h-full mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
+                            <div class="lg:w-3/4 min-h-full">
                                 <span class="font-semibold text-lg lg:text-2xl">
                                   {{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}
                                 </span>
@@ -165,7 +165,7 @@ watch(activeIndex, () => {
                             </p>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-start snap-always p-6 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-always p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
@@ -187,6 +187,12 @@ watch(activeIndex, () => {
     <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
+.sticky-margin {
+    scroll-margin-top: 8rem;
+}
+.sticky-margin-lg {
+    scroll-margin-top: 7rem;
+}
 .banner2-url {
     background-image: url('../assets/curation-topic1.webp');
 }
