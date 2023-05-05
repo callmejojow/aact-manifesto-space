@@ -76,21 +76,21 @@ function onIntersection(entry, index) {
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-1">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/made_in_queer">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">MADE IN QUEER</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">MADE IN QUEER</span>
                         </a>
                     </div>
                 </div>
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-2">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/body_politics">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">BODY POLITICS</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">BODY POLITICS</span>
                         </a>
                     </div>
                 </div>
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-3">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/yellow_perils">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">YELLOW PERILS</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">YELLOW PERILS</span>
                         </a>
                     </div>
                 </div>
