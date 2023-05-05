@@ -54,10 +54,10 @@ function onIntersection(entry, index) {
         <!-- end of navigation -->
         <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
             <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center lg:px-4">
-                <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
-                <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
+                <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">The Bitten Peach:</h1>
+                <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
-                <p class="text-xl my-10">
+                <p class="text-xl tracking-wide my-10">
                     AACT MANIFESTO is pleased to present The Bitten Peach: Decolonizing Queer Asians, a group exhibition curated by Emily Gong and Shengyu Cai.
                 </p>
                 <div class="flex flex-col space-y-4 leading-6 pb-4 pr-4 text-left">
