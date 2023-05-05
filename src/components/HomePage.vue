@@ -1,5 +1,5 @@
 <script setup>
-    import NavDropdown from '@/components/NavDropdown.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { ref, onMounted } from 'vue'
 const buttonOpacity = ref(0);
@@ -65,10 +65,8 @@ div.slide-left p {
 }
 </style>
 <template>
-<!--  Todo: one of the potential culprits for the padding issue could be related to having header and footer both inside the main tag. -->
-<!--  Todo: check with Jolie re the rationale behind doing so and whether we can modify this to allow appropriate padding. -->
-    <main class="overflow-hidden font-open min-h-screen bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
-        <div class="min-h-screen bg-black/20 flex flex-col">
+    <main class="relative h-screen w-screen m-0 overflow-hidden font-open bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
+        <div class="h-screen bg-black/20 flex flex-col">
             <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
                 <a href="/">
                     <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
@@ -78,7 +76,7 @@ div.slide-left p {
                     <NavDropdown />
                 </div>
             </div>
-            <div class="overflow-hidden absolute inset-0 flex items-center justify-center text-ivory max-w-screen origin-center" :style="{ transform: 'translate(-15%, 10%)' }">
+            <div class="absolute inset-0 flex items-center justify-center text-ivory max-w-screen origin-center" :style="{ transform: 'translate(-15%, 10%)' }">
                 <span class="sr-only">Current Curation</span>
                 <div class="pl-12 md:pl-24 lg:pl-36">
                     <p class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 0.1s ease-in' }">The Bitten Peach</p>
@@ -89,8 +87,6 @@ div.slide-left p {
                 </div>
             </div>
         </div>
-        <div class="overflow-hidden absolute bottom-12 inset-x-0">
-            <FooterComponent />
-        </div>
     </main>
+    <FooterComponent class="text-ivory/70 absolute bottom-12 inset-x-0"/>
 </template>

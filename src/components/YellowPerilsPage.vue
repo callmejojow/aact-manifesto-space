@@ -1,5 +1,6 @@
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import SmoothScroll from 'smooth-scroll'
@@ -94,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-36 -mt-36 -mb-6 snap-start snap-always overflow-y-hidden inline-block relative h-screen w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
+            <section id="about" class="pt-36 -mt-36 -mb-6 snap-start snap-always overflow-y-hidden inline-block relative min-h-screen max-h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
                 <h2 class="text-4xl font-semibold">About</h2>
                 <p class="text-md lg:text-lg font-thin">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -120,7 +121,7 @@ watch(activeIndex, () => {
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
                 <div class="w-full tracking-wide leading-6 bg-ivory">
-                    <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen">
+                    <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen max-h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4">
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
@@ -144,7 +145,7 @@ watch(activeIndex, () => {
                             </div>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'text'" class="relative h-screen bg-black text-ivory lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 p-4 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'text'" class="relative min-h-screen max-h-full bg-black text-ivory lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 p-4 md:p-8 lg:p-12">
                         <div class="lg:w-3/4 flex flex-col">
                             <h3 v-for="art in artist.artworks" :key="art" class="font-semibold text-lg lg:text-2xl">{{art.name}}</h3>
                             <p class="lg:text-justify">
@@ -162,9 +163,9 @@ watch(activeIndex, () => {
                             </p>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'video'" class="min-h-screen snap-start snap-always p-6 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-start snap-always p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
-                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-screen" allowfullscreen></iframe>
+                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
                         <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 h-screen">
                             <div class="lg:w-3/4">
@@ -181,6 +182,7 @@ watch(activeIndex, () => {
             </div>
         </div>
     </div>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
 .banner3-url {

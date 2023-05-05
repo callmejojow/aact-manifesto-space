@@ -1,12 +1,12 @@
 <template>
-  <footer>
+  <footer class="m-0 overflow-x-hidden min-w-screen">
     <div class="flex flex-col md:flex-row items-start justify-start md:items-center md:justify-between" aria-label="Footer">
         <div class="w-full ml-4 md:ml-12">
             <ol role="list" class="flex items-center">
                 <li v-for="page in pages" :key="page.name">
                     <div class="flex items-center">
-                        <a :href="page.href" class="text-sm text-ivory/70 hover:text-ivory">{{ page.name }}</a>
-                        <p class="text-ivory/50 mx-2">/</p>
+                        <a :href="page.href" class="text-sm">{{ page.name }}</a>
+                        <p class="mx-2">/</p>
                     </div>
                 </li>
             </ol>
@@ -15,14 +15,14 @@
             <ol role="list" class="ml-4 md:ml-0 flex items-center justify-start md:justify-end">
                 <li v-for="media in medias" :key="media.name">
                     <div class="flex items-center">
-                        <a :href="media.href" class="text-sm text-ivory/70 hover:text-ivory">{{ media.name }}</a>
-                        <p class="text-ivory/50 mx-2">/</p>
+                        <a :href="media.href" class="text-sm">{{ media.name }}</a>
+                        <p class="mx-2">/</p>
                     </div>
                 </li>
             </ol>
         </div>
     </div>
-    <small class="text-ivory/50 text-xs ml-4 md:ml-12">© 2023 MANIFESTO SPACE. All rights reserved.</small>
+    <small class="text-xs ml-4 md:ml-12">© 2023 MANIFESTO SPACE. All rights reserved.</small>
   </footer>
 </template>
 

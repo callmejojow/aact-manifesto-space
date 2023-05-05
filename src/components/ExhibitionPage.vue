@@ -1,5 +1,6 @@
 <script setup>
 import NavDropdown from '@/components/NavDropdown.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import {useScrollObserver} from '@/useScrollObserver.js'
 import { ref,onMounted } from "vue"
 import SmoothScroll from 'smooth-scroll'
@@ -29,7 +30,7 @@ function onIntersection(entry, index) {
 
 </script>
 <template>
-    <div class="min-h-screen font-open">
+    <main class="min-h-screen font-open">
         <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full">
             <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
                 <a href="/">
@@ -53,11 +54,11 @@ function onIntersection(entry, index) {
         </div>
         <!-- end of navigation -->
         <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
-            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center">
-                <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left">The Bitten Peach:</h1>
-                <h1 class="text-3xl lg:text-4xl font-medium tracking-widest text-left mt-2">Decolonizing Queer Asians</h1>
+            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center lg:px-4">
+                <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">The Bitten Peach:</h1>
+                <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
-                <p class="text-xl my-10">
+                <p class="text-xl tracking-wide my-10">
                     AACT MANIFESTO is pleased to present The Bitten Peach: Decolonizing Queer Asians, a group exhibition curated by Emily Gong and Shengyu Cai.
                 </p>
                 <div class="flex flex-col space-y-4 leading-6 pb-4 pr-4 text-left">
@@ -76,27 +77,28 @@ function onIntersection(entry, index) {
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-1">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/made_in_queer">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">MADE IN QUEER</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">MADE IN QUEER</span>
                         </a>
                     </div>
                 </div>
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-2">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/body_politics">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">BODY POLITICS</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">BODY POLITICS</span>
                         </a>
                     </div>
                 </div>
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-3">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/yellow_perils">
-                            <span class="text-ivory text-4xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">YELLOW PERILS</span>
+                            <span class="text-ivory text-4xl lg:text-2xl text-center font-thin md:transition-all md:ease-in md:ease-out md:duration-300 md:group-hover:opacity-100 md:opacity-0 opacity-100">YELLOW PERILS</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
 .bg-url-1 {

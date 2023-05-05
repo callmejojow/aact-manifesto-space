@@ -1,5 +1,6 @@
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import SmoothScroll from 'smooth-scroll'
@@ -145,7 +146,7 @@ watch(activeIndex, () => {
                             </div>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'text'" class="relative h-screen bg-black text-ivory lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 p-4 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'text'" class="relative min-h-screen max-h-full bg-black text-ivory lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 p-4 md:p-8 lg:p-12">
                         <div class="lg:w-3/4 flex flex-col">
                             <h3 v-for="art in artist.artworks" :key="art" class="font-semibold text-lg lg:text-2xl">{{art.name}}</h3>
                             <p class="lg:text-justify">
@@ -163,11 +164,11 @@ watch(activeIndex, () => {
                             </p>
                         </div>
                     </div>
-                    <div v-if="artist.format == 'video'" class="min-h-screen snap-start snap-always p-6 md:p-8 lg:p-12">
+                    <div v-if="artist.format == 'video'" class="min-h-screen max-h-full snap-start snap-always p-6 md:p-8 lg:p-12">
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
-                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-screen" allowfullscreen></iframe>
+                            <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
-                        <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 h-screen">
+                        <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 min-h-screen max-h-full">
                             <div class="lg:w-3/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
                                 <p class="lg:text-justify">{{artist.description}}</p>
@@ -182,6 +183,7 @@ watch(activeIndex, () => {
             </div>
         </div>
     </div>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
 .banner1-url {
