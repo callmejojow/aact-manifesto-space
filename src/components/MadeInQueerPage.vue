@@ -3,7 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
-// import SmoothScroll from 'smooth-scroll'
+import SmoothScroll from 'smooth-scroll'
 
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
@@ -24,10 +24,10 @@ onMounted(() => {
         startObserving(targetElement, index, onIntersection);
     });
 
-    // const scroll = new SmoothScroll('a[href*="#"]', {
-    //     speed: 800,
-    //     easing: 'easeInOutCubic',
-    // });
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        easing: 'easeInOutCubic',
+    });
 });
 
 function onIntersection(entry, index) {
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="sticky-margin lg:sticky-margin-lg pt-8 snap-always overflow-y-hidden inline-block relative min-h-screen max-h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
+            <section id="about" class="scroll-pt-[8rem] pt-8 snap-always overflow-y-hidden inline-block relative h-full w-full px-20 md:px-14 sm:px-10 px-6 tracking-wide leading-6 bg-ivory">
                 <h2 class="text-4xl font-semibold">About</h2>
                 <p class="text-md lg:text-lg font-thin">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -187,12 +187,6 @@ watch(activeIndex, () => {
     <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
 </template>
 <style>
-.sticky-margin {
-    scroll-margin-top: 8rem;
-}
-.sticky-margin-lg {
-    scroll-margin-top: 7rem;
-}
 .banner2-url {
     background-image: url('../assets/curation-topic1.webp');
 }
