@@ -6,7 +6,7 @@ const AllowedFormats = {
 }
 
 export const bodyPolitics = {
-    artist1: {
+    artist3: {
         idx: 3, // for internal use
         format: AllowedFormats.Image, // for rendering
         visible: true,
@@ -127,7 +127,7 @@ export const bodyPolitics = {
             },
         ],
     },
-    artist2: {
+    artist9: {
         idx: 9,
         format: AllowedFormats.Image,
         visible: true,
@@ -196,7 +196,7 @@ export const bodyPolitics = {
             },
         ],
     },
-    artist3: {
+    artist11: {
         idx: 11,
         format: AllowedFormats.Text,
         visible: false, // set to false for now
@@ -220,7 +220,7 @@ export const bodyPolitics = {
             },
         },
     },
-    artist4: {
+    artist13: {
         idx: 13,
         format: AllowedFormats.Video,
         visible: false,
@@ -248,7 +248,7 @@ export const bodyPolitics = {
             },
         },
     },
-    artist5: {
+    artist14: {
         idx: 14,
         format: AllowedFormats.Image,
         visible: true,
@@ -328,7 +328,7 @@ export const bodyPolitics = {
             },
         ],
     },
-    artist6: {
+    artist17: {
         idx: 17,
         format: AllowedFormats.Video, // embedded video
         visible: true,
@@ -352,7 +352,7 @@ export const bodyPolitics = {
             }
         },
     },
-    artist7: {
+    artist23: {
         idx: 23,
         format: AllowedFormats.Video, // embedded video
         visible: true,
@@ -377,7 +377,7 @@ export const bodyPolitics = {
             }
         },
     },
-    artist8: {
+    artist24: {
         idx: 24,
         format: AllowedFormats.Image,
         visible: true,

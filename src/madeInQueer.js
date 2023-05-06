@@ -183,7 +183,7 @@ export const madeInQueer = {
       },
     ],
   },
-  artist3:{
+  artist5:{
     idx: 5,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
@@ -280,91 +280,7 @@ export const madeInQueer = {
       },
     ],
   },
-  artist4:{
-    idx: 8,  // for internal use
-    format: AllowedFormats.Image,
-    visible: true,
-    artist_name: "Mia Yaguchi-Chow",
-    ins_handle: ["@bitchfits"],
-    quote: '“I often feel like I don\'t fit into conventional Western communities of queerness [...] Not that I don\'t appreciate these communities -- I do, and I\'m grateful to be welcomed into the one\'s I\'m part of, but it\'s not how I often choose to instinctively express or engage with my queerness.”',
-    bio: 'My name is Mia and I\'m a non-binary Japanese/Chinese multifaceted creative, particularly focused in visual art, photography, illustration, graphic design, acting, and more. Currently, I am studying my Masters of Arts in Fashion at Toronto Metropolitan University, where I also received my Bachelors of Design in Fashion in 2021. Professionally, I work as a freelance/contract graphic designer and photographer and am an ACTRA member. Within both my professional and creative/personal work, I always aim to contribute to discourses that invite contemplation or critical reflection as this is a relationship I share with my own work. Art is a method of communication for me and I like to share these discussions with others and use it as a tool to get to know others, and if I can contribute to progressive change with it then that’s a bonus.',
-    topic_name: "Made in Queer",
-    quote_bg_url: require('@/assets/MadeInQueer/Mia/Mia2.png'),
-    collection_title: "Mia's Self Portraits",
-    description: "In reflection of how my work entangles with \"Decolonizing Asian Queerness,\" I acknowledge within myself that I still have much work to do inward decolonization. Being East-Asian and born in Toronto, although I may ethnically be Japanese and Chinese, I am culturally and nationally Canadian. I would categorize my identity and behaviour mostly in a Western sense drizzled and spiced with my ethnic identity and upbringing. I take much pride in my ethnic upbringing and identity, and despite my \"Canadianness,\" it still plays a big role in who I am and how I express myself.\n" +
-        "\n" +
-        "I often think about Asian queerness, especially in comparing Western Asian-Diasporic queerness with what the equivalent would be in Asia. As an artist and overall creative being, self-expression is inherent in everything I do. I've thought very critically about how I can be a walking representation of my people: I've gone through waves of dressing in my culture's clothing to express my cultural identity, while styling it to my tastes and adhering to my queerness. This naturally fluctuates as more elements of my identity become more pronounced on any given day, but that's just a testament to the multiplicity of what makes me, me! \n" +
-        "\n" +
-        "I started taking so many self-portraits as I felt there was a gap in how I wanted to be represented. Fortunately, I am already a photographer and have the basic equipment to photograph myself. So what had initially been a simple effort at expressing myself in my own photography to appease my own vision became a side-business offering (what I see as) queerified portrait services to others who wish to have quality, accessible portraits that show a side of them that cold corporate (and not queer) services can't offer.\n" +
-        "\n" +
-        "There is no one way to be Asian and queer and I'm happy to be able to express my ever-changing self and my evolutionary Asian-queerness through my self-portraiture and other creative works.",
-    directory: '/assets/MadeInQueer/Mia',
-    artworks: {
-      art1: {
-        name: "Self Portrait 1",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected1.jpg",
-      },
-      art2: {
-        name: "Self Portrait 2",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected2.jpg",
-      },
-      art3: {
-        name: "Self Portrait 3",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected3.jpg",
-      },
-      art4: {
-        name: "Self Portrait 4",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected4.jpg",
-      },
-      art5: {
-        name: "Self Portrait 5",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected5.jpg",
-      },
-      art6: {
-        name: "Self Portrait 6",
-        year: '',
-        medium: "",
-        file_name: "MiaSelected6.jpg",
-      },
-    },
-    slides:[
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected1.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected2.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected3.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected4.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected5.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected6.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-    ],
-  },
-  artist5:{
+  artist20:{
     idx: 20,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
@@ -480,7 +396,7 @@ export const madeInQueer = {
       },
     ],
   },
-  artist6:{
+  artist25:{
     idx: 25,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
@@ -518,7 +434,7 @@ export const madeInQueer = {
       },
     ],
   },
-  artist7:{
+  artist26:{
     idx: 26,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
@@ -571,7 +487,7 @@ export const madeInQueer = {
       },
     ],
   },
-  artist8:{
+  artist27:{
     idx: 27,  // for internal use
     format: AllowedFormats.Video,
     visible: true,
