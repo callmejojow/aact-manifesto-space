@@ -12,12 +12,16 @@ export const bodyPolitics = {
         visible: true,
         artist_name: "Imran Jatoi",
         ins_handle: ["@imranfaizjatoi"], // a list b/c some artists have multiple handles
-        quote: '“Queer people of colour who experience discrimination for being who they are, need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”',
-        bio: 'Imran Faizyab Jatoi is a Pakistani self-employed visual artist, creating 2d and 3d art forms and performances. His practice underlines queer ideologies with an emphasis on identity, orientation, faith and autobiographical allusions. He is postgraduate in Art & Design from Yasar University, Turkey and contributed to number of exhibitions. The involvement of his art practice is to educate and make awareness about queer issues center on an investigation of Identity, especially gender and sexuality, through multidisciplinary approaches. He will likely to make work that mechanism with closeness and empowers understanding, accepting, and basic discussions about queer identity, sexuality and contemporary societal movement.',
+        quote: '“Queer people of colour who experience discrimination for being who they are need to learn about their racial identities as well as how to intersect their gender and sexual orientation.”',
+        bio: 'Imran Faizyab Jatoi is a Pakistani self-employed visual artist who creates 2D and 3D art forms and performances. His practice underlines queer ideologies with an emphasis on identity, orientation, faith, and autobiographical allusions. He is a postgraduate in Art & Design from Yasar University, Turkey and has contributed to a number of exhibitions. The involvement of his art practice attempts to educate and raise awareness about queer issues centered on identity, gender, and sexuality through multidisciplinary approaches. He enjoys making works that celebrate closeness and facilitates understanding, acceptance, as well as fundamental discussions regarding queer identity, sexuality and current societal movements.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Imran/6_face_to_face.jpg'),
         collection_title: "Unsullied Souls",
-        description: "",  // todo: missing description
+        description: "Unsullied Souls explores the celebration of the soul and self identity. Inspired by South Asian metaphors of the lotus flower, the visual process of Unsullied Souls paints the path to enlightenment and captures the concept that celebration arises from suffering. How can we celebrate our inner identities when we don’t experience hardship? In South Asian culture, the floating lotus is a symbol of growth towards purity and enlightenment because even though its roots are in the muddiest water the flower rises above the surface to bloom immaculately. \n" +
+            "\n" +
+            "Abstractly, Unsullied Souls is also interrelated to the soulful identity of Khwaja Sira, a term used to refer to the third gender in Pakistan. Historically, Khwaja Sira’s were employed at elite households in Indian Subcontinent states during pre-colonial times and have a presence in both Hindu and Islamic traditions of South Asia. British Colonial rule ended the social, economic, cultural, and political bases that supported this community and the Khwaja Sira continue to be a site of social and power struggles in post-colonial Pakistan because they challenge conventional gender boundaries. In Pakistan, their community experiences suppression and a lack of recognition due to their non-conformity to traditional gender binaries. Khawaja Sira are constantly persecuted through marginalization and judgment as they are pushed away by the society as outsiders. \n" +
+            "\n" +
+            "This exhibition reveals the activism of decolonizing Khwaja Sira identities in a diverse and accepted way. The creative process involves the techniques of stamp printing, inking, and stenciling to illustrate the portraiture as well as the floral and substance elements in an intimate and fluid representation.",
         directory: "/assets/BodyPolitics/Imran",
         artworks: {
             art1: {
@@ -136,7 +140,7 @@ export const bodyPolitics = {
         collection_title: "",
         description: "The impacts of migration are multigenerational. It affects those we leave, those we bring, and those born long after resettlement. Through the action of displacement and in the subsequent retellings of the journey, families and communities begin to blur the lines between individual and collective experience, mixing together their memories of joy, challenge, and trauma. I’ve come to sit with the imperfection of my competing memories—nonlinear, atemporal thoughts that meander and meditate along the erratic threads of experience that connect me and my ancestors to the places we’ve inhabited.\n" +
             "\n" +
-            "In my series, “Homecoming,” I was particularly interested in examining how memories are carried in our bodies and in the land, how they inform our ability to find belonging in new places, and how queer bodies complicate these processes. The works in this series are lens-based, abstract digital paintings which exposes the entanglement of my own memories and inherited ones. Yet time decays and transforms thoughts as we bear it from the past into the present. Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our behaviour, our physique, our Asian-ness, and our queerness. In creating these pieces, I wanted to honour the complexities of my family and my community’s past. Simultaneously, I wished to acknowledge my own identities which serve as the vessel for these fractured histories.\n",
+            "In my series, “Homecoming,” I was particularly interested in examining how memories are carried in our bodies and in the land, how they inform our ability to find belonging in new places, and how queer bodies complicate these processes. The works in this series are lens-based abstract digital paintings that expose the entanglement of my own memories and inherited ones. Yet time decays and transforms thoughts as we bear it from the past into the present. Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our behaviour, our physique, our Asian-ness, and our queerness. In creating these pieces, I wanted to honour the complexities of my family and my community’s past. Simultaneously, I wished to acknowledge my own identities which serve as the vessel for these fractured histories.",
         directory: "/assets/BodyPolitics/Geoff",
         artworks: {
             art1: {
@@ -199,12 +203,12 @@ export const bodyPolitics = {
         artist_name: "Jeff Chow Jung Sing 重昇",
         ins_handle: ["@dun.a.way"],
         quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being a Queer Asian can contribute to the conversation."',
-        bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, designs and draw inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario pursuing education but left defeated in spite.",
+        bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, and designs, and draws inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario to pursue education but left defeated in spite.",
         topic_name: "Body Politics",
         quote_bg_url: '',
         collection_title: "",
         directory: "",
-        description: "Jeff is interested in exploring how Asian and queer, respectively and collectively — contest the genre of electronic dance music (e.g. house, techno, etc.) and the dancefloor. The history of dance music is undeniably racialized — roots of underground music of queer Black and Latino population in New York, Chicago, Detroit; and also de-racialized — the whitewashing and commodification of dance music since the late 90s. What more conversations does being a Queer Asian, specifically, bring to the conversation? What does that Queer Asian sound sound like on the dance floor? What does coalition sound like on the dancefloor and what conditions are we creating to reach that? Jeff accepted our invitation to write an essay, In an attempt to address these questions.",
+        description: "Jeff is interested in exploring how Asian and queer  —respectively and collectively — contest the genre of electronic dance music (e.g. house, techno, etc.) and the dance floor. The history of dance music is undeniably racialized with roots of underground music within queer Black and Latino populations in New York, Chicago, and Detroit; and also de-racialized through the the whitewashing and commodification of dance music since the late 90s. What more conversations does being a Queer Asian, specifically, bring to the conversation? What does that Queer Asian sound sound like on the dance floor? What does coalition sound like on the dancefloor and what conditions are we creating to reach that? Jeff accepted our invitation to write an essay, In an attempt to address these questions.",
         excert1: "Having been raised in Hong Kong for twenty-something years, I only learned about my Chineseness and Queerness when I moved to Canada four years ago. Growing up I was never asked the question Where are you from? Thinking back, there is a certain *thinginess* that comes with the migration process and spending the last few years in suburban Ontario. It all felt like a third puberty — learning how to swim again but this time in olive oil. Breathing at first was hard but as the old saying goes, you get used to it.",
         excert2: "The scholar Kathryn Bond Stockton writes about how queer child “grows sideways”,because queer life often defies the linear chronology of marriage and children. Stockton also describes children of color as growing sideways, since their youth is likewise outside the model of the enshrined white child. I have been thinking about how Queer Asian comes to their reckoning through a meandering fuckery of sideways and straightways and sideways. We are being told we fit in and that we can assimilate, yet we are different because of our queerness; we have been told that Asians in America have it good despite our realities tell us otherwise. Where is the Queer Asian heading?",
         artworks: {
@@ -234,7 +238,7 @@ export const bodyPolitics = {
             "\n" +
             "The right channel of the video documents my intimate interview with Yang, using both a digital camera and VCR. Through this interview, Yang shares his personal perspective on the challenges of being both Chinese and gay, including the pressure to uphold the family lineage, show filial piety, and respect parental authority.\n" +
             "\n" +
-            "Overall, \"Yang\" is a deeply personal and intimate work that offers a glimpse into the complex and often challenging experiences of those navigating the intersection of cultural identity and sexual orientation.\n",
+            "\"Yang\" is a deeply personal and intimate work that offers a glimpse into the complex and often challenging experiences of those navigating the intersection of cultural identity and sexual orientation.",
         artworks: {
             art1: {
                 name: "Yang",
@@ -251,39 +255,52 @@ export const bodyPolitics = {
         ins_handle: ["@dj.esl"],
         artist_name: "Sophie Stiquée",
         quote: '“As an Asian African who grew up in Mauritius and later immigrated to Toronto… I have experienced the challenges and complexities of balancing these two distinct parts of my identity.”',
-        bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences. In June 2023, Sophie will showcase her work at an art exhibition organized by the City of Toronto, exploring the universe of drag and the intersectionality of being queer and Mauritian through a series of portraits of queer Mauritians. With a passion for creativity and a drive to make an impact, Sophie is poised for continued success in the world of music and art.',
+        bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Sophie/04.jpg'),
         collection_title: "",
         directory: "/assets/BodyPolitics/Sophie",
-        description: "",  // todo missing description
+        description: "Sophie Stiquée (credit: Ryan Tremblay)\n" +
+            "This photograph captures a bold and impactful representation of Sophie Stiquée's identity as a queer Asian African immigrant of color in the midst of the COVID-19 pandemic. By transforming COVID-19 masks into a striking outfit, Sophie sends a powerful message of resistance and empowerment in the face of xenophobia and discrimination.\n" +
+            '\n' +
+            "Sophie Stiquée at Pride Québec\n" +
+            "As a Francophone queer immigrant of color, Sophie Stiquée's performance at Pride Québec represents a powerful moment of visibility and representation for individuals who share similar identities and experiences. The photograph, taken during Pride Month at Place d'Youville (an iconic Quebecois landmark and blocks away from Quebec City's gay village), captures the joy and celebration of this euphoric moment. \n" +
+            '\n' +
+            "Sophie Stiquée at Buddies in Bad Times Theatre\n" +
+            "After an electrifying performance to the beats of house music legend Adeva, Sophie Stiquée is seen greeting their chosen family and friends who have come to support them at Lady 5 in the Hold drag pageant. This iconic event takes place at Buddies in Bad Times Theatre, the oldest 2SLGBTQIA+ theatre in Toronto's village and represents a profound moment of community, love, and celebration. Let this photograph serve as a reminder of the importance of chosen family, community, and representation in creating a more just and equitable world for all.\n" +
+            '\n' +
+            "Sophie Stiquée at Toronto Pride\n" +
+            "This photograph, taken by Ryan Tremblay during Toronto Pride, captures a historic moment in which Sophie Stiquée becomes the first Asian-African drag DJ to perform on the international stage.\n" +
+            '\n' +
+            "Sophie Stiquée with her chosen family (credits: Brock Tremblay)\n" +
+            "This photograph documents a powerful moment of community and celebration within Toronto's 2SLGBTQIA+ community. Moments after the It's All Queer Cycle Show, a showcase of queer drag and burlesque artists of color hosted by Sophie's drag mentor and mom, Tygr Willy, the photograph depicts Sophie surrounded by her drag siblings - Sebastian Urmom, Delirios, and Cyanide. This photograph is significant as it showcases the importance of chosen family and community within queer culture. The presence of Tygr Willy, an Asian-indigenous non-binary drag and burlesque artist, as Sophie's drag mentor/mom, highlights the intergenerational and intersectional nature of queer culture and the power of mentorship and support within marginalized communities.",
         artworks: {
             art1: {
-                name: "01",
+                name: "Sophie Stiquée (credit: Ryan Tremblay)",
                 year: "",
                 medium: "Photography",
                 file_name: "01.jpg",
             },
             art2: {
-                name: "02",
+                name: "Sophie Stiquée at Pride Québec\n",
                 year: "",
                 medium: "Photography",
                 file_name: "02.jpg",
             },
             art3: {
-                name: "03",
+                name: "Sophie Stiquée at Buddies in Bad Times Theatre",
                 year: "",
                 medium: "Photography",
                 file_name: "03.jpg",
             },
             art4: {
-                name: "04",
+                name: "Sophie Stiquée at Toronto Pride",
                 year: "",
                 medium: "Photography",
                 file_name: "04.jpg",
             },
             art5: {
-                name: "05",
+                name: "Sophie Stiquée with her chosen family (credits: Brock Tremblay)",
                 year: "",
                 medium: "Photography",
                 file_name: "05.jpg",
@@ -317,10 +334,10 @@ export const bodyPolitics = {
         visible: true,
         ins_handle: ["@sherlchen"],
         artist_name: "Sidi Chen",
-        quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an archive of the distances and relations... ”',
-        bio: '"Sidi Chen is a queer artist in diaspora whose interdisciplinary performance-based practice interrogates the entangled relations held within the collective bodies that are communal, ecological, and planetary. Through his practice, Chen explores subjects of queer diaspora, intergenerational migration, social and environmental shifting to understand and cultivate an Earthly empathy. \n' +
+        quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an archive of the distances and relations...”',
+        bio: 'Sidi Chen is a queer artist in diaspora whose interdisciplinary performance-based practice interrogates the entangled relations held within the collective bodies that are communal, ecological, and planetary. Through his practice, Chen explores subjects of queer diaspora, intergenerational migration, social and environmental shifting to understand and cultivate an Earthly empathy. \n' +
             '\n' +
-            'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC."',
+            'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC.',
         topic_name: "Body Politics",
         quote_bg_url: "",
         collection_title: "",
@@ -331,7 +348,7 @@ export const bodyPolitics = {
                 name: "Mirage Raft (The Dream Talking Oyster)",
                 year: "",
                 medium: "Digital Video",
-                file_name: "https://www.youtube.com/embed/ASOwIWN4Kvs", // TODO: not sure if substituting the video link here is the right way to do it, but there are artists who have multiple videos
+                file_name: "https://www.youtube.com/embed/ASOwIWN4Kvs",
             }
         },
     },
@@ -341,8 +358,8 @@ export const bodyPolitics = {
         visible: true,
         artist_name: "Jasmine Liaw",
         ins_handle: ["@jasmineliaw_"],
-        quote: '“Am I Asian enough within the Hakka Asain diaspora? Am I queer enough within my own physical experience and externalization?”',
-        bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy,  and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
+        quote: '“Am I Asian enough within the Hakka Asian diaspora? Am I queer enough within my own physical experience and externalization?”\n',
+        bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy, and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
         topic_name: "Body Politics",
         quote_bg_url: "",
         collection_title: "",
@@ -366,13 +383,17 @@ export const bodyPolitics = {
         visible: true,
         artist_name: "Makoto Chi",
         ins_handle: ["@makoto.chi", "@ma__ko__to___"],
-        quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries.”',
-        bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western massachusetts. He is cultivating slow practices, and making art addressing sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
+        quote: '"As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries."',
+        bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as Vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western Massachusetts. He is cultivating slow practices and making art that addresses sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Makoto/YinYang.jpg'),
         collection_title: "",
         directory: "/assets/BodyPolitics/Makoto",
-        description: '',  // todo no description
+        description: 'There is an essay by Kai Cheng Thom wherein she states that performing funerary traditions as the eldest “son” did not undo her gender or femininity, because by inhabiting the rites of her ancestors she is showing up fully and honestly. That holding of many truths and contradictions in a culture that loves rigid binaries is where I situate myself -sometimes in comfort, sometimes not - as a mixed-race, transgender queer person. Ideas around ‘Eastern’ or ‘Western’ ways we must show up in the world have, at times, felt like toys, like shelter, and sometimes like cudgels. It is a beautiful space to inhabit, and it is also quite lonely, and I see that loneliness in my communities. Relatedly, the eurocentric lens deftly severs our sense of lineages, spiritualities and relationships with the land. Much of my art is in practicing a type of grief over my own busted connections to the peoples and lands of my predecessors, with the lands I have been born on — and reaching out to find others like me, carving pathways towards ourselves and each other.\n' +
+            '\n' +
+            'My newer work is the result of ruminating about blood lineage, frayed thoughts about my family and non-blood community, and trying to find ritual acknowledgement of my connection to these relationships. What does it mean to be inherently connected with one’s ancestry? How can this relationship be reconciled when it is likely that my predecessors colonized the ancestors of my loved ones? How do we metabolize that shame? When I am with my comrades, what should I do with these conflicting feelings that we must hold each other close to survive while and at times have extraordinarily hostile conflicts that result in and come from multi-generational traumas? I\'m thinking a lot about the pureness of anger too: anger that has no place to go, that is passed from parent to child, lover to friend, and is absorbed into the collective miasma. Unseen and unaffirmed, the anger turns inward to our spirits and seeps from our mouths and fingertips to touch the people that we want to care for. I\'ve been finding peace by filling the picture space with multiple figures either in combat and/or intimacy. Some of my most cherished relationships and deepest betrayals have been with people who look like me, so I work through that on the canvas or the page. \n' +
+            '\n' +
+            'To some of us diaspora, the homelands of shared identity can feel like a clear pool of water in a desert. Often it is, and sometimes it is a mirage. One of the traps of colonial thinking is to assume that finding a space populated by people like us will end a type of diasporic loneliness intrinsic to having fragmented and complex identities. I don’t believe a place of perfect mirrors of ourselves and healing exists, and I feel my heart reaching for it, while also resisting assimilation. The figures in my work echo this tension, and are in a cycle of looking for community, losing community, being in conflict and mending all in the same picture frame. I use masks and chimeric elements to indicate a sense of sameness and the grace needed to connect across grave differences. In my art I also think a lot about queer (white) culture in the colonized West and how inescapable it has been to my own sense of self, in particular how I conceive of my sexuality and desire. In my work I try to stare the Eurocentric gaze directly instead of avoiding it, because it is a part of me, and I don’t think it can be cleaved off without losing important parts of myself: like any trauma it is something to grow around instead of bury. The sexuality in my art takes the orientalist gaze and twists its form into something self-made, hedonistic, gay and proudly monstrous.',
         artworks: {
             art1: {
                 name: "Comets",
