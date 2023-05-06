@@ -53,8 +53,8 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
-            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 md:pt-24 md:-mt-24 justify-self-center self-center lg:px-4">
+        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center lg:items-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
+            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 justify-self-center lg:self-end lg:px-4">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
@@ -73,7 +73,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-screen lg:min-h-screen">
+            <div id="sections" class="pb-4 lg:pb-0 pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-[calc(100vh-36px)] lg:min-h-screen">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 lg:h-screen bg-cover group bg-url-1">
                     <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                         <a href="/exhibitions/made_in_queer">
