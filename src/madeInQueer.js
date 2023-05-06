@@ -290,7 +290,7 @@ export const madeInQueer = {
     bio: 'My name is Mia and I\'m a non-binary Japanese/Chinese multifaceted creative, particularly focused in visual art, photography, illustration, graphic design, acting, and more. Currently, I am studying my Masters of Arts in Fashion at Toronto Metropolitan University, where I also received my Bachelors of Design in Fashion in 2021. Professionally, I work as a freelance/contract graphic designer and photographer and am an ACTRA member. Within both my professional and creative/personal work, I always aim to contribute to discourses that invite contemplation or critical reflection as this is a relationship I share with my own work. Art is a method of communication for me and I like to share these discussions with others and use it as a tool to get to know others, and if I can contribute to progressive change with it then that’s a bonus.',
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Mia/Mia2.png'),
-    collection_title: "Self Portraits",
+    collection_title: "Mia's Self Portraits",
     description: "In reflection of how my work entangles with \"Decolonizing Asian Queerness,\" I acknowledge within myself that I still have much work to do inward decolonization. Being East-Asian and born in Toronto, although I may ethnically be Japanese and Chinese, I am culturally and nationally Canadian. I would categorize my identity and behaviour mostly in a Western sense drizzled and spiced with my ethnic identity and upbringing. I take much pride in my ethnic upbringing and identity, and despite my \"Canadianness,\" it still plays a big role in who I am and how I express myself.\n" +
         "\n" +
         "I often think about Asian queerness, especially in comparing Western Asian-Diasporic queerness with what the equivalent would be in Asia. As an artist and overall creative being, self-expression is inherent in everything I do. I've thought very critically about how I can be a walking representation of my people: I've gone through waves of dressing in my culture's clothing to express my cultural identity, while styling it to my tastes and adhering to my queerness. This naturally fluctuates as more elements of my identity become more pronounced on any given day, but that's just a testament to the multiplicity of what makes me, me! \n" +
@@ -486,9 +486,9 @@ export const madeInQueer = {
     visible: true,
     artist_name: "Eric Chengyang",
     ins_handle: ["@monkeywearstie"],
-    quote: '“ By integrating storytelling with historical research and contemporary art, my practice explores the themes of symbiotic duality and paradox, such as the intersections and proximity between the East and the West.”',
-    // bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox with a focus on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy. Aiming to build bridges through multidisciplinary art practices, Eric is also one-half of an artist duo called the Dawat Yan Project, co-founded with Mariam Magsi. (Pronouns: They/He)',
-    bio: '',  // TODO note: the artist wishes not to share his bio for the exhibition
+    quote: '“By integrating storytelling with historical research and contemporary art, my practice explores the themes of symbiotic duality and paradox, such as the intersections and proximity between the East and the West.”',
+    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox with a focus on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy. Aiming to build bridges through multidisciplinary art practices, Eric is also one-half of an artist duo called the Dawat Yan Project, co-founded with Mariam Magsi. (Pronouns: They/He)',
+    // bio: '',  // TODO note: the artist wishes not to share his bio for the exhibition
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Eric/ASplitPeach.jpg"),
     collection_title: "",
@@ -584,7 +584,7 @@ export const madeInQueer = {
         '\n' +
         'Ling Tang: Sociology as art and vice versa. Dr. Ling Tang is an artist academic whose art media range from academic writing, creative writing to music, photography, and film. She obtained her D.Phil. at University of Oxford and is now based at Hong Kong Baptist University. Their songs can be found on music streaming platforms (e.g. Spotify and 网易云) with the name Lyn Dawn or 唐凌.',
     topic_name: "Made in Queer",
-    quote_bg_url: '',
+    quote_bg_url: require("@/assets/MadeInQueer/YichenLing/PenumbraAsksUmbraCover.jpg"),
     collection_title: "",
     description: "Penumbra asks umbra：I am a fish (罔两问景：我是一只鱼）\n" +
         "2020\n" +

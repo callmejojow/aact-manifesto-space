@@ -137,7 +137,7 @@ export const bodyPolitics = {
         bio: 'Geoffrey Lok-Fay Cheung is a visual artist interested in the themes of tension, conflict, and harmony as they relate to identity, community, and cultural inheritance. His practice is heavily informed by his own lived experiences growing up in Vancouver as a queer first-generation Canadian of Chinese descent. In his current investigations, Cheung explores connection with land and memory as it relates to the immigrant experience. For the better part of the past two decades, Cheung lived and worked out East, most recently in Toronto, as a Medical Animator and Illustrator. He previously received a Master of Science in Biomedical Communications and Bachelor of Science in Life Science. He returned to live in Vancouver for the MFA program at Emily Carr University which is on the unceded territories of the Coast Salish peoples, including the Musqueam, Squamish and Tsleil-Waututh nations.',
         topic_name: "Body Politics",
         quote_bg_url: require("@/assets/BodyPolitics/Geoff/aPalaceForMyForefathers.jpg"),
-        collection_title: "",
+        collection_title: "Homecoming",
         description: "The impacts of migration are multigenerational. It affects those we leave, those we bring, and those born long after resettlement. Through the action of displacement and in the subsequent retellings of the journey, families and communities begin to blur the lines between individual and collective experience, mixing together their memories of joy, challenge, and trauma. I’ve come to sit with the imperfection of my competing memories—nonlinear, atemporal thoughts that meander and meditate along the erratic threads of experience that connect me and my ancestors to the places we’ve inhabited.\n" +
             "\n" +
             "In my series, “Homecoming,” I was particularly interested in examining how memories are carried in our bodies and in the land, how they inform our ability to find belonging in new places, and how queer bodies complicate these processes. The works in this series are lens-based abstract digital paintings that expose the entanglement of my own memories and inherited ones. Yet time decays and transforms thoughts as we bear it from the past into the present. Our bodies are the substrate for memory’s longevity even as it changes and adapts to our form—our behaviour, our physique, our Asian-ness, and our queerness. In creating these pieces, I wanted to honour the complexities of my family and my community’s past. Simultaneously, I wished to acknowledge my own identities which serve as the vessel for these fractured histories.",
@@ -202,11 +202,11 @@ export const bodyPolitics = {
         visible: false, // set to false for now
         artist_name: "Jeff Chow Jung Sing 重昇",
         ins_handle: ["@dun.a.way"],
-        quote: '"How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being a Queer Asian can contribute to the conversation."',
+        quote: '“How dance music\'s history is shaped by race and de-racialization, and what additional perspectives being a Queer Asian can contribute to the conversation.”',
         bio: "Arts admin by day and deep house DJ by night, Jeff Chow is a creative gatherer that works between the mediums of DJ-ing, writing, teaching, and designs, and draws inspiration from his queer, migrant, working class experience. Originally from Hong Kong, Jeff moved to Hamilton, Ontario to pursue education but left defeated in spite.",
         topic_name: "Body Politics",
         quote_bg_url: '',
-        collection_title: "",
+        collection_title: "Queer Asians on the Dancefloor",
         directory: "",
         description: "Jeff is interested in exploring how Asian and queer  —respectively and collectively — contest the genre of electronic dance music (e.g. house, techno, etc.) and the dance floor. The history of dance music is undeniably racialized with roots of underground music within queer Black and Latino populations in New York, Chicago, and Detroit; and also de-racialized through the the whitewashing and commodification of dance music since the late 90s. What more conversations does being a Queer Asian, specifically, bring to the conversation? What does that Queer Asian sound sound like on the dance floor? What does coalition sound like on the dancefloor and what conditions are we creating to reach that? Jeff accepted our invitation to write an essay, In an attempt to address these questions.",
         excerpt1: "Having been raised in Hong Kong for twenty-something years, I only learned about my Chineseness and Queerness when I moved to Canada four years ago. Growing up I was never asked the question Where are you from? Thinking back, there is a certain *thinginess* that comes with the migration process and spending the last few years in suburban Ontario. It all felt like a third puberty — learning how to swim again but this time in olive oil. Breathing at first was hard but as the old saying goes, you get used to it.",
@@ -230,7 +230,7 @@ export const bodyPolitics = {
         bio: 'I\'m Muchen, a photographer and videographer. When I was little, both still photos and movie scenes astounded me. Throughout my growing process, photos, movies, and drawing have all been present. Visual pictures have been my main tool to explore my internal expression during my developing process, but more crucial for me right now is to use my works as a medium to resonate with the outside world. Images affect me both consciously and unconsciously throughout my life. I was able to get through some of my darkest years with the diversion of making art out of photographs. I couldn\'t have found it anyplace else, but it gave me the consciousness and voice I needed.',
         topic_name: "Body Politics",
         quote_bg_url: "",
-        collection_title: "",
+        collection_title: "Yang",
         directory: "",
         description: "As the artist and filmmaker of the experimental video \"Yang,\" I delved into the personal experiences and challenges faced by my dear friend Yang. Through a combination of montages and interviews, I aimed to capture the essence of Yang's reflections on his journey, intertwined with his deeply personal explorations of his life experiences.\n" +
             "\n" +
@@ -258,7 +258,7 @@ export const bodyPolitics = {
         bio: 'Sophie Stiquée is a talented multidisciplinary artist based in Toronto. As a skilled DJ, Sophie has been making waves in the local music scene, delivering electrifying sets and captivating audiences with her unique style. With a background in classical piano, Sophie brings a unique touch to her performances, often incorporating live instrumentation into her sets. Sophie is also a successful drag performer, known for her dynamic stage presence and ability to connect with audiences.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Sophie/04.jpg'),
-        collection_title: "",
+        collection_title: "Moments of Sophie Stiquée",
         directory: "/assets/BodyPolitics/Sophie",
         description: "Sophie Stiquée (credit: Ryan Tremblay)\n" +
             "This photograph captures a bold and impactful representation of Sophie Stiquée's identity as a queer Asian African immigrant of color in the midst of the COVID-19 pandemic. By transforming COVID-19 masks into a striking outfit, Sophie sends a powerful message of resistance and empowerment in the face of xenophobia and discrimination.\n" +
@@ -334,13 +334,13 @@ export const bodyPolitics = {
         visible: true,
         ins_handle: ["@sherlchen"],
         artist_name: "Sidi Chen",
-        quote: '"[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an archive of the distances and relations...”',
+        quote: '“[T]he intersectionality of the queer and east Asian diaspora identities roots in how the body becomes an archive of the distances and relations...”',
         bio: 'Sidi Chen is a queer artist in diaspora whose interdisciplinary performance-based practice interrogates the entangled relations held within the collective bodies that are communal, ecological, and planetary. Through his practice, Chen explores subjects of queer diaspora, intergenerational migration, social and environmental shifting to understand and cultivate an Earthly empathy. \n' +
             '\n' +
             'Sidi Chen has been participating in a wide range of residencies, exhibitions, performances, and projects in North America and is currently completing the Master of Fine Arts Program at Emily Carr University of Art + Design (Spring 2023). Chen Sidi Chen is also an independent arts administrator and research for arts-based community development, and is currently residing on the traditional, ancestral, and unceded territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) First Nations, known as Vancouver, BC.',
         topic_name: "Body Politics",
-        quote_bg_url: "",
-        collection_title: "",
+        quote_bg_url: require('@/assets/BodyPolitics/Sidi/MirageRaftCover.jpg'),
+        collection_title: "Mirage Raft (The Dream Talking Oyster)",
         directory: "", // no directory since it's a video on Youtube
         description: "Mirage Raft (The Dream Talking Oyster) interrogates my own diasporic experience and queer identities by emphasizing the hermaphroditic bodies of oysters and their habitational behaviors that respond to the tidal cycle and planetary rotations. Using an acoustic device, I compose the music through the texture of the oyster shell which has accompanied me through my diasporic journey for nearly 10 years. Every physical movement is captured in the musical score so that the visual and auditory composition is an imaginative representation of the oyster’s absent body. By residing my body inside the oyster shell, I reference the Chinese classical story of Chuang Chou’s Dreaming a Butterfly (庄周梦蝶) to consider if it was the oyster dreaming of me or if I was becoming the oyster, and in doing so I ultimately question the subjectivity of the diasporic experience and find a kinesthetic empathy that transforms the boundaries of the bodies.",
         artworks: {
@@ -358,11 +358,11 @@ export const bodyPolitics = {
         visible: true,
         artist_name: "Jasmine Liaw",
         ins_handle: ["@jasmineliaw_"],
-        quote: '“Am I Asian enough within the Hakka Asian diaspora? Am I queer enough within my own physical experience and externalization?”\n',
+        quote: '“Am I Asian enough within the Hakka Asian diaspora? Am I queer enough within my own physical experience and externalization?”',
         bio: "Jasmine Liaw is a queer emerging Chinese-Canadian interdisciplinary artist in dance performance, new media art, and film. Bicoastal, she is based in so-called Toronto and Vancouver. Her practice focuses on the interconnections of conceptual realms of dance and digital/new media landscapes. As an emerging artist, Jasmine is compelled to explore her contemporary views of Asian diaspora. She is the Artistic Associate of Chimerik 似不像 Collective, working in interdisciplinary research and creation, and a member of Shoes Off Collective, an emerging artist community centred within the Asian Diaspora. In 2020, she graduated with Distinction at the Conteur Academy in Toronto. Her recent collaborations and presentations include RT Collective Commission Film Program in partnership with Toronto Dance Theatre, in conjunction with Chimerik's project \"\"Ritual Spective,” Frog in Hand's touring Full Body Exhibit, adelheid dance projects, Chimerik/Theatre Passe Muraille: Digital Creators Lab, Gallery TPW's The Parkettes Projects with Ronnie Clarke, Rumble Theatre, Dawson City International Film Festival, Florence Contemporary Art Gallery, Italy, and Quarantine Qapsule partnered with Emily Carr University Library, Lonely Artists Productions, and Myseum of Toronto. She is a 2022 Artworkx Toronto Spotlight Artist. Jasmine is F-O-R-M Recorded Movement Society Artist-in-Residence in their Technology and Interaction Program exploring her latest installation work, SONIC COLOUR: extended.",
         topic_name: "Body Politics",
-        quote_bg_url: "",
-        collection_title: "",
+        quote_bg_url: require('@/assets/BodyPolitics/Jasmine/XinniCover.jpg'),
+        collection_title: "xīn nī 廖芯妮 (understanding you)",
         directory: "", // no directory since it's a video on Youtube
         description: "As an intimate auto-ethnographic, experimental visual poem and moving-portrait, xīn nī 廖芯妮 explores the ancestral and dance-technological embodiments when retracing familial relationships within intergenerational conversations. Bridging the gaps surrounding my Chinese given name and its Hakka translation, this linguistic divide is common in Western diaspora culture, and navigating these marginalized displacements through my contemporary dance practice has created space for healing. I often feel inside and outside of my Hakka culture, as I also question my understanding of queer culture and its intersectionalities. \n" +
             "\n" +
@@ -383,7 +383,7 @@ export const bodyPolitics = {
         visible: true,
         artist_name: "Makoto Chi",
         ins_handle: ["@makoto.chi", "@ma__ko__to___"],
-        quote: '"As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries."',
+        quote: '“As a diasporic trans person, I situate myself in an ever-moving process of embodying and making many truths and contradictions in a culture that loves rigid binaries.”',
         bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as Vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western Massachusetts. He is cultivating slow practices and making art that addresses sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Makoto/YinYang.jpg'),

@@ -136,7 +136,8 @@ watch(activeIndex, () => {
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-                                <p>{{artist.bio}}</p>
+<!--                                <p>{{artist.bio}}</p>-->
+                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
                     </div>
@@ -149,28 +150,32 @@ watch(activeIndex, () => {
                             <p class="lg:text-justify mt-4">
                                 {{artist.excerpt2}}
                             </p>
-                            <a href="https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2" target="_blank" class="self-end justify-self-end underline text-ivory/50 hover:text-ivory/80 p-2">Read More</a>
-<!--                          TODO: update link!!!-->
+<!--                            <a href="https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2" target="_blank" class="self-end justify-self-end underline text-ivory/50 hover:text-ivory/80 p-2">Read More</a>-->
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-                            <p>
-                                {{artist.bio}}
-                            </p>
+<!--                            <p> {{artist.bio}} </p>-->
+                          <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                         </div>
                     </div>
                     <div v-if="artist.format == 'video'" class="min-h-screen max-h-full p-6 md:p-8 lg:p-12">
+                        <div class="lg:flex lg:justify-between lg:items-start gap-4">
+                          <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
+                          <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
+                        </div>
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
                         <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 min-h-screen max-h-full">
                             <div class="lg:w-3/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-                                <p class="lg:text-justify">{{artist.description}}</p>
+<!--                                <p class="lg:text-justify">{{artist.description}}</p>-->
+                              <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-                                <p>{{artist.bio}}</p>
+<!--                                <p>{{artist.bio}}</p>-->
+                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
                     </div>

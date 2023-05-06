@@ -12,10 +12,10 @@ export const yellowPerils = {
     visible: true,
     artist_name: "Love Intersections",
     ins_handle: ["@loveintersections"],  // a list b/c some artists have multiple handles
-    quote: '“ A core part of our recent practice as queer Chinese artists has been to explore the relationship between our identities as queer Chinese artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize.”',
+    quote: '“A core part of our recent practice as queer Chinese artists has been to explore the relationship between our identities as queer Chinese artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize.”',
     bio: 'Love Intersections is a media arts collective made up of queer artists of colour dedicated to using collaborative art making and relational storytelling to address systemic racism in our communities. We produce intersectional and intergenerational stories from underrepresented communities of colour – centering the invisible, the spiritual, the metaphysical, and the imaginary. We believe in deep and meaningful relationships, that intersectionality is a verb and a call to action, that we must cultivate social trust through collective care and community responsibility. Our desire is to provoke (he)artful social change through a lens of love.',
     topic_name: "Yellow Peril",
-    collection_title:'',
+    collection_title:'Channeling the Elements; an encounter of time/space',
     quote_bg_url: require('@/assets/YellowPerils/Love/YellowPeril.jpg'),
     description: "This video installation employs the metaphor of the Chinese Five Elements to explore the discursive formation of queer Chinese diasporic identity from a non-Eurocentric/Western point of departure. In Traditional Chinese Medicine, the Five Elemental forces provide many applications to understanding daily life, identity, and relationships in addition to physical, mental, and emotional health. The elements help to approach and understand ways of “being” through principles of metaphysics and temporalities. We invoke these five elements in this installation as a conduit to understanding queer East Asian cultural formations, not as an intellectual delineation, but to interpret our own embodiment of queer Chinese, diasporic identities.\n" +
         "\n" +
@@ -43,8 +43,8 @@ export const yellowPerils = {
         "\n" +
         "Jamie studied experimental filmmaking at the University of the Philippines Diliman in 2019 and was selected for the Ricky Lee Script Writing Program organised by the Cinemalaya Institute in 2021.  In 2022, her film 《Safe Distance: Chapter 1》won the Short Film Audience Award in the 33rd Hong Kong Lesbian and Gay Film Festival.",
     topic_name: "Yellow Peril",
-    collection_title:'',
-    quote_bg_url: '', 
+    collection_title:'Safe Distance',
+    quote_bg_url: require('@/assets/YellowPerils/Jamie/SafeDistanceCover.jpg'),
     description: "Safe Distance explores queer Chinese individuals’ lived experiences and narratives in the UK during the COVID-19 pandemic. It was produced at a time when anti-Asian racism was soaring across the world in all forms. It examines themes that incorporate identity, intersectionality, mental health, discrimination, migration, the notion of home, and community.\n" +
         "\n" +
         "In the process of making this film, we realized that there is little documentation of queer Asian history. It is essential to establish a visual record of the lives of Chinese queer people in British-Chinese history, especially as the community is facing unprecedented discrimination and challenges in recent years. This project becomes a means to discuss with our community members how we can better improve our situation.\n" +
@@ -264,8 +264,8 @@ export const yellowPerils = {
     quote: '“From sleeping together and uninhibited dancing to daily conversations, I seem to find out which community I am in and which community I am excluded from.”',
     bio: 'Hanxuan Jiang is a time-based artist and an art tutor who is currently based in Shanghai. She graduated from Ruskin School of Art, University of Oxford with Distinction (MFA). Her first MA was in Contemporary Art Practice of the Royal College of Art. In 2019, She was announced by Art News of China as one of the most excellent young artists in China (100 in total). Her moving image works were selected in European Short Film Festival, London Independent film Festival, Manchester film festival, 2019 Coventry Biennial, 9th International Video Poetry Festival, etc. Her artworks were collected by 2019 Florence Contemporary art Biennale, National Art Museum of China and Beijing Biennial.',
     topic_name: "Yellow Peril",
-    collection_title: '',
-    quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
+    collection_title: 'The Journey of Displacement',
+    quote_bg_url: require('@/assets/YellowPerils/Hanxuan/TheJourneyOfDisplacementCover.jpg'),
     description: "Swinging on a seesaw, by the little beach,\n" +
         "In the midst of the verdant green space,\n" +
         "I find my own piece of paradise,\n" +
@@ -288,7 +288,7 @@ export const yellowPerils = {
       },
     },
   },
-  artist6: {  // todo: This is a spoken word and will feature a PDF file - check with Jolie re implementation - should i just take screen shots of the PDF and use the images?
+  artist6: {
     idx: 18,  // for internal use
     format: AllowedFormats.Image,
     visible: true,
@@ -376,7 +376,7 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
     quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
-    description:  // todo description too long?
+    description:
         "2033 Essex Rd, Williston, Vermont, USA, 05495 (2023 - ongoing) is inspired by a recent trip home to unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, Səl̓ílwətaʔ/Selilwitulh, colonially known as Vancouver, BC.\n" +
         "\n" +
         "On this trip, I observed that many small businesses installed new business signs and awnings directly over previous covers, layering new signs over the old ones without removing them. I see this as an act of interventionism: a queering of what has come before that conveys questionable practices of writing over the past. Perhaps it is a simple act of convenience on the part of business owners, but it demonstrates the enactment of a suspension in time that signifies how a singular space or parcel of land remains fixed to its physical location yet carries a multitude of meanings, purposes, and histories.\n" +
@@ -522,7 +522,7 @@ export const yellowPerils = {
     visible: true,
     artist_name: "Michelle Lu",
     ins_handle: ['@tiger___mommy'],
-    quote: 'Until recently I\'ve been intimidated to explore the intersection of my ethnicity and queerness. I’m now recognizing that they have always been intricately intertwined and an essential part of who I am.”',
+    quote: '“Until recently I\'ve been intimidated to explore the intersection of my ethnicity and queerness. I’m now recognizing that they have always been intricately intertwined and an essential part of who I am.”',
     bio: 'Michelle Lu (she/they) is a multidisciplinary designer and artist from Toronto, Canada. Her practice explores the nuances of identity, collaborative creation, and imagining new forms of community. Lu’s work is motivated by storytelling and the desire to make systems more equitable and accessible.\n' +
         '\n' +
         'Michelle’s work has been featured in exhibitions and publications nationally and internationally. They are also a founding member of here-there collective, a group of interdisciplinary artists who are currently working on the here-there audio archive – a community arts project and home for stories from the Asian Canadian diaspora.',
