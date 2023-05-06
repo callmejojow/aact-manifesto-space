@@ -271,7 +271,7 @@ export const yellowPerils = {
   },
   artist6: {  // todo: This is a spoken word and will feature a PDF file - check with Jolie re implementation - should i just take screen shots of the PDF and use the images?
     idx: 18,  // for internal use
-    format: AllowedFormats.Text,  // todo: this might have prevented the descriptions from showing up
+    format: AllowedFormats.Text,
     visible: true,
     artist_name: "Anto Chan",
     ins_handle: ["@antopunfu", "@antowrites"],
@@ -280,9 +280,9 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: 'Anto’s Spoken Words',
     quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-    description: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n" +
-        "\n" +
-        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
+    excerpt1: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n",
+    excerpt2: "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
+    description: "",
     directory: "",
     artworks: {
       art1: {

@@ -144,10 +144,10 @@ watch(activeIndex, () => {
                         <div class="lg:w-3/4 flex flex-col">
                             <h3 v-for="art in artist.artworks" :key="art" class="font-semibold text-lg lg:text-2xl">{{art.name}}</h3>
                             <p class="lg:text-justify">
-                                {{artist.excert1}}
+                                {{artist.excerpt1}}
                             </p>
                             <p class="lg:text-justify mt-4">
-                                {{artist.excert2}}
+                                {{artist.excerpt2}}
                             </p>
                             <a href="https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2" target="_blank" class="self-end justify-self-end underline text-ivory/50 hover:text-ivory/80 p-2">Read More</a>
                         </div>
