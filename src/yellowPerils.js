@@ -74,22 +74,22 @@ export const yellowPerils = {
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, and Isneg. To be seen intersectionally and as a whole is rare. Sometimes it's a gift. Sometimes it brings about forced relationships. I'm curious about folks' positionality on nationhood, light skin privileges and building solidarity, and creating possibilities of futurism with other QTBIPoC.\n" +
         "\n" +
-        "libération en fait (freedom actually / release)\n" +
+        "1. libération en fait (freedom actually / release)\n" +
         "hanging sculpture made of black zip ties and brass rings. the tension made from the zip ties represents the feeling of having to experience oppression individually and the release outwards is the freedom of knowing we are not alone.\n" +
         "\n" +
-        "barbed dreams\n" +
+        "2. barbed dreams\n" +
         "dream catcher made of leather, wire, and pieces of metal collected from protests in Palestine. speaks to solidarity with communities who experience the erasure of their homelands because of border imperialism.\n" +
         "\n" +
-        "malgré eux (despite them)\n" +
+        "3. malgré eux (despite them)\n" +
         "hanging leather flogger to affirm that we not only have the capacities to survive our hurts and harms but that we have the capacity to experience joys and pleasures, and that they can be healing.\n" +
         "\n" +
-        "makibaka (to struggle and to fight)\n" +
+        "4. makibaka (to struggle and to fight)\n" +
         "mixed media of two friends who are active and militant in their activist work and that the impact, the amplification of their dedication is widespread and appreciated by many.\n" +
         "\n" +
-        "thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
-        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n" +
-        "\n" +
-        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a href='https://youtu.be/t9qG14MSVPs'>here</a>.",
+        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>." +
+        "\n\n" +
+        "5. thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
+        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
       art4: {
@@ -169,7 +169,26 @@ export const yellowPerils = {
         "\n" +
         "In these uncertain times, it is crucial to examine our authentic selves and support each other in becoming our true selves. We believe in teaching and encouraging young people to question the world around them and to embrace their unique identities. As Samra Habib wrote in her book, \"We Have Always Been Here: A Queer Muslim Memoir,\" \"Not everyone is equipped for activism in the traditional sense—marching, writing letters to officials—but dedicating your life to understanding yourself can be its own form of protest, especially when the world tells you that you don't exist.”\n" +
         "\n" +
-        "Unlearning can be a challenging and exhausting process that requires a lot of support. We want to remind you that we are here for you and that we will continue to create art that represents and celebrates the diversity of our community.",
+        "Unlearning can be a challenging and exhausting process that requires a lot of support. We want to remind you that we are here for you and that we will continue to create art that represents and celebrates the diversity of our community." +
+        "\n" +
+        "\n" +
+        "Artwork Titles: \n" +
+        "1. Giovanni's Room by James Baldwin (1956)\n" +
+        "Featuring Gayle (@gayle_1.jpg, 24, she/they) on the left and Sohini (@sohmusoblue, 24, she/they) on the right. Photographed by Zelina (@cold__heat, she/her). Styled by the ethereal Shradha (@immaterialgir7, she/they). \n" +
+        "\n" +
+        "2. A Suitable Boy by Vikram Seth (1993)\n" +
+        "Featuring Aarti Vasudevan (they/she/he, 22) on the left and Shradha (@immaterialgir7, she/they, 22) on the right. Photographed by Zelina (@cold__heat, she/her). Styling and creative direction by Sohini (@sohmusoblue, she/they) and Shradha (@immaterialgir7)\n" +
+        "\n" +
+        "3. We Have Always Been Here: A Queer Muslim Memoir by Samra Habib (2019)\n" +
+        "Featuring Anika Zulfikar (@anikazulfikar, she/her) and Bisma Jay (@bisma_jayy, they/them). Photographed by Zelina (@cold__heat, she/her) along with Bisma (@bisma_jayy) and Sohini (@sohmusoblue). Self-styled. Creative direction: Sohini (@sohmusoblue) \n" +
+        "\n" +
+        "4. Beyond the Gender Binary\n" +
+        "Featuring nora (@thatmeanhag, they/he, 15) on the right and Malav (@the_khalnaik, he/they, 30) on the left. Photographed by the wonderful Zelina (@cold__heat, she/her). Styling and creative direction by Gayle (@gayle_1.jpg, she/they) and Sohini (@sohmusoblue, she/they)Recreating Alok Vaid-Menon’s Beyond the Gender Binary \n" +
+        "\n" +
+        "5. Biker Gang Baddies\n" +
+        "Featuring Gayle (@gayle_1.jpg, she/they), Zuhayr (they/them), nf (they/them), Kinu (@kinjxl, he/they) and Bisma (@bisma_jayy, they/them).\n" +
+        "\n" +
+        "6. Who We Are",
     directory: "/assets/YellowPerils/Theysi",
     artworks: {
       art1: {
@@ -265,13 +284,13 @@ export const yellowPerils = {
         name: "The Journey of Displacement",
         year: '',
         medium: "",
-        file_name: "https://player.vimeo.com/video/531181722?h=31d92e0c94&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed",  // todo: check embed link
+        file_name: "https://player.vimeo.com/video/531181722?h=31d92e0c94&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed",
       },
     },
   },
   artist6: {  // todo: This is a spoken word and will feature a PDF file - check with Jolie re implementation - should i just take screen shots of the PDF and use the images?
     idx: 18,  // for internal use
-    format: AllowedFormats.Text,
+    format: AllowedFormats.Image,
     visible: true,
     artist_name: "Anto Chan",
     ins_handle: ["@antopunfu", "@antowrites"],
@@ -280,9 +299,11 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: 'Anto’s Spoken Words',
     quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
-    excerpt1: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n",
-    excerpt2: "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
-    description: "",
+    // excerpt1: "",
+    // excerpt2: "",
+    description: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n" +
+        "\n" +
+        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
     directory: "",
     artworks: {
       art1: {
@@ -292,6 +313,53 @@ export const yellowPerils = {
         file_name: "",
       },
     },
+    slides:[
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa4.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung3.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {
+        image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung4.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+
+    ],
   },
   artist7: {
     idx: 19,  // for internal use
@@ -300,7 +368,7 @@ export const yellowPerils = {
     artist_name: "Snack Witch",
     ins_handle: [],
     quote: '“I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.”',
-    bio: '🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects↔place↔migration↔identities, always with humour, sometimes with food. 😉\n' +
+    bio: '🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects ↔ place ↔ migration ↔ identities, always with humour, sometimes with food. 😉\n' +
         '\n' +
         'They’re currently toiling over their MFA on stolen lands of the Kanien’kehá:ka at Concordia University.  A wicked #magicalgirl ✨ eating art + making snacks 🌈, she has exhibited and curated shows across Turtle Island, colonially known as Canada, including Centre CLARK, Montréal; Latitude 53, Edmonton; Xpace Cultural Centre, Toronto; and Hotam Press Bookshop & Gallery, Vancouver; among other spaces and platforms. Their work has been published nationally and internationally.\n' +
         '\n' +

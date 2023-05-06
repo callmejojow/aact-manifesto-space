@@ -26,7 +26,7 @@ export const madeInQueer = {
         "\n" +
         "This work encourages viewers to reflect on binary thinking and recognise the experiences of queer Asians. By contextualizing traditional household furniture, this project explores the possibility of decolonizing queer Asians through the lens of materiality and craftsmanship.\n" +
         "\n" +
-        "The accompanying video for this series can be viewed  <a href='https://www.youtube.com/watch?v=0i8i-kE3qH0'>here</a>.",
+        "The accompanying video for this series can be viewed  <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=0i8i-kE3qH0'>here</a>.",
     directory: '/assets/MadeInQueer/Rising',
     artworks: {
       art1: {
@@ -375,10 +375,11 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg'),
     collection_title: "",
-    description: "Fruity Furniture\n" +
+    description: "\n" +
+        "<b>Fruity Furniture</b>\n" +
         "Growing up, celebrations around food were integral parts of my experience with my grandparents and the primary connection to my Chinese heritage. Chinese traditions around food like Lunar New Year were always very fascinating and magical. And for a short while, I would be a part of something that felt like it came from another time. Often these celebrations were performed around the living room, a central gathering space in my Pau Pau and Gong Gong’s home, as we sat in a circular fashion around the room. The Fruity Furniture ties back to these memories of family connection and food celebration because the furniture become whimsical characters. The Fruity Furniture plays with the sense of wonder that I would experience as a child around food. Designed as small seats of varying proportions, the fruit collection allows us to live out childhood dreams of having food as big as our bodies and seeing the furniture as physical characters with identities of their own. Taking the embodiment of ‘fruity’ the furniture offers levels of whimsy and wonder that also ties to queer and soft identity. They are an expression of self, characters to cherish in your home that are meant to be shared collectively. The collection includes a pear, green apple, plum, peach and berry.\n" +
         "\n" +
-        "Laced Bodies\n" +
+        "<b>Laced Bodies</b>\n" +
         "Being mixed-asian and queer is a tender experience, where one lives in the intersectionality of  multiple experiences but also feels a lack of community while embracing each part of one’s identity. Being part of an in-between is an odd and frail experience, where the ability to see this state of being  as something beautiful and powerful can be enriching but is sometimes hard to acknowledge. Laced Bodies is a tender lens that embodies the soft experience of feeling in-between. Through a coupling of glass ‘limbs’, the bespoke glass vessels are able to embrace through subtle bends and folds that mimic the human body. Each fold and curve of the glass reflects bodily forms while the pairing of the vessels reflects a sense of warmth through a fragile and cold material. The coupling vessels resemble a connection to community, identity, and self; their abstract forms allow the viewer to perceive their own personal reflection in the sculptures. By serving as a reminder to the body, the vessels portray the connection to self and other as a personal soft experience. Each vessel was hand-blown and shaped individually. Once cooled, the limbs were carefully assembled to match pairings to make each coupling unique. By using a natural material like glass, the vessels offer gradients of transparency, fluidity, and fragility that tie to the experience of being mixed. \n" +
         "\n" +
         "Laced Bodies was created in collaboration with design studio müsing–sellés in 2019.\n",
@@ -533,7 +534,7 @@ export const madeInQueer = {
     collection_title: "You’re here, too",
     description: "You’re here, too is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
         "\n" +
-        "The accompanying video for this series can be viewed <a href='https://beaugomez.com/yht/wipvid001'>here</a>.",
+        "The accompanying video for this series can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://beaugomez.com/yht/wipvid001'>here</a>.",
     directory: '/assets/MadeInQueer/Beau',
     artworks: {
       art1: {
