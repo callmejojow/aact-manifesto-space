@@ -328,6 +328,115 @@ export const bodyPolitics = {
             },
         ],
     },
+    artist12: {
+        idx: 12,  // for internal use
+        format: AllowedFormats.Image,
+        visible: true,
+        artist_name: "Theysi Queers",
+        ins_handle: ['@gayle_1.jpg', '@sohmusoblue', '@immaterialgir7', '@cold__heat', '@anikazulfikar', '@bisma_jayy', '@thatmeanhag', '@the_khalnaik', '@kinjxl'],
+        quote: '“Being queer and South Asian can often feel like two diverging identities that are difficult to navigate simultaneously especially if you\'re also an immigrant.”',
+        bio: 'Theysi Queers is a collective of artists, dreamers, makers, and creators in Tkaronto, dreaming of queer futures and realities in the South Asian diaspora. Their mission is to visualize for you the joy of the realities we live in. They want to make real and give flesh to queer daydreams. \n' +
+            '\n' +
+            'Each season, they will work within a theme to bring you a photo series showcasing collaborative talents of models, stylists, set designers, photographers, and all kinds of artists, and demonstrate what inspires them.\n' +
+            '\n' +
+            'This season, they look to the written word for inspiration. They are lifting queer stories from the page and bringing you images inspired by our favourite stories.',
+        topic_name: "Body Politics",
+        collection_title: '',
+        quote_bg_url: require('@/assets/BodyPolitics/Theysi/6WhoWeAre.jpg'),
+        description: "Theysi Queers is a collective of artists, dreamers, makers, and creators based in Tkaronto. Our vision is to imagine queer futures and realities within the South Asian diaspora.\n" +
+            "\n" +
+            "Our mission is to share with you the joy and beauty of the realities we live in. We strive to give flesh to our queer daydreams and create art that represents the multifaceted experiences of the LGBTQ+ community.\n" +
+            "\n" +
+            "As Alok Vaid-Menon once said, \"Whose standards of authenticity are we being held up to in the first place?\" We often find ourselves questioning the lack of vocabulary to describe what we feel for our chosen family, our support system. We reject the idea of being labeled as heterosexual versus homosexual, girl versus boy, sexual versus platonic and instead embrace the diversity of human experiences and identities. Our goal is to celebrate and honor the different forms of love that exist in our lives.\n" +
+            "\n" +
+            "In these uncertain times, it is crucial to examine our authentic selves and support each other in becoming our true selves. We believe in teaching and encouraging young people to question the world around them and to embrace their unique identities. As Samra Habib wrote in her book, \"We Have Always Been Here: A Queer Muslim Memoir,\" \"Not everyone is equipped for activism in the traditional sense—marching, writing letters to officials—but dedicating your life to understanding yourself can be its own form of protest, especially when the world tells you that you don't exist.”\n" +
+            "\n" +
+            "Unlearning can be a challenging and exhausting process that requires a lot of support. We want to remind you that we are here for you and that we will continue to create art that represents and celebrates the diversity of our community." +
+            "\n" +
+            "\n" +
+            "Artwork Titles: \n" +
+            "1. Giovanni's Room by James Baldwin (1956)\n" +
+            "Featuring Gayle (@gayle_1.jpg, 24, she/they) on the left and Sohini (@sohmusoblue, 24, she/they) on the right. Photographed by Zelina (@cold__heat, she/her). Styled by the ethereal Shradha (@immaterialgir7, she/they). \n" +
+            "\n" +
+            "2. A Suitable Boy by Vikram Seth (1993)\n" +
+            "Featuring Aarti Vasudevan (they/she/he, 22) on the left and Shradha (@immaterialgir7, she/they, 22) on the right. Photographed by Zelina (@cold__heat, she/her). Styling and creative direction by Sohini (@sohmusoblue, she/they) and Shradha (@immaterialgir7)\n" +
+            "\n" +
+            "3. We Have Always Been Here: A Queer Muslim Memoir by Samra Habib (2019)\n" +
+            "Featuring Anika Zulfikar (@anikazulfikar, she/her) and Bisma Jay (@bisma_jayy, they/them). Photographed by Zelina (@cold__heat, she/her) along with Bisma (@bisma_jayy) and Sohini (@sohmusoblue). Self-styled. Creative direction: Sohini (@sohmusoblue) \n" +
+            "\n" +
+            "4. Beyond the Gender Binary\n" +
+            "Featuring nora (@thatmeanhag, they/he, 15) on the right and Malav (@the_khalnaik, he/they, 30) on the left. Photographed by the wonderful Zelina (@cold__heat, she/her). Styling and creative direction by Gayle (@gayle_1.jpg, she/they) and Sohini (@sohmusoblue, she/they)Recreating Alok Vaid-Menon’s Beyond the Gender Binary \n" +
+            "\n" +
+            "5. Biker Gang Baddies\n" +
+            "Featuring Gayle (@gayle_1.jpg, she/they), Zuhayr (they/them), nf (they/them), Kinu (@kinjxl, he/they) and Bisma (@bisma_jayy, they/them).\n" +
+            "\n" +
+            "6. Who We Are",
+        directory: "/assets/BodyPolitics/Theysi",
+        artworks: {
+            art1: {
+                name: "Giovanni's Room by James Baldwin (1956)",
+                year: '',
+                medium: "",
+                file_name: "1GiovannisRoom.jpg",
+            },
+            art2: {
+                name: "A Suitable Boy by Vikram Seth (1993)",
+                year: '',
+                medium: "",
+                file_name: "2ASuitableBoy.jpg",
+            },
+            art3: {
+                name: "We Have Always Been Here: A Queer Muslim Memoir by Samra Habib (2019)",
+                year: '',
+                medium: "",
+                file_name: "3WeHaveAlwaysBeenHere.jpg",
+            },
+            art4: {
+                name: "Beyond the Gender Binary by Alok Vaid-Menon (2020)",
+                year: '',
+                medium: "",
+                file_name: "4BeyondtheGenderBinary.jpg",
+            },
+            art5: {
+                name: "Biker Gang Baddies",
+                year: '',
+                medium: "",
+                file_name: "5BikerGangBaddies.jpg",
+            },
+            art6: {
+                name: "Who We Are",
+                year: '',
+                medium: "",
+                file_name: "6WhoWeAre.jpg",
+            },
+        },
+        slides:[
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/1GiovannisRoom.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/2ASuitableBoy.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/3WeHaveAlwaysBeenHere.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/4BeyondtheGenderBinary.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/5BikerGangBaddies.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+            {
+                image:require("@/assets/bg.svg"),
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/6WhoWeAre.jpg")}" class="object-contain h-[48rem]"/>`,
+            },
+        ],
+    },
     artist17: {
         idx: 17,
         format: AllowedFormats.Video, // embedded video
