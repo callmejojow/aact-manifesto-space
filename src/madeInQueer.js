@@ -298,7 +298,12 @@ export const madeInQueer = {
         "<b>Laced Bodies</b>\n" +
         "Being mixed-asian and queer is a tender experience, where one lives in the intersectionality of  multiple experiences but also feels a lack of community while embracing each part of one’s identity. Being part of an in-between is an odd and frail experience, where the ability to see this state of being  as something beautiful and powerful can be enriching but is sometimes hard to acknowledge. Laced Bodies is a tender lens that embodies the soft experience of feeling in-between. Through a coupling of glass ‘limbs’, the bespoke glass vessels are able to embrace through subtle bends and folds that mimic the human body. Each fold and curve of the glass reflects bodily forms while the pairing of the vessels reflects a sense of warmth through a fragile and cold material. The coupling vessels resemble a connection to community, identity, and self; their abstract forms allow the viewer to perceive their own personal reflection in the sculptures. By serving as a reminder to the body, the vessels portray the connection to self and other as a personal soft experience. Each vessel was hand-blown and shaped individually. Once cooled, the limbs were carefully assembled to match pairings to make each coupling unique. By using a natural material like glass, the vessels offer gradients of transparency, fluidity, and fragility that tie to the experience of being mixed. \n" +
         "\n" +
-        "Laced Bodies was created in collaboration with design studio müsing–sellés in 2019.\n",
+        "Laced Bodies was created in collaboration with design studio müsing–sellés in 2019.\n" +
+        "\n" +
+        "<b>Naia Lamps</b>\n" +
+        "The Naia Lamps are fleshy silk structures made of naturally dyed silk that are then pleated and folded in place with a silicone finish. The silicone is poured and spread on each lamp shade to mimic natural folds in cloth, the process of adding silicone allows that movement to be captured permanently. The lamp frames are made of thin metal rods that the lampshades are hand sewn onto with silk thread. The Naia Lamps are playful sculptural pieces inspired by fabric pleating, bodily forms, and soft sea creatures.\n" +
+        "\n" +
+        "This artwork was created by Jennifer Laflamme and Marisa Musing as MAMUMIFI, a Toronto-based collective that explores building stories and creatures through objects and fantasy ethereal worlds. MAMUMIFI works through playing with various materials and compositions in the worlds of furniture, sculpture, digital, fashion and art. Their work lies in between functional and experimental design. Evolving projects around body, femininity, fluidity and our relationship to identity.",
     directory: '/assets/MadeInQueer/Marisa',
     artworks: {
       art1: {
@@ -393,6 +398,15 @@ export const madeInQueer = {
       },
       {image:require("@/assets/bg.svg"),
         content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_9.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_1.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      },
+      {image:require("@/assets/bg.svg"),
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_small.jpg")}" class="object-contain h-[48rem]"/>`,
       },
     ],
   },
