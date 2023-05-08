@@ -1,5 +1,5 @@
 <script setup>
-import NavDropdown from '@/components/NavDropdown.vue'
+    import NavDropdown from '@/components/NavDropdown.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { ref, onMounted } from 'vue'
 const buttonOpacity = ref(0);
@@ -65,8 +65,8 @@ div.slide-left p {
 }
 </style>
 <template>
-    <main class="relative h-screen w-screen m-0 overflow-hidden font-open bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
-        <div class="h-screen bg-black/20 flex flex-col">
+    <main class="min-h-screen max-h-full overflow-hidden relative bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
+        <div class="h-screen w-screen m-0 font-open bg-black/20 flex flex-col">
             <div class="flex justify-start md:justify-center items-center py-4 px-4 md:px-0">
                 <a href="/">
                     <img src="@/assets/manifesto-logo.png" class="w-6 h-6" alt="Website Logo" />
@@ -87,6 +87,6 @@ div.slide-left p {
                 </div>
             </div>
         </div>
+        <FooterComponent class="text-ivory/70" />
     </main>
-    <FooterComponent class="text-ivory/70 absolute bottom-12 inset-x-0"/>
 </template>
