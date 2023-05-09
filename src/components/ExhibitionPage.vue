@@ -45,14 +45,14 @@ function onIntersection(entry, index) {
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
             </div>
-            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory py-1.5 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen">
+            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory py-1.5 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
                 <li><a href="#about" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
-                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Sections</a></li>
+                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Exhibitions Sections</a></li>
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start relative lg:lg:h-[calc(100vh-36px)] mx-auto">
-            <div id="about" class="lg:-mt-16 min-h-full max-h-screen overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start relative lg:h-[calc(100vh-36px)] mx-auto">
+            <div id="about" class="lg:-mt-16 min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
                 <h1 class="text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
                 <h1 class=" text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
@@ -72,7 +72,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
             <div id="sections" class="pb-4 lg:pb-0 pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
-                <div class="h-1/3 lg:h-screen lg:w-1/3 bg-center bg-cover group bg-url-1">
+                <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made_in_queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                             <p class="text-ivory text-2xl lg:text-4xl text-center font-extralight lg:transition-all lg:ease-in lg:ease-out lg:duration-300 lg:group-hover:opacity-100 lg:opacity-0 opacity-100">MADE IN <span class="inline lg:block">QUEER</span></p>
@@ -86,7 +86,7 @@ function onIntersection(entry, index) {
                         </div>
                     </a>
                 </div>
-                <div class="h-1/3 lg:h-screen lg:w-1/3 bg-center bg-cover group bg-url-3">
+                <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-3">
                     <a href="/exhibitions/yellow_perils">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
                             <p class="text-ivory text-2xl lg:text-4xl text-center font-extralight lg:transition-all lg:ease-in lg:ease-out lg:duration-300 lg:group-hover:opacity-100 lg:opacity-0 opacity-100">YELLOW <span class="inline lg:block">PERILS</span></p>
