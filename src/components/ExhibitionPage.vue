@@ -29,8 +29,8 @@ function onIntersection(entry, index) {
 }
 </script>
 <template>
-    <main class="min-h-screen bg-ivory">
-        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-12 lg:mb-0 lg:border-b lg:border-stone-400/50">
+    <main class="min-h-screen bg-ivory max-h-full">
+        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
             <div class="flex justify-start md:justify-center items-center pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -71,7 +71,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pb-4 lg:pb-0 pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
+            <div id="sections" class="pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made_in_queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
@@ -95,7 +95,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-        <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 lg:px-4" />
+        <FooterComponent class="min-h-full text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-28 lg:pt-9 pb-9" />
     </main>
 </template>
 <style>
