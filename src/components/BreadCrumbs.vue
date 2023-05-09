@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex" aria-label="Breadcrumb">
+  <nav class="flex font-inter" aria-label="Breadcrumb">
     <ol role="list" class="flex items-center space-x-4">
       <li>
         <div>

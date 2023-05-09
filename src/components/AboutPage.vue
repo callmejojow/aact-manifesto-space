@@ -3,7 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 </script>
 <template>
-    <div class="relative scroll-smooth font-open max-h-screen w-screen overflow-x-hidden">
+    <div class="font-inter relative scroll-smooth max-h-screen w-screen overflow-x-hidden">
         <div class="sticky top-0 z-20 bg-ivory">
             <div class="flex items-center justify-start lg:justify-center py-4 px-4 border-b border-stone-200/80">
                 <a href="/">
