@@ -30,10 +30,10 @@ function onIntersection(entry, index) {
 </script>
 <template>
     <main class="min-h-screen bg-ivory">
-        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-12 lg:mb-0">
+        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-12 lg:mb-0 lg:border-b lg:border-stone-400/50">
             <div class="flex justify-start md:justify-center items-center pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
-                    <img src="@/assets/manifesto-logo-black.svg" class="h-3.5 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
+                    <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
                 <div class="absolute right-4 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />

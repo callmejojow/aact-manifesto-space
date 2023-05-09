@@ -69,7 +69,7 @@ div.slide-left p {
         <div class="h-[calc(100vh+6rem)] md:h-[calc(100vh+4rem)] w-screen m-0 bg-black/20 flex flex-col justify-between">
             <div class="flex justify-start md:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <a href="/">
-                    <img src="@/assets/manifesto-logo-white.svg" class="h-3.5 lg:h-8 opacity-90 lg:ml-4" alt="Website Logo" />
+                    <img src="@/assets/manifesto-logo-white.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Logo" />
                 </a>
                 <div class="absolute right-0 text-ivory z-40">
                     <NavDropdown />
