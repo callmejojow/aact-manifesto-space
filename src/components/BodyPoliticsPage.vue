@@ -57,7 +57,7 @@ watch(activeIndex, () => {
                         <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
                     </a>
                     <p class="text-black tracking-widest ml-6">MANIFESTO</p>
-                    <div class="absolute right-4 text-ivory z-40">
+                    <div class="absolute right-4 text-stone-600/80 hover:text-stone-800/50 z-40">
                         <NavDropdown />
                     </div>
                 </div>
