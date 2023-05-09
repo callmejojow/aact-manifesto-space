@@ -71,7 +71,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pb-4 mb:portrait:pb-4 mb:landscape:pb-0 mb:landscape:pt-0 mb:landscape:mt-0 mb:portrait:pt-36 mb:portrait:-mt-36 lg:pb-0 pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-[calc(100vh-36px)] lg:min-h-screen">
+            <div id="sections" class="pb-4 lg:pb-0 pt-36 -mt-36 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-end min-w-screen h-[calc(100vh-36px)] lg:min-h-screen">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-cover group bg-url-1">
                     <a href="/exhibitions/made_in_queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
