@@ -65,7 +65,7 @@ div.slide-left p {
 }
 </style>
 <template>
-    <main class="min-h-screen max-h-full overflow-hidden relative bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
+    <main class="font-inter min-h-screen max-h-full overflow-hidden relative bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
         <div class="h-[calc(100vh+6rem)] md:h-[calc(100vh+4rem)] w-screen m-0 bg-black/20 flex flex-col justify-between">
             <div class="flex justify-start md:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <a href="/">
