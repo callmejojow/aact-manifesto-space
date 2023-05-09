@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   presets: [],
@@ -6,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
             fontFamily: {
+              sans: [
+                'Inter var',
+                ...defaultTheme.fontFamily.sans,
+              ]
             },
             colors: {
                 'bitten': '#be0000',
@@ -308,7 +314,6 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      inter:['"Inter"'],
       sans: [
         'ui-sans-serif',
         'system-ui',

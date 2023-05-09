@@ -1,6 +1,6 @@
 <template>
   <div class="p-10">
-    <h1 class="text-2xl font-medium font-inter">Artists</h1>
+    <h1 class="text-2xl font-medium">Artists</h1>
     <p class="text-lg">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare
       vestibulum massa, vel gravida ante efficitur in. Sed euismod velit id

@@ -43,7 +43,7 @@ watch(activeIndex, () => {
 });
 </script>
 <template>
-    <div class="font-inter">
+    <div>
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky top-0 z-30 bg-ivory h-36 lg:h-28">
                 <div class="flex items-center justify-start lg:justify-center py-[1.1rem] px-4 border-b border-stone-200/80">

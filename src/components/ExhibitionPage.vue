@@ -29,7 +29,7 @@ function onIntersection(entry, index) {
 }
 </script>
 <template>
-    <main class="min-h-screen bg-ivory font-inter">
+    <main class="min-h-screen bg-ivory">
         <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-12 lg:mb-0">
             <div class="flex justify-start md:justify-center items-center pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">

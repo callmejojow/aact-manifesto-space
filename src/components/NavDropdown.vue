@@ -1,5 +1,5 @@
 
-<template class="font-inter absolute top-0 right-0">
+<template class="absolute top-0 right-0">
   <div class="flex justify-end item-start p-4 z-40">
     <Menu as="div" class="relative inline-block text-left">
       <MenuButton class="">
