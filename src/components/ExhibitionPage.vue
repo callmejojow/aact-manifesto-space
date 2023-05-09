@@ -31,7 +31,7 @@ function onIntersection(entry, index) {
 <template>
     <main class="min-h-screen font-open">
         <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full">
-            <div class="bg-transparent flex justify-start lg:justify-center items-center py-4 px-4 lg:px-0">
+            <div class="flex justify-start md:justify-center items-center py-4 md:py-6 lg:py-4 px-6 md:px-12 lg:px-0">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="w-2/3 opacity-90" alt="Website Dark Logo" />
                 </a>
@@ -40,19 +40,19 @@ function onIntersection(entry, index) {
                 </div>
             </div>
             <!-- navigation -->
-            <div class="lg:hidden p-4">
-                <p class="text-sm text-gray-500 hover:text-gray-700">
+            <div class="lg:hidden px-6 md:px-12 lg:px-24">
+                <p class="text-sm text-stone-500 hover:text-stone-700">
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
             </div>
-            <ul class="lg:hidden bg-ivory t-0 border-b border-gray-600 flex space-x-5 mx-4 mb-4 overflow-x-auto max-w-screen">
-                <li><a href="#about" class="nav-item inline-block ivoryspace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
-                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-gray-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Sections</a></li>
+            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 mb-4 overflow-x-auto max-w-screen">
+                <li><a href="#about" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
+                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Sections</a></li>
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="font-open grid grid-cols-1 lg:grid-cols-2 justify-center lg:items-center relative overflow-hidden min-h-screen max-h-full pt-4 md:pt-0 bg-ivory mx-auto px-4 lg:px-0">
-            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 justify-self-center lg:self-end lg:px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:items-center relative overflow-hidden min-h-screen max-h-full pt-0 md:portrait:pt-0 md:landscape:pt-4 lg:pt-4 bg-ivory mx-auto">
+            <div id="about" class="min-h-screen col-span-1 pt-36 -mt-36 justify-self-center md:landscape:self-end lg:self-end px-6 md:px-12 lg:px-24">
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">The Bitten Peach:</h1>
                 <h1 class="text-3xl lg:text-4xl font-medium tracking-wide text-left">Decolonizing Queer Asians</h1>
                 <p class="mt-4 text-sm font-thin">May 2023</p>
