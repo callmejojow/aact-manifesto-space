@@ -51,23 +51,23 @@ watch(activeIndex, () => {
 <template>
     <div>
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
-            <div class="sticky top-0 z-30 bg-ivory h-36 lg:h-28">
-                <div class="flex items-center justify-start lg:justify-center py-[1.1rem] px-4 border-b border-stone-200/80">
+            <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
+                <div class="flex justify-start md:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                     <a href="/">
-                        <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
+                        <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                     </a>
-                    <p class="text-black tracking-widest ml-6">MANIFESTO</p>
-                    <div class="absolute right-4 text-stone-600/80 hover:text-stone-800/50 z-40">
+                    <div class="absolute right-0 text-stone-600/80 hover:text-stone-800/50 z-40">
                         <NavDropdown />
                     </div>
                 </div>
-                <!-- Generic Breadcrumbs -->
-                <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
+                <div class="pt-3 hidden lg:flex lg:justify-start lg:items-center lg:px-12">
                     <BreadCrumbs />
                     <span class="ml-4 text-sm text-stone-400/80">
                         Body Politics
                     </span>
                 </div>
+            </div>
+            <div>
                 <div class="lg:hidden p-4">
                     <a href="/exhibitions" class="text-sm text-stone-500 hover:text-stone-700">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -136,7 +136,7 @@ watch(activeIndex, () => {
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-<!--                                <p>{{artist.bio}}</p>-->
+                                <!--                                <p>{{artist.bio}}</p>-->
                                 <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
@@ -154,14 +154,14 @@ watch(activeIndex, () => {
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-<!--                            <p> {{artist.bio}} </p>-->
+                            <!--                            <p> {{artist.bio}} </p>-->
                             <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                         </div>
                     </div>
                     <div v-if="artist.format == 'video'" class="min-h-screen max-h-full p-6 md:p-8 lg:p-12">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4">
-                          <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
-                          <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
+                            <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
+                            <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
                         </div>
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
@@ -169,12 +169,12 @@ watch(activeIndex, () => {
                         <div class="mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6 min-h-screen max-h-full">
                             <div class="lg:w-3/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.collection_title ? "About " + artist.collection_title : "About This Collection" }}</span>
-<!--                                <p class="lg:text-justify">{{artist.description}}</p>-->
-                              <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
+                                <!--                                <p class="lg:text-justify">{{artist.description}}</p>-->
+                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4">
                                 <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-<!--                                <p>{{artist.bio}}</p>-->
+                                <!--                                <p>{{artist.bio}}</p>-->
                                 <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
@@ -183,7 +183,7 @@ watch(activeIndex, () => {
             </div>
         </div>
     </div>
-    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8"/>
+    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8" />
 </template>
 <style>
 .banner1-url {
