@@ -31,7 +31,7 @@ function onIntersection(entry, index) {
 <template>
     <main class="min-h-screen bg-ivory max-h-full">
         <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
-            <div class="flex justify-start md:justify-center items-center pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
+            <div class="flex justify-start md:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
