@@ -35,7 +35,7 @@ function onIntersection(entry, index) {
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <div class="absolute right-4 text-stone-600/80 hover:text-stone-800/50 z-40">
+                <div class="absolute right-0 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
