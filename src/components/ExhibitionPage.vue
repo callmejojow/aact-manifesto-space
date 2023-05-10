@@ -30,7 +30,7 @@ function onIntersection(entry, index) {
 </script>
 <template>
     <main class="min-h-screen bg-ivory max-h-full">
-        <div class="sticky z-20 top-0 bg-ivory h-36 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
+        <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
             <div class="flex justify-start md:justify-center items-center pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -52,8 +52,8 @@ function onIntersection(entry, index) {
         </div>
         <!-- end of navigation -->
         <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start relative lg:h-[calc(100vh-36px)] mx-auto">
-            <div id="about" class="lg:-mt-16 min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
-                <h1 class="text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
+            <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
+                <h1 class="lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
                 <h1 class=" text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
                 <p class="text-2xl my-12">
@@ -95,7 +95,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-        <FooterComponent class="min-h-full text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-28 lg:pt-9 pb-9" />
+        <FooterComponent class="min-h-full text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-28 lg:pt-7 pb-7" />
     </main>
 </template>
 <style>
