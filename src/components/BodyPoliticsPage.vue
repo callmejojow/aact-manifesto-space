@@ -51,7 +51,7 @@ watch(activeIndex, () => {
 <template>
     <div>
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
-            <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
+            <div class="sticky z-30 top-0 bg-ivory h-32 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <div class="flex justify-start md:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                     <a href="/">
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -66,14 +66,12 @@ watch(activeIndex, () => {
                         Body Politics
                     </span>
                 </div>
-            </div>
-            <div>
-                <div class="lg:hidden p-4">
+                <div class="lg:hidden">
                     <a href="/exhibitions" class="text-sm text-stone-500 hover:text-stone-700">
                         The Bitten Peach: Decolonizing Queer Asians
                     </a>
                 </div>
-                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 mx-4 overflow-x-auto max-w-screen">
+                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen">
                     <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 0 }">
                         About
                     </a>
