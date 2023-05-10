@@ -124,7 +124,7 @@ watch(activeIndex, () => {
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.collection_title}}</p>
                             <p class="text-3xl font-bold p-20 md:p-14 sm:p-10 p-6">{{artist.artist_name}}</p>
                         </div>
-                        <CarouselComponent :slides="artist.slides" />
+                        <CarouselComponent :slides="artist.slides" class="mx-20 h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)]"/>
                         <div class="min-h-screen max-h-full mt-4 lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 px-4 md:px-6 lg:px-12 pb-6">
                             <div class="lg:w-3/4 min-h-full">
                                 <span class="font-semibold text-lg lg:text-2xl">

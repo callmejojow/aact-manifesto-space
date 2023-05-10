@@ -61,23 +61,23 @@ export const madeInQueer = {
       },
     },
     slides:[
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/SmallModels.jpg")}" class="object-contain h-[48rem]"/>`,
-      },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceAssembled.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/SmallModels.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/Foundation.jpg")}" class="object-contain h-[48rem]"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceAssembled.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/CarvingSet.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/Foundation.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/CarvingSet.jpg")}" class="object-contain h-screen"/>`,
+      },
+      {
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -150,36 +150,36 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/1_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/1_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/2_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/2_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/3_3.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/3_3.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/4_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/4_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/5_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/5_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/6_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/6_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/7_2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/7_2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Gillian/group.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -251,32 +251,32 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/HyphenatedBeing.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/HyphenatedBeing.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/SeeYouSoon.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/SeeYouSoon.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/Cannon.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/Cannon.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/Guardians.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/Guardians.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/Masquerader1.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/Masquerader1.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/CeremonialVessel.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/CeremonialVessel.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Josh/StayAtHome002.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Josh/StayAtHome002.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -369,44 +369,44 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/FRUIT_ROOM_1.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/FRUIT_ROOM_1.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_2.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_3.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_3.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_4.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_4.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_5.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_5.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_6.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_6.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_7.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_7.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_8.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_8.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_9.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Laced_Bodies_9.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_1.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_1.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_2.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_large_and_small_2.jpg")}" class="object-contain h-screen"/>`,
       },
-      {image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_small.jpg")}" class="object-contain h-[48rem]"/>`,
+      {
+        content:`<img src="${require("@/assets/MadeInQueer/Marisa/Naia_Lamps_small.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -484,28 +484,28 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/1snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/1snack.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/2snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/2snack.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/3snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/3snack.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/4snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/4snack.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/5snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/5snack.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Snack/6snack.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/6snack.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -542,8 +542,8 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Eric/ASplitPeach.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Eric/ASplitPeach.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
@@ -587,16 +587,16 @@ export const madeInQueer = {
     },
     slides:[
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo1.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo1.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo2.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo2.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        image:require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo3.jpg")}" class="object-contain h-[48rem]"/>`,
+        
+        content:`<img src="${require("@/assets/MadeInQueer/Beau/YoureHereToo3.jpg")}" class="object-contain h-screen"/>`,
       },
     ],
   },
