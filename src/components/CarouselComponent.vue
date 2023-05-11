@@ -6,8 +6,8 @@ import 'vueperslides/dist/vueperslides.css'
 defineProps({ slides: Array })
 </script>
 <template>
-    <vueper-slides class="no-shadow" arrows-outside :style="'background-color: #E4E2DD'" :infinite="false" :bullets="false" fixed-height="100vh" fade :touchable="false">
-        <vueper-slide v-for="(slide, i) in slides" :key="i" :content="slide.content" />
+    <vueper-slides lazy lazy-load-on-drag class="no-shadow" :infinite="false" :bullets="false" :touchable="false" fixed-height="800px">
+        <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" :content="slide.content" />
     </vueper-slides>
 </template>
 

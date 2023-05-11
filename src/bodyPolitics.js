@@ -86,25 +86,25 @@ export const bodyPolitics = {
             },
         },
         slides: [{
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class="object-contain h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/8_return_to_yourself.jpg")}" class="object-contain h-screen"/>`,
@@ -196,6 +196,7 @@ export const bodyPolitics = {
         description: "Jeff is interested in exploring how Asian and queer  —respectively and collectively — contest the genre of electronic dance music (e.g. house, techno, etc.) and the dance floor. The history of dance music is undeniably racialized with roots of underground music within queer Black and Latino populations in New York, Chicago, and Detroit; and also de-racialized through the the whitewashing and commodification of dance music since the late 90s. What more conversations does being a Queer Asian, specifically, bring to the conversation? What does that Queer Asian sound sound like on the dance floor? What does coalition sound like on the dancefloor and what conditions are we creating to reach that? Jeff accepted our invitation to write an essay, In an attempt to address these questions.",
         excerpt1: "Having been raised in Hong Kong for twenty-something years, I only learned about my Chineseness and Queerness when I moved to Canada four years ago. Growing up I was never asked the question Where are you from? Thinking back, there is a certain *thinginess* that comes with the migration process and spending the last few years in suburban Ontario. It all felt like a third puberty — learning how to swim again but this time in olive oil. Breathing at first was hard but as the old saying goes, you get used to it.",
         excerpt2: "The scholar Kathryn Bond Stockton writes about how queer child “grows sideways”,because queer life often defies the linear chronology of marriage and children. Stockton also describes children of color as growing sideways, since their youth is likewise outside the model of the enshrined white child. I have been thinking about how Queer Asian comes to their reckoning through a meandering fuckery of sideways and straightways and sideways. We are being told we fit in and that we can assimilate, yet we are different because of our queerness; we have been told that Asians in America have it good despite our realities tell us otherwise. Where is the Queer Asian heading?",
+        link:"https://jeffjungsingc.notion.site/Bitten-Peach-Submission-Queer-Asians-on-the-Dancefloor-5dfaf0bca4f34e5d85f146280385fce2",
         artworks: {
             art1: {
                 name: "Queer Asians on the Dancefloor",
