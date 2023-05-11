@@ -1,97 +1,148 @@
 <script setup>
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+
+import { useScrollObserver } from '@/useScrollObserver.js'
+import { ref, onMounted } from "vue"
+import SmoothScroll from 'smooth-scroll'
+/* eslint-disable no-unused-vars */
+const navbar = ref(null);
+const activeIndex = ref(-1);
+const { startObserving } = useScrollObserver();
+const people = [
+  {
+    name: 'Emily Gong',
+    role: 'Co-founder - Partnerships',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Emily Gong (she/her/they) is a Chinese Canadian artist, interdisciplinary researcher, and entrepreneur. Emily holds a BFA from Queen‘s University and a MSc from the University of Oxford. She conducted comparative research on Contemporary Art Markets, from the perspective of how to empower emerging artists from diverse backgrounds. She lived across three continents for a decade and is fascinated by dialogues between arts and science, socio-cultural anthropology, and grassroots initiatives. Emily has written for the Barbican Centre and exhibited in the Shenzhen-Hong Kong Biennale of Urbanism.'
+  },
+  {
+    name: 'Michael Wang',
+    role: 'Co-founder - Operations',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Michael Wang (he/him/his), Ph.D., is a vision scientist and tech enthusiast. His deep fascination about how humans perceive the world around them has led him to explore how personal and lived experiences are represented in various forms of art. To this end, Michael applies his knowledge in scientific research and modern technology to collaborate with local artists in Toronto to transform the creation and exhibition of arts.'
+  },
+  {
+    name: 'Shengyu Cai',
+    role: 'Curatorial Lead',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Shengyu (Sheng) Cai (he/him/his) has studied architecture as a native in China, an immigrant in Canada, and an expatriate in Denmark. He is currently practicing architecture and contemporary art in parallel in Victoria & Vancouver, British Columbia. Sheng aspires to decouple architecture with colonial and homogenizing influences and explore various mediums of spatial art that intersects with queer theory. His design and art works have been featured in X University Year End Show, RAIC Festival of Architecture, Grow-Op Exhibition of Art and Design, and Sukkahville Festival. He firmly believes that AACT‘s has the ability to become a voice for those who were once silenced and provide a platform that welcomes diverse discourses. With rich exhibition design experiences under his belt, Sheng is eager to make his contributions to AACT’s curatorial agenda.'
+  },
+  {
+    name: 'Zengcong Lai',
+    role: 'UX Design Lead',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Zengcong Lai is an architect-turned-UX designer that surprisingly holds an Accounting and Finance degree from University of Waterloo. Being a first-generation Chinese Canadian constantly entangled in ideology division and cultural paradox, he is particularly interested in exploring opportunities to ease tensions and solve social-cultural issues. With professional backgrounds in both public and private sectors, he aspires to advocate for real people with technology and design. Zeng is excited to be part of the AACT team, leading the website design and UX research to refine our organization missions and guide future event development.'
+  },
+  {
+    name: 'Jolie Wang',
+    role: 'Development Lead',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Jolie Wang is an experienced full-stack developer and product designer with a passion for creating exceptional user experiences. As a freelance illustrator and web content consultant, she helps others bring their ideas to life with her extensive knowledge of programming, art and design. Jolie is also committed to contributing to the advancement of women in tech and seeks to use her skills to support and empower women in the industry.\n Jolie‘s curious and self-driven nature makes her a skilled problem-solver who is always pushing the boundaries of what’s possible. In her free time, Jolie indulges her love of music by playing the piano. She also enjoys gardening, watching musicals and snowboarding.'
+  },
+  {
+    name: 'Chevonne Xue',
+    role: 'Visual Design Lead',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Chevonne is a sociologist-designer focusing on user experience and product development. Her background in sociology, communication studies, and design background allows her to create aesthetic and feasible design solutions that link revenue to creating social benefits.'
+  },
+  // More people...
+]
+onMounted(() => {
+    const aboutSection = document.getElementById("about");
+    const sectionsSection = document.getElementById("sections");
+    startObserving(aboutSection, 0, onIntersection);
+    startObserving(sectionsSection, 1, onIntersection);
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        easing: 'easeInOutCubic',
+    });
+});
+
+function onIntersection(entry, index) {
+    if (entry.isIntersecting) {
+        activeIndex.value = index;
+        console.log(activeIndex.value)
+    }
+}
 </script>
 <template>
-    <div class="relative scroll-smooth max-h-screen w-screen overflow-x-hidden">
-        <div class="sticky top-0 z-20 bg-ivory">
-            <div class="flex items-center justify-start lg:justify-center py-4 px-4 border-b border-stone-200/80">
+    <main class="min-h-screen bg-ivory max-h-full">
+        <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-28 mb-0">
+            <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4 lg:border-b lg:border-stone-400/50">
                 <a href="/">
-                    <img src="@/assets/manifesto-logo-black.svg" class="w-6 h-6" alt="Website Logo" />
+                    <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <p class="text-black tracking-widest ml-6">MANIFESTO</p>
-                <div class="absolute right-4 text-ivory z-40">
+                <div class="absolute right-0 md:right-6 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
-            <!-- Generic Breadcrumbs -->
-            <div class="hidden lg:flex lg:justify-start lg:items-center lg:p-4">
-                <BreadCrumbs />
-                <span class="ml-4 text-sm text-stone-400/80 capitalize">
-                    meet the team
-                </span>
+            <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center px-6 md:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
+                <BreadCrumbs :main-page="true" />
+            </div>
+            <!-- navigation -->
+            <div class="lg:hidden px-6 md:px-12 lg:px-24">
+                <p class="text-base text-stone-500">
+                    About Us
+                </p>
+            </div>
+            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
+                <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">Manifesto Space</a></li>
+                <li><a href="#team" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == 1, 'text-stone-500': activeIndex != 1 }">Team</a></li>
+            </ul>
+        </div>
+        <!-- end of navigation -->
+        <div class="min-h-full mx-auto px-6 md:px-12 lg:px-16 lg:pb-28">
+            <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40">
+                <div class="flex flex-col lg:max-w-xl mx-auto space-y-6 leading-6 text-left text-base pb-24 pt-10">
+                    <h1 class="lg:mt-16 text-3xl lg:text-4xl font-medium text-left">Manifesto Space</h1>
+                    <p class="font-normal">
+                        Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
+                    </p>
+                    <p class="font-normal">
+                        We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?
+                    </p>
+                    <p class="font-normal">
+                        We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
+                    </p>
+                </div>
+            </div>
+            <div id="team" class="pt-36 -mt-36">
+                <div class="mx-auto">
+                    <div class="mx-auto max-w-2xl lg:mx-0">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Team</h2>
+                    </div>
+                    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <li v-for="person in people" :key="person.name">
+                            <img class="aspect-[1/1] w-full rounded object-cover" :src="person.imageUrl" alt="Profile Image" />
+                            <h3 class="mt-6 text-2xl font-bold leading-8 tracking-tight text-gray-900">{{ person.name }}</h3>
+                            <p class="text-base leading-7 text-gray-600">{{ person.role }}</p>
+                            <p class="mt-3 leading-6">{{ person.bio }}</p>
+                            <!-- <ul role="list" class="mt-6 flex gap-x-6">
+                                <li>
+                                    <a :href="person.twitterUrl" class="text-gray-400 hover:text-gray-500">
+                                        <span class="sr-only">Twitter</span>
+                                        <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a :href="person.linkedinUrl" class="text-gray-400 hover:text-gray-500">
+                                        <span class="sr-only">LinkedIn</span>
+                                        <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="h-full overflow-hidden min-h-screen relative bg-ivory px-6 md:px-10 lg:px-12 xl:px-16 pt-16 team-bg bg-contain bg-no-repeat bg-right-bottom">
-            <h1 class="capitalize font-extrabold text-2xl md:text-3xl lg:text-5xl text-black">our team memebers</h1>
-            <div class="py-6 grid md:grid-cols-2 gap-16 justify-start mx-auto z-30">
-                <div class="z-20 flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-                <div class="flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-                <div class="flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-                <div class="flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-                <div class="flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-                <div class="flex justify-start items-center gap-4">
-                    <div>
-                        <img src="@/assets/avatar.png" class="w-24 lg:w-28 w-24 lg:h-28 rounded-full object-contain" />
-                    </div>
-                    <div>
-                        <h2 class="capitalize font-bold text-xl md:text-2xl xl:text-3xl text-black/80">team member name</h2>
-                        <p class="font-semibold text-base xl:text-lg">Role/Position (Tenure)</p>
-                        <p class="font-semibold text-base xl:text-lg">Visit my socials: @intagram or whatever</p>
-                    </div>
-                </div>
-            </div>
-            <div class="z-0 absolute -left-8 top-0 w-32 h-32 bg-bitten rounded-full bg-opacity-80 mix-blend-multiply overflow-hidden blur-md">
-            </div>
-            <div class="absolute -left-16 -bottom-16 w-[16rem] h-[16rem] bg-bitten rounded-full bg-opacity-30 mix-blend-multiply overflow-hidden blur-xl">
-            </div>
-            <div class="absolute -right-16 bottom-64 w-96 h-96 bg-bitten rounded-full bg-opacity-70 mix-blend-multiply overflow-hidden blur-lg">
-            </div>
-        </div>
-    </div>
+        <FooterComponent class="min-h-full text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-28 lg:pt-7 pb-7" />
+    </main>
 </template>

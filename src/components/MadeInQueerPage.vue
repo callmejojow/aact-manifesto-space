@@ -47,16 +47,16 @@ watch(activeIndex, () => {
     <div class="bg-ivory max-h-full">
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky z-30 top-0 bg-ivory h-32 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
-                <div class="flex justify-start md:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
+                <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                     <a href="/">
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                     </a>
-                    <div class="absolute right-0 text-stone-600/80 hover:text-stone-800/50 z-40">
+                    <div class="absolute right-0 md:right-6 text-stone-600/80 hover:text-stone-800/50 z-40">
                         <NavDropdown />
                     </div>
                 </div>
-                <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:px-12">
-                    <BreadCrumbs />
+                <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
+                    <BreadCrumbs :main-page="false" />
                     <span class="ml-4 text-sm text-stone-500/80">
                         Made In Queer
                     </span>
