@@ -397,19 +397,19 @@ export const yellowPerils = {
         name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: "mt_w1.jpg",
+        file_name: "mt_w1.png",
       },
       art3: {
         name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: "mt_w2.jpg",
+        file_name: "mt_w2.png",
       },
       art4: {
         name: "Mother’s Tongue",
         year: '',
         medium: "",
-        file_name: "mt_w3.jpg",
+        file_name: "mt_w3.png",
       },
     },
     slides:[
@@ -417,13 +417,13 @@ export const yellowPerils = {
         content:`<img src="${require("@/assets/YellowPerils/Michelle/mothers_tongue.jpg")}" class="object-contain h-screen"/>`,
       },
       {
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w1.jpg")}" class="object-contain h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w1.png")}" class="object-contain h-screen"/>`,
       },
       {
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w2.jpg")}" class="object-contain h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w2.png")}" class="object-contain h-screen"/>`,
       },
       {
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w3.jpg")}" class="object-contain h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w3.png")}" class="object-contain h-screen"/>`,
       },
     ],
   },

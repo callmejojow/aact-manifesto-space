@@ -6,7 +6,7 @@ import 'vueperslides/dist/vueperslides.css'
 defineProps({ slides: Array })
 </script>
 <template>
-    <vueper-slides class="no-shadow" arrows-outside :style="'background-color: #E4E2DD'" :infinite="false" :bullets="false" :slide-ratio="9 / 16" fixed-height="100vh" fade :touchable="false">
+    <vueper-slides class="no-shadow" arrows-outside :style="'background-color: #E4E2DD'" :infinite="false" :bullets="false" fixed-height="100vh" fade :touchable="false">
         <vueper-slide v-for="(slide, i) in slides" :key="i" :content="slide.content" />
     </vueper-slides>
 </template>
