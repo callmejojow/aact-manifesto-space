@@ -30,7 +30,7 @@ function onIntersection(entry, index) {
 </script>
 <template>
     <main class="min-h-screen bg-ivory max-h-full">
-        <div class="sticky z-30 top-0 bg-ivory h-32 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
+        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
             <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -41,19 +41,19 @@ function onIntersection(entry, index) {
             </div>
             <!-- navigation -->
             <div class="lg:hidden px-6 md:px-12 lg:px-24">
-                <p class="text-base text-stone-500">
+                <p class="text-sm text-stone-500">
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
             </div>
-            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
-                <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">About</a></li>
-                <li><a href="#sections" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == 1, 'text-stone-500': activeIndex != 1 }">Exhibitions Sections</a></li>
+            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen text-sm">
+                <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-semibold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">About</a></li>
+                <li><a href="#sections" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-semibold text-stone-800': activeIndex == 1, 'text-stone-500': activeIndex != 1 }">Exhibitions Sections</a></li>
             </ul>
         </div>
         <!-- end of navigation -->
         <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start relative lg:h-[calc(100vh-36px)] mx-auto">
             <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
-                <h1 class="lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
+                <h1 class="mt-6 lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
                 <h1 class=" text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
                 <p class="text-2xl my-12">
@@ -71,7 +71,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-32 -mt-32 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
+            <div id="sections" class="pt-24 -mt-24 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made_in_queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
