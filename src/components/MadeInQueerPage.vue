@@ -189,9 +189,10 @@ watch(activeIndex, () => {
                     </div>
                 </div>
             </div>
+            <div class="snap-start"></div>
+            <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8" />
         </div>
     </div>
-    <FooterComponent class="min-h-full text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8" />
 </template>
 <style>
 .banner2-url {

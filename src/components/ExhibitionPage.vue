@@ -30,7 +30,7 @@ function onIntersection(entry, index) {
 </script>
 <template>
     <main class="min-h-screen bg-ivory max-h-full">
-        <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
+        <div class="sticky z-30 top-0 bg-ivory h-36 lg:h-28 mb-0 lg:border-b lg:border-stone-400/50">
             <div class="flex justify-start md:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -41,13 +41,13 @@ function onIntersection(entry, index) {
             </div>
             <!-- navigation -->
             <div class="lg:hidden px-6 md:px-12 lg:px-24">
-                <p class="text-sm text-stone-500 hover:text-stone-700">
+                <p class="text-base text-stone-500">
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
             </div>
-            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory py-1.5 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
-                <li><a href="#about" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 0 }">About</a></li>
-                <li><a href="#sections" class="nav-item inline-block ivoryspace-nowrap text-stone-600 text-sm" :class="{'font-bold': activeIndex == 1 }">Exhibitions Sections</a></li>
+            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
+                <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">About</a></li>
+                <li><a href="#sections" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == 1, 'text-stone-500': activeIndex != 1 }">Exhibitions Sections</a></li>
             </ul>
         </div>
         <!-- end of navigation -->

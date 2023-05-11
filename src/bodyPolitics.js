@@ -322,7 +322,7 @@ export const bodyPolitics = {
             '\n' +
             'This season, they look to the written word for inspiration. They are lifting queer stories from the page and bringing you images inspired by our favourite stories.',
         topic_name: "Body Politics",
-        collection_title: '',
+        collection_title: null,
         quote_bg_url: require('@/assets/BodyPolitics/Theysi/6WhoWeAre.jpg'),
         description: "Theysi Queers is a collective of artists, dreamers, makers, and creators based in Tkaronto. Our vision is to imagine queer futures and realities within the South Asian diaspora.\n" +
             "\n" +
@@ -477,7 +477,7 @@ export const bodyPolitics = {
         bio: 'Makoto (he/him) is a visual artist from diasporic Ashkenazi and Yonsei Nikkei heritages. Chi grew up in the unceded lands of the xʷməθkʷəy̓əm , Sḵwx̱wú7mesh , and səlilwətaɬ Nations, colonially known as Vancouver. This land base informs much of his work and thought, especially that of being a mixed-race person amongst other racialized people of different ways of being in the world. Chi began dabbling in commercial art in his young teens after artistically gestating in early internet forums. Simultaneously, he started tattooing in a small apartment in the Chinatown neighborhood. He has since gained a BFA in Illustration from Emily Carr University in 2015, and has been cultivating an 18-year internationally recognized tattoo practice - he also takes part in commercial exhibits across turtle island and beyond. Makoto Chi currently lives at Lupinewood Collective, a queer collective housing project in so-called western Massachusetts. He is cultivating slow practices and making art that addresses sexuality amidst rising fascism, about lineage, and unanswerable questions about solidarity and strife in the overlapping communities he experiences.',
         topic_name: "Body Politics",
         quote_bg_url: require('@/assets/BodyPolitics/Makoto/YinYang.jpg'),
-        collection_title: "",
+        collection_title: null,
         directory: "/assets/BodyPolitics/Makoto",
         description: 'There is an essay by Kai Cheng Thom wherein she states that performing funerary traditions as the eldest “son” did not undo her gender or femininity, because by inhabiting the rites of her ancestors she is showing up fully and honestly. That holding of many truths and contradictions in a culture that loves rigid binaries is where I situate myself -sometimes in comfort, sometimes not - as a mixed-race, transgender queer person. Ideas around ‘Eastern’ or ‘Western’ ways we must show up in the world have, at times, felt like toys, like shelter, and sometimes like cudgels. It is a beautiful space to inhabit, and it is also quite lonely, and I see that loneliness in my communities. Relatedly, the eurocentric lens deftly severs our sense of lineages, spiritualities and relationships with the land. Much of my art is in practicing a type of grief over my own busted connections to the peoples and lands of my predecessors, with the lands I have been born on — and reaching out to find others like me, carving pathways towards ourselves and each other.\n' +
             '\n' +

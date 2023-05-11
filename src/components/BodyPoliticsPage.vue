@@ -48,7 +48,7 @@ watch(activeIndex, () => {
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky z-30 top-0 bg-ivory h-32 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <div class="flex justify-start md:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
-                    <a href="/">
+                    <a href="/"> 
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                     </a>
                     <div class="absolute right-0 text-stone-600/80 hover:text-stone-800/50 z-40">
@@ -74,7 +74,7 @@ watch(activeIndex, () => {
                         Body Politics
                     </button>
                 </div>
-                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen text-base">
+                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen text-base">
                     <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
                         About
                     </a>
@@ -126,7 +126,7 @@ watch(activeIndex, () => {
                             <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                             <p class="text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
-                        <CarouselComponent :slides="artist.slides"/>
+                        <CarouselComponent :slides="artist.slides" />
                         <div class="min-h-screen mt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
                                 <span v-if="artist.collection_title" class="font-bold leanding-4">
@@ -159,7 +159,7 @@ watch(activeIndex, () => {
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-<!--                            <p> {{artist.bio}} </p>-->
+                            <!--                            <p> {{artist.bio}} </p>-->
                             <div class="" v-html="artist.bio" style="white-space: pre-line"> </div>
                         </div>
                     </div>
@@ -189,9 +189,10 @@ watch(activeIndex, () => {
                     </div>
                 </div>
             </div>
+            <div class="snap-start"></div>
+            <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-8 lg:pt-7 pb-7" />
         </div>
     </div>
-    <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8" />
 </template>
 <style>
 .banner1-url {
