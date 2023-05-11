@@ -74,7 +74,7 @@ watch(activeIndex, () => {
                         Body Politics
                     </button>
                 </div>
-                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen text-sm">
+                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen text-sm scrollbar-hide">
                     <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-semibold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
                         About
                     </a>
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-6 scroll-mt-28 snap-start min-h-full px-20 md:px-14 sm:px-10 px-6">
+            <section id="about" class="pt-6 scroll-mt-24 snap-start min-h-full px-20 md:px-14 sm:px-10 px-6">
                 <h2 class="mb-6 lg:mt-16 lg:mb-10 text-xl font-bold">About</h2>
                 <p class="font-normal text-sm leading-5 lg:text-lg">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
