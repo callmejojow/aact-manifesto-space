@@ -215,7 +215,7 @@ export const bodyPolitics = {
         quote: '“My friends and I encounter challenges related to upholding the family lineage, showing filial piety, and respecting parental authority, which may not be commonly experienced by the queer community in Western cultures.”',
         bio: 'I\'m Muchen, a photographer and videographer. When I was little, both still photos and movie scenes astounded me. Throughout my growing process, photos, movies, and drawing have all been present. Visual pictures have been my main tool to explore my internal expression during my developing process, but more crucial for me right now is to use my works as a medium to resonate with the outside world. Images affect me both consciously and unconsciously throughout my life. I was able to get through some of my darkest years with the diversion of making art out of photographs. I couldn\'t have found it anyplace else, but it gave me the consciousness and voice I needed.',
         topic_name: "Body Politics",
-        quote_bg_url: "",
+        quote_bg_url: require("@/assets/BodyPolitics/Muchen/MuchenQuoteBackground.jpg"),
         collection_title: "Yang",
         directory: "",
         description: "As the artist and filmmaker of the experimental video \"Yang,\" I delved into the personal experiences and challenges faced by my dear friend Yang. Through a combination of montages and interviews, I aimed to capture the essence of Yang's reflections on his journey, intertwined with his deeply personal explorations of his life experiences.\n" +
