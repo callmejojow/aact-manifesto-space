@@ -135,11 +135,11 @@ watch(activeIndex, () => {
                                 <span v-else class="font-bold leanding-4">
                                     About This Collection
                                 </span>
-                                <div class="text-base mt-4 leading-6">{{artist.description}}</div>
+                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
                                 <span class="font-bold leading-4">{{artist.artist_name}}</span>
-                                <div class="text-base mt-4 leading-6">{{artist.description}}</div>
+                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,6 @@ watch(activeIndex, () => {
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-                            <!--                            <p> {{artist.bio}} </p>-->
                             <div class="" v-html="artist.bio" style="white-space: pre-line"> </div>
                         </div>
                     </div>
@@ -179,11 +178,11 @@ watch(activeIndex, () => {
                                 <span v-else class="font-bold leanding-4">
                                     About This Collection
                                 </span>
-                                <div class="text-base mt-4 leading-6">{{artist.description}}</div>
+                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
                                 <span class="font-bold leading-4">{{artist.artist_name}}</span>
-                                <div class="text-base mt-4 leading-6">{{artist.description}}</div>
+                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
                             </div>
                         </div>
                     </div>

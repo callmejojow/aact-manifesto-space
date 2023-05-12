@@ -417,11 +417,9 @@ export const madeInQueer = {
     artist_name: "Snack Witch",
     ins_handle: [],
     quote: '“I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.”',
-    bio: '🔮Snack Witch 🍡 is a Canadian-born Hong Kong-Chinese anglophone, queer woman and grateful, uninvited guest born—and knows she wants to die—on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, and Səl̓ílwətaʔ/Selilwitulh peoples. Her interdisciplinary practice investigates the relationship between objects ↔ place ↔ migration ↔ identities, always with humour, sometimes with food. 😉\n' +
+    bio: 'They recently became a Certified Sculpture Witch with an MFA from Concordia University. She holds a BFA with Distinction in Visual Art (2018) from the School for the Contemporary Arts at Simon Fraser University. As a wicked #magicalgirl ✨ who eats art and makes snacks, she has exhibited and curated shows, off- and online, across Turtle Island. Currently, they are based on the stolen lands of the Kanien’kehá:ka peoples.\n' +
         '\n' +
-        'They’re currently toiling over their MFA on stolen lands of the Kanien’kehá:ka at Concordia University.  A wicked #magicalgirl ✨ eating art + making snacks 🌈, she has exhibited and curated shows across Turtle Island, colonially known as Canada, including Centre CLARK, Montréal; Latitude 53, Edmonton; Xpace Cultural Centre, Toronto; and Hotam Press Bookshop & Gallery, Vancouver; among other spaces and platforms. Their work has been published nationally and internationally.\n' +
-        '\n' +
-        'They are a recipient of numerous awards, including the BC Arts Council Scholarship and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship.',
+        'They are a recipient of numerous awards, including the Canada Council for the Arts and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship.',
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
     quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
