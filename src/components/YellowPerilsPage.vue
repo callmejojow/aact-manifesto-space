@@ -46,7 +46,7 @@ watch(activeIndex, () => {
 <template>
     <div class="bg-ivory">
         <div class="h-screen overflow-scroll snap-y snap-mandatory">
-            <div class="sticky z-30 top-0 bg-ivory h-32 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
+            <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                     <a href="/">
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -61,7 +61,7 @@ watch(activeIndex, () => {
                         Yellow Perils
                     </span>
                 </div>
-                <div class="lg:hidden flex items-center justify-start w-80 text-stone-700 text-base">
+                <div class="lg:hidden flex items-center justify-start w-80 text-stone-700 text-sm">
                     <a href="/" class="hover:text-stone-900">
                         Home
                     </a>
@@ -74,7 +74,7 @@ watch(activeIndex, () => {
                         Yellow Perils
                     </button>
                 </div>
-                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen text-base">
+                <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen text-sm scrollbar-hide">
                     <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
                         About
                     </a>
@@ -84,7 +84,7 @@ watch(activeIndex, () => {
                 </nav>
             </div>
             <!-- Banner -->
-            <section id="page_banner" class="scroll-mt-32 lg:scroll-mt-28 snap-start h-screen min-h-screen w-full bg-cover bg-top banner3-url overflow-hidden">
+            <section id="page_banner" class="scroll-mt-28 snap-start h-screen min-h-screen w-full bg-cover bg-top banner3-url overflow-hidden">
                 <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
                     <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-6 scroll-mt-32 lg:scroll-mt-28 snap-start min-h-full px-20 md:px-14 sm:px-10 px-6">
+            <section id="about" class="pt-6 scroll-mt-24 snap-start min-h-full px-20 md:px-14 sm:px-10 px-6">
                 <h2 class="mb-6 lg:mt-16 lg:mb-10 text-xl font-bold">About</h2>
                 <p class="font-normal text-sm leading-5 lg:text-lg">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -107,7 +107,7 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in yellowPerilsArray" :key="index" class="scroll-mt-32 lg:scroll-mt-28 snap-start pb-20">
+            <div v-for="(artist,index) in yellowPerilsArray" :key="index" class="scroll-mt-28 snap-start pb-20">
                 <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)] w-screen bg-cover sticky-margin lg:sticky-margin-lg" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">

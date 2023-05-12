@@ -3,6 +3,7 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
+import { team } from '@/team.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
 import { ref, onMounted } from "vue"
 import SmoothScroll from 'smooth-scroll'
@@ -10,45 +11,7 @@ import SmoothScroll from 'smooth-scroll'
 const navbar = ref(null);
 const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
-const people = [
-  {
-    name: 'Emily Gong',
-    role: 'Co-founder - Partnerships',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Emily Gong (she/her/they) is a Chinese Canadian artist, interdisciplinary researcher, and entrepreneur. Emily holds a BFA from Queen‘s University and a MSc from the University of Oxford. She conducted comparative research on Contemporary Art Markets, from the perspective of how to empower emerging artists from diverse backgrounds. She lived across three continents for a decade and is fascinated by dialogues between arts and science, socio-cultural anthropology, and grassroots initiatives. Emily has written for the Barbican Centre and exhibited in the Shenzhen-Hong Kong Biennale of Urbanism.'
-  },
-  {
-    name: 'Michael Wang',
-    role: 'Co-founder - Operations',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Michael Wang (he/him/his), Ph.D., is a vision scientist and tech enthusiast. His deep fascination about how humans perceive the world around them has led him to explore how personal and lived experiences are represented in various forms of art. To this end, Michael applies his knowledge in scientific research and modern technology to collaborate with local artists in Toronto to transform the creation and exhibition of arts.'
-  },
-  {
-    name: 'Shengyu Cai',
-    role: 'Curatorial Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Shengyu (Sheng) Cai (he/him/his) has studied architecture as a native in China, an immigrant in Canada, and an expatriate in Denmark. He is currently practicing architecture and contemporary art in parallel in Victoria & Vancouver, British Columbia. Sheng aspires to decouple architecture with colonial and homogenizing influences and explore various mediums of spatial art that intersects with queer theory. His design and art works have been featured in X University Year End Show, RAIC Festival of Architecture, Grow-Op Exhibition of Art and Design, and Sukkahville Festival. He firmly believes that AACT‘s has the ability to become a voice for those who were once silenced and provide a platform that welcomes diverse discourses. With rich exhibition design experiences under his belt, Sheng is eager to make his contributions to AACT’s curatorial agenda.'
-  },
-  {
-    name: 'Zengcong Lai',
-    role: 'UX Design Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Zengcong Lai is an architect-turned-UX designer that surprisingly holds an Accounting and Finance degree from University of Waterloo. Being a first-generation Chinese Canadian constantly entangled in ideology division and cultural paradox, he is particularly interested in exploring opportunities to ease tensions and solve social-cultural issues. With professional backgrounds in both public and private sectors, he aspires to advocate for real people with technology and design. Zeng is excited to be part of the AACT team, leading the website design and UX research to refine our organization missions and guide future event development.'
-  },
-  {
-    name: 'Jolie Wang',
-    role: 'Development Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Jolie Wang is an experienced full-stack developer and product designer with a passion for creating exceptional user experiences. As a freelance illustrator and web content consultant, she helps others bring their ideas to life with her extensive knowledge of programming, art and design. Jolie is also committed to contributing to the advancement of women in tech and seeks to use her skills to support and empower women in the industry.\n Jolie‘s curious and self-driven nature makes her a skilled problem-solver who is always pushing the boundaries of what’s possible. In her free time, Jolie indulges her love of music by playing the piano. She also enjoys gardening, watching musicals and snowboarding.'
-  },
-  {
-    name: 'Chevonne Xue',
-    role: 'Visual Design Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Chevonne is a sociologist-designer focusing on user experience and product development. Her background in sociology, communication studies, and design background allows her to create aesthetic and feasible design solutions that link revenue to creating social benefits.'
-  },
-  // More people...
-]
+
 onMounted(() => {
     const aboutSection = document.getElementById("about");
     const sectionsSection = document.getElementById("sections");
@@ -115,14 +78,14 @@ function onIntersection(entry, index) {
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Team</h2>
                     </div>
                     <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        <li v-for="person in people" :key="person.name">
-                            <img class="aspect-[1/1] w-full rounded object-cover" :src="person.imageUrl" alt="Profile Image" />
-                            <h3 class="mt-6 text-2xl font-bold leading-8 tracking-tight text-gray-900">{{ person.name }}</h3>
-                            <p class="text-base leading-7 text-gray-600">{{ person.role }}</p>
-                            <p class="mt-3 leading-6">{{ person.bio }}</p>
+                        <li v-for="member in team" :key="member.name">
+                            <img class="aspect-[1/1] w-full rounded object-cover" :src="member.imageUrl" alt="Profile Image" />
+                            <h3 class="mt-6 text-2xl font-bold leading-8 tracking-tight text-gray-900">{{ member.name }}</h3>
+                            <p class="text-base leading-7 text-gray-600">{{ member.role }}</p>
+                            <p class="mt-3 leading-6">{{ member.bio }}</p>
                             <!-- <ul role="list" class="mt-6 flex gap-x-6">
                                 <li>
-                                    <a :href="person.twitterUrl" class="text-gray-400 hover:text-gray-500">
+                                    <a :href="member.twitterUrl" class="text-gray-400 hover:text-gray-500">
                                         <span class="sr-only">Twitter</span>
                                         <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
@@ -130,7 +93,7 @@ function onIntersection(entry, index) {
                                     </a>
                                 </li>
                                 <li>
-                                    <a :href="person.linkedinUrl" class="text-gray-400 hover:text-gray-500">
+                                    <a :href="member.linkedinUrl" class="text-gray-400 hover:text-gray-500">
                                         <span class="sr-only">LinkedIn</span>
                                         <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
