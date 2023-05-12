@@ -327,13 +327,11 @@ export const yellowPerils = {
     quote_bg_url: require('@/assets/YellowPerils/Julie/JulieTian_3.jpg'),
     description: "This piece is part of a series of interpretations of the Seven Grandfather Teachings for a project called “A Visual Reconciliation”. I approached the project from my observations of my childhood and relationship with my family. The title of this piece is my xiǎomíng (small name), níng nìng, which can be used in the context of “peace” and “would rather” respectively.\n" +
         "\n" +
-        "I spent my early childhood in Northern China before my parents and I immigrated to Canada without any support network. My idea of resilience and dedication was shaped by my mother and the environment around us. I saw her selfless commitment to what she cares about, and so like my mother, I have a sense of responsibility and give care earnestly. I’m aware of the physical toll and the always-present guilt of not doing or being enough, but I would rather be like that than not to help.\n" +
+        "I spent my early childhood in Northern China before my parents and I immigrated to Canada without any support network. My idea of resilience and dedication was shaped by my mother and the environment around us. I saw her selfless commitment to what she cares about, and so like my mother, I have a sense of responsibility and give care earnestly. I’m aware of the physical toll and the always-present guilt of not doing or being enough, but I would rather that than not to help.\n" +
         " \n" +
-        "North American culture is built on individualism, fragmented and transient, and the Queer Asian community here is not exempt from this. Queer folks here fortunately have more space and the privilege to continuously rebuild and redefine their own communities. But I’m not used to this kind of liberty, and it’s not something I can depend on when Queer survival and existence are a priority. \n" +
+        "North American culture is fundamentally individualistic, fragmented, and transient, and the Queer Asian community here is not exempt from this. Queer folks here fortunately have more space and the privilege to continuously rebuild and redefine their own communities. But I’m not used to this kind of liberty, and it’s not something I can depend on when Queer survival and existence are a priority. \n" +
         "\n" +
-        "I’ve struggled with navigating the transactional nature of the Queer communities here because I feel it’s okay to give more than we take.  \n" +
-        "\n" +
-        "Oil on wood panel, 24\" x 18\"",
+        "I’ve struggled with navigating the transactional nature of the Queer communities here because I feel it’s okay to give more than we take.  \n",
     directory: "/assets/YellowPerils/Julie",
     artworks: {
       art1: {
