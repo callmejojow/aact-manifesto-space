@@ -67,8 +67,8 @@ export const yellowPerils = {
     artist_name: "Andi Vicente",
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
     quote: '“I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, Isneg. To be seen by others like you can be a gift, a moment of euphoria. Sometimes it can bring about forced relationships. Solidarity is not simply based on the similar ways we experience oppression. Solidarity is compassionate.”',
-    bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?”\n' +
-        'Author and Editor of Bitter Melanin.',
+    bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?”\n\n' +
+        'Andi is the author and editor of <a class="font-medium text-bitten/80 hover:text-bitten" href="http://anakpublishing.ca/BitterMelanin.html">Bitter Melanin</a>.',
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
@@ -85,9 +85,8 @@ export const yellowPerils = {
         "\n" +
         "4. makibaka (to struggle and to fight)\n" +
         "mixed media of two friends who are active and militant in their activist work and that the impact, the amplification of their dedication is widespread and appreciated by many.\n" +
+        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>.\n" +
         "\n" +
-        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>." +
-        "\n\n" +
         "5. thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
         "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n",
     directory: "/assets/YellowPerils/Andi",
