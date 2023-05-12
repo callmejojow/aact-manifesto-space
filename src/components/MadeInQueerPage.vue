@@ -57,7 +57,7 @@ watch(activeIndex, () => {
                 </div>
                 <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
                     <BreadCrumbs :main-page="false" />
-                    <span class="ml-4 text-sm text-stone-500/80">
+                    <span class="ml-3 text-sm text-stone-500/80">
                         Made In Queer
                     </span>
                 </div>
@@ -95,15 +95,15 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-6 scroll-mt-24 snap-start min-h-full px-20 md:px-14 sm:px-10 px-6">
-                <h2 class="mb-6 lg:mt-16 lg:mb-10 text-xl font-bold">About</h2>
-                <p class="font-normal text-sm leading-5 lg:text-lg">
+            <section id="about" class="pt-16 lg:pt-12 pb-16 lg:pb-12 scroll-mt-24 snap-start h-full md:px-12 px-6">
+                <h2 class="mb-4 lg:mb-6 text-xl lg:text-4xl font-bold">About</h2>
+                <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
                 </p>
-                <p class="font-normal mt-3 text-sm leading-5 lg:text-lg">
+                <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">
                     We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?
                 </p>
-                <p class="font-normal mt-3 text-sm leading-5 lg:text-lg">
+                <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>

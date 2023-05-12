@@ -34,9 +34,9 @@ const pages = [
     { name: 'AACT', href: 'https://aact.community/' },
 ]
 const medias = [
-    { name: 'INSTAGRAM', href: '#' },
-    { name: 'FACEBOOK', href: '#' },
+    { name: 'INSTAGRAM', href: 'https://www.instagram.com/aact.community/' },
+    { name: 'FACEBOOK', href: 'https://www.facebook.com/aact.community/' },
     { name: 'LINKEDIN', href: 'https://www.linkedin.com/company/asian-arts-and-culture-trust/' },
-    { name: 'EMAIL', href: 'mailto:jingwangjolie@gmail.com' },
+    { name: 'EMAIL', href: 'mailto:aact.canada@gmail.com' },
 ]
 </script>
