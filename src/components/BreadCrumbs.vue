@@ -1,7 +1,7 @@
 <template>
   <nav class="flex" aria-label="Breadcrumb">
     <div v-if="!mainPage">
-      <ol role="list" class="flex items-center space-x-4">
+      <ol role="list" class="flex items-center space-x-3">
         <li>
           <div>
             <a href="#" class="text-stone-600 hover:text-stone-800">
@@ -19,7 +19,7 @@
       </ol>
     </div>
     <div v-else>
-      <ol role="list" class="flex items-center space-x-4">
+      <ol role="list" class="flex items-center space-x-3">
         <li>
           <div>
             <a href="#" class="text-stone-600 hover:text-stone-800">
