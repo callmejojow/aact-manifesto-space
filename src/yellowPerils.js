@@ -62,7 +62,7 @@ export const yellowPerils = {
   },
   artist10:{
     idx: 10,  // for internal use
-    format: AllowedFormats.Mixed, 
+    format: AllowedFormats.Image,
     visible: true,
     artist_name: "Andi Vicente",
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
