@@ -17,7 +17,7 @@ const router = createRouter({
 			component: Home
 		},
 		{
-			path:'/about_us',
+			path:'/about-us',
 			component: About
 		},
 		{
@@ -29,15 +29,15 @@ const router = createRouter({
 			component: Artist
 		},
 		{
-			path:'/exhibitions/body_politics',
+			path:'/exhibitions/body-politics',
 			component: BodyPolitics
 		},
 		{
-			path:'/exhibitions/made_in_queer',
+			path:'/exhibitions/made-in-queer',
 			component: MadeInQueer
 		},
 		{
-			path:'/exhibitions/yellow_perils',
+			path:'/exhibitions/yellow-perils',
 			component: YellowPerils
 		},
 	]

@@ -30,13 +30,13 @@
 const pages = [
     { name: 'HOME', href: '/' },
     { name: 'EXHIBITION', href: '/exhibitions' },
-    { name: 'ABOUT US', href: '/about' },
+    { name: 'ABOUT US', href: '/about-us' },
     { name: 'AACT', href: 'https://aact.community/' },
 ]
 const medias = [
     { name: 'INSTAGRAM', href: '#' },
     { name: 'FACEBOOK', href: '#' },
-    { name: 'LINKEDIN', href: '#' },
+    { name: 'LINKEDIN', href: 'https://www.linkedin.com/company/asian-arts-and-culture-trust/' },
     { name: 'EMAIL', href: 'mailto:jingwangjolie@gmail.com' },
 ]
 </script>
