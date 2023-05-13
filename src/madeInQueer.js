@@ -514,12 +514,14 @@ export const madeInQueer = {
     artist_name: "Eric Chengyang",
     ins_handle: ["@monkeywearstie"],
     quote: '“By integrating storytelling with historical research and contemporary art, my practice explores the themes of symbiotic duality and paradox, such as the intersections and proximity between the East and the West.”',
-    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox with a focus on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy. Aiming to build bridges through multidisciplinary art practices, Eric is also one-half of an artist duo called the Dawat Yan Project, co-founded with Mariam Magsi. (Pronouns: They/He)',
-    // bio: '',  // TODO note: the artist wishes not to share his bio for the exhibition
+    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox by focusing on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy.  Besides a solo practice, Eric is a part of the collaborative Dawat Yan Project. (Pronouns: they/he)',
     topic_name: "Made in Queer",
-    quote_bg_url: require("@/assets/MadeInQueer/Eric/ASplitPeach.jpg"),
-    collection_title: "",
-    description: "Fen-tao 分桃\n" +
+    quote_bg_url: require("@/assets/MadeInQueer/Eric/ASplitPeachSingle.jpg"),
+    collection_title: "Study of Equivalent Relations (A Split Peach), Iteration II",
+    description: "Digital Watercolour & Photography, Text\n" +
+        "Process-based Project since 2018\n" +
+        "\n" +
+        "Fen-tao 分桃\n" +
         "Literal: the divided peach | Euphemism: homosexuality\n" +
         "\n" +
         "异日，与君游于果园，食桃而甘，不尽，以其半啗君，君曰：爱我哉，忘其口味，以啗寡人。 及弥子色衰爱弛，得罪于君，君曰：是固尝矫驾吾车，又尝啗我以馀桃。—— 节选于《韩非子·说难篇》 \n" +
@@ -528,7 +530,11 @@ export const madeInQueer = {
         "\n" +
         "As both men aged, the Duke’s attraction toward Mizi diminished. On another day, when Mizi offended the Duke, the Duke responded, ‘this person has offended me several times. For example, he had used the royal chaise by forging my name and authority. Furthermore, he once offered me a leftover peach that he no longer desired’...” \n" +
         "\n" +
-        "-- Excerpt taken from Shui Nan (the Difficulties of Persuasion) by Han, Feizi; Translated by Eric Chengyang\n",
+        "-- Excerpt taken from Shui Nan (the Difficulties of Persuasion) by Han, Feizi; Translated by Eric Chengyang\n" +
+        "\n" +
+        "Bridging the East and the West, the Past and Present,  this project pays further homage to the works by these contemporary artists:\n" +
+        "1. “Untitled” (Perfect Lovers) by Felix Gonzalez-Torres. See it on MoMA <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.moma.org/collection/works/81074'>online collection</a>\n" +
+        "2. “The Origin of Love”, written by Stephen Trask for Hedwig and the Angry Inch. Listen to the official audio of Neil Patrick Harris’ version on <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=VZtyFQQPnEs'>YouTube</a>",
     directory: '/assets/MadeInQueer/Eric',
     artworks: {
       art1: {
