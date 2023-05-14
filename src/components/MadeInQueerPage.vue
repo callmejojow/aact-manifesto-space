@@ -190,7 +190,6 @@ watch(activeIndex, () => {
                             </div>
                         </div>
                     </div>
-                    <div class="snap-start"></div>
                 </div>
             </div>
             <div class="snap-start"></div>
