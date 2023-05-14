@@ -107,39 +107,42 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in madeInQueerArray" :key="index" class="scroll-mt-28 snap-start pb-20">
+            <div v-for="(artist,index) in madeInQueerArray" :key="index" class="pb-20">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)] w-screen bg-cover sticky-margin lg:sticky-margin-lg" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
-                    <div class="h-full flex flex-col items-center justify-center px-20 md:px-14 sm:px-10 px-6 bg-black/70">
-                        <p class="font-thin tracking-wider max-w-4xl text-lg md:text-xl lg:text-2xl xl:text-3xl text-ivory/90">
+                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)] w-screen bg-cover scroll-mt-24 scroll-mt-18 snap-start" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                    <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
+                        <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
                             {{artist.quote}}
                         </p>
-                        <p class="mt-10 z-20 text-ivory/90 font-semibold text-xl md:text-2xl lg:text-3xl text-ivory text-center">
+                        <p class="mt-4 lg:mt-6 z-20 text-ivory/90 font-semibold text-base lg:text-2xl text-ivory text-center">
                             {{artist.artist_name}}
                         </p>
                     </div>
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
-                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 md:px-14 sm:px-10 px-6">
+                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 md:px-14 sm:px-10 px-6 scroll-mt-24 scroll-mt-18 snap-start">
                     <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen max-h-full">
-                        <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4">
+                        <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                             <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                             <p class="text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
-                        <CarouselComponent :slides="artist.slides"/>
-                        <div class="min-h-screen mt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
+                        <div class="block md:hidden h-full" v-for="(art,index) in artist.artworks" :key="index">
+                            <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3"/>
+                        </div>
+                        <CarouselComponent class="hidden md:block" :slides="artist.slides"/>
+                        <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
-                                <span v-if="artist.collection_title" class="font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
                                     About <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4">
+                                <span v-else class="text-font-bold leanding-4 text-sm lg:text-3xl">
                                     About This Collection
                                 </span>
-                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
+                                <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
-                                <span class="font-bold leading-4">{{artist.artist_name}}</span>
-                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
+                                <span class="font-bold leading-4 text-sm lg:text-3xl">{{artist.artist_name}}</span>
+                                <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.bio"> </div>
                             </div>
                         </div>
                     </div>
@@ -171,19 +174,19 @@ watch(activeIndex, () => {
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                         </div>
-                        <div class="min-h-screen mt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
+                        <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6 scroll-mt-24 scroll-mt-18 snap-start">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
-                                <span v-if="artist.collection_title" class="font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
                                     About <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4">
+                                <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
                                     About This Collection
                                 </span>
-                                <div class="lg:text-justify" v-html="artist.description" style="white-space: pre-line"> </div>
+                                <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
-                                <span class="font-bold leading-4">{{artist.artist_name}}</span>
-                                <div class="lg:text-justify" v-html="artist.bio" style="white-space: pre-line"> </div>
+                                <span class="font-bold leading-4 text-sm lg:text-3xl">{{artist.artist_name}}</span>
+                                <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.bio"> </div>
                             </div>
                         </div>
                     </div>
