@@ -5,7 +5,7 @@
             <ol role="list" class="flex items-center">
                 <li v-for="page in pages" :key="page.name">
                     <div class="flex items-center">
-                        <a :href="page.href" class="text-sm">{{ page.name }}</a>
+                        <a :href="page.href" class="text-xs md:text-sm">{{ page.name }}</a>
                         <p class="mx-2">/</p>
                     </div>
                 </li>
@@ -15,7 +15,7 @@
             <ol role="list" class="ml-4 lg:ml-0 flex items-center justify-start lg:justify-end">
                 <li v-for="media in medias" :key="media.name">
                     <div class="flex items-center">
-                        <a :href="media.href" class="text-sm">{{ media.name }}</a>
+                        <a :href="media.href" class="text-xs md:text-sm">{{ media.name }}</a>
                         <p class="mx-2">/</p>
                     </div>
                 </li>

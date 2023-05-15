@@ -46,7 +46,7 @@ watch(activeIndex, () => {
 <template>
     <div class="bg-ivory max-h-full">
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
-            <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
+            <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-16">
                 <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                     <a href="/">
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -95,7 +95,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="pt-16 lg:pt-12 pb-16 lg:pb-12 scroll-mt-24 snap-start h-full md:px-12 px-6">
+            <section id="about" class="pt-16 lg:pt-12 pb-16 lg:pb-12 scroll-mt-24 snap-start h-full px-6 md:px-12 lg:px-16">
                 <h2 class="mb-4 lg:mb-6 text-xl lg:text-4xl font-bold">About</h2>
                 <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
@@ -120,7 +120,7 @@ watch(activeIndex, () => {
                     </div>
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
-                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 md:px-14 sm:px-10 px-6 scroll-mt-24 scroll-mt-18 snap-start">
+                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 md:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 snap-start">
                     <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen max-h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                             <p class="text-2xl font-bold">{{artist.artist_name}}</p>
@@ -193,7 +193,7 @@ watch(activeIndex, () => {
                 </div>
             </div>
             <div class="snap-start"></div>
-            <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 md:-mx-8" />
+            <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 px-2 md:px-8 lg:px-4" />
         </div>
     </div>
 </template>
