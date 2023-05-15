@@ -1,7 +1,7 @@
 <template>
   <footer class="m-0 overflow-x-hidden min-w-screen">
-    <div class="flex flex-col md:flex-row items-start justify-start md:items-center md:justify-between" aria-label="Footer">
-        <div class="w-full ml-4 md:ml-12">
+    <div class="flex flex-col lg:flex-row items-start justify-start lg:items-center lg:justify-between" aria-label="Footer">
+        <div class="w-full ml-4 lg:ml-12">
             <ol role="list" class="flex items-center">
                 <li v-for="page in pages" :key="page.name">
                     <div class="flex items-center">
@@ -12,7 +12,7 @@
             </ol>
         </div>
         <div class="w-full mr-12">
-            <ol role="list" class="ml-4 md:ml-0 flex items-center justify-start md:justify-end">
+            <ol role="list" class="ml-4 lg:ml-0 flex items-center justify-start lg:justify-end">
                 <li v-for="media in medias" :key="media.name">
                     <div class="flex items-center">
                         <a :href="media.href" class="text-sm">{{ media.name }}</a>
@@ -22,7 +22,7 @@
             </ol>
         </div>
     </div>
-    <small class="text-xs ml-4 md:ml-12">© 2023 MANIFESTO SPACE. All rights reserved.</small>
+    <small class="text-xs ml-4 lg:ml-12">© 2023 MANIFESTO SPACE. All rights reserved.</small>
   </footer>
 </template>
 
