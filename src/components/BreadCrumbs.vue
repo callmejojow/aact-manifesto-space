@@ -22,7 +22,7 @@
       <ol role="list" class="flex items-center space-x-3">
         <li>
           <div>
-            <a href="#" class="text-stone-600 hover:text-stone-800">
+            <a href="/" class="text-stone-600 hover:text-stone-800">
               <img src="@/assets/manifesto-logo-mini.svg" class="h-5 w-5 flex-shrink-0" aria-hidden="true" alt="Website Logo" />
             </a>
           </div>
@@ -30,7 +30,6 @@
         <li>
           <div class="flex items-center">
             <img src="@/assets/arrow.svg" class="h-3 w-3 flex-shrink-0 text-stone-600" aria-hidden="true" alt="Website Logo" />
-            <a :href="about.href" class="ml-4 text-sm text-stone-700 hover:text-stone-800">{{ about.name }}</a>
           </div>
         </li>
       </ol>
@@ -43,10 +42,6 @@ const pages = [
   { name: 'Exhibitions', href: '/exhibitions', current: false },
   { name: 'The Bitten Peach', href: '/exhibitions', current: true },
 ]
-
-const about = {
-  name: 'About Us', href: '/about_us'
-}
 
 defineProps({
   mainPage: Boolean

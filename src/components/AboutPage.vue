@@ -14,9 +14,9 @@ const { startObserving } = useScrollObserver();
 
 onMounted(() => {
     const aboutSection = document.getElementById("about");
-    const sectionsSection = document.getElementById("sections");
+    const teamSection = document.getElementById("team");
     startObserving(aboutSection, 0, onIntersection);
-    startObserving(sectionsSection, 1, onIntersection);
+    startObserving(teamSection, 1, onIntersection);
 
     const scroll = new SmoothScroll('a[href*="#"]', {
         speed: 800,
@@ -44,6 +44,9 @@ function onIntersection(entry, index) {
             </div>
             <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center px-6 md:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
                 <BreadCrumbs :main-page="true" />
+                <span class="ml-3 text-sm text-stone-500/80">
+                    About Us
+                </span>
             </div>
             <!-- navigation -->
             <div class="lg:hidden px-6 md:px-12 lg:px-24">
