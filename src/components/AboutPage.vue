@@ -32,29 +32,29 @@ function onIntersection(entry, index) {
 }
 </script>
 <template>
-    <main class="h-full bg-ivory max-h-full">
-        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
-            <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4 lg:border-b lg:border-stone-400/50">
+    <main class="h-full bg-ivory">
+        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-16">
+                <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <div class="absolute right-0 md:right-6 text-stone-600/80 hover:text-stone-800/50 z-40">
+                <div class="absolute right-0 md:right-7 lg:right-11 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
-            <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center px-6 md:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
+            <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
                 <BreadCrumbs :main-page="true" />
                 <span class="ml-3 text-sm text-stone-500/80">
                     About Us
                 </span>
             </div>
             <!-- navigation -->
-            <div class="lg:hidden px-6 md:px-12 lg:px-24">
+            <div class="lg:hidden">
                 <p class="text-base text-stone-500">
                     About Us
                 </p>
             </div>
-            <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen">
+            <ul class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen text-sm scrollbar-hide">
                 <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">Manifesto Space</a></li>
                 <li><a href="#team" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == 1, 'text-stone-500': activeIndex != 1 }">Team</a></li>
             </ul>
@@ -65,13 +65,10 @@ function onIntersection(entry, index) {
                 <div class="flex flex-col mx-auto leading-6 text-left text-base pb-12 ">
                     <h1 class="my-6 lg:my-10 text-2xl lg:text-3xl lg:font-medium font-bold text-left">Manifesto Space</h1>
                     <p class="font-normal">
-                        Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
+                        Manifesto Space is an online think tank that is dedicated to challenging the hegemony within the contemporary art world. Leveraging the digital space, we aim to provide an open platform to showcase diverse mediums of artwork, celebrate emerging artists, and initiate conversations that are often overlooked in the mainstream discourse. The digital format allows us to collaborate with artists, academics, and organizations to share artistic and scholarly works with creative freedom. 
                     </p>
                     <p class="mt-6 font-normal">
-                        We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?
-                    </p>
-                    <p class="mt-6 font-normal">
-                        We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
+                        Manifesto Space is affiliated with Asian Art and Culture Trust (AACT), an artist-centric volunteer run federal not-for-profit organization. AACT provides public programming to increase empathy, appreciation, and representation of Asian heritage, arts, and culture in Canada. AACT was founded in Toronto, Canada during the peak of the Anti-Asian hate crimes experienced by Asian Canadians during the COVID-19 pandemic. Led by artists, writers, designers, architects, and researchers, who believe in the power of art to bring people together to initiate dialogue and increase understanding. Through arts programming, we bring people together, foster understanding and empathy, and promote social justice and diversity in Canadian society.
                     </p>
                 </div>
             </div>
