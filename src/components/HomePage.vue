@@ -23,7 +23,7 @@ onMounted(() => {
 </script>
 <style>
     .fade-out {
-  animation: fadeOut 0.5s ease-out forwards;
+  animation: fadeOut 0.2s ease-out forwards;
 }
 
 @keyframes fadeOut {
@@ -34,26 +34,6 @@ onMounted(() => {
     opacity: 0;
   }
 }
-
-/*div.slide-left {
-  width:100%;
-  overflow:hidden;
-}
-div.slide-left p {
-  animation: slide-left 5s;
-}*/
-
-/*@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}*/
 
 @keyframes fadeIn {
   from {
@@ -78,11 +58,11 @@ div.slide-left p {
             <div class="self-start flex items-center justify-center text-ivory max-w-screen">
                 <span class="sr-only">Current Curation</span>
                 <div class="pl-6 md:pl-12 lg:pl-24">
-                    <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 100ms ease-in' }">The Bitten Peach:</p>
-                    <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 150ms ease-in' }">
+                    <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 60ms ease-in' }">The Bitten Peach:</p>
+                    <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 120ms ease-in' }">
                         Decolonizing Queer Asians
                     </p>
-                    <button @click="navigateWithFadeOut('/exhibitions')" type="button" :style="{ opacity: buttonOpacity, transition: 'opacity 350ms ease-in' }" class="z-20 mt-6 md:mt-9 lg:mt-12 border border-ivory/60 px-6 py-2 md:py-4 text-ivory/60 hover:border/ivory hover:text-ivory bg-ivory/10 md:text-base text-small">Explore Now</button>
+                    <button @click="navigateWithFadeOut('/exhibitions')" type="button" :style="{ opacity: buttonOpacity, transition: 'opacity 200ms ease-in' }" class="z-20 mt-6 md:mt-9 lg:mt-12 border border-ivory/60 px-6 py-2 md:py-4 text-ivory/60 hover:border/ivory hover:text-ivory bg-ivory/10 md:text-base text-small">Explore Now</button>
                 </div>
             </div>
             <FooterComponent class="text-ivory/70 mb-7" />
