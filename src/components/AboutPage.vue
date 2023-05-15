@@ -61,7 +61,7 @@ function onIntersection(entry, index) {
         </div>
         <!-- end of navigation -->
         <div class="min-h-full mx-auto lg:pb-28 bg-ivory">
-            <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] lg:overflow-scroll col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
+            <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
                 <div class="flex flex-col mx-auto leading-6 text-left text-base pb-12 ">
                     <h1 class="my-6 lg:my-10 text-2xl lg:text-3xl lg:font-medium font-bold text-left">Manifesto Space</h1>
                     <p class="font-normal">
