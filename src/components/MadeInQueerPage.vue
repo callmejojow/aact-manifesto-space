@@ -127,9 +127,9 @@ watch(activeIndex, () => {
                             <p class="text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
                         <div class="block md:hidden h-full" v-for="(art,index) in artist.artworks" :key="index">
-                            <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3"/>
+                            <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3" />
                         </div>
-                        <CarouselComponent class="hidden md:block" :slides="artist.slides"/>
+                        <CarouselComponent class="hidden md:block" :slides="artist.slides" />
                         <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
                                 <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
@@ -162,7 +162,7 @@ watch(activeIndex, () => {
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/4">
                             <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
-<!--                            <p> {{artist.bio}} </p>-->
+                            <!--                            <p> {{artist.bio}} </p>-->
                             <div class="" v-html="artist.bio" style="white-space: pre-line"> </div>
                         </div>
                     </div>
