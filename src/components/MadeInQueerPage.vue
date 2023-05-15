@@ -44,7 +44,7 @@ watch(activeIndex, () => {
 });
 </script>
 <template>
-    <div class="bg-ivory max-h-full">
+    <div class="bg-ivory">
         <div class="snap-y snap-mandatory h-screen overflow-scroll">
             <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
@@ -61,7 +61,7 @@ watch(activeIndex, () => {
                         Made In Queer
                     </span>
                 </div>
-                <div class="lg:hidden flex items-center justify-start w-96 text-stone-700 text-sm">
+                <div class="lg:hidden flex items-center justify-start w-full text-stone-700 text-sm">
                     <a href="/" class="hover:text-stone-900">
                         Home
                     </a>

@@ -61,7 +61,7 @@ watch(activeIndex, () => {
                         Yellow Perils
                     </span>
                 </div>
-                <div class="lg:hidden flex items-center justify-start w-96 text-stone-700 text-sm">
+                <div class="lg:hidden flex items-center justify-start w-full text-stone-700 text-sm">
                     <a href="/" class="hover:text-stone-900">
                         Home
                     </a>
