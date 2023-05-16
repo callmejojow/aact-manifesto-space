@@ -34,6 +34,12 @@ export const team = [
     role: 'Visual Design Lead',
     imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio:'Chevonne is a sociologist-designer focusing on user experience and product development. Her background in sociology, communication studies, and design background allows her to create aesthetic and feasible design solutions that link revenue to creating social benefits.'
-  }
+  },
+  {
+    name: 'Erin Rooney',
+    role: 'Lead Editor',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Erin is a Data Management Coordinator with an MI from the University of Toronto. She has a passion for the written word and socio-cultural anthropology. She spent her formative years abroad, primarily in Asia, where she gained a lasting appreciation for Asian culture. Erin holds a BA from Queen’s University where she studied her lifelong love of English Literature and Language as well as History. She pursued her interest in Chinese studies at Queen’s University by enrolling in Chinese Language courses where she participated in departmental activities and events that strengthened her appreciation and understanding of Chinese culture. Erin is fascinated by the role that storytelling plays within culture and society and enjoys spending her free time pursuing her creative interests in reading and writing. She is an advocate for celebrating cultural diversity and tolerance through the art of storytelling in various mediums, joining AACT to promote cultural awareness and diversity through the creative arts.'
+  },
   //more members here
 ]
