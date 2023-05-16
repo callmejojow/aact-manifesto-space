@@ -72,7 +72,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="team" class="pt-36 -mt-36 lg:pt-0 lg:mt-0 px-6 md:px-12 lg:px-16">
+            <div id="team" class="pt-28 -mt-28 lg:pt-0 lg:mt-0 px-6 md:px-12 lg:px-16">
                 <div class="mx-auto">
                     <div class="mx-auto lg:mx-0">
                         <h2 class="mb-4 lg:mb-10 text-2xl lg:text-3xl lg:font-medium font-bold text-left">Team</h2>
