@@ -34,7 +34,7 @@ function onIntersection(entry, index) {
 <template>
     <main class="h-full bg-ivory">
         <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-16">
-                <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
+            <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-2 md:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
@@ -50,7 +50,7 @@ function onIntersection(entry, index) {
             </div>
             <!-- navigation -->
             <div class="lg:hidden">
-                <p class="text-base text-stone-500">
+                <p class="text-sm text-stone-500">
                     About Us
                 </p>
             </div>
@@ -65,7 +65,7 @@ function onIntersection(entry, index) {
                 <div class="flex flex-col mx-auto leading-6 text-left text-base pb-12 ">
                     <h1 class="my-6 lg:my-10 text-2xl lg:text-3xl lg:font-medium font-bold text-left">Manifesto Space</h1>
                     <p class="font-normal">
-                        Manifesto Space is an online think tank that is dedicated to challenging the hegemony within the contemporary art world. Leveraging the digital space, we aim to provide an open platform to showcase diverse mediums of artwork, celebrate emerging artists, and initiate conversations that are often overlooked in the mainstream discourse. The digital format allows us to collaborate with artists, academics, and organizations to share artistic and scholarly works with creative freedom. 
+                        Manifesto Space is an online think tank that is dedicated to challenging the hegemony within the contemporary art world. Leveraging the digital space, we aim to provide an open platform to showcase diverse mediums of artwork, celebrate emerging artists, and initiate conversations that are often overlooked in the mainstream discourse. The digital format allows us to collaborate with artists, academics, and organizations to share artistic and scholarly works with creative freedom.
                     </p>
                     <p class="mt-6 font-normal">
                         Manifesto Space is affiliated with Asian Art and Culture Trust (AACT), an artist-centric volunteer run federal not-for-profit organization. AACT provides public programming to increase empathy, appreciation, and representation of Asian heritage, arts, and culture in Canada. AACT was founded in Toronto, Canada during the peak of the Anti-Asian hate crimes experienced by Asian Canadians during the COVID-19 pandemic. Led by artists, writers, designers, architects, and researchers, who believe in the power of art to bring people together to initiate dialogue and increase understanding. Through arts programming, we bring people together, foster understanding and empathy, and promote social justice and diversity in Canadian society.

@@ -24,18 +24,17 @@ onMounted(() => {
 function onIntersection(entry, index) {
     if (entry.isIntersecting) {
         activeIndex.value = index;
-        console.log(activeIndex.value)
     }
 }
 </script>
 <template>
     <main class="min-h-screen bg-ivory max-h-full">
         <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-full mb-0 lg:border-b lg:border-stone-400/50">
-            <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-6 lg:pb-4">
+            <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0 pb-2 md:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <div class="absolute right-0 md:right-6 text-stone-600/80 hover:text-stone-800/50 z-40">
+                <div class="absolute right-0 md:right-7 lg:right-11 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
@@ -51,15 +50,15 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start relative lg:h-[calc(100vh-36px)] mx-auto">
-            <div id="about" class="min-h-full lg:max-h-[calc(100vh-36px)] col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start lg:h-[calc(100vh-36px)] mx-auto">
+            <div id="about" class="h-full col-span-1 pt-40 -mt-40 px-6 md:px-12 lg:px-16 flex flex-col justify-between overflow-y-scroll">
                 <h1 class="mt-6 lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
                 <h1 class=" text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
-                <p class="text-2xl my-12">
+                <p class="text-2xl mt-12 mb-6">
                     MANIFESTO SPACE is thrilled to present the <span class="font-semibold italic">Bitten Peach: Decolonizing Queer Asians</span>, a group exhibition curated by Shengyu Cai.
                 </p>
-                <div class="flex flex-col space-y-6 leading-6 text-left text-base pb-24">
+                <div class="flex flex-col space-y-6 leading-6 text-left text-base pb-24 lg:pb-0">
                     <p class="font-normal">
                         <span class="font-semibold italic">The Bitten Peach: Decolonizing Queer Asians</span> is a curatorial project that explores the intersectionality of Asian and queer identities through various artistic mediums.
                     </p>
@@ -68,7 +67,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-24 -mt-24 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
+            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden pb-24 lg:pb-0">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made-in-queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
@@ -92,7 +91,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-        <FooterComponent class="min-h-full text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 lg:px-4 pt-28 lg:pt-7 pb-7" />
+        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 py-4 px-2 md:px-8 lg:px-4" />
     </main>
 </template>
 <style>
