@@ -18,6 +18,12 @@ export const team = [
     bio:'Jolie Wang is a highly skilled full-stack developer and product designer with a fervent passion for crafting exceptional user experiences. As a freelance illustrator and web content consultant, Jolie leverages her comprehensive expertise in programming, art, and design to help clients bring their innovative ideas to fruition. Dedicated to promoting the advancement of women in technology, Jolie actively employs her talents to support and empower her female peers within the industry.'
   },
   {
+    name: 'Chevonne Xue',
+    role: 'Visual Design Lead',
+    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio:'Chevonne is a sociologist-designer focusing on user experience and product development. Her background in sociology, communication studies, and design background allows her to create aesthetic and feasible design solutions that link revenue to creating social benefits.'
+  },
+  {
     name: 'Emily Gong',
     role: 'Community Partnerships Lead',
     imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
@@ -28,12 +34,6 @@ export const team = [
     role: 'Community Operations Lead',
     imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio:'Michael Wang (he/him/his), Ph.D., is a vision scientist and tech enthusiast. His deep fascination about how humans perceive the world around them has led him to explore how personal and lived experiences are represented in various forms of art. To this end, Michael applies his knowledge in scientific research and modern technology to collaborate with local artists in Toronto to transform the creation and exhibition of arts.'
-  },
-  {
-    name: 'Chevonne Xue',
-    role: 'Visual Design Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio:'Chevonne is a sociologist-designer focusing on user experience and product development. Her background in sociology, communication studies, and design background allows her to create aesthetic and feasible design solutions that link revenue to creating social benefits.'
   }
   //more members here
 ]
