@@ -51,11 +51,11 @@ watch(activeIndex, () => {
                     <a href="/">
                         <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                     </a>
-                    <div class="absolute right-0 md:right-7 lg:right-11 text-stone-600/80 hover:text-stone-800/50 z-40">
+                    <div class="absolute right-0 md:right-7 text-stone-600/80 hover:text-stone-800/50 z-40">
                         <NavDropdown />
                     </div>
                 </div>
-                <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:px-12 lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
+                <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
                     <BreadCrumbs :main-page="false" />
                     <span class="ml-3 text-sm text-stone-500/80">
                         Made In Queer
@@ -107,7 +107,7 @@ watch(activeIndex, () => {
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
-            <div v-for="(artist,index) in madeInQueerArray" :key="index" class="pb-20">
+            <div v-for="(artist,index) in madeInQueerArray" :key="index">
                 <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)] w-screen bg-cover scroll-mt-24 scroll-mt-18 snap-start" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
@@ -192,8 +192,22 @@ watch(activeIndex, () => {
                     </div>
                 </div>
             </div>
+            <div class="scroll-mt-20 snap-start"></div>
+            <div class="pt-12 md:pt-9 pb-28 md:pb-9 lg:pb-0">
+                <p class="text-2xl font-bold mb-6 mt-2 lg:px-16 md:px-12 px-6">Continue To</p>
+                <div class="bg-url-1 w-full h-60 bg-top bg-cover">
+                    <div class="bg-black/50 w-full h-full flex items-center">
+                        <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">BODY POLITICS</p>
+                    </div>
+                </div>
+                <div class="bg-url-3 w-full h-60 bg-top bg-cover">
+                    <div class="bg-black/50 w-full h-full flex items-center">
+                        <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">YELLOW PERILS</p>
+                    </div>
+                </div>
+            </div>
             <div class="snap-start"></div>
-            <FooterComponent class="text-stone-800/60 bg-ivory border-t border-stone-400/50 py-4 px-2 md:px-8 lg:px-4" />
+            <FooterComponent class="text-stone-800/60 bg-ivory lg:pt-9 lg:border-t lg:border-stone-400/50 px-2 md:px-8 lg:px-4 pb-9" />
         </div>
     </div>
 </template>

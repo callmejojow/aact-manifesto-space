@@ -34,7 +34,7 @@ function onIntersection(entry, index) {
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <div class="absolute right-0 md:right-7 lg:right-11 text-stone-600/80 hover:text-stone-800/50 z-40">
+                <div class="absolute right-0 md:right-7 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
@@ -67,7 +67,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden pb-24 lg:pb-0">
+            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden pb-24 md:pb-9">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made-in-queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
@@ -91,7 +91,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 py-4 px-2 md:px-8 lg:px-4" />
+        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 px-2 md:px-8 lg:px-4 pb-9 lg:pt-9" />
     </main>
 </template>
 <style>
