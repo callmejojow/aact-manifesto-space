@@ -14,7 +14,7 @@ export const team = [
   {
     name: 'Jolie Wang',
     role: 'Development Lead',
-    imageUrl:'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:require('@/assets/members/jolie.png'),
     bio:'Jolie Wang is a highly skilled full-stack developer and product designer with a fervent passion for crafting exceptional user experiences. As a freelance illustrator and web content consultant, Jolie leverages her comprehensive expertise in programming, art, and design to help clients bring their innovative ideas to fruition. Dedicated to promoting the advancement of women in technology, Jolie actively employs her talents to support and empower her female peers within the industry.'
   },
   {

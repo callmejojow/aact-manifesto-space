@@ -47,11 +47,11 @@ onMounted(() => {
 <template>
     <main class="min-h-screen max-h-full overflow-hidden relative bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
         <div class="h-[calc(100vh+6rem)] w-screen m-0 bg-black/20 flex flex-col justify-between">
-            <div class="flex justify-start md:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
+            <div class="flex justify-start lg:justify-center items-center pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-0">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-white.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Logo" />
                 </a>
-                <div class="absolute right-0 text-ivory z-40">
+                <div class="absolute right-0 md:right-7 text-ivory z-40">
                     <NavDropdown />
                 </div>
             </div>
