@@ -39,10 +39,14 @@ function onIntersection(entry, index) {
                 </div>
             </div>
             <!-- navigation -->
-            <div class="lg:hidden px-6 md:px-12 lg:px-24">
-                <p class="text-sm text-stone-500">
-                    The Bitten Peach: Decolonizing Queer Asians
-                </p>
+            <div class="lg:hidden text-stone-500 text-sm flex justify-start items-center px-6 md:px-12 lg:px-24">
+                <a href="/">
+                    Home
+                </a>
+                <span class="mx-3">/</span>
+                <a href="/exhibitions">
+                    The Bitten Peach
+                </a>
             </div>
             <ul class="mx-6 md:mx-12 lg:mx-24 lg:hidden t-0 border-b border-stone-600 flex space-x-3 overflow-x-auto max-w-screen text-sm">
                 <li><a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-semibold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">About</a></li>
