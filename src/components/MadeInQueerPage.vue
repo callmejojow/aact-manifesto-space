@@ -195,14 +195,14 @@ watch(activeIndex, () => {
             <p class="text-xl lg:text-2xl font-bold mb-6 mt-2">Continue To</p>
             <div class="bg-url-1 w-full h-60 bg-top bg-cover">
                 <a href="/exhibitions/body-politics">
-                    <div class="backdrop-brightness-50 w-full h-full flex items-center">
+                    <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
                         <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">BODY POLITICS</p>
                     </div>
                 </a>
             </div>
             <div class="bg-url-3 w-full h-60 bg-top bg-cover">
                 <a href="/exhibitions/yellow-perils">
-                    <div class="backdrop-brightness-50 w-full h-full flex items-center">
+                    <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
                         <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">YELLOW PERILS</p>
                     </div>
                 </a>
