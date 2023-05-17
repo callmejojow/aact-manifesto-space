@@ -120,7 +120,7 @@ watch(activeIndex, () => {
             </section>
             <!-- Art pieces of a certain artist with his/her introduction -->
             <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 md:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 ">
-                <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="min-h-screen max-h-full">
+                <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                         <p class="text-lg font-light italic">{{artist.collection_title}}</p>
@@ -129,12 +129,12 @@ watch(activeIndex, () => {
                         <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3" />
                     </div>
                     <CarouselComponent class="hidden md:block" :slides="artist.slides" />
-                    <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
+                    <div class="h-full pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                         <div class="w-full lg:w-3/4 min-h-full pt-8">
                             <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
                                 About <span class="italic">{{artist.collection_title}}</span>
                             </span>
-                            <span v-else class="text-font-bold leanding-4 text-sm lg:text-3xl">
+                            <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
                                 About This Collection
                             </span>
                             <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.description"> </div>
@@ -145,7 +145,7 @@ watch(activeIndex, () => {
                         </div>
                     </div>
                 </div>
-                <div v-if="artist.format == 'text'" class="min-h-screen max-h-full w-full lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 mx-auto">
+                <div v-if="artist.format == 'text'" class="h-full w-full lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 mx-auto">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                         <p class="text-lg font-light italic">{{artist.collection_title}}</p>
@@ -165,7 +165,7 @@ watch(activeIndex, () => {
                         <div class="" v-html="artist.bio" style="white-space: pre-line"> </div>
                     </div>
                 </div>
-                <div v-if="artist.format == 'video'" class="min-h-screen max-h-full">
+                <div v-if="artist.format == 'video'" class="h-full">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                         <p class="text-lg font-light italic">{{artist.collection_title}}</p>
@@ -173,8 +173,8 @@ watch(activeIndex, () => {
                     <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                         <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
                     </div>
-                    <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
-                        <div class="w-full lg:w-3/4 min-h-full pt-8">
+                    <div class="h-full pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
+                        <div class="w-full lg:w-3/4 pt-12">
                             <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
                                 About <span class="italic">{{artist.collection_title}}</span>
                             </span>
@@ -191,22 +191,24 @@ watch(activeIndex, () => {
                 </div>
             </div>
         </div>
-        <div class="scroll-mt-20 "></div>
-        <div class="pt-12 md:pt-9 pb-28 md:pb-9 lg:pb-0">
-            <p class="text-2xl font-bold mb-6 mt-2 lg:px-16 md:px-12 px-6">Continue To</p>
+        <div class="pt-16 md:pt-9 lg:px-16 md:px-12 px-6">
+            <p class="text-xl lg:text-2xl font-bold mb-6 mt-2">Continue To</p>
             <div class="bg-url-1 w-full h-60 bg-top bg-cover">
-                <div class="bg-black/50 w-full h-full flex items-center">
-                    <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">BODY POLITICS</p>
-                </div>
+                <a href="/exhibitions/body-politics">
+                    <div class="backdrop-brightness-50 w-full h-full flex items-center">
+                        <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">BODY POLITICS</p>
+                    </div>
+                </a>
             </div>
             <div class="bg-url-3 w-full h-60 bg-top bg-cover">
-                <div class="bg-black/50 w-full h-full flex items-center">
-                    <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">YELLOW PERILS</p>
-                </div>
+                <a href="/exhibitions/yellow-perils">
+                    <div class="backdrop-brightness-50 w-full h-full flex items-center">
+                        <p class="text-center mx-auto text-ivory font-extralight text-4xl lg:text-7xl">YELLOW PERILS</p>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class=""></div>
-        <FooterComponent class="text-stone-800/60 bg-ivory lg:pt-9 lg:border-t lg:border-stone-400/50 px-2 md:px-8 lg:px-4 pb-9" />
+        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
     </div>
 </template>
 <style>

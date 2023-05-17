@@ -58,7 +58,7 @@ function onIntersection(entry, index) {
                 <p class="text-2xl mt-12 mb-6">
                     MANIFESTO SPACE is thrilled to present the <span class="font-semibold italic">Bitten Peach: Decolonizing Queer Asians</span>, a group exhibition curated by Shengyu Cai.
                 </p>
-                <div class="flex flex-col space-y-6 leading-6 text-left text-base pb-24 lg:pb-0">
+                <div class="flex flex-col space-y-6 leading-6 text-left text-base">
                     <p class="font-normal">
                         <span class="font-semibold italic">The Bitten Peach: Decolonizing Queer Asians</span> is a curatorial project that explores the intersectionality of Asian and queer identities through various artistic mediums.
                     </p>
@@ -67,7 +67,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden pb-24 md:pb-9">
+            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 md:px-12 lg:px-0 lg:overflow-y-hidden">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made-in-queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
@@ -91,7 +91,7 @@ function onIntersection(entry, index) {
                 </div>
             </div>
         </div>
-        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50 px-2 md:px-8 lg:px-4 pb-9 lg:pt-9" />
+        <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
     </main>
 </template>
 <style>

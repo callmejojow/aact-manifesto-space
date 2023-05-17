@@ -1,5 +1,5 @@
 <template>
-  <footer class="m-0 overflow-x-hidden min-w-screen">
+  <footer class="m-0 overflow-x-hidden min-w-screen px-2 md:px-8 lg:px-4 pb-9 pt-24 lg:pt-9">
     <div class="flex flex-col lg:flex-row items-start justify-start lg:items-center lg:justify-between" aria-label="Footer">
         <div class="w-full ml-4 lg:ml-12">
             <ol role="list" class="flex items-center">
