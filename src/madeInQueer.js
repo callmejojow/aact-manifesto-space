@@ -505,6 +505,10 @@ export const madeInQueer = {
         
         content:`<img src="${require("@/assets/YellowPerils/Snack/6snack.jpg")}" class="object-contain h-screen"/>`,
       },
+      {
+        
+        content:`<img src="${require("@/assets/YellowPerils/Snack/7snack.jpg")}" class="object-contain h-screen"/>`,
+      },
     ],
   },
   artist25:{
