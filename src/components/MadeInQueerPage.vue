@@ -21,10 +21,11 @@ onMounted(() => {
         const targetElement = document.getElementById(targetId);
         startObserving(targetElement, index, onIntersection);
     });
-
+    const offset = 104;
     const scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1000,
         easing: 'easeInOutCubic',
+        offset: offset,
     });
 });
 
@@ -48,7 +49,7 @@ watch(activeIndex, () => {
 </script>
 <template>
     <div class="bg-ivory">
-        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-34 pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
+        <div class="sticky z-30 top-0 bg-ivory pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
             <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -85,9 +86,9 @@ watch(activeIndex, () => {
                 </a>
             </nav>
         </div>
-        <div class="overflow-scroll scroll-smooth relative">
+        <div class="overflow-scroll scroll-smooth">
             <!-- Banner -->
-            <section id="page_banner" class="scroll-mt-28 h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-full bg-cover bg-top banner2-url overflow-hidden z-20">
+            <section id="page_banner" class="h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-full bg-cover bg-top banner2-url overflow-hidden z-20">
                 <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
                     <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -98,21 +99,21 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Introduction of the sub section -->
-            <section id="about" class="scroll-mt-24 pt-24 lg:pt-[108px] pb-[94px] sm:pb-24 h-[calc(100vh-36px)] lg:h-fit px-6 sm:px-12 lg:px-16">
-                <h2 class="mb-6 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
+            <section id="about" class="h-fit px-6 sm:px-12 lg:px-16">
+                <h2 class="pt-6 mb-6 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
                 <p class="font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                     Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
                 </p>
                 <p class="mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                     We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?
                 </p>
-                <p class="mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
+                <p class="pb-[94px] sm:pb-24 mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                     We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
                 </p>
             </section>
             <div v-for="(artist,index) in madeInQueerArray" :key="index">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-screen bg-cover scroll-mt-24" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-104px)] lg:h-[calc(100vh-34px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
                             {{artist.quote}}
@@ -123,7 +124,7 @@ watch(activeIndex, () => {
                     </div>
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
-                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 ">
+                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16">
                     <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                             <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
