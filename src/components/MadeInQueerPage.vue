@@ -15,18 +15,45 @@ const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
 
 onMounted(() => {
+    let scroll;
+
+    // Create a function to initialize SmoothScroll with an offset
+    function initializeSmoothScroll(offset) {
+      if (scroll !== undefined) scroll.destroy(); // Destroy the old instance, if it exists
+
+      scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        offset: offset,
+      });
+    }
+
+    // Create a function to adjust offset based on window size
+    function adjustOffset() {
+      if (window.innerWidth >= 1024) { // lg screens and above
+        initializeSmoothScroll(136); // your offset for lg screens
+      } else {
+        initializeSmoothScroll(104); // your offset for smaller screens
+      }
+    }
+
+    // Initialize SmoothScroll and adjust the offset on page load
+    adjustOffset();
+
+    // Adjust the offset whenever the window is resized
+    window.addEventListener('resize', adjustOffset);
+
     navItems.value = document.querySelectorAll(".nav-item");
     navItems.value.forEach((el, index) => {
         const targetId = el.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
         startObserving(targetElement, index, onIntersection);
     });
-    const offset = 104;
-    const scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 1000,
-        easing: 'easeInOutCubic',
-        offset: offset,
-    });
+    // const offset = 104;
+    // const scroll = new SmoothScroll('a[href*="#"]', {
+    //     speed: 1000,
+    //     easing: 'easeInOutCubic',
+    //     offset: offset,
+    // });
 });
 
 function onIntersection(entry, index) {
