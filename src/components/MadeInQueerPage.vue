@@ -3,16 +3,30 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
+import SmoothScroll from 'smooth-scroll'
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
-import SmoothScroll from 'smooth-scroll'
-import { ref, onMounted, computed, watch, nextTick } from "vue"
+import { ref, onMounted, computed, watch } from "vue"
 
 /* eslint-disable no-unused-vars */
 const navItems = ref([]);
 const navbar = ref(null);
 const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
+
+onMounted(() => {
+    navItems.value = document.querySelectorAll(".nav-item");
+    navItems.value.forEach((el, index) => {
+        const targetId = el.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        startObserving(targetElement, index, onIntersection);
+    });
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    easing: 'easeInOutCubic',
+  });
+});
 
 function onIntersection(entry, index) {
     if (entry.isIntersecting) {
@@ -32,20 +46,7 @@ watch(activeIndex, () => {
     }
 });
 
-onMounted(() => {
-    nextTick(() => {
-        const scroll = new SmoothScroll('a[href*="#"]', {
-          speed: 500,
-          speedAsDuration: true,
-        });
-    });
-    navItems.value = document.querySelectorAll(".nav-item");
-    navItems.value.forEach((el, index) => {
-        const targetId = el.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        startObserving(targetElement, index, onIntersection);
-    });
-});
+
 
 </script>
 <template>
