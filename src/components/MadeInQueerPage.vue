@@ -3,7 +3,6 @@ import BreadCrumbs from '@/components/BreadCrumbs.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
-
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
 
@@ -14,16 +13,6 @@ const navItems = ref([]);
 const navbar = ref(null);
 const activeIndex = ref(-1);
 const { startObserving } = useScrollObserver();
-
-onMounted(() => {
-    navItems.value = document.querySelectorAll(".nav-item");
-    navItems.value.forEach((el, index) => {
-        const targetId = el.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        startObserving(targetElement, index, onIntersection);
-    });
-
-});
 
 function onIntersection(entry, index) {
     if (entry.isIntersecting) {
@@ -42,6 +31,16 @@ watch(activeIndex, () => {
         navbar.value.scrollLeft = activeNavItemOffset - navbarWidth / 2;
     }
 });
+
+onMounted(() => {
+    navItems.value = document.querySelectorAll(".nav-item");
+    navItems.value.forEach((el, index) => {
+        const targetId = el.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        startObserving(targetElement, index, onIntersection);
+    });
+});
+
 </script>
 <template>
     <div class="bg-ivory">
@@ -123,8 +122,8 @@ watch(activeIndex, () => {
             <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 ">
                 <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
-                        <p class="text-2xl font-bold">{{artist.artist_name}}</p>
-                        <p class="text-lg font-light italic">{{artist.collection_title}}</p>
+                        <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
+                        <p class="lg:text-4xl text-lg font-light italic">{{artist.collection_title}}</p>
                     </div>
                     <div class="block md:hidden h-full" v-for="(art,index) in artist.artworks" :key="index">
                         <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3" />
@@ -132,7 +131,7 @@ watch(activeIndex, () => {
                     <CarouselComponent class="hidden md:block" :slides="artist.slides" />
                     <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
                         <div class="w-full lg:w-2/3 min-h-full">
-                            <span v-if="artist.collection_title" class="text-sm lg:text-[28px] font-bold leanding-4">
+                            <span v-if="artist.collection_title" class="text-sm sm:text-base lg:text-[28px] font-bold leanding-4">
                                 About <span class="italic">{{artist.collection_title}}</span>
                             </span>
                             <span v-else class="font-bold leanding-4 text-sm sm:text-base lg:text-[28px]">
