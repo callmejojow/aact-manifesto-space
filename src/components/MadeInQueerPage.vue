@@ -46,16 +46,16 @@ watch(activeIndex, () => {
 <template>
     <div class="bg-ivory">
     <div class="snap-y snap-mandatory h-screen overflow-scroll">
-        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-28 pt-4 md:pt-6 lg:pt-4 px-6 md:px-12 lg:px-16">
+        <div class="sticky z-30 top-0 bg-ivory h-26 lg:h-34 pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
             <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
-                <div class="absolute right-0 md:right-7 text-stone-600/80 hover:text-stone-800/50 z-40">
+                <div class="absolute right-0 sm:right-7 lg:right-10 text-stone-600/80 hover:text-stone-800/50 z-40">
                     <NavDropdown />
                 </div>
             </div>
-            <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-3">
+            <div class="pt-3.5 hidden lg:flex lg:justify-start lg:items-center pb-6 lg:pb-3">
                 <BreadCrumbs :main-page="false" />
                 <span class="ml-3 text-sm text-stone-500/80">
                     Made In Queer
@@ -74,7 +74,7 @@ watch(activeIndex, () => {
                     Made In Queer
                 </button>
             </div>
-            <nav ref="navbar" class="lg:hidden bg-ivory t-0 border-b border-stone-600 flex space-x-5 overflow-x-auto max-w-screen text-sm scrollbar-hide">
+            <nav ref="navbar" class="bg-ivory t-0 border-b border-stone-600 lg:pb-2 flex space-x-5 overflow-x-auto max-w-screen text-sm scrollbar-hide">
                 <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
                     About
                 </a>
@@ -84,32 +84,32 @@ watch(activeIndex, () => {
             </nav>
         </div>
         <!-- Banner -->
-        <section id="page_banner" class="scroll-mt-28  h-screen min-h-screen w-full bg-cover bg-top banner2-url overflow-hidden z-20">
-            <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center pl-20 md:pl-14 sm:pl-10 pl-6">
-                <p class="text-lg md:text-xl lg:text-2xl text-ivory/90">
+        <section id="page_banner" class="scroll-mt-28 h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-full bg-cover bg-top banner2-url overflow-hidden z-20">
+            <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
+                <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
                     The Bitten Peach: Decolonizing Queer Asians
                 </p>
-                <p class="z-20 text-ivory/90 font-bold text-4xl md:text-5xl lg:text-6xl text-ivory text-center">
+                <p class="leading-[29px] sm:leading-[44px] lg:leading-[77px] z-20 text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-[64px] text-ivory text-center">
                     Made In Queer
                 </p>
             </div>
         </section>
         <!-- Introduction of the sub section -->
-        <section id="about" class="pt-16 lg:pt-12 pb-16 lg:pb-12 scroll-mt-24  h-full px-6 md:px-12 lg:px-16">
-            <h2 class="mb-4 lg:mb-6 text-xl lg:text-4xl font-bold">About</h2>
-            <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">
+        <section id="about" class="scroll-mt-24 pt-24 lg:pt-[108px] pb-[94px] sm:pb-24 h-[calc(100vh-36px)] lg:h-fit px-6 sm:px-12 lg:px-16">
+            <h2 class="mb-6 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
+            <p class="font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                 Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.
             </p>
-            <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">
+            <p class="mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                 We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?
             </p>
-            <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">
+            <p class="mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
                 We welcome diverse critical positions. Collectively, we aim to present an exhibition that celebrates broader definitions of queerness from different world views. We bite the peach together.
             </p>
         </section>
         <div v-for="(artist,index) in madeInQueerArray" :key="index">
             <!-- Quote of the Topic -->
-            <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-28px)] w-screen bg-cover scroll-mt-24 scroll-mt-18 " :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+            <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-screen bg-cover scroll-mt-24" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                 <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
                     <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
                         {{artist.quote}}
@@ -120,7 +120,7 @@ watch(activeIndex, () => {
                 </div>
             </section>
             <!-- Art pieces of a certain artist with his/her introduction -->
-            <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 md:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 ">
+            <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16 scroll-mt-24 scroll-mt-18 ">
                 <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
                     <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
@@ -130,28 +130,28 @@ watch(activeIndex, () => {
                         <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3" />
                     </div>
                     <CarouselComponent class="hidden md:block" :slides="artist.slides" />
-                    <div class="h-full pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
-                        <div class="w-full lg:w-3/4 min-h-full pt-8">
-                            <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
+                    <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
+                        <div class="w-full lg:w-2/3 min-h-full">
+                            <span v-if="artist.collection_title" class="text-sm lg:text-[28px] font-bold leanding-4">
                                 About <span class="italic">{{artist.collection_title}}</span>
                             </span>
-                            <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
+                            <span v-else class="font-bold leanding-4 text-sm sm:text-base lg:text-[28px]">
                                 About This Collection
                             </span>
-                            <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.description"> </div>
+                            <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.description"> </div>
                         </div>
-                        <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
-                            <span class="font-bold leading-4 text-sm lg:text-3xl">{{artist.artist_name}}</span>
-                            <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.bio"> </div>
+                        <div class="mt-4 lg:mt-0 lg:w-1/3">
+                            <span class="font-bold leading-4 text-sm sm:text-base lg:text-[28px]">{{artist.artist_name}}</span>
+                            <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.bio"> </div>
                         </div>
                     </div>
                 </div>
                 <div v-if="artist.format == 'text'" class="h-full w-full lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 mx-auto">
-                    <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4">
+                    <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-[60px] pb-6 lg:pt-24 lg:pb-12">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                         <p class="text-lg font-light italic">{{artist.collection_title}}</p>
                     </div>
-                    <div class="lg:w-3/4 flex flex-col">
+                    <div class="lg:w-2/3 flex flex-col">
                         <p class="text-base leading-6">
                             {{artist.excerpt1}}
                         </p>
@@ -160,39 +160,39 @@ watch(activeIndex, () => {
                         </p>
                         <a :href="artist.link" target="_blank" class="self-end justify-self-end underline text-bitten/50 hover:text-bitten p-2">Read More</a>
                     </div>
-                    <div class="mt-6 lg:mt-0 lg:w-1/4">
+                    <div class="mt-6 lg:mt-0 lg:w-1/3">
                         <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
                         <!--                            <p> {{artist.bio}} </p>-->
-                        <div class="" v-html="artist.bio" style="white-space: pre-line"> </div>
+                        <div v-html="artist.bio" style="white-space: pre-line"> </div>
                     </div>
                 </div>
                 <div v-if="artist.format == 'video'" class="h-full">
-                    <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4">
+                    <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-[60px] pb-6 lg:pt-24 lg:pb-12">
                         <p class="text-2xl font-bold">{{artist.artist_name}}</p>
                         <p class="text-lg font-light italic">{{artist.collection_title}}</p>
                     </div>
                     <div v-for="art in artist.artworks" :key="art" class="aspect-video">
-                        <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full lg:h-screen" allowfullscreen></iframe>
+                        <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
                     </div>
-                    <div class="h-full pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
-                        <div class="w-full lg:w-3/4 pt-12">
-                            <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
+                    <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
+                        <div class="w-full lg:w-2/3 min-h-full">
+                            <span v-if="artist.collection_title" class="text-sm lg:text-[28px] font-bold leanding-4">
                                 About <span class="italic">{{artist.collection_title}}</span>
                             </span>
-                            <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
+                            <span v-else class="font-bold leanding-4 text-sm sm:text-base lg:text-[28px]">
                                 About This Collection
                             </span>
-                            <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.description"> </div>
+                            <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.description"> </div>
                         </div>
-                        <div class="mt-4 lg:mt-0 lg:w-1/4 pt-4">
-                            <span class="font-bold leading-4 text-sm lg:text-3xl">{{artist.artist_name}}</span>
-                            <div class="mt-4 whitespace-pre-line text-sm lg:text-xl" v-html="artist.bio"> </div>
+                        <div class="mt-4 lg:mt-0 lg:w-1/3">
+                            <span class="font-bold leading-4 text-sm sm:text-base lg:text-[28px]">{{artist.artist_name}}</span>
+                            <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.bio"> </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pt-16 md:pt-9 lg:px-16 md:px-12 px-6">
+        <div class="pt-16 md:pt-9 lg:px-16 sm:px-12 px-6">
             <p class="text-xl lg:text-2xl font-bold mb-6 mt-2">Continue To</p>
             <div class="bg-url-1 w-full h-60 bg-top bg-cover">
                 <a href="/exhibitions/body-politics">
