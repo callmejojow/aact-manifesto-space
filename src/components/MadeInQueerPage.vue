@@ -49,7 +49,7 @@ watch(activeIndex, () => {
 </script>
 <template>
     <div class="min-h-screen bg-ivory max-h-full">
-        <div class="sticky z-30 top-0 bg-ivory pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
+        <div class="sticky z-50 top-0 bg-ivory pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
             <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
@@ -88,12 +88,12 @@ watch(activeIndex, () => {
         </div>
         <div class="overflow-scroll scroll-smooth">
             <!-- Banner -->
-            <section id="page_banner" class="h-[calc(100vh-36px)] lg:h-[calc(100vh-34px)] w-full bg-cover bg-top banner2-url overflow-hidden z-20">
-                <div class="bg-black/50 w-full h-screen flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
+            <section id="page_banner" class="h-[calc(100vh-104px)] w-full bg-cover bg-top banner2-url">
+                <div class="bg-black/50 w-full h-[calc(100vh-104px)] flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
                     <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
                     </p>
-                    <p class="leading-[29px] sm:leading-[44px] lg:leading-[77px] z-20 text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-[64px] text-ivory text-center">
+                    <p class="leading-[29px] sm:leading-[44px] lg:leading-[77px] text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-[64px] text-ivory text-center">
                         Made In Queer
                     </p>
                 </div>
@@ -113,7 +113,7 @@ watch(activeIndex, () => {
             </section>
             <div v-for="(artist,index) in madeInQueerArray" :key="index">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-104px)] lg:h-[calc(100vh-34px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-104px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
                             {{artist.quote}}
