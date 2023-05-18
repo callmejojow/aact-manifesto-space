@@ -48,7 +48,7 @@ watch(activeIndex, () => {
 });
 </script>
 <template>
-    <div class="bg-ivory">
+    <div class="min-h-screen bg-ivory max-h-full">
         <div class="sticky z-30 top-0 bg-ivory pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
             <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
                 <a href="/">
