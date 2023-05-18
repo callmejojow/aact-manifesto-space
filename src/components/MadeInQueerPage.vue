@@ -5,8 +5,8 @@ import NavDropdown from '@/components/NavDropdown.vue'
 import CarouselComponent from '@/components/CarouselComponent.vue'
 import { madeInQueer } from '@/madeInQueer.js';
 import { useScrollObserver } from '@/useScrollObserver.js'
-
-import { ref, onMounted, computed, watch } from "vue"
+import SmoothScroll from 'smooth-scroll'
+import { ref, onMounted, computed, watch, nextTick } from "vue"
 
 /* eslint-disable no-unused-vars */
 const navItems = ref([]);
@@ -33,6 +33,12 @@ watch(activeIndex, () => {
 });
 
 onMounted(() => {
+    nextTick(() => {
+        const scroll = new SmoothScroll('a[href*="#"]', {
+          speed: 500,
+          speedAsDuration: true,
+        });
+    });
     navItems.value = document.querySelectorAll(".nav-item");
     navItems.value.forEach((el, index) => {
         const targetId = el.getAttribute("href").substring(1);
@@ -74,10 +80,10 @@ onMounted(() => {
                 </button>
             </div>
             <nav ref="navbar" class="bg-ivory t-0 border-b border-stone-600 lg:pb-2 flex space-x-5 overflow-x-auto max-w-screen text-sm scrollbar-hide">
-                <a href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
+                <a  href="#about" class="nav-item inline-block whitespace-nowrap text-stone-600" :class="{'font-bold text-stone-800': activeIndex == 0, 'text-stone-500': activeIndex != 0 }">
                     About
                 </a>
-                <a v-for="(artist, index) in madeInQueerArray" :key="'nav_item_' + index" :href="`#artist_${index}`" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == index + 1, 'text-stone-500': activeIndex != index + 1 }">
+                <a  v-for="(artist, index) in madeInQueerArray" :key="'nav_item_' + index" :href="`#artist_${index}`" class="nav-item inline-block whitespace-nowrap" :class="{ 'font-bold text-stone-800': activeIndex == index + 1, 'text-stone-500': activeIndex != index + 1 }">
                     {{artist.artist_name}}
                 </a>
             </nav>
