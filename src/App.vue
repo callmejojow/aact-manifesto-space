@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-w-full max-w-screen lg:overflow-x-hidden lg:m-0 bg-ivory">
+  <div id="app" class="scroll-smooth min-w-full max-w-screen lg:overflow-x-hidden lg:m-0 bg-ivory">
     <router-view />
   </div>
 </template>
