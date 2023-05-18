@@ -85,34 +85,45 @@ export const bodyPolitics = {
                 file_name: require("@/assets/BodyPolitics/Imran/10_levitate.jpg"),
             },
         },
-        slides: [{
+        slides: [
+            {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class="object-cover lg:object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/8_return_to_yourself.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/9_minute.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Imran/10_levitate.jpg")}" class="object-contain h-screen"/>`,
             },
         ],
@@ -164,19 +175,25 @@ export const bodyPolitics = {
                 file_name: require("@/assets/BodyPolitics/Geoff/towardAMemory.jpg"),
             },
         },
-        slides: [{
+        slides: [
+            {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Geoff/aPalaceForMyForefathers.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Geoff/homecoming.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Geoff/pathfinding.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Geoff/stifle.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Geoff/towardAMemory.jpg")}" class="object-contain h-screen"/>`,
             },
         ],
@@ -292,19 +309,25 @@ export const bodyPolitics = {
                 file_name: require("@/assets/BodyPolitics/Sophie/05.jpg"),
             },
         },
-        slides: [{
+        slides: [
+            {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Sophie/01.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Sophie/02.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Sophie/03.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Sophie/04.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Sophie/05.jpg")}" class="object-contain h-screen"/>`,
             },
         ],
@@ -507,13 +530,17 @@ export const bodyPolitics = {
                 description: "",
             },
         },
-        slides: [{
+        slides: [
+            {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Makoto/Comets.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Makoto/TwoSnakes.jpg")}" class="object-contain h-screen"/>`,
             },
             {
+                image: require("@/assets/bg.svg"),
                 content: `<img src="${require("@/assets/BodyPolitics/Makoto/YinYang.jpg")}" class="object-contain h-screen"/>`,
             },
         ],
