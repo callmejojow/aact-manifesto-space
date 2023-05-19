@@ -161,7 +161,7 @@ watch(activeIndex, () => {
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-9 lg:mt-0 lg:w-1/3">
-                                <span class="font-bold leading-4 text-sm sm:text-base lg:text-2xl">{{artist.artist_name}}</span>
+                                <span class="font-bold leading-4 text-base sm:text-lg lg:text-2xl">{{artist.artist_name}}</span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base" v-html="artist.bio"> </div>
                             </div>
                         </div>
