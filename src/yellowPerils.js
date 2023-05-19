@@ -13,7 +13,9 @@ export const yellowPerils = {
     artist_name: "Love Intersections",
     ins_handle: ["@loveintersections"],  // a list b/c some artists have multiple handles
     quote: '“A core part of our recent practice as queer Chinese artists has been to explore the relationship between our identities as queer Chinese artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize.”',
-    bio: 'Love Intersections is a media arts collective made up of queer artists of colour dedicated to using collaborative art making and relational storytelling to address systemic racism in our communities. We produce intersectional and intergenerational stories from underrepresented communities of colour – centering the invisible, the spiritual, the metaphysical, and the imaginary. We believe in deep and meaningful relationships, that intersectionality is a verb and a call to action, that we must cultivate social trust through collective care and community responsibility. Our desire is to provoke (he)artful social change through a lens of love.',
+    bio: 'Love Intersections is a media arts collective made up of queer artists of colour dedicated to using collaborative art making and relational storytelling to address systemic racism in our communities. We produce intersectional and intergenerational stories from underrepresented communities of colour – centering the invisible, the spiritual, the metaphysical, and the imaginary. We believe in deep and meaningful relationships, that intersectionality is a verb and a call to action, that we must cultivate social trust through collective care and community responsibility. Our desire is to provoke (he)artful social change through a lens of love.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/loveintersections\">@loveintersections</a>",
     topic_name: "Yellow Peril",
     collection_title:'Channeling the Elements; an encounter of time/space',
     quote_bg_url: require('@/assets/YellowPerils/Love/YellowPeril.jpg'),
@@ -21,9 +23,7 @@ export const yellowPerils = {
         "\n" +
         "We performed an ancestral veneration ceremony at Larwill Park in Vancouver, which was the gathering site of the anti-Oriental riots of 1907 to mark an image of the temporal relationship that the project Yellow Peril: Queer Destiny has amongst a history of anti-Asian racism in Canada.  Giving offerings to our ancestors, reflecting on histories of colonization, founded upon systemic racism, and recognizing that these formations of anti-Asian racism and yellow peril exist to uphold imperialism - and never really goes away. Drawing on Simeon Mann and Dylan Rodriguez, Anti-Asian racism emerges when there’s an insecurity around the capitalist mode of production predicated on the seizure and extraction of Indigenous lands, and that anti-Asian violence is a structure to sustain racial devices inherent in racial capitalism and settler colonialism.\n" +
         "\n" +
-        "Race, temporality, ancestry, and relationships to land are themes that we grapple with in this project. A core part of our recent practice as queer Chinese artists is exploring the relationship between our identities as queer Asian artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize. We are particularly interested in the recent (re)emergence of Anti-Asian racism and community (and governmental) responses that lean towards identity based politics. We are interested in creating works that address systemic racism and colonization, and the roles that queer Chinese people play in undoing anti-Black and anti-Indigenous racism.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/loveintersections\">@loveintersections</a>",
+        "Race, temporality, ancestry, and relationships to land are themes that we grapple with in this project. A core part of our recent practice as queer Chinese artists is exploring the relationship between our identities as queer Asian artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize. We are particularly interested in the recent (re)emergence of Anti-Asian racism and community (and governmental) responses that lean towards identity based politics. We are interested in creating works that address systemic racism and colonization, and the roles that queer Chinese people play in undoing anti-Black and anti-Indigenous racism.",
     directory: "",
     artworks: {
       art1: {
@@ -43,7 +43,10 @@ export const yellowPerils = {
     quote: '“We should embody kindness and empathy with people from all walks of life.”',
     bio: "Jamie Chi (she/they) is an independent filmmaker and photographer, using her work to advocate for LGBTQ+ rights. After receiving an MA in cultural studies at Université Jean Moulin Lyon 3, France, Jamie advocated for Asian LGBTQ+ rights through her film. \n" +
         "\n" +
-        "Jamie studied experimental filmmaking at the University of the Philippines Diliman in 2019 and was selected for the Ricky Lee Script Writing Program organised by the Cinemalaya Institute in 2021.  In 2022, her film 《Safe Distance: Chapter 1》won the Short Film Audience Award in the 33rd Hong Kong Lesbian and Gay Film Festival.",
+        "Jamie studied experimental filmmaking at the University of the Philippines Diliman in 2019 and was selected for the Ricky Lee Script Writing Program organised by the Cinemalaya Institute in 2021.  In 2022, her film 《Safe Distance: Chapter 1》won the Short Film Audience Award in the 33rd Hong Kong Lesbian and Gay Film Festival.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/safedistance_docu\">@safedistance_docu</a>\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/jamiechi_\">@jamiechi_</a>\n",
     topic_name: "Yellow Peril",
     collection_title:'Safe Distance',
     quote_bg_url: require('@/assets/YellowPerils/Jamie/SafeDistanceCover.jpg'),
@@ -51,10 +54,7 @@ export const yellowPerils = {
         "\n" +
         "In the process of making this film, we realized that there is little documentation of queer Asian history. It is essential to establish a visual record of the lives of Chinese queer people in British-Chinese history, especially as the community is facing unprecedented discrimination and challenges in recent years. This project becomes a means to discuss with our community members how we can better improve our situation.\n" +
         "\n" +
-        "Through Safe Distance, we compare the HIV pandemic in the 1980s with the COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against the queer community in society. She also highlights how queer Chinese individuals experience a “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/safedistance_docu\">@safedistance_docu</a>\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/jamiechi_\">@jamiechi_</a>\n",
+        "Through Safe Distance, we compare the HIV pandemic in the 1980s with the COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against the queer community in society. She also highlights how queer Chinese individuals experience a “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.",
     directory: "",
     artworks: {
       art1: {
@@ -73,7 +73,9 @@ export const yellowPerils = {
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
     quote: '“I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, Isneg. To be seen by others like you can be a gift, a moment of euphoria. Sometimes it can bring about forced relationships. Solidarity is not simply based on the similar ways we experience oppression. Solidarity is compassionate.”',
     bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?”\n\n' +
-        'Andi is the author and editor of <a class="font-medium text-bitten/80 hover:text-bitten" href="http://anakpublishing.ca/BitterMelanin.html">Bitter Melanin</a>.',
+        'Andi is the author and editor of <a class="font-medium text-bitten/80 hover:text-bitten" href="http://anakpublishing.ca/BitterMelanin.html">Bitter Melanin</a>.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/andivice\">@andivice</a>",
     topic_name: "Yellow Peril",
     collection_title:'',
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
@@ -93,9 +95,7 @@ export const yellowPerils = {
         "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>.\n" +
         "\n" +
         "5. thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
-        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/andivice\">@andivice</a>",
+        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
       art4: {
@@ -192,7 +192,9 @@ export const yellowPerils = {
     artist_name: "Mia Yaguchi-Chow",
     ins_handle: ["@bitchfits"],
     quote: '“I often feel like I don\'t fit into conventional Western communities of queerness [...] Not that I don\'t appreciate these communities -- I do, and I\'m grateful to be welcomed into the one\'s I\'m part of, but it\'s not how I often choose to instinctively express or engage with my queerness.”',
-    bio: 'My name is Mia and I\'m a non-binary Japanese/Chinese multifaceted creative, particularly focused in visual art, photography, illustration, graphic design, acting, and more. Currently, I am studying my Masters of Arts in Fashion at Toronto Metropolitan University, where I also received my Bachelors of Design in Fashion in 2021. Professionally, I work as a freelance/contract graphic designer and photographer and am an ACTRA member. Within both my professional and creative/personal work, I always aim to contribute to discourses that invite contemplation or critical reflection as this is a relationship I share with my own work. Art is a method of communication for me and I like to share these discussions with others and use it as a tool to get to know others, and if I can contribute to progressive change with it then that’s a bonus.',
+    bio: 'My name is Mia and I\'m a non-binary Japanese/Chinese multifaceted creative, particularly focused in visual art, photography, illustration, graphic design, acting, and more. Currently, I am studying my Masters of Arts in Fashion at Toronto Metropolitan University, where I also received my Bachelors of Design in Fashion in 2021. Professionally, I work as a freelance/contract graphic designer and photographer and am an ACTRA member. Within both my professional and creative/personal work, I always aim to contribute to discourses that invite contemplation or critical reflection as this is a relationship I share with my own work. Art is a method of communication for me and I like to share these discussions with others and use it as a tool to get to know others, and if I can contribute to progressive change with it then that’s a bonus.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/bitchfits\">@bitchfits</a>\n",
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Mia/Mia2.png'),
     collection_title: "Mia's Self Portraits",
@@ -202,9 +204,7 @@ export const yellowPerils = {
         "\n" +
         "I started taking so many self-portraits as I felt there was a gap in how I wanted to be represented. Fortunately, I am already a photographer and have the basic equipment to photograph myself. So what had initially been a simple effort at expressing myself in my own photography to appease my own vision became a side-business offering (what I see as) queerified portrait services to others who wish to have quality, accessible portraits that show a side of them that cold corporate (and not queer) services can't offer.\n" +
         "\n" +
-        "There is no one way to be Asian and queer and I'm happy to be able to express my ever-changing self and my evolutionary Asian-queerness through my self-portraiture and other creative works.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/bitchfits\">@bitchfits</a>\n",
+        "There is no one way to be Asian and queer and I'm happy to be able to express my ever-changing self and my evolutionary Asian-queerness through my self-portraiture and other creative works.",
     directory: '/assets/MadeInQueer/Mia',
     artworks: {
       art1: {
@@ -278,7 +278,10 @@ export const yellowPerils = {
     artist_name: "Anto Chan",
     ins_handle: ["@antopunfu", "@antowrites"],
     quote: '“The unfolding of self-discovery has been a lifetime of feeling as [if] I’m not enough. Consistently pleasing my family’s views on sacrifice and big picture living, left me disconnected from my reality and AUTHENTIC identity.”',
-    bio: 'Anto is a queer HK Chinese-Canadian spoken word performance artist, writer, facilitator, entrepreneur, producer & caregiver. He performed his one-person show "Love So Far” at the Montreal Fringe Festival in 2019. He was featured on Toronto Fringe Community Booster Storytelling, Bell Fibe Raconteur Storytelling & the CBC’s the National. He currently co-curates and hosts the variety show "FreeFlow Showcase”, and his poetry chapbook Romantic Reflections was released in 2020. In 2022, he received a grant from the Canada Council of the Arts for his project InnerGenerational: Trauma & Healing, that he performed during May’s Asian Heritage Month, Guelph Fringe Festival and Mississauga Fringe Festival for a total of 12 shows. He is passionate about mentoring the next generation of artists to overcome personal obstacles, leading to sharing their stories authentically. His life’s work is to create and support meaningful art that centres around the journey of growth, self-love and healing intergenerational trauma. He is currently studying Expressive Art Therapy with Create Institute, running 2 groups with University of Toronto Mississauga and Keystone Psychology (for Asian-Canadian population).',
+    bio: 'Anto is a queer HK Chinese-Canadian spoken word performance artist, writer, facilitator, entrepreneur, producer & caregiver. He performed his one-person show "Love So Far” at the Montreal Fringe Festival in 2019. He was featured on Toronto Fringe Community Booster Storytelling, Bell Fibe Raconteur Storytelling & the CBC’s the National. He currently co-curates and hosts the variety show "FreeFlow Showcase”, and his poetry chapbook Romantic Reflections was released in 2020. In 2022, he received a grant from the Canada Council of the Arts for his project InnerGenerational: Trauma & Healing, that he performed during May’s Asian Heritage Month, Guelph Fringe Festival and Mississauga Fringe Festival for a total of 12 shows. He is passionate about mentoring the next generation of artists to overcome personal obstacles, leading to sharing their stories authentically. His life’s work is to create and support meaningful art that centres around the journey of growth, self-love and healing intergenerational trauma. He is currently studying Expressive Art Therapy with Create Institute, running 2 groups with University of Toronto Mississauga and Keystone Psychology (for Asian-Canadian population).\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antopunfu\">@antopunfu</a>\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antowrites\">@antowrites</a>",
     topic_name: "Yellow Peril",
     collection_title: 'Anto’s Spoken Words',
     quote_bg_url: '',  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
@@ -286,10 +289,7 @@ export const yellowPerils = {
     // excerpt2: "",
     description: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n" +
         "\n" +
-        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antopunfu\">@antopunfu</a>\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antowrites\">@antowrites</a>",
+        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
     directory: "",
     artworks: {
       art1: {
@@ -470,7 +470,9 @@ export const yellowPerils = {
     quote: '“Until recently I\'ve been intimidated to explore the intersection of my ethnicity and queerness. I’m now recognizing that they have always been intricately intertwined and an essential part of who I am.”',
     bio: 'Michelle Lu (she/they) is a multidisciplinary designer and artist from Toronto, Canada. Her practice explores the nuances of identity, collaborative creation, and imagining new forms of community. Lu’s work is motivated by storytelling and the desire to make systems more equitable and accessible.\n' +
         '\n' +
-        'Michelle’s work has been featured in exhibitions and publications nationally and internationally. They are also a founding member of here-there collective, a group of interdisciplinary artists who are currently working on the here-there audio archive – a community arts project and home for stories from the Asian Canadian diaspora.',
+        'Michelle’s work has been featured in exhibitions and publications nationally and internationally. They are also a founding member of here-there collective, a group of interdisciplinary artists who are currently working on the here-there audio archive – a community arts project and home for stories from the Asian Canadian diaspora.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/tiger___mommy\">@tiger___mommy</a>\n",
     topic_name: "Yellow Peril",
     collection_title: 'Mother’s Tongue',
     quote_bg_url: require('@/assets/YellowPerils/Michelle/mothers_tongue.jpg'),
@@ -478,9 +480,7 @@ export const yellowPerils = {
         "\n" +
         "Mother’s Tongue is a manifestation of my discomfort with my queer identity. The sculpture consists of polymer clay dumplings encased in gelatine. The unstable fluid materiality of the gelatine captures my relationship to my queerness while the encased clay dumplings are representative of my Asian identity. The two identities are frequently at odds with one another, existing in a state of suspension and tension. From the material tension of the sculpture to the underlying tension within my writing, both forms are trying to contain the multitudes of what is undefinable, capturing a moment in time and suspending it in space. \n" +
         "\n" +
-        "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/tiger___mommy\">@tiger___mommy</a>\n",
+        "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.",
     directory: "/assets/YellowPerils/Michelle",
     artworks: {
       art1: {
