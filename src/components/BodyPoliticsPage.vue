@@ -155,10 +155,10 @@ watch(activeIndex, () => {
                         <CarouselComponent class="hidden md:block" :slides="artist.slides" />
                         <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
                             <div class="w-full lg:w-2/3 min-h-full">
-                                <span v-if="artist.collection_title" class="text-md sm:text-lg lg:text-[28px] font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-base sm:text-lg lg:text-[28px] font-bold leanding-4">
                                     <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4 text-md sm:text-lg lg:text-[28px]">
+                                <span v-else class="font-bold leanding-4 text-base sm:text-lg lg:text-[28px]">
                                     About This Collection
                                 </span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.description"> </div>
@@ -185,7 +185,7 @@ watch(activeIndex, () => {
                                 <a :href="artist.link" target="_blank" class="self-end justify-self-end underline text-bitten/50 hover:text-bitten p-2">Read More</a>
                             </div>
                             <div class="w-full mt-6 lg:mt-0 lg:w-1/3">
-                                <span class="font-semibold text-md sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
+                                <span class="font-semibold text-base sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
                                 <!--                            <p> {{artist.bio}} </p>-->
                                 <div v-html="artist.bio" class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg"> </div>
                             </div>
@@ -201,16 +201,16 @@ watch(activeIndex, () => {
                         </div>
                         <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
                             <div class="w-full lg:w-2/3 min-h-full">
-                                <span v-if="artist.collection_title" class="text-md sm:text-lg lg:text-[28px] font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-base sm:text-lg lg:text-[28px] font-bold leanding-4">
                                     <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4 text-md sm:text-lg lg:text-[28px]">
+                                <span v-else class="font-bold leanding-4 text-base sm:text-lg lg:text-[28px]">
                                     About This Collection
                                 </span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/3">
-                                <span class="font-bold leading-4 text-md sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
+                                <span class="font-bold leading-4 text-base sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.bio"> </div>
                             </div>
                         </div>
@@ -237,6 +237,7 @@ watch(activeIndex, () => {
             <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
         </div>
     </div>
+</template>
 </template>
 <style>
 .banner1-url {
