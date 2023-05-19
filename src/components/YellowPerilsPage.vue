@@ -130,8 +130,8 @@ watch(activeIndex, () => {
                     Yellow perils examines the contextual racism, self-discovery struggles, homophobia and how they have shaped our nuanced identities. These artworks pursue the concepts of community, inclusion, and artists’ attempts to decolonize their queer Asian bodies.
                 </p>
             </section>
-            <div v-for="(artist,index) in yellowPerilsArray" :key="index" class="pb-[94px] sm:pb-24">
-                 <!-- Quote of the Topic -->
+            <div v-for="(artist,index) in yellowPerilsArray" :key="index">
+                <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-base lg:text-[32px] lg:leading-[39px] text-ivory/90">
@@ -143,9 +143,9 @@ watch(activeIndex, () => {
                     </div>
                 </section>
                 <!-- Art pieces of a certain artist with his/her introduction -->
-                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16">
+                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16 pt-[60px] pb-[60px]">
                     <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
-                        <div class="pt-12 pb-4 lg:pt-20 lg:pb-8">
+                        <div class="pb-4 lg:pb-8">
                             <p class="lg:text-[28px] lg:leading-[34px] text-2xl font-bold">{{artist.artist_name}}</p>
                             <p class="lg:text-[28px] lg:leading-[34px] text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
@@ -153,7 +153,7 @@ watch(activeIndex, () => {
                             <img :src="art.file_name" alt="artwork" class="max-w-screen mb-3" />
                         </div>
                         <CarouselComponent class="hidden md:block" :slides="artist.slides" />
-                        <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
+                        <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-[60px] pt-14 pb-6 lg:pb-12">
                             <div class="w-full lg:w-2/3 min-h-full">
                                 <span class="font-bold leanding-4 text-base sm:text-lg lg:text-2xl">
                                     About This Collection
@@ -167,9 +167,9 @@ watch(activeIndex, () => {
                         </div>
                     </div>
                     <div v-if="artist.format == 'text'" class="h-full w-full mx-auto">
-                        <div class="pt-[60px] pb-6 lg:pt-24 lg:pb-12">
-                            <p class="lg:text-4xl text-2xl font-bold">{{artist.collection_title}}</p>
-                            <p class="lg:justify-self-end lg:text-4xl text-lg font-light italic">{{artist.artist_name}}</p>
+                        <div class="pb-4 lg:pb-8">
+                            <p class="lg:text-[28px] lg:leading-[34px] text-2xl font-bold">{{artist.collection_title}}</p>
+                            <p class="lg:text-[28px] lg:leading-[34px] text-lg font-light italic">{{artist.artist_name}}</p>
                         </div>
                         <div class="w-full lg:flex lg:justify-between lg:gap-9">
                             <div class="w-full lg:w-2/3">
@@ -189,21 +189,21 @@ watch(activeIndex, () => {
                         </div>
                     </div>
                     <div v-if="artist.format == 'video'" class="h-full">
-                        <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-[60px] pb-6 lg:pt-24 lg:pb-12">
-                            <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
-                            <p class="lg:text-4xl text-lg font-light italic">{{artist.collection_title}}</p>
+                        <div class="pb-4 lg:pb-8">
+                            <p class="lg:text-[28px] lg:leading-[34px] text-2xl font-bold">{{artist.artist_name}}</p>
+                            <p class="lg:text-[28px] lg:leading-[34px] text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
                         </div>
-                        <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
+                        <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-[60px] pt-14">
                             <div class="w-full lg:w-2/3 min-h-full">
                                 <span class="font-bold leanding-4 text-base sm:text-lg lg:text-2xl">
                                     About This Collection
                                 </span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base" v-html="artist.description"> </div>
                             </div>
-                            <div class="mt-4 lg:mt-0 lg:w-1/3">
+                            <div class="mt-6 lg:mt-0 lg:w-1/3">
                                 <span class="font-bold leading-4 text-base sm:text-lg lg:text-2xl">{{artist.artist_name}}</span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base" v-html="artist.bio"> </div>
                             </div>
@@ -211,21 +211,23 @@ watch(activeIndex, () => {
                     </div>
                 </div>
             </div>
-            <div class="pt-16 md:pt-9 lg:px-16 sm:px-12 px-6">
+            <div class="pt-9 lg:px-16 sm:px-12 px-6">
                 <p class="text-xl lg:text-2xl font-bold mb-6 mt-2">Continue To</p>
-                <div class="bg-url-1 w-full h-60 bg-top bg-cover">
-                    <a href="/exhibitions/made-in-queer">
-                        <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
-                            <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-5xl">MADE IN QUEER</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="bg-url-3 w-full h-60 bg-top bg-cover">
-                    <a href="/exhibitions/body-politics">
-                        <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
-                            <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-5xl">BODY POLITICS</p>
-                        </div>
-                    </a>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="bg-url-1 w-full h-60 lg:w-1/2 lg:h-[30rem] bg-top bg-cover">
+                        <a href="/exhibitions/made-in-queer">
+                            <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
+                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-5xl">MADE IN QUEER</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bg-url-2 w-full h-60 lg:w-1/2 lg:h-[30rem] bg-top bg-cover">
+                        <a href="/exhibitions/body-politics">
+                            <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
+                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-5xl">BODY POLITICS</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
