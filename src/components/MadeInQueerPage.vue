@@ -130,7 +130,7 @@ watch(activeIndex, () => {
                   Made in Queer celebrates artists who explore the discursive or material reflection of relational queerness, where their lived experiences, identities, memories are projected onto physical objects, structures, and our built environment.
                 </p>
             </section>
-            <div v-for="(artist,index) in madeInQueerArray" :key="index" class="">
+            <div v-for="(artist,index) in madeInQueerArray" :key="index">
                 <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
@@ -211,7 +211,7 @@ watch(activeIndex, () => {
                     </div>
                 </div>
             </div>
-            <div class="pt-9 md:pt-9 lg:px-16 sm:px-12 px-6">
+            <div class="pt-9 lg:px-16 sm:px-12 px-6">
                 <p class="text-xl lg:text-2xl font-bold mb-6 mt-2">Continue To</p>
                 <div class="flex flex-col lg:flex-row">
                     <div class="bg-url-2 w-full h-60 lg:w-1/2 lg:h-[30rem] bg-top bg-cover">

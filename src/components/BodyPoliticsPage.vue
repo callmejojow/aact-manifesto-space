@@ -130,7 +130,7 @@ watch(activeIndex, () => {
                     Our bodies are battlegrounds. This section assumes our bodies as a measurement of ‘Asian-ness’ and ‘queerness’, untangling their complicated relationships with identities, intimacy, self-love, and diasporic experience, etc.
                 </p>
             </section>
-            <div v-for="(artist,index) in bodyPoliticsArray" :key="index" class="pb-[94px] sm:pb-24">
+            <div v-for="(artist,index) in bodyPoliticsArray" :key="index">
                 <!-- Quote of the Topic -->
                 <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
