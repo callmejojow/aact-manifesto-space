@@ -90,31 +90,31 @@ export const bodyPolitics = {
         slides: [
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class="object-cover lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
