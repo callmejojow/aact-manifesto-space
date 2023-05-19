@@ -438,17 +438,21 @@ export const madeInQueer = {
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
     quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
     description:
-        "2033 Essex Rd, Williston, Vermont, USA, 05495 (2023 - ongoing) is inspired by a recent trip home to unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, Səl̓ílwətaʔ/Selilwitulh, colonially known as Vancouver, BC.\n" +
+        "2033 Essex Rd, Williston, Vermont, USA, 05495 (2023 - ongoing) is inspired by the many small business awnings layering the present business name over the old, rather than removing the old cover before installation, on the unceded territories of the xʷməθkwəy̓əm, Skwxwú7mesh, Stó:lō, Səl̓ílwətaʔ/Selilwitulh, colonially known as Vancouver, BC (and where I also call home). \n" +
         "\n" +
-        "On this trip, I observed that many small businesses installed new business signs and awnings directly over previous covers, layering new signs over the old ones without removing them. I see this as an act of interventionism: a queering of what has come before that conveys questionable practices of writing over the past. Perhaps it is a simple act of convenience on the part of business owners, but it demonstrates the enactment of a suspension in time that signifies how a singular space or parcel of land remains fixed to its physical location yet carries a multitude of meanings, purposes, and histories.\n" +
+        "For most of my childhood, my father did not live with me, returning to visit 2-3 times a year. As I got older, I learned that he was working at a Chinese restaurant in Williston, Vermont. The restaurant closed after a few years. This memory had disappeared from my mind until I moved to Montréal to continue my academic studies.\n" +
         "\n" +
-        "With this in mind, I explore public signs as an active form of cross-generational communication, where signs inform and encourage viewers to participate and engage with their community while also becoming meaningful social stamps whose significance is shaped and derived by its audience. In this artwork, the restaurant awnings function in the way that printed matter “insist[s] on […] encounter[s]” by taking inspiration from Josh MacPhee who states that “[signs] gesture beyond the text on a page to a more-than, to publics to come. Banner making is a similar form of public/ation that is both community driven and a form of communication.”\n" +
+        "The only things I know about this establishment are its name and address: East Orchid restaurant, 2033 Essex Rd. \n" +
         "\n" +
-        "Performing in parallel with Rebecca Solnit’s reflections on posters and artistic projects involving “public/ations”, my work acknowledges how temporal signs define and lay claim to physical spaces and inspire viewers to think of the past, present, and future not as a linear timeline but a continuous social project that is constantly being written. As stated by Stephanie Springgay in Feltness:\n" +
+        "This piece reflects on these particular signs as interventionist: a queering, an act of behaving badly. Perhaps it is just a simple act resulting from convenience, but a suspension of time has been enacted. Simultaneous universes, places, histories are made space for.\n" +
         "\n" +
-        "The vitality of street posters [...] ‘when the walls wake up, they remind us of who we are, where we are . . .  that we are not alone, that others have gone before, and hope remains ahead’ (18). In an era of eroded public space, protest posters become ‘small gestures,’ [...] that keep alive the power of revolution and hope in the public sphere.\n" +
+        "Restaurant awnings function the way printed matter “insist[s] on [...] encounter[s]”, as stated by Josh MacPhee: \n" +
         "\n" +
-        "What might initially be read as carelessness or laziness may actually be the complete opposite. Instead, the layering of signs could be an example of how one can care for those that came before, serving as a reminder that there will always be someone or something preceding or coming after. The question then becomes: How do we care for those who have yet to arrive while thanking the ones who paved desire lines for us to flourish in the various gestures we make everyday?",
+        "<div class='pl-12'><p class='italic'>They want to be used. But they also gesture beyond the text on a page to a more-than, to publics to come. Banner making is a similar form of public/ation that is both community driven and a form of communication.</p></div>\n" +
+        "\n" +
+        "What might initially be read as carelessness or laziness, is actually the complete opposite. It is an example of how one can care for those that came before, a reminder that there will always be someone/thing after. How do we care for those who have yet to arrive, while thanking the ones who paved desire lines for us to flourish in the various gestures we make everyday? At the same time, this work is a way for me to acknowledge this (hi)story, one of many that go undocumented by institutions that don't deem this knowledge and these experiences as significant.\n" +
+        "\n" +
+        "Credit: Kyle Tryhorn",
     directory: "/assets/YellowPerils/Snack",
     artworks: {
       art1: {
