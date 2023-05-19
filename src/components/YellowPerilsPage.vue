@@ -113,7 +113,7 @@ watch(activeIndex, () => {
                         The Bitten Peach: Decolonizing Queer Asians
                     </p>
                     <p class="leading-[29px] sm:leading-[44px] lg:leading-[58px] text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-5xl text-ivory text-center">
-                        YELLOW PERILS
+                        Yellow Perils
                     </p>
                 </div>
             </section>

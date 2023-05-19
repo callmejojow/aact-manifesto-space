@@ -72,7 +72,7 @@ export const yellowPerils = {
     artist_name: "Andi Vicente",
     ins_handle: ["@andivice", "http://anakpublishing.ca/BitterMelanin.html"],  // a list b/c some artists have multiple handles
     quote: '“I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, Isneg. To be seen by others like you can be a gift, a moment of euphoria. Sometimes it can bring about forced relationships. Solidarity is not simply based on the similar ways we experience oppression. Solidarity is compassionate.”',
-    bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden an understanding of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?”\n\n' +
+    bio: 'Andi (they/them) is a visual artist whose interdisciplinary practice is humbled and radicalized by their work with different communities. Through installation and digital collage, they’ve explored intersectional identities, precarious livelihoods and the juxtaposition of movements. Andi aims to broaden understandings of oppressed experiences and encourage collective empowerment through the answering of the questions “Who is not here with us and how can I be there for you?”\n\n' +
         'Andi is the author and editor of <a class="font-medium text-bitten/80 hover:text-bitten" href="http://anakpublishing.ca/BitterMelanin.html">Bitter Melanin</a>.\n' +
         "\n" +
         "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/andivice\">@andivice</a>",
@@ -81,20 +81,20 @@ export const yellowPerils = {
     quote_bg_url: require('@/assets/YellowPerils/Andi/barbed_dreams.jpg'),  // require('@/assets/YellowPerils/Josh/CeremonialVessel.jpg'),
     description: "I identify as Queer, Non-Binary, Filipino/a/x, Ilocano, and Isneg. To be seen intersectionally and as a whole is rare. Sometimes it's a gift. Sometimes it brings about forced relationships. I'm curious about folks' positionality on nationhood, light skin privileges and building solidarity, and creating possibilities of futurism with other QTBIPoC.\n" +
         "\n" +
-        "1. libération en fait (freedom actually / release)\n" +
+        "<em>libération en fait (freedom actually / release)</em>\n" +
         "hanging sculpture made of black zip ties and brass rings. the tension made from the zip ties represents the feeling of having to experience oppression individually and the release outwards is the freedom of knowing we are not alone.\n" +
         "\n" +
-        "2. barbed dreams\n" +
+        "<em>barbed dreams</em>\n" +
         "dream catcher made of leather, wire, and pieces of metal collected from protests in Palestine. speaks to solidarity with communities who experience the erasure of their homelands because of border imperialism.\n" +
         "\n" +
-        "3. malgré eux (despite them)\n" +
+        "<em>malgré eux (despite them)</em>\n" +
         "hanging leather flogger to affirm that we not only have the capacities to survive our hurts and harms but that we have the capacity to experience joys and pleasures, and that they can be healing.\n" +
         "\n" +
-        "4. makibaka (to struggle and to fight)\n" +
+        "<em>makibaka (to struggle and to fight)</em>\n" +
         "mixed media of two friends who are active and militant in their activist work and that the impact, the amplification of their dedication is widespread and appreciated by many.\n" +
-        "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>.\n" +
+        "The accompanying video for <em>makibaka (to struggle and to fight)</em> can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>.\n" +
         "\n" +
-        "5. thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
+        "<em>thank you [i learned of my legacy and my ancestors through the harms made by yours]</em>\n" +
         "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
@@ -159,7 +159,7 @@ export const yellowPerils = {
     artist_name: "Hanxuan (Sophie) Jiang",
     ins_handle: [],
     quote: '“From sleeping together and uninhibited dancing to daily conversations, I seem to find out which community I am in and which community I am excluded from.”',
-    bio: 'Hanxuan Jiang is a time-based artist and an art tutor who is currently based in Shanghai. She graduated from Ruskin School of Art, University of Oxford with Distinction (MFA). Her first MA was in Contemporary Art Practice of the Royal College of Art. In 2019, She was announced by Art News of China as one of the most excellent young artists in China (100 in total). Her moving image works were selected in European Short Film Festival, London Independent film Festival, Manchester film festival, 2019 Coventry Biennial, 9th International Video Poetry Festival, etc. Her artworks were collected by 2019 Florence Contemporary art Biennale, National Art Museum of China and Beijing Biennial.',
+    bio: 'Hanxuan Jiang is a time-based artist and an art tutor who is currently based in Shanghai. She graduated from Ruskin School of Art, University of Oxford with Distinction (MFA). Her first MA was in Contemporary Art Practice of the Royal College of Art. In 2019, She was announced by Art News of China as one of the most excellent young artists in China (100 in total). Her moving image works were selected in European Short Film Festival, London Independent Film Festival, Manchester Film Festival, 2019 Coventry Biennial, 9th International Video Poetry Festival, etc. Her artworks were collected by 2019 Florence Contemporary Art Biennale, National Art Museum of China and Beijing Biennial.',
     topic_name: "Yellow Peril",
     collection_title: 'The Journey of Displacement',
     quote_bg_url: require('@/assets/YellowPerils/Hanxuan/TheJourneyOfDisplacementCover.jpg'),
@@ -418,7 +418,7 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: 'níng nìng',
     quote_bg_url: require('@/assets/YellowPerils/Julie/JulieTian_3.jpg'),
-    description: "This piece is part of a series of interpretations of the Seven Grandfather Teachings for a project called “A Visual Reconciliation”. I approached the project from my observations of my childhood and relationship with my family. The title of this piece is my xiǎomíng (small name), níng nìng, which can be used in the context of “peace” and “would rather” respectively.\n" +
+    description: "This piece is part of a series of interpretations of the Seven Grandfather Teachings for a project called “A Visual Reconciliation”. I approached the project from my observations of my childhood and relationship with my family. The title of this piece is my xiǎomíng (small name), <em>níng nìng</em>, which can be used in the context of “peace” and “would rather” respectively.\n" +
         "\n" +
         "I spent my early childhood in Northern China before my parents and I immigrated to Canada without any support network. My idea of resilience and dedication was shaped by my mother and the environment around us. I saw her selfless commitment to what she cares about, and so like my mother, I have a sense of responsibility and give care earnestly. I’m aware of the physical toll and the always-present guilt of not doing or being enough, but I would rather that than not to help.\n" +
         " \n" +
@@ -476,9 +476,9 @@ export const yellowPerils = {
     topic_name: "Yellow Peril",
     collection_title: 'Mother’s Tongue',
     quote_bg_url: require('@/assets/YellowPerils/Michelle/mothers_tongue.jpg'),
-    description: "Mother’s Tongue is a temporal sculpture and prose reflecting on the ever-changing nature of memory, identity, and tradition. Created in 2020 during a time of instability and discomfort, the tandem pieces explore finding solace in tradition, ritual, and food. This piece was originally conceived as a way to connect with my cultural ancestors but upon reevaluation, I recognize now I was also searching for connection with my queer ancestors. \n" +
+    description: "<em>Mother’s Tongue</em> is a temporal sculpture and prose reflecting on the ever-changing nature of memory, identity, and tradition. Created in 2020 during a time of instability and discomfort, the tandem pieces explore finding solace in tradition, ritual, and food. This piece was originally conceived as a way to connect with my cultural ancestors but upon reevaluation, I recognize now I was also searching for connection with my queer ancestors. \n" +
         "\n" +
-        "Mother’s Tongue is a manifestation of my discomfort with my queer identity. The sculpture consists of polymer clay dumplings encased in gelatine. The unstable fluid materiality of the gelatine captures my relationship to my queerness while the encased clay dumplings are representative of my Asian identity. The two identities are frequently at odds with one another, existing in a state of suspension and tension. From the material tension of the sculpture to the underlying tension within my writing, both forms are trying to contain the multitudes of what is undefinable, capturing a moment in time and suspending it in space. \n" +
+        "<em>Mother’s Tongue</em> is a manifestation of my discomfort with my queer identity. The sculpture consists of polymer clay dumplings encased in gelatine. The unstable fluid materiality of the gelatine captures my relationship to my queerness while the encased clay dumplings are representative of my Asian identity. The two identities are frequently at odds with one another, existing in a state of suspension and tension. From the material tension of the sculpture to the underlying tension within my writing, both forms are trying to contain the multitudes of what is undefinable, capturing a moment in time and suspending it in space. \n" +
         "\n" +
         "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.",
     directory: "/assets/YellowPerils/Michelle",
