@@ -16,7 +16,9 @@ export const madeInQueer = {
         '\n' +
         'But there is more to Rising\'s art and design practice than meets the eye. Deeply rooted in their own experiences as a queer individual in society, Rising uses their work to challenge normative definitions of gender and create a world without discrimination. Through a framework and guide for researching material culture and demonstrating theoretical concepts through craft, Rising focuses on traditions, folk culture, and craftsmanship to invite viewers to consider the deeper meanings and significance behind the materials and artefacts that shape our world.\n' +
         '\n' +
-        'Whether through their crafted objects or thought-provoking installations, Rising Lai\'s work invites viewers to explore the deeper complexities of human creations and the impact they have on society.',
+        'Whether through their crafted objects or thought-provoking installations, Rising Lai\'s work invites viewers to explore the deeper complexities of human creations and the impact they have on society.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/risinglai\">@risinglai</a>",
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Rising/FullPieceOpenFramework.jpg'),
     collection_title: "Crafting Desire: Queering",
@@ -26,9 +28,7 @@ export const madeInQueer = {
         "\n" +
         "This work encourages viewers to reflect on binary thinking and recognise the experiences of queer Asians. By contextualizing traditional household furniture, this project explores the possibility of decolonizing queer Asians through the lens of materiality and craftsmanship.\n" +
         "\n" +
-        "The accompanying video for this series can be viewed  <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=0i8i-kE3qH0'>here</a>.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/risinglai\">@risinglai</a>",
+        "The accompanying video for this series can be viewed  <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=0i8i-kE3qH0'>here</a>.",
     directory: '/assets/MadeInQueer/Rising',
     artworks: {
       art1: {
@@ -92,7 +92,9 @@ export const madeInQueer = {
     artist_name: "Gillian Lapuz",
     ins_handle: ["@gillizn"],
     quote: '“As an Asian artist, and a first-generation Canadian, queer theory has only previously been digested through a Eurocentric lens [... which] is often described through the experience of a perspective that is not mine.”',
-    bio: 'Gillian Lapuz is an interdisciplinary artist based in Toronto, Canada. Lapuz is currently completing his BEd at the University of Windsor in the intermediate/senior level with teachables in Visual Arts and General Social Science. Lapuz’ body of work revolves around investigating and developing facets of queer identity. His interest in connection and relationship has ventured into a material based practice that examines personal intersecting aspects of love, fear and humour. Inspired by the material process of developing work, Lapuz attempts to render queer imagery through print, textiles, illustrations and wearable art. Lapuz completed his BFA undergraduate studies at OCADU majoring in Printmaking and minoring in Material Arts and Design: Textiles.',
+    bio: 'Gillian Lapuz is an interdisciplinary artist based in Toronto, Canada. Lapuz is currently completing his BEd at the University of Windsor in the intermediate/senior level with teachables in Visual Arts and General Social Science. Lapuz’ body of work revolves around investigating and developing facets of queer identity. His interest in connection and relationship has ventured into a material based practice that examines personal intersecting aspects of love, fear and humour. Inspired by the material process of developing work, Lapuz attempts to render queer imagery through print, textiles, illustrations and wearable art. Lapuz completed his BFA undergraduate studies at OCADU majoring in Printmaking and minoring in Material Arts and Design: Textiles.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/gillizn\">@gillizn</a>",
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Gillian/group.jpg'),
     collection_title: "Joker: Wildcard",
@@ -100,9 +102,7 @@ export const madeInQueer = {
         "\n" +
         "While conducting material research during this residency, I wanted to explore the bridges between queer theory and adorning the queer body. Using textiles as the medium to showcase my intersectional identities, I attempted to create a framework of understanding my perspective of what it meant to be a queer, Filipino artist and translate queer theory into material practice. \n" +
         "\n" +
-        "I often feel ostracized from my familial and Catholic upbringing for being queer, but also not feeling queer enough in relation to the Eurocentric vision of exploding queerness. Finding myself in a dichotomy that does little to explain and showcase my own experiences, I used this series as a portal to explain wanting to explore gender and sexuality beyond the conventional standards of beauty. Each of these garments, although dull in color palette, is filled with character and personality. There is a connection between the horrors of feeling excluded and the humors of living authentically. In other words, there is a connection between all my identities and my understanding of queerness cannot be removed from my religious background, my familial values, and the love I have for each of my communities. It is difficult to explain my version of being queer without also addressing feelings of fear and joy in conjunction with each other.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/gillizn\">@gillizn</a>",
+        "I often feel ostracized from my familial and Catholic upbringing for being queer, but also not feeling queer enough in relation to the Eurocentric vision of exploding queerness. Finding myself in a dichotomy that does little to explain and showcase my own experiences, I used this series as a portal to explain wanting to explore gender and sexuality beyond the conventional standards of beauty. Each of these garments, although dull in color palette, is filled with character and personality. There is a connection between the horrors of feeling excluded and the humors of living authentically. In other words, there is a connection between all my identities and my understanding of queerness cannot be removed from my religious background, my familial values, and the love I have for each of my communities. It is difficult to explain my version of being queer without also addressing feelings of fear and joy in conjunction with each other.",
     directory: '/assets/MadeInQueer/Gillian',
     artworks: {
       art1: {
@@ -196,15 +196,15 @@ export const madeInQueer = {
     artist_name: "Joshua Lue Chee Kong",
     ins_handle: ["@josh_lu_studio"],
     quote: '“[M]y identity has always felt like a moving target, going back and forth between Chinese and West Indian, but also Hakka Chinese and queer. Having these multiple identities all confined to one body has always been met with confusion, amazement and wonder.”',
-    bio: 'Joshua Lue Chee Kong is a Trinidadian Chinese artist based in Toronto, Canada. In 2020, Joshua graduated from OCAD University, Toronto, with a degree in the Interdisciplinary Master’s in Art, Media, and Design. His explorations of home, longing, and belonging interrogate ideas of multiculturalism and assimilation. In particular, the representation of the Chinese in Caribbean culture and its diaspora.',
+    bio: 'Joshua Lue Chee Kong is a Trinidadian Chinese artist based in Toronto, Canada. In 2020, Joshua graduated from OCAD University, Toronto, with a degree in the Interdisciplinary Master’s in Art, Media, and Design. His explorations of home, longing, and belonging interrogate ideas of multiculturalism and assimilation. In particular, the representation of the Chinese in Caribbean culture and its diaspora.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/josh_lu_studio\">@josh_lu_studio</a>",
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Josh/CeremonialVessel.jpg'),
     collection_title: "Melting Pot",
     description: "When you see my work will you ever know if I was ever gay or that I am a Trinidadian Chinese from my work without reading my bio? Does it matter to me? I am telling myself this as I write this statement. For a queer Trinidadian Hakka Chinese like myself I have lived with ambiguity my whole life when I have been told “Oh I never knew there were Chinese from the Caribbean” or “Can you just become straight again?”, which has consistently challenged my identity. As an artist, I embrace this ambiguity in my work that confronts what it means to be queer, Hakka and Trinidadian, giving myself the space to reimagine how a queer Trinidadian Hakka Chinese body would look like. Having a fluid identity, inhabiting and flowing within the hyphens between cultures, through the construction of my memories, fantasy, and experiences within these various cultural identities.\n" +
         "\n" +
-        "As an artist, I deconstruct these identities and choose what to emphasize or to hide which is the reflection of the struggles I had to endure within my own body. I use the transformative aspects of bronze casting and 3D printing to capture the shifting and mixing of cultures and identities in one body. I am making space for my body, family, ancestors, and the diaspora to become part of this ongoing process of identity production. I hope my work will bring joy and happiness to future queers from the diaspora and the wider Asian community.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/josh_lu_studio\">@josh_lu_studio</a>",
+        "As an artist, I deconstruct these identities and choose what to emphasize or to hide which is the reflection of the struggles I had to endure within my own body. I use the transformative aspects of bronze casting and 3D printing to capture the shifting and mixing of cultures and identities in one body. I am making space for my body, family, ancestors, and the diaspora to become part of this ongoing process of identity production. I hope my work will bring joy and happiness to future queers from the diaspora and the wider Asian community.",
     directory: '/assets/MadeInQueer/Josh',
     artworks: {
       art1: {
@@ -295,7 +295,9 @@ export const madeInQueer = {
     artist_name: "Marisa Yue Chuen Müsing",
     ins_handle: ["@marisamusing", "https://www.marisamusing.com/"],
     quote: '“As someone mixed-Asian and queer, both these parts of me felt really intertwined at a time where I was truly figuring out myself again after years of trying to associate myself with a facade of who I was..”',
-    bio: 'Marisa Müsing (she/they) is an artist & designer from Tkaronto, Canada. She has a background in architecture, having graduated from the University of Waterloo School of Architecture (UW), and is currently pursuing her Masters of Art in Architecture at the Royal College of Art (RCA) in London, UK. Constantly driven by the process of fabrication and making, her work ranges from architecture, furniture design, 3D animations, fashion, painting and sculpture. Marisa has lectured and taught at Parsons School of Design, Harvard GSD, Rhode Island School of Design and ELISAVA. In 2018, Marisa co-founded müsing-sellés, a design and architecture studio that plays with furniture and the scalability of object creation. They have made international acclaim, presenting work in a variety of international galleries and shows. As a mixed-asian queer artist, her work focuses on concepts of body and identity, experimenting through different mediums to express feminist ideals through artistic representation. She is constantly seeking new creative ventures in multiple mediums and scales that allow for playful & beautiful interpretations of the world.',
+    bio: 'Marisa Müsing (she/they) is an artist & designer from Tkaronto, Canada. She has a background in architecture, having graduated from the University of Waterloo School of Architecture (UW), and is currently pursuing her Masters of Art in Architecture at the Royal College of Art (RCA) in London, UK. Constantly driven by the process of fabrication and making, her work ranges from architecture, furniture design, 3D animations, fashion, painting and sculpture. Marisa has lectured and taught at Parsons School of Design, Harvard GSD, Rhode Island School of Design and ELISAVA. In 2018, Marisa co-founded müsing-sellés, a design and architecture studio that plays with furniture and the scalability of object creation. They have made international acclaim, presenting work in a variety of international galleries and shows. As a mixed-asian queer artist, her work focuses on concepts of body and identity, experimenting through different mediums to express feminist ideals through artistic representation. She is constantly seeking new creative ventures in multiple mediums and scales that allow for playful & beautiful interpretations of the world.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/marisamusing\">@marisamusing</a>",
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg'),
     collection_title: "",
@@ -311,11 +313,7 @@ export const madeInQueer = {
         "<b>Naia Lamps</b>\n" +
         "The Naia Lamps are fleshy silk structures made of naturally dyed silk that are then pleated and folded in place with a silicone finish. The silicone is poured and spread on each lamp shade to mimic natural folds in cloth, the process of adding silicone allows that movement to be captured permanently. The lamp frames are made of thin metal rods that the lampshades are hand sewn onto with silk thread. The Naia Lamps are playful sculptural pieces inspired by fabric pleating, bodily forms, and soft sea creatures.\n" +
         "\n" +
-        "This artwork was created by Jennifer Laflamme and Marisa Musing as MAMUMIFI, a Toronto-based collective that explores building stories and creatures through objects and fantasy ethereal worlds. MAMUMIFI works through playing with various materials and compositions in the worlds of furniture, sculpture, digital, fashion and art. Their work lies in between functional and experimental design. Evolving projects around body, femininity, fluidity and our relationship to identity.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/marisamusing\">@marisamusing</a>\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/mifi.mifi\">@mifi.mifi</a>\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/mamumifi\">@mamumifi</a>\n",
+        "This artwork was created by Jennifer Laflamme (<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/mifi.mifi\">@mifi.mifi</a>) and Marisa Musing as MAMUMIFI (<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/mamumifi\">@mamumifi</a>), a Toronto-based collective that explores building stories and creatures through objects and fantasy ethereal worlds. MAMUMIFI works through playing with various materials and compositions in the worlds of furniture, sculpture, digital, fashion and art. Their work lies in between functional and experimental design. Evolving projects around body, femininity, fluidity and our relationship to identity.",
     directory: '/assets/MadeInQueer/Marisa',
     artworks: {
       art1: {
@@ -443,7 +441,9 @@ export const madeInQueer = {
     quote: '“I see my experiments with [the translation of materials, text, images, and sound between physical and digital spaces] as a way to understand my in-betweenness: of nationalities, cultures, homes, gender, and languages.”',
     bio: 'They recently became a Certified Sculpture Witch with an MFA from Concordia University. She holds a BFA with Distinction in Visual Art (2018) from the School for the Contemporary Arts at Simon Fraser University. As a wicked #magicalgirl ✨ who eats art and makes snacks, she has exhibited and curated shows, off- and online, across Turtle Island. Currently, they are based on the stolen lands of the Kanien’kehá:ka peoples.\n' +
         '\n' +
-        'They are a recipient of numerous awards, including the Canada Council for the Arts and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship.',
+        'They are a recipient of numerous awards, including the Canada Council for the Arts and the Dale and Nick Tedeschi Studio Arts Fellowship. She was waitlisted for the SSHRC - Joseph-Armand Bombardier: Canada Graduate Master’s Scholarship.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/snackwitch\">@snackwitch</a>",
     topic_name: "Yellow Peril",
     collection_title: '2033 Essex Rd, Williston, Vermont, USA, 05495',
     quote_bg_url: require('@/assets/YellowPerils/Snack/3snack.jpg'),
@@ -462,9 +462,7 @@ export const madeInQueer = {
         "\n" +
         "What might initially be read as carelessness or laziness, is actually the complete opposite. It is an example of how one can care for those that came before, a reminder that there will always be someone/thing after. How do we care for those who have yet to arrive, while thanking the ones who paved desire lines for us to flourish in the various gestures we make everyday? At the same time, this work is a way for me to acknowledge this (hi)story, one of many that go undocumented by institutions that don't deem this knowledge and these experiences as significant.\n" +
         "\n" +
-        "Credit: Kyle Tryhorn\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/snackwitch\">@snackwitch</a>",
+        "Credit: Kyle Tryhorn",
     directory: "/assets/YellowPerils/Snack",
     artworks: {
       art1: {
@@ -548,7 +546,9 @@ export const madeInQueer = {
     artist_name: "Eric Chengyang",
     ins_handle: ["@monkeywearstie"],
     quote: '“By integrating storytelling with historical research and contemporary art, my practice explores the themes of symbiotic duality and paradox, such as the intersections and proximity between the East and the West.”',
-    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox by focusing on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy.  Besides a solo practice, Eric is a part of the collaborative Dawat Yan Project. (Pronouns: they/he)',
+    bio: 'Eric Chengyang’s practice integrates storytelling with visual arts through the use of historical archives, museum collections, and hybrid media. Coming from a multilingual Chinese-Canadian background, their works explore the themes of symbiotic duality and paradox by focusing on the intersections and proximity between the East and the West, while challenging the conventional notion of the East-West Dichotomy.  Besides a solo practice, Eric is a part of the collaborative Dawat Yan Project. (Pronouns: they/he)\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/monkeywearstie\">@monkeywearstie</a>\n",
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Eric/ASplitPeachSingle.jpg"),
     collection_title: "Study of Equivalent Relations (A Split Peach), Iteration II",
@@ -568,9 +568,7 @@ export const madeInQueer = {
         "\n" +
         "Bridging the East and the West, the Past and Present,  this project pays further homage to the works by these contemporary artists:\n" +
         "1. “Untitled” (Perfect Lovers) by Felix Gonzalez-Torres. See it on MoMA <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.moma.org/collection/works/81074'>online collection</a>\n" +
-        "2. “The Origin of Love”, written by Stephen Trask for Hedwig and the Angry Inch. Listen to the official audio of Neil Patrick Harris’ version on <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=VZtyFQQPnEs'>YouTube</a>\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/monkeywearstie\">@monkeywearstie</a>\n",
+        "2. “The Origin of Love”, written by Stephen Trask for Hedwig and the Angry Inch. Listen to the official audio of Neil Patrick Harris’ version on <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.youtube.com/watch?v=VZtyFQQPnEs'>YouTube</a>",
     directory: '/assets/MadeInQueer/Eric',
     artworks: {
       art1: {
@@ -597,15 +595,15 @@ export const madeInQueer = {
     bio: 'Beau Gomez is a Filipino-Canadian visual artist based in Toronto and Montréal. His practice is informed by ideas, challenges and conversations around cross-cultural narratives, as they relate to positions of queerness and community. \n' +
         '\n ' +
         'Select exhibitions include Propeller Art Gallery, Magenta Foundation, Artspace Gallery, La Gaîté Lyrique, and TIFF Bell Lightbox. He equally devotes his time to community engagement, and has contributed to organizations including Reel Asian Film Festival, The Site Magazine, Pride Toronto/Montréal and Critical Distance Centre for Curators. In 2019, he launched Fixer, a gathering of emerging image-makers, writers and creative thinkers in an ' +
-        'engaged critique on works in progress. Beau holds a BFA in Photography Studies from Toronto Metropolitan University.',
+        'engaged critique on works in progress. Beau holds a BFA in Photography Studies from Toronto Metropolitan University.\n' +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/beaugomezx\">@beaugomezx</a>",
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Beau/YoureHereToo2.jpg"),
     collection_title: "You’re here, too",
     description: "You’re here, too is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
         "\n" +
-        "The accompanying video for this series can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://beaugomez.com/yht/wipvid001'>here</a>.\n" +
-        "\n" +
-        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/beaugomezx\">@beaugomezx</a>",
+        "The accompanying video for this series can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://beaugomez.com/yht/wipvid001'>here</a>.",
     directory: '/assets/MadeInQueer/Beau',
     artworks: {
       art1: {
