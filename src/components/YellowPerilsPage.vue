@@ -109,10 +109,10 @@ watch(activeIndex, () => {
             <!-- Banner -->
             <section id="page_banner" class="h-[calc(100vh-89px)] w-full bg-cover bg-top banner3-url">
                 <div class="bg-black/50 w-full h-[calc(100vh-89px)] flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
-                    <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
+                    <p class="lg:leading-6 hidden lg:block lg:text-xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
                     </p>
-                    <p class="leading-[29px] sm:leading-[44px] lg:leading-[77px] text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-[64px] text-ivory text-center">
+                    <p class="leading-[29px] sm:leading-[44px] lg:leading-[58px] text-ivory/90 font-medium text-2xl sm:text-4xl lg:text-5xl text-ivory text-center">
                         YELLOW PERILS
                     </p>
                 </div>
