@@ -243,13 +243,13 @@ export const bodyPolitics = {
         quote_bg_url: require("@/assets/BodyPolitics/Muchen/MuchenQuoteBackground.jpg"),
         collection_title: "Yang",
         directory: "",
-        description: "As the artist and filmmaker of the experimental video \"Yang,\" I delved into the personal experiences and challenges faced by my dear friend Yang. Through a combination of montages and interviews, I aimed to capture the essence of Yang's reflections on his journey, intertwined with his deeply personal explorations of his life experiences.\n" +
+        description: "As the artist and filmmaker of the experimental video <em>Yang</em>, I delved into the personal experiences and challenges faced by my dear friend Yang. Through a combination of montages and interviews, I aimed to capture the essence of Yang's reflections on his journey, intertwined with his deeply personal explorations of his life experiences.\n" +
             "\n" +
             "The left channel of the video presents a series of carefully curated montages, each with its distinct color pattern. These montages visually represent Yang's life, showcasing various aspects of his personal experiences in an abstract manner. As the colors shift and change, viewers are invited to join Yang on his journey of self-discovery and personal growth.\n" +
             "\n" +
             "The right channel of the video documents my intimate interview with Yang, using both a digital camera and VCR. Through this interview, Yang shares his personal perspective on the challenges of being both Chinese and gay, including the pressure to uphold the family lineage, show filial piety, and respect parental authority.\n" +
             "\n" +
-            "\"Yang\" is a deeply personal and intimate work that offers a glimpse into the complex and often challenging experiences of those navigating the intersection of cultural identity and sexual orientation.",
+            "<em>Yang</em> is a deeply personal and intimate work that offers a glimpse into the complex and often challenging experiences of those navigating the intersection of cultural identity and sexual orientation.",
         artworks: {
             art1: {
                 name: "Yang",
@@ -467,7 +467,7 @@ export const bodyPolitics = {
         quote_bg_url: require('@/assets/BodyPolitics/Sidi/MirageRaftCover.jpg'),
         collection_title: "Mirage Raft (The Dream Talking Oyster)",
         directory: "", // no directory since it's a video on Youtube
-        description: "Mirage Raft (The Dream Talking Oyster) interrogates my own diasporic experience and queer identities by emphasizing the hermaphroditic bodies of oysters and their habitational behaviors that respond to the tidal cycle and planetary rotations. Using an acoustic device, I compose the music through the texture of the oyster shell which has accompanied me through my diasporic journey for nearly 10 years. Every physical movement is captured in the musical score so that the visual and auditory composition is an imaginative representation of the oyster’s absent body. By residing my body inside the oyster shell, I reference the Chinese classical story of Chuang Chou’s Dreaming a Butterfly (庄周梦蝶) to consider if it was the oyster dreaming of me or if I was becoming the oyster, and in doing so I ultimately question the subjectivity of the diasporic experience and find a kinesthetic empathy that transforms the boundaries of the bodies.",
+        description: "<em>Mirage Raft (The Dream Talking Oyster)</em> interrogates my own diasporic experience and queer identities by emphasizing the hermaphroditic bodies of oysters and their habitational behaviors that respond to the tidal cycle and planetary rotations. Using an acoustic device, I compose the music through the texture of the oyster shell which has accompanied me through my diasporic journey for nearly 10 years. Every physical movement is captured in the musical score so that the visual and auditory composition is an imaginative representation of the oyster’s absent body. By residing my body inside the oyster shell, I reference the Chinese classical story of Chuang Chou’s <em>Dreaming a Butterfly</em> (庄周梦蝶) to consider if it was the oyster dreaming of me or if I was becoming the oyster, and in doing so I ultimately question the subjectivity of the diasporic experience and find a kinesthetic empathy that transforms the boundaries of the bodies.",
         artworks: {
             art1: {
                 name: "Mirage Raft (The Dream Talking Oyster)",
