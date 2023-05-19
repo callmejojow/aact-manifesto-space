@@ -161,11 +161,11 @@ watch(activeIndex, () => {
                                 <span v-else class="font-bold leanding-4 text-md sm:text-lg lg:text-[28px]">
                                     About This Collection
                                 </span>
-                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.description"> </div>
+                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-9 lg:mt-0 lg:w-1/3">
                                 <span class="font-bold leading-4 text-sm sm:text-base lg:text-[28px]">{{artist.artist_name}}</span>
-                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.bio"> </div>
+                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.bio"> </div>
                             </div>
                         </div>
                     </div>
@@ -191,25 +191,25 @@ watch(activeIndex, () => {
                     </div>
                     <div v-if="artist.format == 'video'" class="h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-[60px] pb-6 lg:pt-24 lg:pb-12">
-                            <p class="text-2xl font-bold">{{artist.artist_name}}</p>
-                            <p class="text-lg font-light italic">{{artist.collection_title}}</p>
+                            <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
+                            <p class="lg:text-4xl text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
                         <div v-for="art in artist.artworks" :key="art" class="aspect-video">
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
                         </div>
                         <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
                             <div class="w-full lg:w-2/3 min-h-full">
-                                <span v-if="artist.collection_title" class="text-sm lg:text-[28px] font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-md sm:text-lg lg:text-[28px] font-bold leanding-4">
                                     <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4 text-sm sm:text-base lg:text-[28px]">
+                                <span v-else class="font-bold leanding-4 text-md sm:text-lg lg:text-[28px]">
                                     About This Collection
                                 </span>
-                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.description"> </div>
+                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.description"> </div>
                             </div>
                             <div class="mt-4 lg:mt-0 lg:w-1/3">
-                                <span class="font-bold leading-4 text-sm sm:text-base lg:text-[28px]">{{artist.artist_name}}</span>
-                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.bio"> </div>
+                                <span class="font-bold leading-4 text-md sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
+                                <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg" v-html="artist.bio"> </div>
                             </div>
                         </div>
                     </div>
