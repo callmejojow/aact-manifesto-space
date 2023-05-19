@@ -133,7 +133,7 @@ watch(activeIndex, () => {
                         <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
                                 <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
-                                    About <span class="italic">{{artist.collection_title}}</span>
+                                    <span class="italic">{{artist.collection_title}}</span>
                                 </span>
                                 <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
                                     About This Collection
@@ -177,7 +177,7 @@ watch(activeIndex, () => {
                         <div class="min-h-screen pt-4 lg:flex lg:justify-between lg:items-start lg:gap-24 pb-6">
                             <div class="w-full lg:w-3/4 min-h-full pt-8">
                                 <span v-if="artist.collection_title" class="text-sm lg:text-3xl font-bold leanding-4">
-                                    About <span class="italic">{{artist.collection_title}}</span>
+                                    <span class="italic">{{artist.collection_title}}</span>
                                 </span>
                                 <span v-else class="font-bold leanding-4 text-sm lg:text-3xl">
                                     About This Collection
