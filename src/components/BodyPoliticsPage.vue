@@ -119,14 +119,14 @@ watch(activeIndex, () => {
             </section>
             <!-- Introduction of the sub section -->
             <section id="about" class="h-fit px-6 sm:px-12 lg:px-16">
-                <h2 class="pt-[60px] pb-6 lg:pt-24 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
+                <h2 class="pt-[60px] pb-6 text-xl lg:text-[28px] lg:leading-[34px] font-bold">About</h2>
                 <!--                <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
                 <!--                    Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.-->
                 <!--                </p>-->
                 <!--                <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
                 <!--                    We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?-->
                 <!--                </p>-->
-                <p class="pb-[94px] sm:pb-24 mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
+                <p class="pb-[60px] font-normal text-sm sm:text-base leading-5 sm:leading-6 lg:leading-8">
                     Our bodies are battlegrounds. This section assumes our bodies as a measurement of ‘Asian-ness’ and ‘queerness’, untangling their complicated relationships with identities, intimacy, self-love, and diasporic experience, etc.
                 </p>
             </section>
@@ -237,7 +237,6 @@ watch(activeIndex, () => {
             <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
         </div>
     </div>
-</template>
 </template>
 <style>
 .banner1-url {
