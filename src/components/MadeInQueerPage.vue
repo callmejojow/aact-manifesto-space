@@ -32,13 +32,11 @@ onMounted(() => {
       if (window.innerWidth >= 1024) { // lg screens and above
         initializeSmoothScroll(136); // your offset for lg screens
       } else {
-        initializeSmoothScroll(104); // your offset for smaller screens
+        initializeSmoothScroll(89); // your offset for smaller screens
       }
     }
-
     // Initialize SmoothScroll and adjust the offset on page load
     adjustOffset();
-
     // Adjust the offset whenever the window is resized
     window.addEventListener('resize', adjustOffset);
 
@@ -48,12 +46,6 @@ onMounted(() => {
         const targetElement = document.getElementById(targetId);
         startObserving(targetElement, index, onIntersection);
     });
-    // const offset = 104;
-    // const scroll = new SmoothScroll('a[href*="#"]', {
-    //     speed: 1000,
-    //     easing: 'easeInOutCubic',
-    //     offset: offset,
-    // });
 });
 
 function onIntersection(entry, index) {
@@ -77,7 +69,7 @@ watch(activeIndex, () => {
 <template>
     <div class="min-h-screen bg-ivory max-h-full">
         <div class="sticky z-50 top-0 bg-ivory pt-4 sm:pt-6 lg:pt-4 px-6 sm:px-12 lg:px-16">
-            <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-6 lg:pb-4">
+            <div class="flex justify-start lg:justify-center items-center lg:border-b lg:border-stone-400/50 pb-2 md:pb-4">
                 <a href="/">
                     <img src="@/assets/manifesto-logo-black.svg" class="h-6 lg:h-8 opacity-90 lg:ml-4" alt="Website Dark Logo" />
                 </a>
@@ -115,8 +107,8 @@ watch(activeIndex, () => {
         </div>
         <div class="overflow-scroll scroll-smooth">
             <!-- Banner -->
-            <section id="page_banner" class="h-[calc(100vh-104px)] w-full bg-cover bg-top banner2-url">
-                <div class="bg-black/50 w-full h-[calc(100vh-104px)] flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
+            <section id="page_banner" class="h-[calc(100vh-89px)] w-full bg-cover bg-top banner2-url">
+                <div class="bg-black/50 w-full h-[calc(100vh-89px)] flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
                     <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
                     </p>
@@ -127,7 +119,7 @@ watch(activeIndex, () => {
             </section>
             <!-- Introduction of the sub section -->
             <section id="about" class="h-fit px-6 sm:px-12 lg:px-16">
-                <h2 class="pt-6 mb-6 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
+                <h2 class="pt-[60px] pb-6 lg:pt-24 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
 <!--                <p class="font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">-->
 <!--                  Made in Queer celebrates artists who explore the discursive or material reflection of relational queerness, where their lived experiences, identities, memories are projected onto physical objects, structures, and our built environment.-->
 <!--                </p>-->
@@ -140,7 +132,7 @@ watch(activeIndex, () => {
             </section>
             <div v-for="(artist,index) in madeInQueerArray" :key="index" class="pb-[94px] sm:pb-24">
                 <!-- Quote of the Topic -->
-                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-104px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
                     <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
                         <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
                             {{artist.quote}}
