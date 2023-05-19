@@ -217,14 +217,14 @@ watch(activeIndex, () => {
                     <div class="bg-url-1 w-full h-60 lg:w-1/2 lg:h-[30rem] bg-top bg-cover">
                         <a href="/exhibitions/made-in-queer">
                             <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
-                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-4xl">MADE IN QUEER</p>
+                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-4xl  lg:leading-[44px]">MADE IN <span class="inline lg:block">QUEER</span></p>
                             </div>
                         </a>
                     </div>
                     <div class="bg-url-2 w-full h-60 lg:w-1/2 lg:h-[30rem] bg-top bg-cover">
                         <a href="/exhibitions/body-politics">
                             <div class="backdrop-brightness-50 w-full h-full flex items-center md:transition-all md:ease-in md:ease-out md:duration-300 hover:backdrop-brightness-100">
-                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-4xl">BODY POLITICS</p>
+                                <p class="text-center mx-auto text-ivory font-extralight text-2xl lg:text-4xl lg:leading-[44px]">BODY<span class="inline lg:block"> POLITICS</span></p>
                             </div>
                         </a>
                     </div>
