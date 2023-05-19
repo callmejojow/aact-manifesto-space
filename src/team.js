@@ -30,16 +30,17 @@ export const team = [
     bio:'Emily Gong (she/her/they) is a Chinese Canadian artist, researcher, and entrepreneur. Emily holds a Bachelor of Fine Arts Honours degree from Queen’s University and a Master of Science degree from the University of Oxford. Her masters research is focused on the comparative studies of the global art markets from the perspective of empowering artists in this system. Emily has written for the Barbican Centre and exhibited in the Shenzhen-Hong Kong Biennale of Urbanism.'
   },
   {
-    name: 'Michael Wang',
-    role: 'Community Operations Lead',
-    imageUrl:require('@/assets/members/michael.png'),
-    bio:'Michael Wang (he/him/his), Ph.D., is a vision scientist and tech enthusiast. His deep fascination about how humans perceive the world around them has led him to explore how personal and lived experiences are represented in various forms of art. To this end, Michael applies his knowledge in scientific research and modern technology to collaborate with local artists in Toronto to transform the creation and exhibition of arts.'
-  },
-  {
     name: 'Erin Rooney',
     role: 'Lead Editor',
     imageUrl:require('@/assets/members/erin.png'),
     bio:'Erin is a Data Management Coordinator with an MI from the University of Toronto. She has a passion for the written word and socio-cultural anthropology. She spent her formative years abroad, primarily in Asia, where she gained a lasting appreciation for Asian culture. Erin holds a BA from Queen’s University where she studied her lifelong love of English Literature and Language as well as History. She pursued her interest in Chinese studies at Queen’s University by enrolling in Chinese Language courses where she participated in departmental activities and events that strengthened her appreciation and understanding of Chinese culture. Erin is fascinated by the role that storytelling plays within culture and society and enjoys spending her free time pursuing her creative interests in reading and writing. She is an advocate for celebrating cultural diversity and tolerance through the art of storytelling in various mediums, joining AACT to promote cultural awareness and diversity through the creative arts.'
   },
+  {
+    name: 'Michael Wang',
+    role: 'Community Operations Lead',
+    imageUrl:require('@/assets/members/michael.png'),
+    bio:'Michael Wang (he/him/his), Ph.D., is a vision scientist and tech enthusiast. His deep fascination about how humans perceive the world around them has led him to explore how personal and lived experiences are represented in various forms of art. To this end, Michael applies his knowledge in scientific research and modern technology to collaborate with local artists in Toronto to transform the creation and exhibition of arts.'
+  },
+
   //more members here
 ]

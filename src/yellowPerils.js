@@ -21,7 +21,9 @@ export const yellowPerils = {
         "\n" +
         "We performed an ancestral veneration ceremony at Larwill Park in Vancouver, which was the gathering site of the anti-Oriental riots of 1907 to mark an image of the temporal relationship that the project Yellow Peril: Queer Destiny has amongst a history of anti-Asian racism in Canada.  Giving offerings to our ancestors, reflecting on histories of colonization, founded upon systemic racism, and recognizing that these formations of anti-Asian racism and yellow peril exist to uphold imperialism - and never really goes away. Drawing on Simeon Mann and Dylan Rodriguez, Anti-Asian racism emerges when there’s an insecurity around the capitalist mode of production predicated on the seizure and extraction of Indigenous lands, and that anti-Asian violence is a structure to sustain racial devices inherent in racial capitalism and settler colonialism.\n" +
         "\n" +
-        "Race, temporality, ancestry, and relationships to land are themes that we grapple with in this project. A core part of our recent practice as queer Chinese artists is exploring the relationship between our identities as queer Asian artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize. We are particularly interested in the recent (re)emergence of Anti-Asian racism and community (and governmental) responses that lean towards identity based politics. We are interested in creating works that address systemic racism and colonization, and the roles that queer Chinese people play in undoing anti-Black and anti-Indigenous racism.",
+        "Race, temporality, ancestry, and relationships to land are themes that we grapple with in this project. A core part of our recent practice as queer Chinese artists is exploring the relationship between our identities as queer Asian artists and how our anti-racist arts practice can work in solidarity with struggles to decolonize. We are particularly interested in the recent (re)emergence of Anti-Asian racism and community (and governmental) responses that lean towards identity based politics. We are interested in creating works that address systemic racism and colonization, and the roles that queer Chinese people play in undoing anti-Black and anti-Indigenous racism.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/loveintersections\">@loveintersections</a>",
     directory: "",
     artworks: {
       art1: {
@@ -49,7 +51,10 @@ export const yellowPerils = {
         "\n" +
         "In the process of making this film, we realized that there is little documentation of queer Asian history. It is essential to establish a visual record of the lives of Chinese queer people in British-Chinese history, especially as the community is facing unprecedented discrimination and challenges in recent years. This project becomes a means to discuss with our community members how we can better improve our situation.\n" +
         "\n" +
-        "Through Safe Distance, we compare the HIV pandemic in the 1980s with the COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against the queer community in society. She also highlights how queer Chinese individuals experience a “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.",
+        "Through Safe Distance, we compare the HIV pandemic in the 1980s with the COVID-19 pandemic since 2020. She would like to remind people to stay alert to the history of ostracization and discrimination against the queer community in society. She also highlights how queer Chinese individuals experience a “double whammy” of racism and homophobia. By addressing the above issues, Jamie hopes to promote the message that “We should embody kindness and empathy with people from all walks of life” in her film.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/safedistance_docu\">@safedistance_docu</a>\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/jamiechi_\">@jamiechi_</a>\n",
     directory: "",
     artworks: {
       art1: {
@@ -88,7 +93,9 @@ export const yellowPerils = {
         "The accompanying video for makibaka (to struggle and to fight) can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://youtu.be/t9qG14MSVPs'>here</a>.\n" +
         "\n" +
         "5. thank you [i learned of my legacy and my ancestors through the harms made by yours]\n" +
-        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n",
+        "found vintage tourist memorabilia with a quote that is a reminder of how to not let anger or victimhood overtake your personhood. that we are capable of demonstrating defiance with grace and wisdom.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/andivice\">@andivice</a>",
     directory: "/assets/YellowPerils/Andi",
     artworks: {
       art4: {
@@ -195,7 +202,9 @@ export const yellowPerils = {
         "\n" +
         "I started taking so many self-portraits as I felt there was a gap in how I wanted to be represented. Fortunately, I am already a photographer and have the basic equipment to photograph myself. So what had initially been a simple effort at expressing myself in my own photography to appease my own vision became a side-business offering (what I see as) queerified portrait services to others who wish to have quality, accessible portraits that show a side of them that cold corporate (and not queer) services can't offer.\n" +
         "\n" +
-        "There is no one way to be Asian and queer and I'm happy to be able to express my ever-changing self and my evolutionary Asian-queerness through my self-portraiture and other creative works.",
+        "There is no one way to be Asian and queer and I'm happy to be able to express my ever-changing self and my evolutionary Asian-queerness through my self-portraiture and other creative works.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/bitchfits\">@bitchfits</a>\n",
     directory: '/assets/MadeInQueer/Mia',
     artworks: {
       art1: {
@@ -277,7 +286,10 @@ export const yellowPerils = {
     // excerpt2: "",
     description: "The unfolding of self-discovery has been a lifetime of feeling as if I'm not enough. Consistently pleasing my family’s views on sacrifice and big picture living left me disconnected from my reality and identity. Only this past year have I fully accepted my queerness, including it in my art, my stories and sharing with friends/family. The deep joy that has come from stepping into my full self has been immeasurable, and “Biting the Peach” in all it’s glory transformed how I show up in the World. This includes the hairy outside that I’m mildly allergic to that makes my throat itchy, the soft juicy insides that makes a mess and the oddly shaped pit that I spend way too much time analyzing every time I eat one. I am sensitive, absolutely messy and overthinking each situation that arises, and my celebration of these truths helps me arrive fully for this complicated life I’m living. \n" +
         "\n" +
-        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.",
+        "Unpacking Asian identity was a large part of the past couple years for me with my project InnerGenerational: Trauma and Healing. As was holding space for the Queer community, running a Bi+ Expressive Arts Therapy group and seeing clients in the Bi+ Arts Festival network. I have just begun publicly discovering the intersection of Asian and Queer identities, and this project feels like an incredibly valuable next step for me to step into the full experience of how these parts of myself align, conflict and make up who I am.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antopunfu\">@antopunfu</a>\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/antowrites\">@antowrites</a>",
     directory: "",
     artworks: {
       art1: {
@@ -412,7 +424,7 @@ export const yellowPerils = {
         " \n" +
         "North American culture is fundamentally individualistic, fragmented, and transient, and the Queer Asian community here is not exempt from this. Queer folks here fortunately have more space and the privilege to continuously rebuild and redefine their own communities. But I’m not used to this kind of liberty, and it’s not something I can depend on when Queer survival and existence are a priority. \n" +
         "\n" +
-        "I’ve struggled with navigating the transactional nature of the Queer communities here because I feel it’s okay to give more than we take.  \n",
+        "I’ve struggled with navigating the transactional nature of the Queer communities here because I feel it’s okay to give more than we take.\n",
     directory: "/assets/YellowPerils/Julie",
     artworks: {
       art1: {
@@ -466,7 +478,9 @@ export const yellowPerils = {
         "\n" +
         "Mother’s Tongue is a manifestation of my discomfort with my queer identity. The sculpture consists of polymer clay dumplings encased in gelatine. The unstable fluid materiality of the gelatine captures my relationship to my queerness while the encased clay dumplings are representative of my Asian identity. The two identities are frequently at odds with one another, existing in a state of suspension and tension. From the material tension of the sculpture to the underlying tension within my writing, both forms are trying to contain the multitudes of what is undefinable, capturing a moment in time and suspending it in space. \n" +
         "\n" +
-        "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.",
+        "Like my relationship to my identities, this piece is ever-shifting yet completely intertwined with one another: some pieces will hold firm but the overall shape will never be permanently fixed.\n" +
+        "\n" +
+        "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/tiger___mommy\">@tiger___mommy</a>\n",
     directory: "/assets/YellowPerils/Michelle",
     artworks: {
       art1: {
