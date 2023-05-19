@@ -155,15 +155,15 @@ watch(activeIndex, () => {
                         <CarouselComponent class="hidden md:block" :slides="artist.slides" />
                         <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-12 pt-14 pb-6 lg:pb-12">
                             <div class="w-full lg:w-2/3 min-h-full">
-                                <span v-if="artist.collection_title" class="text-sm sm:text-base lg:text-[28px] font-bold leanding-4">
+                                <span v-if="artist.collection_title" class="text-md sm:text-lg lg:text-[28px] font-bold leanding-4">
                                     <span class="italic">{{artist.collection_title}}</span>
                                 </span>
-                                <span v-else class="font-bold leanding-4 text-sm sm:text-base lg:text-[28px]">
+                                <span v-else class="font-bold leanding-4 text-md sm:text-lg lg:text-[28px]">
                                     About This Collection
                                 </span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.description"> </div>
                             </div>
-                            <div class="mt-4 lg:mt-0 lg:w-1/3">
+                            <div class="mt-9 lg:mt-0 lg:w-1/3">
                                 <span class="font-bold leading-4 text-sm sm:text-base lg:text-[28px]">{{artist.artist_name}}</span>
                                 <div class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-xl" v-html="artist.bio"> </div>
                             </div>
@@ -171,22 +171,22 @@ watch(activeIndex, () => {
                     </div>
                     <div v-if="artist.format == 'text'" class="h-full w-full lg:flex lg:justify-between lg:items-start gap-4 md:gap-12 lg:gap-24 mx-auto">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-[60px] pb-6 lg:pt-24 lg:pb-12">
-                            <p class="text-2xl font-bold">{{artist.artist_name}}</p>
-                            <p class="text-lg font-light italic">{{artist.collection_title}}</p>
+                            <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
+                            <p class="lg:text-4xl text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
                         <div class="lg:w-2/3 flex flex-col">
-                            <p class="text-base leading-6">
+                            <p class="text-sm sm:text-base lg:text-lg leading-6">
                                 {{artist.excerpt1}}
                             </p>
-                            <p class="text-base mt-3 leading-6">
+                            <p class="text-sm sm:text-base lg:text-lg mt-3 leading-6">
                                 {{artist.excerpt2}}
                             </p>
                             <a :href="artist.link" target="_blank" class="self-end justify-self-end underline text-bitten/50 hover:text-bitten p-2">Read More</a>
                         </div>
                         <div class="mt-6 lg:mt-0 lg:w-1/3">
-                            <span class="font-semibold text-lg lg:text-2xl">{{artist.artist_name}}</span>
+                            <span class="font-semibold text-md sm:text-lg lg:text-[28px]">{{artist.artist_name}}</span>
                             <!--                            <p> {{artist.bio}} </p>-->
-                            <div v-html="artist.bio" style="white-space: pre-line"> </div>
+                            <div v-html="artist.bio" class="mt-4 whitespace-pre-line text-sm sm:text-base lg:text-lg"> </div>
                         </div>
                     </div>
                     <div v-if="artist.format == 'video'" class="h-full">
