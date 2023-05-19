@@ -197,7 +197,7 @@ watch(activeIndex, () => {
                             <iframe :src="art.file_name" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-full h-full" allowfullscreen></iframe>
                         </div>
                         <div class="h-full lg:flex lg:justify-between lg:items-start lg:gap-14 lg:pt-[60px] pt-14">
-                            <div class="w-full lg:w-2/3 min-h-full">
+                            <div class="lg:mt-0 w-full lg:w-2/3 min-h-full">
                                 <span class="font-bold leanding-4 text-base sm:text-lg lg:text-2xl">
                                     About This Collection
                                 </span>

@@ -301,7 +301,7 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require('@/assets/MadeInQueer/Marisa/Laced_Bodies_1.jpg'),
     collection_title: "",
-    description: "\n" +
+    description: 
         "<em>Fruity Furniture</em>\n" +
         "Growing up, celebrations around food were integral parts of my experience with my grandparents and the primary connection to my Chinese heritage. Chinese traditions around food like Lunar New Year were always very fascinating and magical. And for a short while, I would be a part of something that felt like it came from another time. Often these celebrations were performed around the living room, a central gathering space in my Pau Pau and Gong Gong’s home, as we sat in a circular fashion around the room. The Fruity Furniture ties back to these memories of family connection and food celebration because the furniture become whimsical characters. The Fruity Furniture plays with the sense of wonder that I would experience as a child around food. Designed as small seats of varying proportions, the fruit collection allows us to live out childhood dreams of having food as big as our bodies and seeing the furniture as physical characters with identities of their own. Taking the embodiment of ‘fruity’ the furniture offers levels of whimsy and wonder that also ties to queer and soft identity. They are an expression of self, characters to cherish in your home that are meant to be shared collectively. The collection includes a pear, green apple, plum, peach and berry.\n" +
         "\n" +
