@@ -90,39 +90,39 @@ export const bodyPolitics = {
         slides: [
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/1_identity_card.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/2_silence.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/3_reemerge.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/4_trust.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/5_immaculate.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/6_face_to_face.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class=" lg: w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/7_in_search_of.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/8_return_to_yourself.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/8_return_to_yourself.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Imran/9_minute.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Imran/9_minute.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
@@ -190,15 +190,15 @@ export const bodyPolitics = {
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Geoff/pathfinding.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Geoff/pathfinding.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Geoff/stifle.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Geoff/stifle.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Geoff/towardAMemory.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Geoff/towardAMemory.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
         ],
     },
@@ -322,23 +322,23 @@ export const bodyPolitics = {
         slides: [
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Sophie/01.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Sophie/01.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Sophie/02.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Sophie/02.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Sophie/03.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Sophie/03.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Sophie/04.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Sophie/04.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Sophie/05.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Sophie/05.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
         ],
     },
@@ -427,27 +427,27 @@ export const bodyPolitics = {
         slides:[
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/1GiovannisRoom.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/1GiovannisRoom.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/2ASuitableBoy.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/2ASuitableBoy.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/3WeHaveAlwaysBeenHere.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/3WeHaveAlwaysBeenHere.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/4BeyondtheGenderBinary.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/4BeyondtheGenderBinary.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/5BikerGangBaddies.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/5BikerGangBaddies.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image:require("@/assets/bg.svg"),
-                content:`<img src="${require("@/assets/BodyPolitics/Theysi/6WhoWeAre.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content:`<img src="${require("@/assets/BodyPolitics/Theysi/6WhoWeAre.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
         ],
     },
@@ -550,15 +550,15 @@ export const bodyPolitics = {
         slides: [
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Makoto/Comets.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Makoto/Comets.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Makoto/TwoSnakes.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Makoto/TwoSnakes.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
             {
                 image: require("@/assets/bg.svg"),
-                content: `<img src="${require("@/assets/BodyPolitics/Makoto/YinYang.jpg")}" class=" w-fit h-[500px] lg:h-screen"/>`,
+                content: `<img src="${require("@/assets/BodyPolitics/Makoto/YinYang.jpg")}" class="w-fit h-[500px] lg:h-screen"/>`,
             },
         ],
     },
