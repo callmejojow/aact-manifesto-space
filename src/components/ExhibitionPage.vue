@@ -15,9 +15,11 @@ onMounted(() => {
     startObserving(aboutSection, 0, onIntersection);
     startObserving(sectionsSection, 1, onIntersection);
 
+    const offset = 88;
     const scroll = new SmoothScroll('a[href*="#"]', {
         speed: 800,
         easing: 'easeInOutCubic',
+        offset: offset,
     });
 });
 
@@ -54,10 +56,10 @@ function onIntersection(entry, index) {
             </ul>
         </div>
         <!-- end of navigation -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start lg:h-[calc(100vh-36px)] mx-auto">
-            <div id="about" class="h-full col-span-1 pt-40 -mt-40 px-6 sm:px-12 lg:px-16 flex flex-col lg:justify-between lg:overflow-y-scroll pb-24 lg:pb-0">
-                <h1 class="mt-6 lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
-                <h1 class=" text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start lg:h-[calc(100vh-64px)] mx-auto">
+            <div id="about" class="lg:h-full col-span-1 px-6 sm:px-12 lg:px-16 flex flex-col lg:overflow-y-scroll pb-24 lg:pb-0">
+                <h1 class="mt-2 sm:mt-4 md:mt-6 lg:mt-16 text-3xl lg:text-4xl font-medium text-left">The Bitten Peach:</h1>
+                <h1 class="mt-1 text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
                 <p class="text-2xl mt-12 mb-6">
                     MANIFESTO SPACE is thrilled to present the <span class="font-semibold italic">Bitten Peach: Decolonizing Queer Asians</span>, a group exhibition curated by Shengyu Cai.
@@ -71,7 +73,7 @@ function onIntersection(entry, index) {
                     </p>
                 </div>
             </div>
-            <div id="sections" class="pt-20 -mt-20 lg:pt-0 lg:mt-0 col-span-1 flex flex-col lg:flex-row justify-start min-w-screen lg:h-[calc(100vh-36px)] h-screen sm:px-6 sm:px-12 lg:px-0 lg:overflow-y-hidden">
+            <div id="sections" class="col-span-1 flex flex-col lg:flex-row justify-start min-w-screen h-[calc(100vh-88px)] lg:h-[calc(100vh-64px)] sm:px-6 sm:px-12 lg:px-0 lg:overflow-y-hidden">
                 <div class="h-1/3 lg:h-screen lg:w-1/3 bg-top lg:bg-center bg-cover group bg-url-1">
                     <a href="/exhibitions/made-in-queer">
                         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50 group-hover:backdrop-brightness-100 md:transition-all md:ease-in md:ease-out md:duration-300">
