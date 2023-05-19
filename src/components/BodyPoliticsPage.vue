@@ -106,8 +106,8 @@ watch(activeIndex, () => {
             </nav>
         </div>
         <div class="overflow-scroll scroll-smooth">
-        <!-- Banner -->
-            <section id="page_banner" class="h-[calc(100vh-89px)] w-full bg-cover bg-top banner2-url">
+            <!-- Banner -->
+            <section id="page_banner" class="h-[calc(100vh-89px)] w-full bg-cover bg-top banner1-url">
                 <div class="bg-black/50 w-full h-[calc(100vh-89px)] flex flex-col items-start justify-center lg:pl-16 sm:pl-12 pl-6">
                     <p class="lg:leading-[29px] hidden lg:block lg:text-2xl text-ivory/90">
                         The Bitten Peach: Decolonizing Queer Asians
@@ -120,30 +120,30 @@ watch(activeIndex, () => {
             <!-- Introduction of the sub section -->
             <section id="about" class="h-fit px-6 sm:px-12 lg:px-16">
                 <h2 class="pt-[60px] pb-6 lg:pt-24 lg:mb-12 text-xl lg:text-4xl font-bold">About</h2>
-            <!--                <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
-            <!--                    Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.-->
-            <!--                </p>-->
-            <!--                <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
-            <!--                    We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?-->
-            <!--                </p>-->
-            <p class="pb-[94px] sm:pb-24 mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
-                Our bodies are battlegrounds. This section assumes our bodies as a measurement of ‘Asian-ness’ and ‘queerness’, untangling their complicated relationships with identities, intimacy, self-love, and diasporic experience, etc.
-            </p>
-        </section>
-        <div v-for="(artist,index) in bodyPoliticsArray" :key="index" class="pb-[94px] sm:pb-24">
-            <!-- Quote of the Topic -->
-            <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
-                <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
-                    <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
-                        {{artist.quote}}
-                    </p>
-                    <p class="mt-4 lg:mt-6 z-20 text-ivory/90 font-semibold text-base lg:text-2xl text-ivory text-center">
-                        {{artist.artist_name}}
-                    </p>
-                </div>
+                <!--                <p class="font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
+                <!--                    Intrigued by the parallel existence of the peach in both Western and Eastern queer cultures, AACT is curating its inaugural online exhibition - The Bitten Peach: Decolonizing Queerness.-->
+                <!--                </p>-->
+                <!--                <p class="mt-3 lg:mt-9 font-normal text-sm leading-5 lg:text-xl lg:leading-8">-->
+                <!--                    We are interested in the intersectionality of Asian and queer identities, and the lived experiences of these community members. The current queer cultural canon is predominantly held together by the Western gaze. Confronting the marginalization of Asian communities in contemporary queer culture, AACT invites all artists to share their experiences, existing research, and observations through artworks of various mediums. We want to impose these critical questions: is current queer theory also a colonized project of Eurocentrism? How does queer activism take place in different forms in different communities? How do we decolonize queerness?-->
+                <!--                </p>-->
+                <p class="pb-[94px] sm:pb-24 mt-3 lg:mt-9 font-normal text-sm sm:text-base lg:text-xl leading-5 sm:leading-6 lg:leading-8">
+                    Our bodies are battlegrounds. This section assumes our bodies as a measurement of ‘Asian-ness’ and ‘queerness’, untangling their complicated relationships with identities, intimacy, self-love, and diasporic experience, etc.
+                </p>
             </section>
-            <!-- Art pieces of a certain artist with his/her introduction -->
-            <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16">
+            <div v-for="(artist,index) in bodyPoliticsArray" :key="index" class="pb-[94px] sm:pb-24">
+                <!-- Quote of the Topic -->
+                <section :id="`artist_${index}`" class="bg-bitten h-[calc(100vh-89px)] w-screen bg-cover" :style="artist.quote_bg_url ? { backgroundImage: 'url(' + artist.quote_bg_url + ')' } : {}">
+                    <div class="h-full flex flex-col items-center justify-center lg:px-64 md:px-32 px-6 bg-black/70">
+                        <p class="font-thin tracking-wider max-w-4xl text-base lg:text-2xl text-ivory/90">
+                            {{artist.quote}}
+                        </p>
+                        <p class="mt-4 lg:mt-6 z-20 text-ivory/90 font-semibold text-base lg:text-2xl text-ivory text-center">
+                            {{artist.artist_name}}
+                        </p>
+                    </div>
+                </section>
+                <!-- Art pieces of a certain artist with his/her introduction -->
+                <div class="w-screen tracking-wide leading-6 bg-ivory px-20 px-6 sm:px-12 lg:px-16">
                     <div v-if="artist.format == 'image' || artist.format == 'mixed'" class="h-full">
                         <div class="lg:flex lg:justify-between lg:items-start gap-4 pt-12 pb-4 lg:pt-20 lg:pb-8">
                             <p class="lg:text-4xl text-2xl font-bold">{{artist.artist_name}}</p>
@@ -234,9 +234,8 @@ watch(activeIndex, () => {
                     </a>
                 </div>
             </div>
-        <div class="snap-start"></div>
-        <FooterComponent class="text-stone-800/60 bg-ivory lg:pt-9 lg:border-t lg:border-stone-400/50 px-2 md:px-8 lg:px-4 pb-9" />
-    </div>
+            <FooterComponent class="text-stone-800/60 bg-ivory lg:border-t lg:border-stone-400/50" />
+        </div>
     </div>
 </template>
 <style>
