@@ -562,4 +562,40 @@ export const bodyPolitics = {
             },
         ],
     },
+    artist28: {
+        idx: 28,
+        format: AllowedFormats.Image,
+        visible: true,
+        artist_name: "Ness Lee",
+        ins_handle: ["@nessleee"],
+        quote: '"Rather than the emphasis on the physical form, the emotional resonance and presence is brought to  focus in periods of vulnerability, discomfort and acceptance."',
+        bio: "Ness Lee is a Chinese-Hakka Canadian born in 1989. Studying at The Ontario College of Art and Design,  they have received their Bachelor of Design in Illustration. Based in Toronto, their work has been shown in institutions such as the Art Gallery of Ontario, the Agnes Etherington Art Centre, the Gardiner  Museum, and the Art Gallery of Hamilton, as well as galleries in New York, Boston, Los Angeles, Miami,  Montreal, and Toronto. Lee has also participated in mural festivals in Canada and Internationally in  Hyderabad, India, and Cozumel, Mexico. \n" +
+            "\n" +
+            "Lee draws upon personal history and narratives of her diasporic cultural upbringing and identity to her body, language, and sexuality. With these embodied experiences, Lee creates tender and surreal illustrations, paintings, sculptures, and installations as a language of self-discovery and acceptance.  Exploring various states of mind during intimate stages of vulnerability, Lee’s work takes form as an effort in seeking comfort, forgiveness, and desire for an end to a self-perpetuated state. \n" +
+            "\n" +
+            "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.instagram.com/nessleee/\">@nessleee</a>\n" +
+            "<a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"http://www.nesslee.com/\">Website</a>",
+        topic_name: "Body Politics",
+        quote_bg_url: require('@/assets/BodyPolitics/Ness/NessQuoteBg.jpg'),
+        collection_title: "Upcoming Live Mural Painting",
+        directory: "/assets/BodyPolitics/Ness",
+        description: 'Ness Lee’s work is an investigation of the human form dealing with notions of intimacy and self-love.  Rather than the emphasis on the physical form, the emotional resonance and presence is brought to  focus in periods of vulnerability, discomfort and acceptance. Using various mediums, she explores and echoes these emotions, encompassing its tactile experience into one that is filled with a depth of feeling,  playing on humourous rhythms and self-exploration.\n' +
+            '\n' +
+            "Photo credit: <a class=\"font-medium text-bitten/80 hover:text-bitten\" href=\"https://www.luluwei.com/\">Lulu Wei</a>",
+        artworks: {
+            art1: {
+                name: "Portrait",
+                year: "",
+                medium: "Photography",
+                file_name: require("@/assets/BodyPolitics/Ness/NessLee.jpg"),
+                description: "",
+            },
+        },
+        slides: [
+            {
+                image: require("@/assets/bg.svg"),
+                content: `<img src="${require("@/assets/BodyPolitics/Ness/NessLee.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+            },
+        ],
+    },
 };
