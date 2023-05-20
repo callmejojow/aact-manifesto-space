@@ -132,23 +132,23 @@ export const yellowPerils = {
     slides:[
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/despite_them.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/despite_them.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/freedom_actually_release.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/freedom_actually_release.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/to_struggle_and_to_fight.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/to_struggle_and_to_fight.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/barbed_dreams.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/barbed_dreams.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Andi/thank_you.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Andi/thank_you.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
     ],
   },
@@ -247,27 +247,27 @@ export const yellowPerils = {
     slides:[
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected1.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected1.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected2.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected2.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected3.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected3.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected4.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected4.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected5.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected5.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected6.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/MadeInQueer/Mia/MiaSelected6.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
     ],
   },
@@ -362,47 +362,47 @@ export const yellowPerils = {
     slides:[
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa1.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa1.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa2.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa2.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa3.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa3.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa4.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheSoulSherpa4.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween1.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween1.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween2.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween2.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween3.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/TheInBetween3.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung1.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung1.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung2.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung2.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung3.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung3.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung4.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Anto/GungGung4.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
 
     ],
@@ -449,15 +449,15 @@ export const yellowPerils = {
     slides:[
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_1.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_1.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_2.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_2.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_3.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Julie/JulieTian_3.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
     ],
   },
@@ -511,19 +511,19 @@ export const yellowPerils = {
     slides:[
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mothers_tongue.jpg")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mothers_tongue.jpg")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w1.png")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w1.png")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w2.png")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w2.png")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
       {
         image: require("@/assets/bg.svg"),
-        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w3.png")}" class="object-contain w-fit h-[500px] lg:h-screen"/>`,
+        content:`<img src="${require("@/assets/YellowPerils/Michelle/mt_w3.png")}" class="object-contain object-contain w-fit h-[500px] lg:h-screen"/>`,
       },
     ],
   },
