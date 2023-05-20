@@ -564,7 +564,7 @@ export const madeInQueer = {
         "\n" +
         "As both men aged, the Duke’s attraction toward Mizi diminished. On another day, when Mizi offended the Duke, the Duke responded, ‘this person has offended me several times. For example, he had used the royal chaise by forging my name and authority. Furthermore, he once offered me a leftover peach that he no longer desired’...” \n" +
         "\n" +
-        "-- Excerpt taken from Shui Nan (the Difficulties of Persuasion) by Han, Feizi; Translated by Eric Chengyang\n" +
+        "-- Excerpt taken from <em>Shui Nan (the Difficulties of Persuasion)</em> by Han, Feizi; Translated by Eric Chengyang\n" +
         "\n" +
         "Bridging the East and the West, the Past and Present,  this project pays further homage to the works by these contemporary artists:\n" +
         "1. “Untitled” (Perfect Lovers) by Felix Gonzalez-Torres. See it on MoMA <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://www.moma.org/collection/works/81074'>online collection</a>\n" +
@@ -601,7 +601,7 @@ export const madeInQueer = {
     topic_name: "Made in Queer",
     quote_bg_url: require("@/assets/MadeInQueer/Beau/YoureHereToo2.jpg"),
     collection_title: "You’re here, too",
-    description: "You’re here, too is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
+    description: "<em>You’re here, too</em> is a series of intimate portraits on being and becoming. Meditative in observation and evocative in tenderness, this work is rooted in meaningful witness between sitter and image-maker, marking a shared reflection on the nuances of queer Asian experience through moments of introspection, resolve, and solitude. \n" +
         "\n" +
         "The accompanying video for this series can be viewed <a class=\"font-medium text-bitten/80 hover:text-bitten\" href='https://beaugomez.com/yht/wipvid001'>here</a>.",
     directory: '/assets/MadeInQueer/Beau',
@@ -666,7 +666,7 @@ export const madeInQueer = {
         "\n" +
         "Our work is a penumbra to the world but umbra to our audiences, as they become the penumbra to ask us. We reflect on our anthropocentric projection of the queerness to the hermaphrodite clownfish, and also hope that the audiences will continue to ask…\n" +
         "\n" +
-        "The Chinese instruments used in the soundtrack include Guqin, Xun and Erhu. They resonate with Zhuangzi, the classical Daoist text from which the tale Penumbra asks umbra originates.",
+        "The Chinese instruments used in the soundtrack include Guqin, Xun and Erhu. They resonate with <em>Zhuangzi</em>, the classical Daoist text from which the tale Penumbra asks umbra originates.",
     directory: '',
     artworks: {
       art1: {

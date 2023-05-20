@@ -168,8 +168,8 @@ watch(activeIndex, () => {
                     </div>
                     <div v-if="artist.format == 'text'" class="h-full w-full mx-auto">
                         <div class="pb-4 lg:pb-8">
-                            <p class="lg:text-[28px] lg:leading-[34px] text-2xl font-bold">{{artist.collection_title}}</p>
-                            <p class="lg:text-[28px] lg:leading-[34px] text-lg font-light italic">{{artist.artist_name}}</p>
+                            <p class="lg:text-[28px] lg:leading-[34px] text-2xl font-bold">{{artist.artist_name}}</p>
+                            <p class="lg:text-[28px] lg:leading-[34px] text-lg font-light italic">{{artist.collection_title}}</p>
                         </div>
                         <div class="w-full lg:flex lg:justify-between lg:gap-9">
                             <div class="w-full lg:w-2/3">

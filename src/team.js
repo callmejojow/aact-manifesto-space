@@ -33,7 +33,7 @@ export const team = [
     name: 'Erin Rooney',
     role: 'Editor',
     imageUrl:require('@/assets/members/erin.png'),
-    bio:'Erin is fascinated by the role that storytelling plays within culture and society and enjoys spending her free time pursuing her creative interests in reading and writing. She is an advocate for celebrating cultural diversity and tolerance through the art of storytelling in various mediums, joining AACT to promote cultural awareness and diversity through the creative arts.'
+    bio:'Erin is an information specialist with an MI from the University of Toronto. She has a passion for creative writing, culture, and the arts. She spent her formative years abroad, primarily in Asia, where she gained a lasting appreciation for Asian culture. Erin holds a BA in English Literature and is fascinated by the role that storytelling plays within culture and society. She is an advocate for celebrating cultural diversity, joining AACT to promote cultural awareness through the arts.'
   },
   {
     name: 'Michael Wang',

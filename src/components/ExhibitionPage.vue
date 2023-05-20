@@ -62,7 +62,7 @@ function onIntersection(entry, index) {
                 <h1 class="mt-1 text-3xl lg:text-4xl font-medium text-left">Decolonizing Queer Asians</h1>
                 <p class="text-base font-normal mt-3">May 2023</p>
                 <p class="text-2xl mt-12 mb-6">
-                    MANIFESTO SPACE is thrilled to present the <span class="font-semibold italic">Bitten Peach: Decolonizing Queer Asians</span>, a group exhibition curated by Shengyu Cai.
+                    MANIFESTO SPACE is thrilled to present <span class="font-semibold italic">The Bitten Peach: Decolonizing Queer Asians</span>, a group exhibition curated by Shengyu Cai.
                 </p>
                 <div class="flex flex-col space-y-6 leading-6 text-left text-sm sm:text-base">
                     <p class="font-normal">
