@@ -14,7 +14,7 @@ function navigateWithFadeOut(url) {
 
   setTimeout(() => {
     router.push(url);
-  }, 100); 
+  }, 200); 
 }
 
 onBeforeRouteLeave(() => {
@@ -25,13 +25,13 @@ onBeforeRouteLeave(() => {
 onMounted(() => {
   setTimeout(() => {
     buttonOpacity.value = 1;
-  }, 400);
+  }, 500);
 })
 
 </script>
 <style>
 .fade-out {
-  animation: fadeOut 0.1s ease-out forwards;
+  animation: fadeOut 0.2s ease-out forwards;
 }
 
 
