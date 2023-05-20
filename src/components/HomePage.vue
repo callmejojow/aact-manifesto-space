@@ -1,30 +1,39 @@
 <script setup>
-    import NavDropdown from '@/components/NavDropdown.vue'
+import NavDropdown from '@/components/NavDropdown.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { ref, onMounted } from 'vue'
 const buttonOpacity = ref(0);
 import bgImg from '@/assets/curation-topic1.webp'
+import { useRouter, onBeforeRouteLeave } from 'vue-router'
+
+const router = useRouter()
 
 function navigateWithFadeOut(url) {
   const body = document.querySelector("body");
   body.classList.add("fade-out");
 
   setTimeout(() => {
-    window.location.href = url;
-  }, 500); // Wait for 500ms (the duration of the fade-out animation) before navigating
+    router.push(url);
+  }, 100); 
 }
+
+onBeforeRouteLeave(() => {
+  const body = document.querySelector("body");
+  body.classList.remove("fade-out");
+})
 
 onMounted(() => {
   setTimeout(() => {
     buttonOpacity.value = 1;
-  }, 1600);
+  }, 400);
 })
 
 </script>
 <style>
-    .fade-out {
-  animation: fadeOut 0.2s ease-out forwards;
+.fade-out {
+  animation: fadeOut 0.1s ease-out forwards;
 }
+
 
 @keyframes fadeOut {
   from {
@@ -35,14 +44,6 @@ onMounted(() => {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 </style>
 <template>
     <main class="min-h-screen max-h-full overflow-hidden relative bg-cover bg-center bg-fixed lg:bg-right-top" :style="`background-image: url(${bgImg});`">
