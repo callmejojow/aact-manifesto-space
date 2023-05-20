@@ -82,7 +82,8 @@ function onIntersection(entry, index) {
 <!--                            <img class="aspect-[1/1] rounded object-cover" :src="member.imageUrl" alt="Profile Image" />-->
                             <h3 class="mt-4 lg:mt-6 lg:text-2xl font-bold text-gray-900">{{ member.name }}</h3>
                             <p class="lg:leading-7 lg:mt-1 text-base text-gray-600">{{ member.role }}</p>
-                            <p class="text-base mt-3 leading-6">{{ member.bio }}</p>
+                          <p class="text-base mt-3 leading-6">{{ member.bio }}</p>
+                          <div class="text-base mt-3 leading-6" v-html="member.social"></div>
                         </li>
                     </ul>
                 </div>
