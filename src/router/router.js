@@ -45,3 +45,14 @@ const router = createRouter({
 
 export default router;
 
+const app = createApp(App);
+
+app.use(router);
+
+app.use(VueGtag, {
+  config: { 
+    id: "G-JJRF0356EC",
+  },
+}, router); // <----- add your router here
+
+app.mount("#app");
