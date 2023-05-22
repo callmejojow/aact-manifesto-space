@@ -6,5 +6,4 @@ import VueKinesis from "vue-kinesis"
 import 'aos/dist/aos.css'
 import VueGtag from "vue-gtag";
 createApp(App).use(router).use(VueKinesis).use(VueGtag, {
-  config: { id: "G-JJRF0356EC" }
-}).mount("#app");
+  config: { id: "G-JJRF0356EC" }}, router).mount("#app");
