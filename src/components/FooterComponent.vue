@@ -32,6 +32,7 @@ const pages = [
     { name: 'EXHIBITION', href: '/exhibitions' },
     { name: 'ABOUT US', href: '/about-us' },
     { name: 'AACT', href: 'https://aact.community/' },
+    { name: 'DONATE', href: 'https://pages.donately.com/asianartsandculturetrust/form/frm_0f49dac5877d' }
 ]
 const medias = [
     { name: 'INSTAGRAM', href: 'https://www.instagram.com/aact.community/' },
