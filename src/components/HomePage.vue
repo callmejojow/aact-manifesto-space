@@ -61,7 +61,7 @@ onMounted(() => {
                 <div class="pl-6 md:pl-12 lg:pl-24">
                     <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 60ms ease-in' }">The Bitten Peach:</p>
                     <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-wide" :style="{ opacity: buttonOpacity, transition: 'opacity 120ms ease-in' }">
-                        Decolonizing Queer Asians
+                        Decolonizing Queer Asians 
                     </p>
                     <button @click="navigateWithFadeOut('/exhibitions')" type="button" :style="{ opacity: buttonOpacity, transition: 'opacity 200ms ease-in' }" class="z-20 mt-6 md:mt-9 lg:mt-12 border border-ivory/60 px-6 py-2 md:py-4 text-ivory/60 hover:border/ivory hover:text-ivory bg-ivory/10 md:text-base text-small">Explore Now</button>
                 </div>
